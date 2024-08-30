@@ -47,7 +47,7 @@ function classNames(...classes) {
 export default function Header() {
   return (
     <>
-      <div className="absolute top-0 left-[50%] translate-x-[-50%] w-full  my-[20px] mx-auto max-w-[1320px] px-2 sm:px-6 lg:px-8 bg-[#D7F9FF] shadow-[0_0px_6.034px_0px_rgba(0,0,0,0.25)] rounded-md">
+      <div className="absolute top-0 left-[50%] translate-x-[-50%] w-full  my-[20px] mx-auto max-w-[1320px] px-2 sm:px-6 lg:px-8 bg-[#ABDDFF] shadow-[0_0px_6.034px_0px_rgba(0,0,0,0.25)] rounded-md">
         <div className="relative flex h-16 items-center justify-between">
           <div className="flex flex-1 items-center justify-items-start sm:items-stretch sm:justify-start">
             <div className="flex flex-shrink-0 items-center">

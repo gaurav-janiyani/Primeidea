@@ -39,7 +39,8 @@ export default function Home() {
         <div className="banner-section relative h-[100vh]">
           <div className="image-section h-[100vh] w-full">
             <Image
-              src="/images/banner.jpeg"
+              // src="/images/banner.jpeg"
+              src="/images/home/banner.png"
               width={1920}
               height={1280}
               alt="Banner"
@@ -47,6 +48,45 @@ export default function Home() {
             />
           </div>
           <Header />
+        </div>
+        <div className="bg-[#293C7D] py-10">
+          <div className="mx-auto max-w-[1320px] px-2">
+            <div className="flex justify-between">
+              <div className="w-[45%]">
+                <p className="text-white text-xl max-w-[500px]">
+                  Prime Idea creates financial plans that fuel your ambitions
+                  today and secure your success for tomorrow, whether you’re
+                  starting out or scaling up.
+                </p>
+              </div>
+              <div className="w-[55%] flex justify-between">
+                <div className="flex flex-col	items-end px-2">
+                  <span className="text-white text-[20px] font-bold">
+                    Trusted By Clients
+                  </span>
+                  <h3 className="text-5xl font-extrabold mt-2 text-[#FFC300]">
+                    80+
+                  </h3>
+                </div>
+                <div className="flex flex-col	items-end px-2">
+                  <span className="text-white text-[20px] font-bold">
+                    Years of expertise
+                  </span>
+                  <h3 className="text-5xl font-extrabold mt-2 text-[#FFC300]">
+                    12+
+                  </h3>
+                </div>
+                <div className="flex flex-col	items-end px-2">
+                  <span className="text-white text-[20px] font-bold">
+                    Client Satisfaction
+                  </span>
+                  <h3 className="text-5xl font-extrabold mt-2 text-[#FFC300]">
+                    92+
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -197,39 +237,65 @@ export default function Home() {
       </section>
 
       <section>
-        <div className="bg-[#1995AD] py-12">
+        <div className="bg-[#1995AD] pt-12">
           <div className="container mx-auto">
             <div className="flex justify-between">
               <div className="max-w-[72%]">
                 <div className="w-full flex justify-between">
-                  <div className="max-w-[40%]">
-                    <h2 className="font-normal text-white text-4xl mb-6 leading-[120%]">
+                  <div className="max-w-[45%] w-full">
+                    <h2 className="font-normal text-white text-[42px] mb-[40px] leading-[120%]">
                       Here&#39;s what your
-                      <span className="font-semibold inline-block">
+                      <span className="font-semibold block">
                         personalized <br /> financial report
                       </span>{" "}
                       will look like
                     </h2>
                     <ul className="flex flex-col">
-                      <li className="w-full text-white px-6 py-4 text-xl cursor-pointer font-extrabold hover:shadow-[inset_0px_0px_6.641px_0px_rgba(0,0,0,0.25)]">Assumptions</li>
-                      <li className="w-full text-white px-6 py-4 text-xl cursor-pointer font-medium hover:shadow-[inset_0px_0px_6.641px_0px_rgba(0,0,0,0.25)]">Net Worth Analysis</li>
-                      <li className="w-full text-white px-6 py-4 text-xl cursor-pointer font-medium hover:shadow-[inset_0px_0px_6.641px_0px_rgba(0,0,0,0.25)]">Prime Idea Recommends</li>
-                      <li className="w-full text-white px-6 py-4 text-xl cursor-pointer font-medium hover:shadow-[inset_0px_0px_6.641px_0px_rgba(0,0,0,0.25)]">Goal Analysis</li>
-                      <li className="w-full text-white px-6 py-4 text-xl cursor-pointer font-medium hover:shadow-[inset_0px_0px_6.641px_0px_rgba(0,0,0,0.25)]">Retirement Planning</li>
+                      <li className="w-full text-white px-6 py-4 text-xl cursor-pointer font-extrabold hover:shadow-[inset_0px_0px_6.641px_0px_rgba(0,0,0,0.25)]">
+                        Assumptions
+                      </li>
+                      <li className="w-full text-white px-6 py-4 text-xl cursor-pointer font-medium hover:shadow-[inset_0px_0px_6.641px_0px_rgba(0,0,0,0.25)]">
+                        Net Worth Analysis
+                      </li>
+                      <li className="w-full text-white px-6 py-4 text-xl cursor-pointer font-medium hover:shadow-[inset_0px_0px_6.641px_0px_rgba(0,0,0,0.25)]">
+                        Prime Idea Recommends
+                      </li>
+                      <li className="w-full text-white px-6 py-4 text-xl cursor-pointer font-medium hover:shadow-[inset_0px_0px_6.641px_0px_rgba(0,0,0,0.25)]">
+                        Goal Analysis
+                      </li>
+                      <li className="w-full text-white px-6 py-4 text-xl cursor-pointer font-medium hover:shadow-[inset_0px_0px_6.641px_0px_rgba(0,0,0,0.25)]">
+                        Retirement Planning
+                      </li>
                     </ul>
                   </div>
-                  <div className="max-w-[60%]">
-                    
+                  <div className="max-w-[55%]">
+                    <div className="mt-[80px] mb-[-130px] ml-[-20px]">
+                      <Image
+                        src="/images/financial-planning/financial-planning-report-tab.png"
+                        alt="Financial Planning"
+                        width={615}
+                        height={771}
+                        className="w-full"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
-              <div className="max-w-[28%]"></div>
+              <div className="max-w-[28%]">
+                <Image
+                  src="/images/financial-planning/financial-advisor-people.png"
+                  alt="Finacial Advisor"
+                  width={477}
+                  height={496}
+                  className="w-full flex items-end"
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <div className="bg-white py-24 sm:py-32">
+      <div className="bg-white py-24 sm:pt-48 sm:pb-32">
         <div className="mx-auto max-w-[1320px] flex justify-between">
           <div className="max-w-[460px]">
             <Image
@@ -268,7 +334,7 @@ export default function Home() {
                   <img
                     alt=""
                     src="/images/financial-planning/finance-calculators.png"
-                    className="h-16 w-16"
+                    className="h-16"
                   />
                   <div>
                     <h3 className="max-w-[80px] text-[23px] font-medium leading-[120%] tracking-tight text-[#4D4D4D] my-4">
@@ -284,6 +350,370 @@ export default function Home() {
           </ul>
         </div>
       </div>
+
+      <section className="border-b border-b-[#222222]">
+        <div className="max-w-[1320px] mx-auto px-2 ">
+          <div className="flex">
+            <div className="w-[38%] pt-4 pr-4">
+              <h2 className="text-3xl font-medium mb-5">
+                Insights & Innovations
+              </h2>
+              <p className="text-lg mb-6">
+                Stay ahead with our latest articles on financial trends,
+                investment strategies, and wealth management tips. Discover
+                insights and strategies to keep your financial game strong and
+                up-to-date.
+              </p>
+              <a
+                href=""
+                className="bg-[#293C7D] text-lg font-bold rounded-md text-white px-6 py-3 inline-flex items-center"
+              >
+                Read All
+                <Image
+                  src="/images/icons/arrow-square-right.png"
+                  width={21}
+                  height={21}
+                  alt="Read All"
+                  className="ml-2"
+                />
+              </a>
+
+              <Image
+                src="/images/home/insights/insights.png"
+                width={320}
+                height={450}
+                alt="Insights & Innovations"
+                className="mx-auto mt-6"
+              />
+            </div>
+            <div className="w-[62%] border-l border-l-[#222222] pt-4">
+              <ul className="">
+                <li className="border-b border-b-[#222222] pb-4">
+                  <div className="flex ">
+                    <div className="w-[20%] max-w-[132px] mr-4">
+                      <Image
+                        src="/images/home/insights/1.png"
+                        width={132}
+                        height={132}
+                        alt="1"
+                      />
+                      <h3 className="flex flex-col justify-center items-center mt-3 leading-[100%]">
+                        Writtern by <span className="text-xl font-bold">Prime Idea</span>
+                      </h3>
+                    </div>
+                    <div className="w-[70%]">
+                      <div className="top-section flex items-center ">
+                        <div className="bg-[#BCE4FF] text-[#000] px-3 py-1 rounded-md font-normal">
+                          Retirement Planning{" "}
+                        </div>{" "}
+                        <span className="w-[16px] h-[2px] rounded-[5px] bg-[#222222] mx-4"></span>{" "}
+                        <div className="text-lg">January 21, 2024</div>
+                      </div>
+                      <div className="py-3">
+                        <h2 className="text-2xl font-semibold">
+                          How can I start planning for retirement if I'm in my
+                          30s ?
+                        </h2>
+                        <p>
+                          Starting your retirement planning in your 30s is a
+                          smart move. Begin by assessing your current financial
+                          situation and setting clear retirement goals.
+                          Contribute regularly to retirement accounts like a
+                          401(k) or IRA, and consider diversifying your
+                          investments to build a robust portfolio. 
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li className="border-b border-b-[#222222] pb-4">
+                  <div className="flex ">
+                    <div className="w-[20%] max-w-[132px] mr-4">
+                      <Image
+                        src="/images/home/insights/1.png"
+                        width={132}
+                        height={132}
+                        alt="1"
+                      />
+                      <h3 className="flex flex-col justify-center items-center mt-3 leading-[100%]">
+                        Writtern by <span className="text-xl font-bold">Prime Idea</span>
+                      </h3>
+                    </div>
+                    <div className="w-[70%]">
+                      <div className="top-section flex items-center ">
+                        <div className="bg-[#BCE4FF] text-[#000] px-3 py-1 rounded-md font-normal">
+                          Retirement Planning{" "}
+                        </div>{" "}
+                        <span className="w-[16px] h-[2px] rounded-[5px] bg-[#222222] mx-4"></span>{" "}
+                        <div className="text-lg">January 21, 2024</div>
+                      </div>
+                      <div className="py-3">
+                        <h2 className="text-2xl font-semibold">
+                          How can I start planning for retirement if I'm in my
+                          30s ?
+                        </h2>
+                        <p>
+                          Starting your retirement planning in your 30s is a
+                          smart move. Begin by assessing your current financial
+                          situation and setting clear retirement goals.
+                          Contribute regularly to retirement accounts like a
+                          401(k) or IRA, and consider diversifying your
+                          investments to build a robust portfolio. 
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li className="pb-4">
+                  <div className="flex ">
+                    <div className="w-[20%] max-w-[132px] mr-4">
+                      <Image
+                        src="/images/home/insights/1.png"
+                        width={132}
+                        height={132}
+                        alt="1"
+                      />
+                      <h3 className="flex flex-col justify-center items-center mt-3 leading-[100%]">
+                        Writtern by <span className="text-xl font-bold">Prime Idea</span>
+                      </h3>
+                    </div>
+                    <div className="w-[70%]">
+                      <div className="top-section flex items-center ">
+                        <div className="bg-[#BCE4FF] text-[#000] px-3 py-1 rounded-md font-normal">
+                          Retirement Planning{" "}
+                        </div>{" "}
+                        <span className="w-[16px] h-[2px] rounded-[5px] bg-[#222222] mx-4"></span>{" "}
+                        <div className="text-lg">January 21, 2024</div>
+                      </div>
+                      <div className="py-3">
+                        <h2 className="text-2xl font-semibold">
+                          How can I start planning for retirement if I'm in my
+                          30s ?
+                        </h2>
+                        <p>
+                          Starting your retirement planning in your 30s is a
+                          smart move. Begin by assessing your current financial
+                          situation and setting clear retirement goals.
+                          Contribute regularly to retirement accounts like a
+                          401(k) or IRA, and consider diversifying your
+                          investments to build a robust portfolio. 
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="bg-[#F6FDFF] py-16 sm:py-24">
+          <div className="max-w-[1320px] mx-auto px-2">
+            <div className="flex justify-between">
+              <div className="w-[45%]">
+                <h2 className="text-[170px] font-extrabold leading-[100%] bg-[#2f8d46] bg-[url('/images/home/prime-idea-textbg.png')] bg-repeat bg-clip-text text-transparent">
+                  PRIME IDEA{" "}
+                  <span className="inline-block w-[70px] h-[70px] bg-[url('/images/home/prime-idea-textbg.png')] rounded-[50%]"></span>
+                </h2>
+              </div>
+              <div className="w-[55%]">
+                <h3 className="text-xl font-normal tracking-tight text-[#000] sm:text-3xl mt-0 mb-6">
+                  Join the community
+                </h3>
+                <p className="mb-4 text-lg">
+                  Be a part of a dynamic network of like-minded individuals and
+                  forward-thinking professionals. At Prime Idea, we’re more than
+                  just a financial advisory service; we’re a community dedicated
+                  to shared success and growth.
+                </p>
+                <p className="mb-4 text-lg">Connect with us to:</p>
+                <ul className="list-disc pl-[20px]">
+                  <li className="mb-3 text-lg">
+                    <p className="contents">
+                      <strong>Access Exclusive Insights:</strong> Stay updated
+                      with the latest financial trends and tips.
+                    </p>
+                  </li>
+                  <li className="mb-3 text-lg">
+                    <p className="contents">
+                      <strong>Engage in Events:</strong> Participate in
+                      workshops, webinars, and networking opportunities.
+                    </p>
+                  </li>
+                  <li className="mb-3 text-lg">
+                    <p className="contents">
+                      <strong>Receive Personalized Support:</strong> Get
+                      tailored advice and resources to achieve your financial
+                      goals.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="bg-[#F6FDFF] py-16 sm:py-24">
+          <div className="max-w-[1320px] mx-auto px-2">
+            <h2 className="text-xl font-normal tracking-tight text-[#04102A] sm:text-3xl mt-0 mb-10 text-center">
+              What our clients say
+            </h2>
+            <div className="bg-[#C6E8FF] flex rounded-lg">
+              <div className="w-[82%] border-r border-r-[#B2B2B2] py-12 px-10">
+                <div className="flex justify-between mx-[-3%]">
+                  <div className="w-[33%] px-[3%] border-r border-r-[#B2B2B2]">
+                    <Image
+                      src="/images/icons/comma.png"
+                      width={61}
+                      height={43}
+                      alt="Commas"
+                      className="mb-6"
+                    />
+                    <p className="mb-10 text-lg">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud
+                    </p>
+                    <div>
+                      <h3 className="font-bold text-2xl mb-1">Mark Henry</h3>
+                      <h4 className="font-normal text-lg">
+                        Developer, Oklavery
+                      </h4>
+                    </div>
+                  </div>
+                  <div className="w-[33%] px-[3%] border-r border-r-[#B2B2B2]">
+                    <Image
+                      src="/images/icons/comma.png"
+                      width={61}
+                      height={43}
+                      alt="Commas"
+                      className="mb-6"
+                    />
+                    <p className="mb-10 text-lg">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud
+                    </p>
+                    <div>
+                      <h3 className="font-bold text-2xl mb-1">Mark Henry</h3>
+                      <h4 className="font-normal text-lg">
+                        Developer, Oklavery
+                      </h4>
+                    </div>
+                  </div>
+                  <div className="w-[33%] px-[3%]">
+                    <Image
+                      src="/images/icons/comma.png"
+                      width={61}
+                      height={43}
+                      alt="Commas"
+                      className="mb-6"
+                    />
+                    <p className="mb-10 text-lg">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud
+                    </p>
+                    <div>
+                      <h3 className="font-bold text-2xl mb-1">Mark Henry</h3>
+                      <h4 className="font-normal text-lg">
+                        Developer, Oklavery
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+                {/* <div className="flex justify-between w-full">
+                  <div className="w-[33%]  pr-[3%] mr-[3%] border-r border-r-[#B2B2B2]">
+                    <Image
+                      src="/images/icons/comma.png"
+                      width={61}
+                      height={43}
+                      alt="Commas"
+                      className="mb-6"
+                    />
+                    <p className="mb-10 text-lg">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud
+                    </p>
+                    <div>
+                      <h3 className="font-bold text-2xl mb-1">
+                        Mark Henry
+                      </h3>
+                      <h4 className="font-normal text-lg">
+                        Developer, Oklavery
+                      </h4>
+                    </div>
+                  </div>
+                  <div className="w-[33%]  pr-[3%] mr-[3%] border-r border-r-[#B2B2B2]">
+                    <Image
+                      src="/images/icons/comma.png"
+                      width={61}
+                      height={43}
+                      alt="Commas"
+                      className="mb-6"
+                    />
+                    <p className="mb-10 text-lg">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud
+                    </p>
+                    <div>
+                      <h3 className="font-bold text-2xl mb-1">
+                        Mark Henry
+                      </h3>
+                      <h4 className="font-normal text-lg">
+                        Developer, Oklavery
+                      </h4>
+                    </div>
+                  </div>
+                  <div className="w-[30%]">
+                    <Image
+                      src="/images/icons/comma.png"
+                      width={61}
+                      height={43}
+                      alt="Commas"
+                      className="mb-6"
+                    />
+                    <p className="mb-10 text-lg">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud
+                    </p>
+                    <div>
+                      <h3 className="font-bold text-2xl mb-1">
+                        Mark Henry
+                      </h3>
+                      <h4 className="font-normal text-lg">
+                        Developer, Oklavery
+                      </h4>
+                    </div>
+                  </div>
+                </div> */}
+              </div>
+              <div className="w-[18%] p-10 text-center">
+                <div className="text-[22px] font-normal">Average Rating</div>
+                <span className="my-3 text-6xl font-semibold block">4.9</span>
+                <div className="flex flex-col justify-center items-center">
+                  <Image
+                    src="/images/icons/stars.png"
+                    width={100}
+                    height={22}
+                    alt="Ratings"
+                  />
+                </div>
+                <span className="mt-2 max-w-[80%] mx-auto block">
+                  (30+) Customer review
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <Footer />
     </div>
