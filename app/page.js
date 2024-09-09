@@ -1,7 +1,5 @@
 import Footer from "@/components/footer";
-
 import Header from "@/components/header";
-import MainHomeSection from "@/components/home";
 import Image from "next/image";
 
 export default function Home() {
@@ -34,12 +32,10 @@ export default function Home() {
   ];
   return (
     <div>
-      {/* <MainHomeSection /> */}
       <section>
         <div className="banner-section relative h-[100vh]">
           <div className="image-section h-[100vh] w-full">
             <Image
-              // src="/images/banner.jpeg"
               src="/images/home/banner.png"
               width={1920}
               height={1280}
@@ -239,7 +235,7 @@ export default function Home() {
       <section>
         <div className="bg-[#1995AD] pt-12">
           <div className="container mx-auto">
-            <div className="flex justify-between">
+            <div className="flex justify-between items-end">
               <div className="max-w-[72%]">
                 <div className="w-full flex justify-between">
                   <div className="max-w-[45%] w-full">
