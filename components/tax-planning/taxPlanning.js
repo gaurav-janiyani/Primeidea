@@ -41,7 +41,7 @@ const TaxPlanning = () => {
               <h3 className="text-2xl font-medium mb-5 text-black ">Key Feature</h3>
               <ul className="flex justify-between mx-[-10px] ">
                 <li className="px-[10px] w-[33%]">
-                  <div className=" shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg">
+                  <div className=" shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg h-full">
                     <Image
                       src="/images/tax-planning/invest-tax-saving/elss.png"
                       width={387}
@@ -57,7 +57,7 @@ const TaxPlanning = () => {
                   </div>
                 </li>
                 <li className="px-[10px] w-[33%]">
-                  <div className=" shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg">
+                  <div className=" shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg h-full">
                     <Image
                       src="/images/tax-planning/invest-tax-saving/ppf.png"
                       width={387}
@@ -73,7 +73,7 @@ const TaxPlanning = () => {
                   </div>
                 </li>
                 <li className="px-[10px] w-[33%]">
-                  <div className=" shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg">
+                  <div className=" shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg h-full">
                     <Image
                       src="/images/tax-planning/invest-tax-saving/nps.png"
                       width={387}
@@ -112,7 +112,7 @@ const TaxPlanning = () => {
               <h3 className="text-2xl font-medium mb-5 text-black ">Key Feature</h3>
               <ul className="flex justify-between mx-[-10px] ">
                 <li className="px-[10px] w-[33%]">
-                  <div className=" shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg">
+                  <div className=" shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg h-full">
                     <Image
                       src="/images/tax-planning/invest-tax-saving/elss.png"
                       width={387}
@@ -128,7 +128,7 @@ const TaxPlanning = () => {
                   </div>
                 </li>
                 <li className="px-[10px] w-[33%]">
-                  <div className=" shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg">
+                  <div className=" shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg h-full">
                     <Image
                       src="/images/tax-planning/invest-tax-saving/ppf.png"
                       width={387}
@@ -144,7 +144,7 @@ const TaxPlanning = () => {
                   </div>
                 </li>
                 <li className="px-[10px] w-[33%]">
-                  <div className=" shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg">
+                  <div className=" shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg h-full">
                     <Image
                       src="/images/tax-planning/invest-tax-saving/nps.png"
                       width={387}
@@ -189,7 +189,7 @@ const TaxPlanning = () => {
               <h3 className="text-2xl font-medium mb-5 text-black ">Key Feature</h3>
               <ul className="flex justify-between mx-[-10px] ">
                 <li className="px-[10px] w-[33%]">
-                  <div className=" shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg">
+                  <div className=" shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg h-full">
                     <Image
                       src="/images/tax-planning/invest-tax-saving/elss.png"
                       width={387}
@@ -205,7 +205,7 @@ const TaxPlanning = () => {
                   </div>
                 </li>
                 <li className="px-[10px] w-[33%]">
-                  <div className=" shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg">
+                  <div className=" shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg h-full">
                     <Image
                       src="/images/tax-planning/invest-tax-saving/ppf.png"
                       width={387}
@@ -221,7 +221,7 @@ const TaxPlanning = () => {
                   </div>
                 </li>
                 <li className="px-[10px] w-[33%]">
-                  <div className=" shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg">
+                  <div className=" shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg h-full">
                     <Image
                       src="/images/tax-planning/invest-tax-saving/nps.png"
                       width={387}

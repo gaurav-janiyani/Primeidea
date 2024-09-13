@@ -3,24 +3,19 @@ import ClientTestimonial from "@/components/clientTestimonial";
 import FaqsSection from "@/components/faqsSection";
 import Footer from "@/components/footer";
 import InsightsSection from "@/components/insightsSection";
-import PowerOfStrategy from "@/components/researchWelathManagement/powerOfStrategy";
-import PrimeIdeaHelps from "@/components/researchWelathManagement/primeideaHelps";
 import WorkSection from "@/components/researchWelathManagement/workSection";
 import StepperSection from "@/components/steppers";
+import TaxPlanning from "@/components/tax-planning/taxPlanning";
 
-const ResearchBasedWealthManagementPage = () => { 
+const LegacyInheritancePlanning = () => { 
     return (
         <div className="bg-[#F6FDFF]">
-            
+
             <BannerSection />
 
-            <WorkSection />
-
-            <PrimeIdeaHelps />
+            <TaxPlanning />
 
             <StepperSection />
-
-            <PowerOfStrategy />
 
             <InsightsSection />
 
@@ -34,4 +29,4 @@ const ResearchBasedWealthManagementPage = () => {
     )
  }
 
- export default ResearchBasedWealthManagementPage;
+ export default LegacyInheritancePlanning;

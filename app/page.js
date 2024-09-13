@@ -1,4 +1,5 @@
 import ClientTestimonial from "@/components/clientTestimonial";
+import FaqsSection from "@/components/faqsSection";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import InsightsSection from "@/components/insightsSection";
@@ -33,7 +34,7 @@ export default function Home() {
     },
   ];
   return (
-    <div>
+    <div className="bg-[#F6FDFF]">
       <section>
         <div className="banner-section relative h-[100vh]">
           <div className="image-section h-[100vh] w-full">
@@ -556,6 +557,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <FaqsSection />
 
       <ClientTestimonial />
 

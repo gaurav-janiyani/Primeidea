@@ -4,7 +4,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <>
-      <footer className="bg-[#1995AD] relative">
+      <footer className="bg-[#479AD2] relative">
         <div className="">
           <span className="absolute bottom-0 right-40 z-[999]">
             <img src="/images/footer/shape1.png" alt="Shape" />
@@ -17,8 +17,8 @@ const Footer = () => {
           <div className="container mx-auto">
             <div className="-mx-4 flex flex-wrap">
               <div className="pb-20 pt-12 w-full px-4 lg:max-w-[400px] relative">
-                  <button className="absolute top-[50%] right-[-3.2rem] text-white border border-solid border-white flex py-[1px] px-[13px] bg-[#178EA5] rotate-[270deg] rounded-2xl">
-                    GOUP
+                  <button className="absolute top-[50%] right-[-3.2rem] text-white border border-solid border-white flex py-[1px] px-[13px] bg-[#3E8ABD] rotate-[270deg] rounded-2xl">
+                    GO UP
                     <Image
                       width="24"
                       height="24"
@@ -27,7 +27,7 @@ const Footer = () => {
                       className="ml-2"
                     />
                   </button>
-                <div className="absolute top-0 right-0 bg-[#178EA5] w-[400%] h-[100%] border-r border-solid border-[#B4B4B4] z-[-1]">
+                <div className="absolute top-0 right-0 bg-[#3E8ABD] w-[400%] h-[100%] border-r border-solid border-[#B4B4B4] z-[-1]">
                 </div>
                 <div className="mb-10 w-full">
                   <a href="/#" className="mb-6 inline-block max-w-[320px]">
@@ -72,7 +72,7 @@ const Footer = () => {
           <div className="container mx-auto">
             <div className="-mx-4">
               <ul className="flex py-6 w-full lg:max-w-[400px] relative">
-                <li className="absolute top-0 right-0 bg-[#178EA5] w-[400%] h-[100%] border-r border-solid border-[#B4B4B4] z-0"></li>
+                <li className="absolute top-0 right-0 bg-[#3E8ABD] w-[400%] h-[100%] border-r border-solid border-[#B4B4B4] z-0"></li>
                 <li className="mr-8 relative z-1">
                   <a href="">
                     <Image

@@ -3,24 +3,24 @@ import ClientTestimonial from "@/components/clientTestimonial";
 import FaqsSection from "@/components/faqsSection";
 import Footer from "@/components/footer";
 import InsightsSection from "@/components/insightsSection";
-import PowerOfStrategy from "@/components/researchWelathManagement/powerOfStrategy";
-import PrimeIdeaHelps from "@/components/researchWelathManagement/primeideaHelps";
 import WorkSection from "@/components/researchWelathManagement/workSection";
+import GetStarted from "@/components/retirement-planning/getStarted";
+import ReportSection from "@/components/retirement-planning/reportSection";
 import StepperSection from "@/components/steppers";
 
-const ResearchBasedWealthManagementPage = () => { 
+const RetirementPlanning = () => { 
     return (
         <div className="bg-[#F6FDFF]">
-            
+
             <BannerSection />
 
             <WorkSection />
 
-            <PrimeIdeaHelps />
-
             <StepperSection />
 
-            <PowerOfStrategy />
+            <div className="mb-[140px]">
+                <ReportSection />
+            </div>
 
             <InsightsSection />
 
@@ -28,10 +28,13 @@ const ResearchBasedWealthManagementPage = () => {
 
             <ClientTestimonial />
 
+            {/* <>Get Started</> */}
+            <GetStarted />
+
             <Footer />
 
         </div>
     )
  }
 
- export default ResearchBasedWealthManagementPage;
+ export default RetirementPlanning;

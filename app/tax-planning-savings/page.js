@@ -1,5 +1,6 @@
 import BannerSection from "@/components/bannerSection";
 import ClientTestimonial from "@/components/clientTestimonial";
+import FaqsSection from "@/components/faqsSection";
 import Footer from "@/components/footer";
 import InsightsSection from "@/components/insightsSection";
 import StepperSection from "@/components/steppers";
@@ -17,6 +18,7 @@ const TaxPlanningPage = () => {
             <YouIHereSection />
             <GiftCitySection />
             <InsightsSection />
+            <FaqsSection />
             <ClientTestimonial />
             <Footer />
         </div>
