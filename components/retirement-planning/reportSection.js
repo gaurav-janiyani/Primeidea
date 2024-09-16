@@ -9,7 +9,7 @@ const ReportSection = () => {
             <div className="max-w-[72%]">
               <div className="w-full flex justify-between">
                 <div className="max-w-[45%] w-full ">
-                  <h2 className="font-normal text-white text-[42px] mb-[40px] leading-[120%]">
+                  <h2 className="font-normal text-white text-[42px] mb-16 leading-[120%]">
                     Here&#39;s what your
                     <span className="font-semibold block">
                       personalized <br /> financial report
@@ -47,14 +47,25 @@ const ReportSection = () => {
                 </div>
               </div>
             </div>
-            <div className="max-w-[28%]">
+            <div className="max-w-[28%] flex flex-col items-center mb-16">
               <Image
-                src="/images/financial-planning/financial-advisor-people.png"
-                alt="Finacial Advisor"
+                src="/images/retirement-planning/retirement.png"
+                alt="Retirement Planning"
                 width={477}
                 height={496}
                 className="w-full flex items-end"
               />
+              <a href=""
+              className="bg-[#293C7D] text-lg font-bold rounded-md text-white px-6 py-3 inline-flex items-center"
+              >Get your personalized now 
+              <Image
+                  src="/images/icons/arrow-square-right.png"
+                  width={21}
+                  height={21}
+                  alt="Get your personalized now "
+                  className="ml-2"
+                />
+              </a>
             </div>
           </div>
         </div>
