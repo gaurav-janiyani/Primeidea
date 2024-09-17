@@ -3,7 +3,9 @@ import ClientTestimonial from "@/components/clientTestimonial";
 import FaqsSection from "@/components/faqsSection";
 import FinancialPlanning from "@/components/financialPlanning&Investment/financialPlanning";
 import GetStarted from "@/components/financialPlanning&Investment/getStarted";
+import HelpWealthCreation from "@/components/financialPlanning&Investment/helpWealthCreation";
 import KeyComponentsOfFinancialPlanning from "@/components/financialPlanning&Investment/keyComponentsFinancialPlanning";
+
 import ReportSection from "@/components/financialPlanning&Investment/reportSection";
 import StepperSection from "@/components/financialPlanning&Investment/steppers";
 import Footer from "@/components/footer";
@@ -19,6 +21,8 @@ const FinancialPlanningAndInvestmentAdvisory = () => {
             <KeyComponentsOfFinancialPlanning />
 
             <StepperSection />
+
+            <HelpWealthCreation />
 
             <ReportSection />
 
