@@ -118,7 +118,7 @@ export default function Header() {
                     href="#"
                     className="block py-2 px-3 font-medium md:w-auto hover:text-[#E40115]"
                   >
-                    Welath Preservation
+                    Wealth Preservation
                   </a>
                 </li>
                 <li className="!ml-2">
