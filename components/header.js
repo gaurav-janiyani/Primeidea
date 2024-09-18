@@ -5,7 +5,7 @@ import {
   DisclosurePanel,
 } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import {
   Menu,
   MenuButton,
@@ -13,6 +13,7 @@ import {
   MenuItem,
   Transition,
 } from "@headlessui/react";
+import Image from "next/image";
 
 const navigation = [
   {
@@ -45,6 +46,11 @@ function classNames(...classes) {
 }
 
 export default function Header() {
+  const [isActiveWealthCreationMenu, setIsActiveWealthCreationMenu] =
+    useState(false);
+  const [isActiveWealthPreservationMenu, setIsActiveWealthPreservationMenu] =
+    useState(false);
+
   return (
     <>
       <div className="absolute top-0 left-[50%] translate-x-[-50%] w-full  my-[20px] mx-auto max-w-[1320px] px-2 sm:px-6 lg:px-8 bg-[#ABDDFF] shadow-[0_0px_6.034px_0px_rgba(0,0,0,0.25)] rounded-md">
@@ -93,7 +99,11 @@ export default function Header() {
                     id="mega-menu-full-cta-dropdown-button"
                     data-collapse-toggle="mega-menu-full-cta-dropdown"
                     data-dropdown-placement="bottom"
-                    className="flex items-center justify-between w-full py-2 px-3 font-medium md:w-auto hover:text-[#E40115]"
+                    className={`flex items-center justify-between w-full py-5 px-3 font-medium md:w-auto hover:text-[#E40115] ${
+                      isActiveWealthCreationMenu ? "active" : ""
+                    }`}
+                    onMouseEnter={() => setIsActiveWealthCreationMenu(true)}
+                    onMouseLeave={() => setIsActiveWealthCreationMenu(false)}
                   >
                     Wealth Creation{" "}
                     <svg
@@ -116,7 +126,7 @@ export default function Header() {
                 <li className="!ml-2">
                   <a
                     href="#"
-                    className="block py-2 px-3 font-medium md:w-auto hover:text-[#E40115]"
+                    className="block py-5 px-3 font-medium md:w-auto hover:text-[#E40115]"
                   >
                     Wealth Preservation
                   </a>
@@ -124,7 +134,7 @@ export default function Header() {
                 <li className="!ml-2">
                   <a
                     href="#"
-                    className="block py-2 px-3 font-medium md:w-auto hover:text-[#E40115]"
+                    className="block py-5 px-3 font-medium md:w-auto hover:text-[#E40115]"
                   >
                     Insurance
                   </a>
@@ -132,7 +142,7 @@ export default function Header() {
                 <li className="!ml-2">
                   <a
                     href="#"
-                    className="block py-2 px-3 font-medium md:w-auto hover:text-[#E40115]"
+                    className="block py-5 px-3 font-medium md:w-auto hover:text-[#E40115]"
                   >
                     About Us
                   </a>
@@ -140,7 +150,7 @@ export default function Header() {
                 <li className="!ml-2">
                   <a
                     href="#"
-                    className="block py-2 px-3 font-medium md:w-auto hover:text-[#E40115]"
+                    className="block py-5 px-3 font-medium md:w-auto hover:text-[#E40115]"
                   >
                     Blogs
                   </a>
@@ -157,84 +167,122 @@ export default function Header() {
             </a>
           </div>
         </div>
-      <div
-        id="mega-menu-full-cta-dropdown"
-        className="mt-1 max-w-[1320px] bg-[#D7F9FF] hidden"
-      >
-        <div className="grid w-full px-4 py-5 mx-auto text-sm text-gray-500 dark:text-gray-400 md:grid-cols-3 md:px-6">
-          <ul
-            className="space-y-4 sm:mb-4 md:mb-0"
-            aria-labelledby="mega-menu-full-cta-button"
-          >
-            <li>
-              <a
-                href="#"
-                className="hover:underline  hover:text-[#E40115]"
-              >
-                Online Stores
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="hover:underline  hover:text-[#E40115]"
-              >
-                Segmentation
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="hover:underline  hover:text-[#E40115]"
-              >
-                Marketing CRM
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="hover:underline  hover:text-[#E40115]"
-              >
-                Online Stores
-              </a>
-            </li>
-          </ul>
-          <ul className="hidden mb-4 space-y-4 md:mb-0 sm:block">
-            <li>
-              <a
-                href="#"
-                className="hover:underline  hover:text-[#E40115]"
-              >
-                Our Blog
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="hover:underline  hover:text-[#E40115]"
-              >
-                Terms & Conditions
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="hover:underline  hover:text-[#E40115]"
-              >
-                License
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="hover:underline  hover:text-[#E40115]"
-              >
-                Resources
-              </a>
-            </li>
-          </ul>
+        <div
+          id="mega-menu-full-cta-dropdown"
+          className="mt-1 max-w-[1320px] bg-[#abddff] py-3 hidden"
+        >
+          <div className="flex justify-between">
+            <div className="w-1/2 px-2">
+              <div className="relative rounded-[12px] shadow-[0_0_5px_0_#00000040]">
+                <Image
+                  src="/images/header/wealth-creation/financial-investment-advisory.png"
+                  width={621}
+                  height={322}
+                  alt="Financial Investment Advisory"
+                  className="rounded-[12px]"
+                />
+                <div className="absolute top-0 left-0 p-5">
+                  <h2 className="font-bold mb-3">Financial Investment Advisory</h2>
+                  <p className="max-w-[240px] text-[14px]">
+                    Financial advisors provides expert guidence on investing your money. They analyze market trends, asssess your risk tolerance, and recommend suitable investment options to help you grow your wealth.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="w-1/2 px-2">
+              <div className="relative rounded-[12px] shadow-[0_0_5px_0_#00000040]">
+                <Image
+                  src="/images/header/wealth-creation/financial-investment-planning.png"
+                  width={621}
+                  height={322}
+                  alt="Financial Investment Planning"
+                  className="rounded-[12px]"
+                />
+                <div className="absolute top-0 left-0 p-5">
+                  <h2 className="font-bold mb-3">Financial Investment Planning</h2>
+                  <p className="max-w-[240px] text-[14px]">
+                    Financial advisors provides expert guidence on investing your money. They analyze market trends, asssess your risk tolerance, and recommend suitable investment options to help you grow your wealth.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+        <div
+          id="mega-menu-full-cta-dropdown"
+          className="mt-1 max-w-[1320px] bg-[#abddff] py-3 hidden"
+        >
+          <div className="flex justify-between">
+            <div className="w-1/4 px-2">
+              <div className="relative rounded-[12px] shadow-[0_0_5px_0_#00000040]">
+                <Image
+                  src="/images/header/wealth-preservation/RBWM.png"
+                  width={425}
+                  height={329}
+                  alt="Research Based Wealth Management"
+                  className="rounded-[12px] w-full"
+                />
+                <div className="absolute top-0 left-0 p-5">
+                  <h2 className="font-bold mb-3">Research Based Wealth Management</h2>
+                  <p className="max-w-[240px] text-[14px]">
+                    A customized investment plan from our experts empowers you to grow your wealth strategically, 
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="w-1/4 px-2">
+              <div className="relative rounded-[12px] shadow-[0_0_5px_0_#00000040]">
+                <Image
+                  src="/images/header/wealth-preservation/Retirement_PLANING.png"
+                  width={282}
+                  height={253}
+                  alt="Dream Retirement Planning"
+                  className="rounded-[12px] w-full"
+                />
+                <div className="absolute top-0 left-0 p-5">
+                  <h2 className="font-bold mb-3">Dream Retirement Planning</h2>
+                  <p className="max-w-[240px] text-[14px]">
+                    A customized investment plan from our experts empowers you to grow your wealth strategically, 
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="w-1/4 px-2">
+              <div className="relative rounded-[12px] shadow-[0_0_5px_0_#00000040]">
+                <Image
+                  src="/images/header/wealth-preservation/legacy.png"
+                  width={289}
+                  height={253}
+                  alt="legacy & Inheritance Planning"
+                  className="rounded-[12px] w-full"
+                />
+                <div className="absolute top-0 left-0 p-5">
+                  <h2 className="font-bold mb-3">legacy & Inheritance Planning</h2>
+                  <p className="max-w-[240px] text-[14px]">
+                    A customized investment plan from our experts empowers you to grow your wealth strategically, 
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="w-1/4 px-2">
+              <div className="relative rounded-[12px] shadow-[0_0_5px_0_#00000040]">
+                <Image
+                  src="/images/header/wealth-preservation/tax-planning.png"
+                  width={284}
+                  height={254}
+                  alt="Tax Planning & Savings"
+                  className="rounded-[12px] w-full"
+                />
+                <div className="absolute top-0 left-0 p-5">
+                  <h2 className="font-bold mb-3">Tax Planning & Savings</h2>
+                  <p className="max-w-[240px] text-[14px]">
+                    A customized investment plan from our experts empowers you to grow your wealth strategically, 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
