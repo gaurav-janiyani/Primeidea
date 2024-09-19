@@ -11,9 +11,11 @@
   "dependencies": {
     "@headlessui/react": "^2.1.5",
     "@heroicons/react": "^2.1.5",
+    "apexcharts": "^3.53.0",
     "gsap": "^3.12.5",
     "next": "^15.0.0-rc.0",
     "react": "^19.0.0-rc-a03254bc-20240905",
+    "react-apexcharts": "^1.4.1",
     "react-dom": "^19.0.0-rc-a03254bc-20240905",
     "react-slick": "^0.30.2"
   },
