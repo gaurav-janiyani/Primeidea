@@ -1,6 +1,35 @@
+"use client"
 import Image from "next/image";
+import Slider from "react-slick";
 
 const PrimeIdeaHelps = () => {
+
+  var settings = {
+    infinite: false,
+    speed: 500,
+    autoPlay: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    pauseOnHover: false,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <section>
       <div className="py-16 bg-[#232D63]">
@@ -27,8 +56,9 @@ const PrimeIdeaHelps = () => {
               />
             </div>
           </div>
-          <ul className="flex items-baseline">
-            <li className="w-[24%] pr-4 mr-4">
+          {/* <ul className="flex items-baseline"> */}
+            <Slider {...settings}>
+            <div className="pr-8">
               <div className="text-[#479AD2] text-lg font-bold">Step 1</div>
               <span className="w-full h-[0.6px] text-white my-6 inline-block relative bg-white before:absolute before:top-[50%] before:translate-y-[-50%] before:left-0 before:content-[''] before:w-[12px] before:h-[12px] before:z-[99] before:rounded-full before:bg-[#ED3237]"></span>
               <h4 className="text-white text-[22px] leading-[140%] font-medium mb-3">
@@ -39,8 +69,8 @@ const PrimeIdeaHelps = () => {
                 financial instruments, including stocks, derivatives, and
                 commodities, to provide thorough market insights.
               </p>
-            </li>
-            <li className="w-[24%] pr-4 mr-4">
+            </div>
+            <div className="pr-8">
               <div className="text-[#479AD2] text-lg font-bold">Step 2</div>
               <span className="w-full h-[0.6px] text-white my-6 inline-block relative bg-white before:absolute before:top-[50%] before:translate-y-[-50%] before:left-0 before:content-[''] before:w-[12px] before:h-[12px] before:z-[99] before:rounded-full before:bg-[#ED3237]"></span>
               <h4 className="text-white text-[22px] leading-[140%] font-medium mb-3">
@@ -52,8 +82,8 @@ const PrimeIdeaHelps = () => {
                 coefficients, which help in understanding fund interactions and
                 potential redundancies.
               </p>
-            </li>
-            <li className="w-[24%] pr-4 mr-4">
+            </div>
+            <div className="pr-8">
               <div className="text-[#479AD2] text-lg font-bold">Step 3</div>
               <span className="w-full h-[0.6px] text-white my-6 inline-block relative bg-white before:absolute before:top-[50%] before:translate-y-[-50%] before:left-0 before:content-[''] before:w-[12px] before:h-[12px] before:z-[99] before:rounded-full before:bg-[#ED3237]"></span>
               <h4 className="text-white text-[22px] leading-[140%] font-medium mb-3">
@@ -62,8 +92,8 @@ const PrimeIdeaHelps = () => {
               <p className="text-white text-base font-normal">
                 Our analysis includes examining the skewness of portfolio returns and rolling returns to gauge the consistency of the portfolio managers' performance over time.
               </p>
-            </li>
-            <li className="w-[24%] pr-4 mr-4">
+            </div>
+            <div className="pr-8">
               <div className="text-[#479AD2] text-lg font-bold">Step 4</div>
               <span className="w-full h-[0.6px] text-white my-6 inline-block relative bg-white before:absolute before:top-[50%] before:translate-y-[-50%] before:left-0 before:content-[''] before:w-[12px] before:h-[12px] before:z-[99] before:rounded-full before:bg-[#ED3237]"></span>
               <h4 className="text-white text-[22px] leading-[140%] font-medium mb-3">
@@ -72,8 +102,29 @@ const PrimeIdeaHelps = () => {
               <p className="text-white text-base font-normal">
                 We utilize metrics like the Sharpe ratio, Sortino ratio, standard deviation, and Value at Risk (VAR) to assess risk-adjusted returns and overall portfolio volatility.
               </p>
-            </li>
-          </ul>
+            </div>
+            <div className="pr-8">
+              <div className="text-[#479AD2] text-lg font-bold">Step 5</div>
+              <span className="w-full h-[0.6px] text-white my-6 inline-block relative bg-white before:absolute before:top-[50%] before:translate-y-[-50%] before:left-0 before:content-[''] before:w-[12px] before:h-[12px] before:z-[99] before:rounded-full before:bg-[#ED3237]"></span>
+              <h4 className="text-white text-[22px] leading-[140%] font-medium mb-3">
+                Customized Risk  <br/> Assessment
+              </h4>
+              <p className="text-white text-base font-normal">
+                We utilize metrics like the Sharpe ratio, Sortino ratio, standard deviation, and Value at Risk (VAR) to assess risk-adjusted returns and overall portfolio volatility.
+              </p>
+            </div>
+            <div className="pr-8">
+              <div className="text-[#479AD2] text-lg font-bold">Step 6</div>
+              <span className="w-full h-[0.6px] text-white my-6 inline-block relative bg-white before:absolute before:top-[50%] before:translate-y-[-50%] before:left-0 before:content-[''] before:w-[12px] before:h-[12px] before:z-[99] before:rounded-full before:bg-[#ED3237]"></span>
+              <h4 className="text-white text-[22px] leading-[140%] font-medium mb-3">
+                Wide Fund <br/> Section
+              </h4>
+              <p className="text-white text-base font-normal">
+                We utilize metrics like the Sharpe ratio, Sortino ratio, standard deviation, and Value at Risk (VAR) to assess risk-adjusted returns and overall portfolio volatility.
+              </p>
+            </div>
+            </Slider>
+          {/* </ul> */}
         </div>
       </div>
     </section>
