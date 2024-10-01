@@ -15,7 +15,7 @@ const AboutInsurance = () => {
                   role in a comprehensive wealth management plan. Our expert
                   insurance solutions are designed to safeguard your wealth,
                   protect your family, and ensure your financial goals are
-                  achieved, regardless of life's uncertainties.
+                  achieved, regardless of life&apos;s uncertainties.
                 </p>
               </div>
               <div className="w-[50%] flex justify-end items-baseline">
@@ -36,8 +36,8 @@ const AboutInsurance = () => {
                 The Role of Insurance in Wealth Management
               </h2>
               <p className="text-lg font-light mb-4">
-                Insurance is more than just a safeguard; it's a key components
-                in managing and preserving your wealth, Here's why it's
+                Insurance is more than just a safeguard; it&apos;s a key components
+                in managing and preserving your wealth, Here&apos;s why it&apos;s
                 essential
               </p>
             </div>

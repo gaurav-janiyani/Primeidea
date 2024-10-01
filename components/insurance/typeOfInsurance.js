@@ -85,7 +85,7 @@ const TypesOfInsurance = () => {
               </h2>
               <p className="text-white text-lg max-w-[770px] mx-auto">
                 At Prime Idea, effective risk management is key to a solid
-                financial strategy. Insurance isn't just about protection—it's
+                financial strategy. Insurance isn&apos;t just about protection—it&apos;s
                 about anticipating risks and being prepared. Our tailored
                 solutions minimize threats to your wealth and ensure financial
                 stability.

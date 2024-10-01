@@ -30,10 +30,10 @@ const FinancialPlanning = () => {
         <div className="flex justify-between max-w-[1020px] mx-auto">
             <div className="w-[70%]">
                 <p className="text-[19px] font-normal mb-3">
-                    At Prime Idea, we create personalized investment strategies to help you achieve your financial goals, whether it's retirement, education savings, or wealth building.
+                    At Prime Idea, we create personalized investment strategies to help you achieve your financial goals, whether it&apos;s retirement, education savings, or wealth building.
                 </p>
                 <p className="text-[19px] font-normal mb-3">
-                    Our expert advisors offer comprehensive guidance, ensuring your investments align with your aspirations. Trust Prime Idea to navigate the complexities of India's investment landscape with transparency and long-term growth.
+                    Our expert advisors offer comprehensive guidance, ensuring your investments align with your aspirations. Trust Prime Idea to navigate the complexities of India&apos;s investment landscape with transparency and long-term growth.
                 </p>
             </div>
             <div className="w-[30%] flex justify-end items-baseline">

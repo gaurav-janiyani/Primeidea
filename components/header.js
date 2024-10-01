@@ -58,9 +58,11 @@ export default function Header() {
           <div className="flex flex-1 items-center justify-items-start sm:items-stretch sm:justify-start">
             <div className="flex flex-shrink-0 items-center">
               <a href="/">
-                <img
-                  alt="Primeidea Ventures"
+                <Image
                   src="/images/logo-black.png"
+                  width={184}
+                  height={40}
+                  alt="Primeidea Ventures"
                   className="h-10 w-auto"
                 />
               </a>

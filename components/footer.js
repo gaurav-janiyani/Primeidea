@@ -7,10 +7,10 @@ const Footer = () => {
       <footer className="bg-[#479AD2] relative">
         <div className="">
           <span className="absolute bottom-0 right-40 z-[999]">
-            <img src="/images/footer/shape1.png" alt="Shape" />
+            <Image src="/images/footer/shape1.png" width="300" height="190" alt="Shape" />
           </span>
           <span className="absolute right-0 top-10 z-[999]">
-            <img src="/images/footer/shape2.png" alt="Shape" />
+            <Image src="/images/footer/shape2.png" width="81" height="127" alt="Shape" />
           </span>
         </div>
         <div className="relative z-[9999] border border-solid border-[#B4B4B4]">
@@ -31,8 +31,10 @@ const Footer = () => {
                 </div>
                 <div className="mb-10 w-full">
                   <a href="/#" className="mb-6 inline-block max-w-[320px]">
-                    <img
+                    <Image
                       src="/images/logo-white.png"
+                      width={320}
+                      height={70}
                       alt="Primeidea Ventures"
                       className="max-w-full dark:hidden"
                     />

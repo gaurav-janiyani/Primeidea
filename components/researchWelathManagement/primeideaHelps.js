@@ -44,7 +44,7 @@ const PrimeIdeaHelps = () => {
                 in a comprehensive wealth management plan. Our expert insurance
                 solutions are designed to safeguard your wealth, protect your
                 family, and ensure your financial goals are achieved, regardless
-                of life's uncertainties.
+                of life&apos;s uncertainties.
               </p>
             </div>
             <div className="w-[50%] flex justify-end items-baseline">
@@ -90,7 +90,7 @@ const PrimeIdeaHelps = () => {
                 Risk and Return <br/> Analysis
               </h4>
               <p className="text-white text-base font-normal">
-                Our analysis includes examining the skewness of portfolio returns and rolling returns to gauge the consistency of the portfolio managers' performance over time.
+                Our analysis includes examining the skewness of portfolio returns and rolling returns to gauge the consistency of the portfolio managers&apos; performance over time.
               </p>
             </div>
             <div className="pr-8">

@@ -7,9 +7,6 @@ const ClientTestimonial = () => {
   const sliderRef = useRef(null);
 
   var settings = {
-    // className: "slider variable-width",
-    // dots: true,
-    // infinite: true,
     speed: 500,
     autoPlay: true,
     slidesToShow: 3,

@@ -16,7 +16,7 @@ const YouIHereSection = () => {
                 />
               </div>
               <h3 className="text-[28px] mb-4 text-white">
-                You're Here!
+                You&apos;re Here!
               </h3>
               <p className="text-lg text-white font-medium">
                 Beause you took a risk and started a business  to impact lives & ignite prosperity - I love that about you!

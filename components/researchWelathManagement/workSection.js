@@ -8,7 +8,7 @@ const WorkSection = () => {
             <div className="flex justify-between">
               <div className="w-[50%]">
                 <h2 className="text-[32px] font-medium mb-6 text-[#04102A]">
-                    Why Idle Savings Aren't Working for You ?
+                    Why Idle Savings Aren&apos;t Working for You ?
                 </h2>
                 <p className="text-lg font-light mb-2">
                     Many people have money sitting in savings accounts or low-yield investments, believing they are being safe and secure. However, these idle savings are often not working to their full potential.                

@@ -16,7 +16,7 @@ const BannerSection = () => {
           <div className="main-section mx-auto max-w-[1320px] flex justify-between absolute w-full top-[20%] left-[50%] translate-x-[-50%]">
             <div className="max-w-[490px] mt-[10%]">
               <h1 className="text-4xl text-[#2D2D2D] font-bold mb-3">
-                Protect Your Family's Future with Confidence
+                Protect Your Family&apos;s Future with Confidence
               </h1>
               <p className="text-xl font-medium mb-4">
                 Expert Assistance in Navigating Insurance Claims and Ensuring

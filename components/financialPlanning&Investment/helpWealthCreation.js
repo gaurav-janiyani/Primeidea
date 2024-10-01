@@ -10,7 +10,7 @@ const HelpWealthCreation = () => {
         <div className="flex justify-between mx-[-15px]">
           <div className="w-1/2 px-[15px] ">
             <p className="text-xl mb-4">
-              We don't just recommend the right investments; we help you take
+              We don&apos;t just recommend the right investments; we help you take
               action and manage your portfolio. From investing to performance
               analysis and rebalancing,
             </p>
@@ -30,7 +30,7 @@ const HelpWealthCreation = () => {
                         <span>Asset Allocation</span>
                     </h2>
                     <p>
-                        Asset allocation is the process of dividing your investments among different asset classes, like stocks, bonds, and cash, to balance risk and reward. It’s essential in financial planning, as it helps reduce risk by diversifying your portfolio and should be regularly adjusted to align with your goals and market changes.
+                        Asset allocation is the process of dividing your investments among different asset classes, like stocks, bonds, and cash, to balance risk and reward. It&apos;s essential in financial planning, as it helps reduce risk by diversifying your portfolio and should be regularly adjusted to align with your goals and market changes.
                     </p>
                 </li>
                 <li className="pl-6 ml-6 relative before:absolute before:left-0 before:top-[38px] before:w-[1px] before:h-[100%] before:bg-black before:content-[''] ">
