@@ -4,7 +4,7 @@ const TypesOfInsurance = () => {
   return (
     <section>
       <div className="bg-[#232D63] py-12 bg-[url('/images/insurance/risk-management/bg.png')]  bg-no-repeat bg-contain bg-top w-full ">
-        <div className="max-w-[1320px] mx-auto px-2">
+        <div className="2xl:max-w-[1320px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-2">
           <h2 className="text-[32px] font-light mb-4 text-[#fff] text-center">
             Explore the Essential Types of Insurance for <br /> Comprehensive
             Protection

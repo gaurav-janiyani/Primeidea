@@ -15,7 +15,7 @@ const KeyComponentsOfFinancialPlanning = () => {
   return (
     <section>
       <div className="py-16 bg-[#293C7D] bg-[url('/images/financial-planning/key-component-bg.png')] bg-no-repeat bg-cover bg-center">
-        <div className="max-w-[1320px] mx-auto px-2">
+        <div className="2xl:max-w-[1320px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-2">
           <h2 className="text-3xl text-white mb-8 text-center font-medium">
             Key Components for Financial Planning
           </h2>

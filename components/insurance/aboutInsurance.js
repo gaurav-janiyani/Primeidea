@@ -4,7 +4,7 @@ const AboutInsurance = () => {
     return (
         <section>
         <div className="bg-[#F6FDFF] py-16">
-          <div className="max-w-[1320px] mx-auto px-2">
+          <div className="2xl:max-w-[1320px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-2">
             <div className="flex justify-between">
               <div className="w-[50%]">
                 <h2 className="text-[32px] font-light mb-1 text-[#04102A]">
@@ -30,7 +30,7 @@ const AboutInsurance = () => {
           </div>
         </div>
         <div className="bg-[#F6FDFF] pt-8 pb-16">
-          <div className="max-w-[1320px] mx-auto px-2">
+          <div className="2xl:max-w-[1320px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-2">
             <div className="max-w-[652px]">
               <h2 className="text-[32px] font-light mb-1 text-[#04102A]">
                 The Role of Insurance in Wealth Management

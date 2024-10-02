@@ -3,7 +3,7 @@ import Image from "next/image";
 const ExpertiseSection = () => {
   return (
     <>
-      <div className="max-w-[1320px] mx-auto px-2 py-16">
+      <div className="2xl:max-w-[1320px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-2 py-16">
         <div className="flex justify-between">
           <div className="w-[50%]">
             <h2 className="text-[32px] font-light mb-1 text-[#04102A]">
@@ -26,7 +26,7 @@ const ExpertiseSection = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-[1320px] mx-auto px-2">
+      <div className="2xl:max-w-[1320px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-2">
         <h2 className="text-[32px] font-light mb-2 text-black">Services</h2>
         <div className="flex mx-[-12px]">
           <div className="px-[12px] w-[20%]">

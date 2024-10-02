@@ -1,19 +1,40 @@
 "use client";
 import Image from "next/image";
-import { useRef } from "react";
+import { useEffect, useRef, useState, useCallback } from "react";
 import Slider from "react-slick";
 
 const ClientTestimonial = () => {
   const sliderRef = useRef(null);
+  const [nav1, setNav1] = useState(null);
+  const [activeSlides, setActiveSlides] = useState([]);
 
-  var settings = {
+  const updateActiveSlides = useCallback((currentIndex, slidesToShow) => {
+    const active = [];
+    for (let i = currentIndex; i < currentIndex + slidesToShow; i++) {
+      active.push(i);
+    }
+    setActiveSlides(active);
+  }, []);
+
+  const settings = {
+    afterChange: (current) => {
+      const slidesToShow = sliderRef.current?.props.slidesToShow || 3;
+      updateActiveSlides(current, slidesToShow);
+    },
     speed: 500,
-    autoPlay: true,
+    autoplay: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     pauseOnHover: false,
     arrows: false,
     responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
       {
         breakpoint: 1024,
         settings: {
@@ -30,6 +51,14 @@ const ClientTestimonial = () => {
       },
     ],
   };
+
+  useEffect(() => {
+    if (sliderRef.current) {
+      setNav1(sliderRef.current);
+      const slidesToShow = sliderRef.current.props.slidesToShow || 3;
+      updateActiveSlides(0, slidesToShow);
+    }
+  }, [updateActiveSlides]);
 
   const sliderItem = [
     {
@@ -71,19 +100,36 @@ const ClientTestimonial = () => {
 
   return (
     <section>
-      <div className="bg-[#F6FDFF] py-16 sm:py-24">
-        <div className="max-w-[1320px] mx-auto px-2">
+      <div className="bg-[#F6FDFF] py-16 2xl:py-24">
+        <div className="2xl:max-w-[1320px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-2">
           <h2 className="text-xl font-normal tracking-tight text-[#04102A] sm:text-3xl mt-0 mb-10 text-center">
             What our clients say
           </h2>
           <div className="bg-[#C6E8FF] flex rounded-lg">
-            <div className="w-[82%] border-r border-r-[#B2B2B2] py-12 px-10">
+            <div className="w-[78%] 2xl:w-[82%] border-r border-r-[#B2B2B2] py-12 px-10">
               {/* <div className="flex justify-between mx-[-3%]"> */}
-              <Slider ref={sliderRef} {...settings}>
+              <Slider
+                {...settings}
+                asNavFor={nav1}
+                // ref={(slider) => {setSlider1(slider);sliderRef}}
+                // ref={(slider) => {
+                //   setSlider1(slider);
+                //   sliderRef.current = slider;
+                // }}
+                ref={sliderRef}
+                // ref={sliderRef}
+              >
                 {sliderItem.map((item, index) => {
                   return (
-                    <div key={index}>
-                      <div className=" px-[30px] border-r border-r-[#B2B2B2]">
+                    <div
+                      key={index}
+                      // className={currentSlide === index ? "active" : null}
+                    >
+                      <div
+                        className={`px-[30px] ${
+                          activeSlides.includes(index) ? "border-r " : ""
+                        } border-r-[#B2B2B2]`}
+                      >
                         <Image
                           src={item.imageUrl}
                           width={61}
@@ -107,7 +153,7 @@ const ClientTestimonial = () => {
               </Slider>
               {/* </div> */}
             </div>
-            <div className="w-[18%] p-10 text-center">
+            <div className="w-[22%] 2xl:w-[18%] p-10 text-center">
               <div className="text-[22px] font-normal">Average Rating</div>
               <span className="my-3 text-6xl font-semibold block">4.9</span>
               <div className="flex flex-col justify-center items-center">
@@ -135,9 +181,10 @@ const ClientTestimonial = () => {
                     alt="Left"
                   />
                 </button>
-                <button 
-                onClick={() => sliderRef.current.slickNext()}
-                className="p-4 m-2 rounded-full bg-[#E3E3E3] hover:bg-[#A0CDEC] outline-0">
+                <button
+                  onClick={() => sliderRef.current.slickNext()}
+                  className="p-4 m-2 rounded-full bg-[#E3E3E3] hover:bg-[#A0CDEC] outline-0"
+                >
                   <Image
                     src="/images/icons/arrow-s-right.png"
                     width={31}

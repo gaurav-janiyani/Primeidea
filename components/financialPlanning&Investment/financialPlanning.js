@@ -3,7 +3,7 @@ import Image from "next/image";
 const FinancialPlanning = () => {
   return (
     <section>
-      <div className="max-w-[1320px] mx-auto px-2 py-16">
+      <div className="2xl:max-w-[1320px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-2 py-16">
         <h2 className="text-3xl text-center mb-12">
           Why have a financial plan?
         </h2>

@@ -13,7 +13,7 @@ const BannerSection = () => {
             alt="Banner"
             className="h-full w-full object-cover"
           />
-          <div className="main-section mx-auto max-w-[1320px] flex justify-between absolute w-full top-[30%] left-[50%] translate-x-[-50%]">
+          <div className="main-section mx-auto 2xl:max-w-[1320px] xl:max-w-[1170px] lg:max-w-[1004px] flex justify-between absolute w-full top-[30%] left-[50%] translate-x-[-50%]">
             <div className="flex items-center">
               <Image
                 src="/images/icons/p-light.png"

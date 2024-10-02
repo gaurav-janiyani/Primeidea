@@ -10,7 +10,7 @@ const FaqsSection = () => {
     };
     return (
         <div className="py-16 sm:py-8">
-            <div className="mx-auto max-w-[1320px]">
+            <div className="mx-auto 2xl:max-w-[1320px] xl:max-w-[1170px] lg:max-w-[1004px]">
               <div className="text-center max-w-[767px] px-4 mx-auto">
                 <h2 className="text-xl font-normal tracking-tight mb-4 text-[#04102A] sm:text-3xl">
                   Frequently Asked Questions
@@ -22,7 +22,7 @@ const FaqsSection = () => {
               <div className="max-w-[1023px] px-4 mx-auto">
                 <ul>
                   <li className="bg-[#C6E8FF] p-6 rounded-lg cursor-pointer" onClick={() => handleTabClick(0)}>
-                    <h2 className="flex items-center justify-between text-[22px] font-semibold text-[#222222]">
+                    <h2 className="flex items-center justify-between text-[20px] 2xl:text-[22px] font-semibold text-[#222222]">
                       <span>
                           What should I consider when setting financial goals?
                       </span>
@@ -35,7 +35,7 @@ const FaqsSection = () => {
                     </div>
                   </li>
                   <li className="bg-[#C6E8FF] p-6 rounded-lg cursor-pointer" onClick={() => handleTabClick(1)}>
-                    <h2 className="flex items-center justify-between text-[22px] font-semibold text-[#222222]">
+                    <h2 className="flex items-center justify-between text-[20px] 2xl:text-[22px] font-semibold text-[#222222]">
                       <span>
                           What should I consider when setting financial goals?
                       </span>
@@ -48,7 +48,7 @@ const FaqsSection = () => {
                     </div>
                   </li>
                   <li className="bg-[#C6E8FF] p-6 rounded-lg cursor-pointer" onClick={() => handleTabClick(2)}>
-                    <h2 className="flex items-center justify-between text-[22px] font-semibold text-[#222222]">
+                    <h2 className="flex items-center justify-between text-[20px] 2xl:text-[22px] font-semibold text-[#222222]">
                       <span>
                           What should I consider when setting financial goals?
                       </span>
@@ -61,7 +61,7 @@ const FaqsSection = () => {
                     </div>
                   </li>
                   <li className="bg-[#C6E8FF] p-6 rounded-lg cursor-pointer" onClick={() => handleTabClick(3)}>
-                    <h2 className="flex items-center justify-between text-[22px] font-semibold text-[#222222]">
+                    <h2 className="flex items-center justify-between text-[20px] 2xl:text-[22px] font-semibold text-[#222222]">
                       <span>
                           What should I consider when setting financial goals?
                       </span>

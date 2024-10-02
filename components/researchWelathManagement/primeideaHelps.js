@@ -33,7 +33,7 @@ const PrimeIdeaHelps = () => {
   return (
     <section>
       <div className="py-16 bg-[#232D63]">
-        <div className="max-w-[1320px] mx-auto px-2">
+        <div className="2xl:max-w-[1320px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-2">
           <div className="flex justify-between mb-10">
             <div className="w-[50%]">
               <h2 className="text-[32px] font-light mb-1 text-[#ffffff]">

@@ -35,9 +35,9 @@ const InsightsSection = (props) => {
   ];
   return (
     <section className={`${props.bgColor ? props.bgColor : ""}`}>
-      <div className="py-6 sm:py-12">
+      <div className="py-6 sm:py-12 2xl:py-16">
         <div className="border-b border-b-[#222222]">
-          <div className="max-w-[1320px] mx-auto px-2 ">
+          <div className="2xl:max-w-[1320px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-2 ">
             <div className="flex">
               <div className="w-[38%] pt-4 pr-4">
                 <h2 className="text-3xl font-medium mb-5">

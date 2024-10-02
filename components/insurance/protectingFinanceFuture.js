@@ -4,7 +4,7 @@ const ProtectingFinanceFuture = () => {
     return (
         <section>
         <div className="bg-[#F6FDFF] py-16">
-          <div className="max-w-[1320px] mx-auto px-2">
+          <div className="2xl:max-w-[1320px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-2">
             <div className="flex justify-between">
               <div className="w-[46%]">
                 <Image

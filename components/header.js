@@ -53,8 +53,8 @@ export default function Header() {
 
   return (
     <>
-      <div className="absolute top-0 left-[50%] translate-x-[-50%] w-full  my-[20px] mx-auto max-w-[1320px] px-2 sm:px-6 lg:px-8 bg-[#ABDDFF] shadow-[0_0px_6.034px_0px_rgba(0,0,0,0.25)] rounded-md">
-        <div className="relative flex h-16 items-center justify-between">
+      <div className="absolute top-0 left-[50%] translate-x-[-50%] w-full my-[20px] mx-auto 2xl:max-w-[1320px] xl:max-w-[1170px] lg:max-w-[1004px]">
+        <div className=" flex h-16 items-center justify-between px-2 lg:px-4 xl:px-6 2xl:px-8 bg-[#ABDDFF] shadow-[0_0px_6.034px_0px_rgba(0,0,0,0.25)] rounded-md">
           <div className="flex flex-1 items-center justify-items-start sm:items-stretch sm:justify-start">
             <div className="flex flex-shrink-0 items-center">
               <a href="/">
@@ -93,15 +93,15 @@ export default function Header() {
             </button>
             <div
               id="mega-menu-full-cta"
-              className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 mx-auto"
+              className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 mx-auto	 "
             >
               <ul className="flex flex-col mt-4 font-medium md:flex-row md:mt-0 md:space-x-8 rtl:space-x-reverse">
-                <li className="!ml-2">
+                <li className="!ml-2 group">
                   <button
                     id="mega-menu-full-cta-dropdown-button"
                     data-collapse-toggle="mega-menu-full-cta-dropdown"
                     data-dropdown-placement="bottom"
-                    className={`flex items-center justify-between w-full py-5 px-3 font-medium md:w-auto hover:text-[#E40115] ${
+                    className={`flex items-center justify-between w-full py-4 2xl:py-5 px-2 2xl:px-3 text-[15px] 2xl:text-base font-medium md:w-auto hover:text-[#E40115] ${
                       isActiveWealthCreationMenu ? "active" : ""
                     }`}
                     onMouseEnter={() => setIsActiveWealthCreationMenu(true)}
@@ -124,19 +124,182 @@ export default function Header() {
                       />
                     </svg>
                   </button>
-                </li>
-                <li className="!ml-2">
-                  <a
-                    href="#"
-                    className="block py-5 px-3 font-medium md:w-auto hover:text-[#E40115]"
+                  <div
+                    id="mega-menu-full-cta-dropdown"
+                    className="mt-1 2xl:max-w-[1320px] xl:max-w-[1170px] lg:max-w-[1004px] bg-[#abddff] p-5 absolute top-[50px] left-0 w-full shadow-[0_7px_6.034px_0px_rgba(0,0,0,0.25)] rounded-b-md transition hidden group-hover:block group-hover:transition"
                   >
-                    Wealth Preservation
-                  </a>
+                    <div className="flex justify-between">
+                      <div className="w-1/2 px-2">
+                        <a href="" className="relative rounded-[12px] shadow-[0_0_5px_0_#00000040] cursor-pointer">
+                          <Image
+                            src="/images/header/wealth-creation/financial-investment-advisory.png"
+                            width={621}
+                            height={322}
+                            alt="Financial Investment Advisory"
+                            className="rounded-[12px] w-full"
+                          />
+                          <div className="absolute top-0 left-0 p-5">
+                            <h2 className="font-bold mb-3">
+                              Financial Investment Advisory
+                            </h2>
+                            <p className="max-w-[240px] text-[14px]">
+                              Financial advisors provides expert guidence on
+                              investing your money. They analyze market trends,
+                              asssess your risk tolerance, and recommend
+                              suitable investment options to help you grow your
+                              wealth.
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+                      <div className="w-1/2 px-2">
+                        <a href="" className="relative rounded-[12px] shadow-[0_0_5px_0_#00000040] cursor-pointer">
+                          <Image
+                            src="/images/header/wealth-creation/financial-investment-planning.png"
+                            width={621}
+                            height={322}
+                            alt="Financial Investment Planning"
+                            className="rounded-[12px] w-full"
+                          />
+                          <div className="absolute top-0 left-0 p-5">
+                            <h2 className="font-bold mb-3">
+                              Financial Investment Planning
+                            </h2>
+                            <p className="max-w-[240px] text-[14px]">
+                              Financial advisors provides expert guidence on
+                              investing your money. They analyze market trends,
+                              asssess your risk tolerance, and recommend
+                              suitable investment options to help you grow your
+                              wealth.
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li className="!ml-2 group">
+                  <button
+                    id="mega-menu-full-cta-dropdown-button"
+                    data-collapse-toggle="mega-menu-full-cta-dropdown"
+                    data-dropdown-placement="bottom"
+                    className={`flex items-center justify-between w-full py-4 2xl:py-5 px-2 2xl:px-3 text-[15px] 2xl:text-base font-medium md:w-auto hover:text-[#E40115] ${
+                      isActiveWealthPreservationMenu ? "active" : ""
+                    }`}
+                    onMouseEnter={() => setIsActiveWealthPreservationMenu(true)}
+                    onMouseLeave={() =>
+                      setIsActiveWealthPreservationMenu(false)
+                    }
+                  >
+                    Wealth Preservation{" "}
+                    <svg
+                      className="w-2.5 h-2.5 ms-3"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 10 6"
+                    >
+                      <path
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="m1 1 4 4 4-4"
+                      />
+                    </svg>
+                  </button>
+                  <div
+                    id="mega-menu-full-cta-dropdown"
+                    className="mt-1 2xl:max-w-[1320px] xl:max-w-[1170px] lg:max-w-[1004px] bg-[#abddff] p-5 absolute top-[50px] left-0 w-full shadow-[0_7px_6.034px_0px_rgba(0,0,0,0.25)] rounded-b-md transition hidden group-hover:block group-hover:transition"
+                  >
+                    <div className="flex justify-between">
+                      <div className="w-1/4 px-2">
+                        <a href="" className="relative rounded-[12px] shadow-[0_0_5px_0_#00000040] cursor-pointer">
+                          <Image
+                            src="/images/header/wealth-preservation/RBWM.png"
+                            width={425}
+                            height={329}
+                            alt="Research Based Wealth Management"
+                            className="rounded-[12px] w-full h-full"
+                          />
+                          <div className="absolute top-0 left-0 p-5">
+                            <h2 className="font-bold mb-3">
+                              Research Based Wealth Management
+                            </h2>
+                            <p className="max-w-[240px] text-[14px]">
+                              A customized investment plan from our experts
+                              empowers you to grow your wealth strategically,
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+                      <div className="w-1/4 px-2">
+                        <a href="" className="relative rounded-[12px] shadow-[0_0_5px_0_#00000040] cursor-pointer">
+                          <Image
+                            src="/images/header/wealth-preservation/Retirement_PLANING.png"
+                            width={282}
+                            height={253}
+                            alt="Dream Retirement Planning"
+                            className="rounded-[12px] w-full h-full"
+                          />
+                          <div className="absolute top-0 left-0 p-5">
+                            <h2 className="font-bold mb-3">
+                              Dream Retirement Planning
+                            </h2>
+                            <p className="max-w-[240px] text-[14px]">
+                              A customized investment plan from our experts
+                              empowers you to grow your wealth strategically,
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+                      <div className="w-1/4 px-2">
+                        <a href="" className="relative rounded-[12px] shadow-[0_0_5px_0_#00000040] cursor-pointer">
+                          <Image
+                            src="/images/header/wealth-preservation/legacy.png"
+                            width={289}
+                            height={253}
+                            alt="legacy & Inheritance Planning"
+                            className="rounded-[12px] w-full h-full"
+                          />
+                          <div className="absolute top-0 left-0 p-5">
+                            <h2 className="font-bold mb-3">
+                              legacy & Inheritance Planning
+                            </h2>
+                            <p className="max-w-[240px] text-[14px]">
+                              A customized investment plan from our experts
+                              empowers you to grow your wealth strategically,
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+                      <div className="w-1/4 px-2">
+                        <a href="" className="relative rounded-[12px] shadow-[0_0_5px_0_#00000040] cursor-pointer">
+                          <Image
+                            src="/images/header/wealth-preservation/tax-planning.png"
+                            width={284}
+                            height={254}
+                            alt="Tax Planning & Savings"
+                            className="rounded-[12px] w-full h-full"
+                          />
+                          <div className="absolute top-0 left-0 p-5">
+                            <h2 className="font-bold mb-3">
+                              Tax Planning & Savings
+                            </h2>
+                            <p className="max-w-[240px] text-[14px]">
+                              A customized investment plan from our experts
+                              empowers you to grow your wealth strategically,
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
                 </li>
                 <li className="!ml-2">
                   <a
                     href="#"
-                    className="block py-5 px-3 font-medium md:w-auto hover:text-[#E40115]"
+                    className="block py-4 2xl:py-5 px-2 2xl:px-3 text-[15px] 2xl:text-base font-medium md:w-auto hover:text-[#E40115]"
                   >
                     Insurance
                   </a>
@@ -144,7 +307,7 @@ export default function Header() {
                 <li className="!ml-2">
                   <a
                     href="#"
-                    className="block py-5 px-3 font-medium md:w-auto hover:text-[#E40115]"
+                    className="block py-4 2xl:py-5 px-2 2xl:px-3 text-[15px] 2xl:text-base font-medium md:w-auto hover:text-[#E40115]"
                   >
                     About Us
                   </a>
@@ -152,7 +315,7 @@ export default function Header() {
                 <li className="!ml-2">
                   <a
                     href="#"
-                    className="block py-5 px-3 font-medium md:w-auto hover:text-[#E40115]"
+                    className="block py-4 2xl:py-5 px-2 2xl:px-3 text-[15px] 2xl:text-base font-medium md:w-auto hover:text-[#E40115]"
                   >
                     Blogs
                   </a>
@@ -160,129 +323,13 @@ export default function Header() {
               </ul>
             </div>
           </div>
-          <div className="absolute inset-y-0 right-0 hidden sm:flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+          <div className="absolute inset-y-0 right-0 hidden sm:flex items-center pr-2 sm:static sm:inset-auto ml-4 2xl:ml-6 sm:pr-0">
             <a
               href=""
               className="rounded-[10px] py-1.5 px-[18px] border border-solid	border-[#1F1F1F] hover:text-white hover:bg-[#E40115] hover:border-[#E40115]"
             >
               Contact Now
             </a>
-          </div>
-        </div>
-        <div
-          id="mega-menu-full-cta-dropdown"
-          className="mt-1 max-w-[1320px] bg-[#abddff] py-3 hidden"
-        >
-          <div className="flex justify-between">
-            <div className="w-1/2 px-2">
-              <div className="relative rounded-[12px] shadow-[0_0_5px_0_#00000040]">
-                <Image
-                  src="/images/header/wealth-creation/financial-investment-advisory.png"
-                  width={621}
-                  height={322}
-                  alt="Financial Investment Advisory"
-                  className="rounded-[12px]"
-                />
-                <div className="absolute top-0 left-0 p-5">
-                  <h2 className="font-bold mb-3">Financial Investment Advisory</h2>
-                  <p className="max-w-[240px] text-[14px]">
-                    Financial advisors provides expert guidence on investing your money. They analyze market trends, asssess your risk tolerance, and recommend suitable investment options to help you grow your wealth.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="w-1/2 px-2">
-              <div className="relative rounded-[12px] shadow-[0_0_5px_0_#00000040]">
-                <Image
-                  src="/images/header/wealth-creation/financial-investment-planning.png"
-                  width={621}
-                  height={322}
-                  alt="Financial Investment Planning"
-                  className="rounded-[12px]"
-                />
-                <div className="absolute top-0 left-0 p-5">
-                  <h2 className="font-bold mb-3">Financial Investment Planning</h2>
-                  <p className="max-w-[240px] text-[14px]">
-                    Financial advisors provides expert guidence on investing your money. They analyze market trends, asssess your risk tolerance, and recommend suitable investment options to help you grow your wealth.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          id="mega-menu-full-cta-dropdown"
-          className="mt-1 max-w-[1320px] bg-[#abddff] py-3 hidden"
-        >
-          <div className="flex justify-between">
-            <div className="w-1/4 px-2">
-              <div className="relative rounded-[12px] shadow-[0_0_5px_0_#00000040]">
-                <Image
-                  src="/images/header/wealth-preservation/RBWM.png"
-                  width={425}
-                  height={329}
-                  alt="Research Based Wealth Management"
-                  className="rounded-[12px] w-full"
-                />
-                <div className="absolute top-0 left-0 p-5">
-                  <h2 className="font-bold mb-3">Research Based Wealth Management</h2>
-                  <p className="max-w-[240px] text-[14px]">
-                    A customized investment plan from our experts empowers you to grow your wealth strategically, 
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="w-1/4 px-2">
-              <div className="relative rounded-[12px] shadow-[0_0_5px_0_#00000040]">
-                <Image
-                  src="/images/header/wealth-preservation/Retirement_PLANING.png"
-                  width={282}
-                  height={253}
-                  alt="Dream Retirement Planning"
-                  className="rounded-[12px] w-full"
-                />
-                <div className="absolute top-0 left-0 p-5">
-                  <h2 className="font-bold mb-3">Dream Retirement Planning</h2>
-                  <p className="max-w-[240px] text-[14px]">
-                    A customized investment plan from our experts empowers you to grow your wealth strategically, 
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="w-1/4 px-2">
-              <div className="relative rounded-[12px] shadow-[0_0_5px_0_#00000040]">
-                <Image
-                  src="/images/header/wealth-preservation/legacy.png"
-                  width={289}
-                  height={253}
-                  alt="legacy & Inheritance Planning"
-                  className="rounded-[12px] w-full"
-                />
-                <div className="absolute top-0 left-0 p-5">
-                  <h2 className="font-bold mb-3">legacy & Inheritance Planning</h2>
-                  <p className="max-w-[240px] text-[14px]">
-                    A customized investment plan from our experts empowers you to grow your wealth strategically, 
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="w-1/4 px-2">
-              <div className="relative rounded-[12px] shadow-[0_0_5px_0_#00000040]">
-                <Image
-                  src="/images/header/wealth-preservation/tax-planning.png"
-                  width={284}
-                  height={254}
-                  alt="Tax Planning & Savings"
-                  className="rounded-[12px] w-full"
-                />
-                <div className="absolute top-0 left-0 p-5">
-                  <h2 className="font-bold mb-3">Tax Planning & Savings</h2>
-                  <p className="max-w-[240px] text-[14px]">
-                    A customized investment plan from our experts empowers you to grow your wealth strategically, 
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>

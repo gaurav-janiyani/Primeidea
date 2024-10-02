@@ -13,18 +13,18 @@ const BannerSection = () => {
             alt="Banner"
             className="h-full w-full object-cover"
           />
-          <div className="main-section mx-auto max-w-[1320px] flex justify-between absolute w-full top-[20%] left-[50%] translate-x-[-50%]">
-            <div className="max-w-[490px] mt-[10%]">
-              <h1 className="text-4xl text-[#2D2D2D] font-bold mb-3">
+          <div className="main-section mx-auto 2xl:max-w-[1320px] xl:max-w-[1170px] lg:max-w-[1004px] flex justify-between absolute w-full top-[20%] left-[50%] translate-x-[-50%]">
+            <div className="lg:max-w-[400px] xl:max-w-[490px] mt-[10%]">
+              <h1 className="lg:text-3xl xl:text-4xl text-[#2D2D2D] font-bold mb-3">
                 Protect Your Family&apos;s Future with Confidence
               </h1>
-              <p className="text-xl font-medium mb-4">
+              <p className="lg:text-lg xl:text-xl font-medium mb-4">
                 Expert Assistance in Navigating Insurance Claims and Ensuring
                 Financial Security
               </p>
               <a
                 href=""
-                className="bg-[#293C7D] text-lg font-bold rounded-md text-white px-6 py-3 inline-flex items-center"
+                className="bg-[#293C7D] lg:text-md xl:text-lg font-bold rounded-md text-white px-6 py-3 inline-flex items-center"
               >
                 Get Expert Guidance Now
                 <Image
@@ -48,10 +48,10 @@ const BannerSection = () => {
         </div>
         <Header />
         <div className="bg-[#293C7D]/95 py-10 absolute bottom-0 w-full">
-          <div className="mx-auto max-w-[1320px] px-2">
+          <div className="mx-auto 2xl:max-w-[1320px] xl:max-w-[1170px] lg:max-w-[1004px] px-2">
             <div className="flex justify-between">
               <div className="w-[45%]">
-                <p className="text-white text-xl max-w-[500px]">
+                <p className="text-white text-lg xl:text-xl max-w-[500px]">
                   Prime Idea creates financial plans that fuel your ambitions
                   today and secure your success for tomorrow, whether you’re
                   starting out or scaling up.
@@ -59,26 +59,26 @@ const BannerSection = () => {
               </div>
               <div className="w-[55%] flex justify-between">
                 <div className="flex flex-col	items-end px-2">
-                  <span className="text-white text-[20px] font-bold">
+                  <span className="text-white text-18px xl:text-[20px] font-bold">
                     Trusted By Clients
                   </span>
-                  <h3 className="text-5xl font-extrabold mt-2 text-[#FFC300]">
+                  <h3 className="text-[42px] leading-[120%] xl:text-5xl font-extrabold mt-2 text-[#FFC300]">
                     80+
                   </h3>
                 </div>
                 <div className="flex flex-col	items-end px-2">
-                  <span className="text-white text-[20px] font-bold">
+                  <span className="text-white text-18px xl:text-[20px] font-bold">
                     Years of expertise
                   </span>
-                  <h3 className="text-5xl font-extrabold mt-2 text-[#FFC300]">
+                  <h3 className="text-[42px] leading-[120%] xl:text-5xl font-extrabold mt-2 text-[#FFC300]">
                     12+
                   </h3>
                 </div>
                 <div className="flex flex-col	items-end px-2">
-                  <span className="text-white text-[20px] font-bold">
+                  <span className="text-white text-18px xl:text-[20px] font-bold">
                     Client Satisfaction
                   </span>
-                  <h3 className="text-5xl font-extrabold mt-2 text-[#FFC300]">
+                  <h3 className="text-[42px] leading-[120%] xl:text-5xl font-extrabold mt-2 text-[#FFC300]">
                     92+
                   </h3>
                 </div>

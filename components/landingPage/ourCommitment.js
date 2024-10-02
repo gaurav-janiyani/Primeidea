@@ -3,7 +3,7 @@ import Image from "next/image";
 const OurCommitment = () => {
   return (
     <section>
-      <div className="max-w-[1320px] mx-auto px-2 py-16">
+      <div className="2xl:max-w-[1320px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-2 py-16">
         <div className="flex justify-between">
           <div className="w-[47%] pr-12">
             <h2 className="text-[32px] text-[#222222] mb-2">Our Commitment</h2>
