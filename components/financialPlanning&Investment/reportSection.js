@@ -4,7 +4,7 @@ const ReportSection = () => {
     return (
         <section>
         <div className="bg-[#479AD2] pt-12">
-          <div className=" 2xl:max-w-[1320px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto">
+          <div className=" 2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-4">
             <div className="flex justify-between items-end">
               <div className="max-w-[72%]">
                 <div className="w-full flex justify-between">

@@ -3,16 +3,16 @@ import Image from "next/image";
 const OurCommitment = () => {
   return (
     <section>
-      <div className="2xl:max-w-[1320px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-2 py-16">
-        <div className="flex justify-between">
-          <div className="w-[47%] pr-12">
-            <h2 className="text-[32px] text-[#222222] mb-2">Our Commitment</h2>
-            <p className="mb-2 text-xl">
+      <div className="2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-4 py-12 xl:py-16">
+        <div className="flex justify-between flex-col-reverse md:flex-row">
+          <div className="w-full md:w-[54%] xl:w-[47%] pr-0 md:pr-8 xl:pr-12">
+            <h2 className="text-[28px] md:text-[32px] text-[#222222] mb-2">Our Commitment</h2>
+            <p className="mb-2 text-base md:text-lg xl:text-xl">
               At Prime Idea, we are dedicated to delivering exceptional wealth
               management services tailored to your unique needs. Our commitment
               includes:
             </p>
-            <ul className="text-lg">
+            <ul className="text-base md:text-[17px] xl:text-lg">
               <li className="mb-2">
                 <strong>Personalized Solutions:</strong>
                 We promise customized strategies that align with your financial
@@ -40,7 +40,7 @@ const OurCommitment = () => {
               </li>
             </ul>
           </div>
-          <div className="w-[53%]">
+          <div className="w-full md:w-[46%] xl:w-[53%] mb-8">
             <Image
               src="/images/landing/commitment.png"
               width={711}

@@ -13,20 +13,20 @@ const BannerSection = () => {
             alt="Banner"
             className="h-full w-full object-cover"
           />
-          <div className="main-section mx-auto 2xl:max-w-[1320px] xl:max-w-[1170px] lg:max-w-[1004px] flex justify-between absolute w-full top-[30%] left-[50%] translate-x-[-50%]">
-            <div className="flex items-center">
+          <div className="main-section mx-auto 2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] px-4 flex justify-between absolute w-full top-[30%] left-[50%] translate-x-[-50%]">
+            <div className="flex items-baseline lg:items-center flex-col  lg:flex-row">
               <Image
                 src="/images/icons/p-light.png"
                 width={165}
                 height={157}
                 alt="PrimeIdea Ventures"
-                className=" mr-12 max-w-[150px]"
+                className="mb-5 lg:mb-0 mr-0 lg:mr-12 max-w-[80px] md:max-w-[100px] xl:max-w-[120px] 2xl:max-w-[150px]"
               />
-              <div className="max-w-[700px]">
-                <h1 className="text-4xl text-white font-medium mb-3 leading-[130%]">
+              <div className="max-w-[500px] xl:max-w-[700px]">
+                <h1 className="text-[1.65rem] md:text-3xl xl:text-[2rem] 2xl:text-4xl text-white font-medium mb-3 leading-[130%]">
                   Empowering Your Financial Future with Expertise and Integrity
                 </h1>
-                <p className="text-xl font-medium text-white">
+                <p className="text-base xl:text-lg 2xl:text-xl font-medium text-white">
                   At Prime Idea, we blend deep market insights with personalized
                   strategies to help you achieve lasting wealth and security.
                   Our mission is to turn your financial aspirations into
@@ -34,28 +34,28 @@ const BannerSection = () => {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col items-center">
-                <h4 className="text-center text-white text-xl">FOLLOW <br/> US</h4>
-                <span className="w-[1px] h-[30px] my-2 bg-white inline-block"></span>
+            <div className="hidden md:flex flex-col items-center">
+                <h4 className="text-center text-white text-lg xl:text-xl">FOLLOW <br/> US</h4>
+                <span className="w-[1px] h-[20px] xl:h-[30px] my-2 bg-white inline-block"></span>
                 <ul className="flex flex-col items-center">
                     <li className="m-2">
                         <a href="">
-                            <Image src="/images/icons/social-media/facebook.png" width={40} height={40} alt="Facebook" />
+                            <Image src="/images/icons/social-media/facebook.png" width={40} height={40} alt="Facebook" className="w-[35px] h-[35px] xl:w-[40px] xl:h-[40px]" />
                         </a>
                     </li>
                     <li className="m-2">
                         <a href="">
-                            <Image src="/images/icons/social-media/instagram.png" width={40} height={40} alt="Instagram" />
+                            <Image src="/images/icons/social-media/instagram.png" width={40} height={40} alt="Instagram" className="w-[35px] h-[35px] xl:w-[40px] xl:h-[40px]" />
                         </a>
                     </li>
                     <li className="m-2">
                         <a href="">
-                            <Image src="/images/icons/social-media/linkedin.png" width={40} height={40} alt="LinkedIn" />
+                            <Image src="/images/icons/social-media/linkedin.png" width={40} height={40} alt="LinkedIn" className="w-[35px] h-[35px] xl:w-[40px] xl:h-[40px]" />
                         </a>
                     </li>
                     <li className="m-2">
                         <a href="">
-                            <Image src="/images/icons/social-media/whatsapp.png" width={40} height={40} alt="WhatsApp" />
+                            <Image src="/images/icons/social-media/whatsapp.png" width={40} height={40} alt="WhatsApp" className="w-[35px] h-[35px] xl:w-[40px] xl:h-[40px]" />
                         </a>
                     </li>
                 </ul>

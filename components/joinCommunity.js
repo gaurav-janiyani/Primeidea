@@ -2,15 +2,15 @@ const JoinCommunity = () => {
     return (
         <section>
         <div className="bg-[#F6FDFF] py-12 2xl:py-20">
-          <div className="2xl:max-w-[1320px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-2">
-            <div className="flex justify-between">
-              <div className="w-[45%]">
-                <h2 className="text-[138px] xl:text-[158px] 2xl:text-[170px] font-extrabold leading-[100%] bg-[#2f8d46] bg-[url('/images/home/prime-idea-textbg.png')] bg-repeat bg-clip-text text-transparent">
+          <div className="2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-4">
+            <div className="flex justify-between flex-col lg:flex-row">
+              <div className="max-w-[500px] lg:max-w-[100%] w-full lg:w-[40%] xl:w-[45%] mb-5">
+                <h2 className="text-[98px] sm:text-[118px] xl:text-[158px] 2xl:text-[170px] font-extrabold leading-[100%] bg-[#2f8d46] bg-[url('/images/home/prime-idea-textbg.png')] bg-repeat bg-clip-text text-transparent">
                   PRIME IDEA{" "}
                   <span className="inline-block w-[70px] h-[70px] bg-[url('/images/home/prime-idea-textbg.png')] rounded-[50%]"></span>
                 </h2>
               </div>
-              <div className="w-[55%]">
+              <div className="w-full lg:w-[60%] xl:w-[55%]">
                 <h3 className="text-xl font-normal tracking-tight text-[#000] sm:text-3xl mt-0 mb-6">
                   Join the community
                 </h3>

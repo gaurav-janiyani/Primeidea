@@ -13,18 +13,18 @@ const BannerSection = () => {
             alt="Banner"
             className="h-full w-full object-cover"
           />
-          <div className="main-section mx-auto 2xl:max-w-[1320px] xl:max-w-[1170px] lg:max-w-[1004px] flex justify-between absolute w-full top-[20%] left-[50%] translate-x-[-50%]">
+          <div className="main-section mx-auto 2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] px-4 flex justify-between absolute w-full top-[20%] left-[50%] translate-x-[-50%]">
             <div className="lg:max-w-[400px] xl:max-w-[490px] mt-[10%]">
-              <h1 className="lg:text-3xl xl:text-4xl text-[#2D2D2D] font-bold mb-3">
+              <h1 className="md:text-3xl xl:text-4xl text-[#2D2D2D] font-bold mb-3">
                 Protect Your Family&apos;s Future with Confidence
               </h1>
-              <p className="lg:text-lg xl:text-xl font-medium mb-4">
+              <p className="md:text-lg xl:text-xl font-medium mb-4">
                 Expert Assistance in Navigating Insurance Claims and Ensuring
                 Financial Security
               </p>
               <a
                 href=""
-                className="bg-[#293C7D] lg:text-md xl:text-lg font-bold rounded-md text-white px-6 py-3 inline-flex items-center"
+                className="bg-[#293C7D] md:text-md xl:text-lg font-bold rounded-md text-white px-6 py-3 inline-flex items-center"
               >
                 Get Expert Guidance Now
                 <Image
@@ -48,7 +48,7 @@ const BannerSection = () => {
         </div>
         <Header />
         <div className="bg-[#293C7D]/95 py-10 absolute bottom-0 w-full">
-          <div className="mx-auto 2xl:max-w-[1320px] xl:max-w-[1170px] lg:max-w-[1004px] px-2">
+          <div className="mx-auto 2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] px-4">
             <div className="flex justify-between">
               <div className="w-[45%]">
                 <p className="text-white text-lg xl:text-xl max-w-[500px]">
@@ -59,7 +59,7 @@ const BannerSection = () => {
               </div>
               <div className="w-[55%] flex justify-between">
                 <div className="flex flex-col	items-end px-2">
-                  <span className="text-white text-18px xl:text-[20px] font-bold">
+                  <span className="text-white text-18px xl:text-[20px] font-bold text-right">
                     Trusted By Clients
                   </span>
                   <h3 className="text-[42px] leading-[120%] xl:text-5xl font-extrabold mt-2 text-[#FFC300]">
@@ -67,7 +67,7 @@ const BannerSection = () => {
                   </h3>
                 </div>
                 <div className="flex flex-col	items-end px-2">
-                  <span className="text-white text-18px xl:text-[20px] font-bold">
+                  <span className="text-white text-18px xl:text-[20px] font-bold text-right">
                     Years of expertise
                   </span>
                   <h3 className="text-[42px] leading-[120%] xl:text-5xl font-extrabold mt-2 text-[#FFC300]">
@@ -75,7 +75,7 @@ const BannerSection = () => {
                   </h3>
                 </div>
                 <div className="flex flex-col	items-end px-2">
-                  <span className="text-white text-18px xl:text-[20px] font-bold">
+                  <span className="text-white text-18px xl:text-[20px] font-bold text-right">
                     Client Satisfaction
                   </span>
                   <h3 className="text-[42px] leading-[120%] xl:text-5xl font-extrabold mt-2 text-[#FFC300]">

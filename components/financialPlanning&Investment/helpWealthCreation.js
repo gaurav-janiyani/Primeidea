@@ -3,7 +3,7 @@ import Image from "next/image";
 const HelpWealthCreation = () => {
   return (
     <section>
-      <div className="py-8 2xl:max-w-[1320px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-2">
+      <div className="py-8 2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-4">
         <h2 className="text-3xl mb-6 font-medium">
           How we help in wealth creation?
         </h2>

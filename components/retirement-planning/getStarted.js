@@ -4,7 +4,7 @@ const GetStarted = () => {
   return (
     <section>
       <div className="py-16">
-        <div className="2xl:max-w-[1320px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-2">
+        <div className="2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-4">
           <div className="relative">
             <Image
               src="/images/retirement-planning/get-started-bg.png"

@@ -101,7 +101,7 @@ const ClientTestimonial = () => {
   return (
     <section>
       <div className="bg-[#F6FDFF] py-16 2xl:py-24">
-        <div className="2xl:max-w-[1320px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-2">
+        <div className="2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-4">
           <h2 className="text-xl font-normal tracking-tight text-[#04102A] sm:text-3xl mt-0 mb-10 text-center">
             What our clients say
           </h2>

@@ -10,7 +10,7 @@ const FaqsSection = () => {
     };
     return (
         <div className="py-16 sm:py-8">
-            <div className="mx-auto 2xl:max-w-[1320px] xl:max-w-[1170px] lg:max-w-[1004px]">
+            <div className="mx-auto 2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] px-4">
               <div className="text-center max-w-[767px] px-4 mx-auto">
                 <h2 className="text-xl font-normal tracking-tight mb-4 text-[#04102A] sm:text-3xl">
                   Frequently Asked Questions

@@ -4,7 +4,7 @@ const ComprehensiveSolutions = () => {
   return (
     <section>
       <div className="bg-[#232D63] py-12 bg-[url('/images/insurance/risk-management/bg.png')]  bg-no-repeat bg-contain bg-top w-full ">
-        <div className="2xl:max-w-[1320px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-2">
+        <div className="2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-4">
           <h2 className="text-[28px] 2xl:text-[32px] font-light mb-6 text-[#fff] text-center">
             Your comprehensive solution for all financial needs, <br /> guiding
             you from saving to investing and beyond.

@@ -118,7 +118,7 @@ const PrimeIdeaBenchmarks = () => {
 
     return (
         <section>
-            <div className="2xl:max-w-[1320px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-2 py-16">
+            <div className="2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-4 py-16">
                 <div className="flex justify-between">
                     <h2 className="text-[32px] text-[#222] mb-2">
                         Prime Idea <br/>

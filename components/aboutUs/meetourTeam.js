@@ -4,7 +4,7 @@ const MeetOurTeam = () => {
     return (
         <section>
             <div className="py-8">
-                <div className="2xl:max-w-[1320px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-2">
+                <div className="2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-4">
                     <div className="flex justify-between mb-4">
                         <h2 className="text-3xl">
                             Meet the <br/>

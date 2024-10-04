@@ -1,19 +1,7 @@
 "use client";
-import {
-  Disclosure,
-  DisclosureButton,
-  DisclosurePanel,
-} from "@headlessui/react";
-import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
-import { Fragment, useState } from "react";
-import {
-  Menu,
-  MenuButton,
-  MenuItems,
-  MenuItem,
-  Transition,
-} from "@headlessui/react";
+import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const navigation = [
   {
@@ -41,59 +29,88 @@ const navigation = [
   { name: "Blogs", href: "#", current: false },
 ];
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
-
 export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isActiveWealthCreationMenu, setIsActiveWealthCreationMenu] =
     useState(false);
   const [isActiveWealthPreservationMenu, setIsActiveWealthPreservationMenu] =
     useState(false);
+  const [activeSubmenu, setActiveSubmenu] = useState(null);
+  const [breadcrumb, setBreadcrumb] = useState([]);
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
+  const handleSubmenuClick = (item) => {
+    if (item.submenus) {
+      setActiveSubmenu(item.name);
+      setBreadcrumb([...breadcrumb, item.name]);
+    } else {
+      setActiveSubmenu(null);
+      setBreadcrumb([]);
+    }
+  };
+
+  const handleBackClick = () => {
+    setBreadcrumb(breadcrumb.slice(0, -1));
+    setActiveSubmenu(breadcrumb[breadcrumb.length - 2] || null);
+  };
 
   return (
-    <>
-      <div className="absolute top-0 left-[50%] translate-x-[-50%] w-full my-[20px] mx-auto 2xl:max-w-[1320px] xl:max-w-[1170px] lg:max-w-[1004px]">
-        <div className=" flex h-16 items-center justify-between px-2 lg:px-4 xl:px-6 2xl:px-8 bg-[#ABDDFF] shadow-[0_0px_6.034px_0px_rgba(0,0,0,0.25)] rounded-md">
-          <div className="flex flex-1 items-center justify-items-start sm:items-stretch sm:justify-start">
-            <div className="flex flex-shrink-0 items-center">
-              <a href="/">
-                <Image
-                  src="/images/logo-black.png"
-                  width={184}
-                  height={40}
-                  alt="Primeidea Ventures"
-                  className="h-10 w-auto"
-                />
-              </a>
-            </div>
-            <button
-              data-collapse-toggle="mega-menu-full-cta"
-              type="button"
-              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-              aria-controls="mega-menu-full-cta"
-              aria-expanded="false"
-            >
-              <span className="sr-only">Open main menu</span>
-              <svg
-                className="w-5 h-5"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 17 14"
-              >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M1 1h15M1 7h15M1 13h15"
-                />
-              </svg>
-            </button>
-            <div
+    <header className="absolute top-0 left-[50%] translate-x-[-50%] w-[calc(100%-32px)] my-[20px] mx-auto 2xl:max-w-[1320px] xl:max-w-[1170px] lg:max-w-[1004px]">
+      <div className="flex h-16 items-center justify-between px-2 lg:px-4 xl:px-6 2xl:px-8 bg-[#ABDDFF] shadow-[0_0px_6.034px_0px_rgba(0,0,0,0.25)] rounded-md">
+        <div className="flex flex-1 items-center justify-items-start sm:items-stretch sm:justify-start">
+          <div className="flex flex-shrink-0 items-center">
+            <Link href="/">
+              <Image
+                src="/images/logo-black.png"
+                width={184}
+                height={40}
+                alt="Primeidea Ventures"
+                className="h-10 w-auto"
+              />
+            </Link>
+          </div>
+          
+          {/* Mobile menu button */}
+          <button
+            onClick={toggleMenu}
+            className="inline-flex items-center p-2 ml-auto mr-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+          >
+            <span className="sr-only">Open main menu</span>
+            <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd"></path>
+            </svg>
+          </button>
+
+          {/* Desktop menu */}
+          {/* <nav className="hidden lg:flex lg:space-x-8 ml-6">
+            {navigation.map((item) => (
+              <div key={item.name} className="relative group">
+                <button className="text-black hover:text-[#E40115] px-3 py-2 text-sm font-medium">
+                  {item.name}
+                </button>
+                {item.submenus && (
+                  <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-150 ease-in-out">
+                    <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                      {item.submenus.map((submenu) => (
+                        <a
+                          key={submenu.name}
+                          href={submenu.href}
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                          role="menuitem"
+                        >
+                          {submenu.name}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            ))}
+          </nav> */}
+          <div
               id="mega-menu-full-cta"
-              className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 mx-auto	 "
+              className="hidden w-full lg:block md:w-auto md:order-1 mx-auto	 "
             >
               <ul className="flex flex-col mt-4 font-medium md:flex-row md:mt-0 md:space-x-8 rtl:space-x-reverse">
                 <li className="!ml-2 group">
@@ -126,7 +143,7 @@ export default function Header() {
                   </button>
                   <div
                     id="mega-menu-full-cta-dropdown"
-                    className="mt-1 2xl:max-w-[1320px] xl:max-w-[1170px] lg:max-w-[1004px] bg-[#abddff] p-5 absolute top-[50px] left-0 w-full shadow-[0_7px_6.034px_0px_rgba(0,0,0,0.25)] rounded-b-md transition hidden group-hover:block group-hover:transition"
+                    className="mt-1 2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] bg-[#abddff] p-5 absolute top-[50px] left-0 w-full shadow-[0_7px_6.034px_0px_rgba(0,0,0,0.25)] rounded-b-md transition hidden group-hover:block group-hover:transition"
                   >
                     <div className="flex justify-between">
                       <div className="w-1/2 px-2">
@@ -322,17 +339,42 @@ export default function Header() {
                 </li>
               </ul>
             </div>
-          </div>
-          <div className="absolute inset-y-0 right-0 hidden sm:flex items-center pr-2 sm:static sm:inset-auto ml-4 2xl:ml-6 sm:pr-0">
-            <a
-              href=""
-              className="rounded-[10px] py-1.5 px-[18px] border border-solid	border-[#1F1F1F] hover:text-white hover:bg-[#E40115] hover:border-[#E40115]"
-            >
-              Contact Now
-            </a>
-          </div>
+        </div>
+
+        {/* Contact button */}
+        <div className="lg:flex items-center">
+          <a
+            href=""
+            className="rounded-[10px] py-1.5 px-[18px] border border-solid border-[#1F1F1F] hover:text-white hover:bg-[#E40115] hover:border-[#E40115]"
+          >
+            Contact Now
+          </a>
         </div>
       </div>
-    </>
+
+      {/* Mobile menu */}
+      <div className={`lg:hidden ${isMenuOpen ? 'block' : 'hidden'} mt-2 bg-white rounded-md shadow-lg`}>
+        <div className="px-2 pt-2 pb-3 space-y-1">
+          {breadcrumb.length > 0 && (
+            <button
+              onClick={handleBackClick}
+              className="w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+            >
+              ← Back
+            </button>
+          )}
+          {(activeSubmenu ? navigation.find(item => item.name === activeSubmenu).submenus : navigation).map((item) => (
+            <button
+              key={item.name}
+              onClick={() => handleSubmenuClick(item)}
+              className="w-full text-left block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+            >
+              {item.name}
+              {item.submenus && <span className="float-right">→</span>}
+            </button>
+          ))}
+        </div>
+      </div>
+    </header>
   );
 }

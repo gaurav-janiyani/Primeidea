@@ -4,7 +4,7 @@ const GiftCitySection = () => {
   return (
     <section>
       <div className="bg-[#F6FDFF] py-16">
-        <div className="2xl:max-w-[1320px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-2">
+        <div className="2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-4">
           <div className="flex justify-between items-center">
             <div className="w-[46%]">
               <Image
