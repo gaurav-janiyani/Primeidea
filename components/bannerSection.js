@@ -1,13 +1,15 @@
+'use client';
 import Image from "next/image";
 import Header from "./header";
 
-const BannerSection = () => {
+const BannerSection = (props) => {
+  console.log(props);
   return (
     <section>
       <div className="banner-section relative h-[100vh]">
         <div className="image-section h-[100vh] w-full">
           <Image
-            src="/images/insurance/banner.jpg"
+            src={props.mainBannerImage?props.mainBannerImage:''}
             width={1920}
             height={1280}
             alt="Banner"
@@ -15,18 +17,25 @@ const BannerSection = () => {
           />
           <div className="main-section mx-auto 2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] px-4 flex justify-between absolute w-full top-[20%] left-[50%] translate-x-[-50%]">
             <div className="lg:max-w-[400px] xl:max-w-[490px] mt-[10%]">
+              {props.mainTitle &&
               <h1 className="md:text-3xl xl:text-4xl text-[#2D2D2D] font-bold mb-3">
-                Protect Your Family&apos;s Future with Confidence
+                {/* Protect Your Family&apos;s Future with Confidence */}
+                {props.mainTitle}
               </h1>
-              <p className="md:text-lg xl:text-xl font-medium mb-4">
-                Expert Assistance in Navigating Insurance Claims and Ensuring
-                Financial Security
-              </p>
+              }
+              {props.mainSubTitle && 
+                <p className="md:text-lg xl:text-xl font-medium mb-4">
+                  {/* Expert Assistance in Navigating Insurance Claims and Ensuring
+                  Financial Security */}
+                  {props.mainSubTitle}
+                </p>
+              }
+              {props.mainLinkTitle &&
               <a
-                href=""
+                href={props.mainLink?props.mainLink:''}
                 className="bg-[#293C7D] md:text-md xl:text-lg font-bold rounded-md text-white px-6 py-3 inline-flex items-center"
               >
-                Get Expert Guidance Now
+                {props.mainLinkTitle?props.mainLinkTitle:''}
                 <Image
                   src="/images/icons/arrow-square-right.png"
                   width={21}
@@ -35,15 +44,16 @@ const BannerSection = () => {
                   className="ml-2"
                 />
               </a>
+              }
             </div>
-            <div className="max-w-[740px] w-full">
+            {/* <div className="max-w-[740px] w-full">
               <Image
                 src="/images/insurance/banner-right.png"
                 width={802}
                 height={642}
                 alt="Insurance"
               />
-            </div>
+            </div> */}
           </div>
         </div>
         <Header />
@@ -51,36 +61,48 @@ const BannerSection = () => {
           <div className="mx-auto 2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] px-4">
             <div className="flex justify-between">
               <div className="w-[45%]">
-                <p className="text-white text-lg xl:text-xl max-w-[500px]">
-                  Prime Idea creates financial plans that fuel your ambitions
-                  today and secure your success for tomorrow, whether you’re
-                  starting out or scaling up.
+                {props.subSectionContent &&
+                <p className="text-white text-lg xl:text-xl max-w-[500px]">                  
+                  {props.subSectionContent?props.subSectionContent:''}
                 </p>
+                }
               </div>
               <div className="w-[55%] flex justify-between">
                 <div className="flex flex-col	items-end px-2">
+                  {props.subSectionTitle1 &&
                   <span className="text-white text-18px xl:text-[20px] font-bold text-right">
-                    Trusted By Clients
+                    {props.subSectionTitle1}
                   </span>
+                  }
+                  {props.subSectionSubTitle1 &&
                   <h3 className="text-[42px] leading-[120%] xl:text-5xl font-extrabold mt-2 text-[#FFC300]">
-                    80+
+                    {props.subSectionSubTitle1}
                   </h3>
+                  }
                 </div>
                 <div className="flex flex-col	items-end px-2">
+                  {props.subSectionTitle2 &&
                   <span className="text-white text-18px xl:text-[20px] font-bold text-right">
-                    Years of expertise
+                    {props.subSectionTitle2}
                   </span>
+                  }
+                  {props.subSectionSubTitle2 &&
                   <h3 className="text-[42px] leading-[120%] xl:text-5xl font-extrabold mt-2 text-[#FFC300]">
-                    12+
+                    {props.subSectionSubTitle2}
                   </h3>
+                  }
                 </div>
                 <div className="flex flex-col	items-end px-2">
+                  {props.subSectionTitle3 &&
                   <span className="text-white text-18px xl:text-[20px] font-bold text-right">
-                    Client Satisfaction
+                    {props.subSectionTitle3}
                   </span>
+                  }
+                  {props.subSectionSubTitle3 &&
                   <h3 className="text-[42px] leading-[120%] xl:text-5xl font-extrabold mt-2 text-[#FFC300]">
-                    92+
+                    {props.subSectionSubTitle3}
                   </h3>
+                  }
                 </div>
               </div>
             </div>
