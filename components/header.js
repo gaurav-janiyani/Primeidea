@@ -147,7 +147,7 @@ export default function Header() {
                   >
                     <div className="flex justify-between">
                       <div className="w-1/2 px-2">
-                        <a href="" className="relative rounded-[12px] shadow-[0_0_5px_0_#00000040] cursor-pointer">
+                        <a href="/financial-planning-and-investment-advisory" className="relative rounded-[12px] shadow-[0_0_5px_0_#00000040] cursor-pointer">
                           <Image
                             src="/images/header/wealth-creation/financial-investment-advisory.png"
                             width={621}
@@ -170,7 +170,7 @@ export default function Header() {
                         </a>
                       </div>
                       <div className="w-1/2 px-2">
-                        <a href="" className="relative rounded-[12px] shadow-[0_0_5px_0_#00000040] cursor-pointer">
+                        <a href="/financial-planning-and-investment-advisory" className="relative rounded-[12px] shadow-[0_0_5px_0_#00000040] cursor-pointer">
                           <Image
                             src="/images/header/wealth-creation/financial-investment-planning.png"
                             width={621}
@@ -231,7 +231,7 @@ export default function Header() {
                   >
                     <div className="flex justify-between">
                       <div className="w-1/4 px-2">
-                        <a href="" className="relative rounded-[12px] shadow-[0_0_5px_0_#00000040] cursor-pointer">
+                        <a href="/research-based-wealth-management" className="relative rounded-[12px] shadow-[0_0_5px_0_#00000040] cursor-pointer">
                           <Image
                             src="/images/header/wealth-preservation/RBWM.png"
                             width={425}
@@ -251,7 +251,7 @@ export default function Header() {
                         </a>
                       </div>
                       <div className="w-1/4 px-2">
-                        <a href="" className="relative rounded-[12px] shadow-[0_0_5px_0_#00000040] cursor-pointer">
+                        <a href="/retirement-planning" className="relative rounded-[12px] shadow-[0_0_5px_0_#00000040] cursor-pointer">
                           <Image
                             src="/images/header/wealth-preservation/Retirement_PLANING.png"
                             width={282}
@@ -271,7 +271,7 @@ export default function Header() {
                         </a>
                       </div>
                       <div className="w-1/4 px-2">
-                        <a href="" className="relative rounded-[12px] shadow-[0_0_5px_0_#00000040] cursor-pointer">
+                        <a href="/legacy-inheritance-planning" className="relative rounded-[12px] shadow-[0_0_5px_0_#00000040] cursor-pointer">
                           <Image
                             src="/images/header/wealth-preservation/legacy.png"
                             width={289}
@@ -291,7 +291,7 @@ export default function Header() {
                         </a>
                       </div>
                       <div className="w-1/4 px-2">
-                        <a href="" className="relative rounded-[12px] shadow-[0_0_5px_0_#00000040] cursor-pointer">
+                        <a href="/tax-planning-savings" className="relative rounded-[12px] shadow-[0_0_5px_0_#00000040] cursor-pointer">
                           <Image
                             src="/images/header/wealth-preservation/tax-planning.png"
                             width={284}
@@ -315,7 +315,7 @@ export default function Header() {
                 </li>
                 <li className="!ml-2">
                   <a
-                    href="#"
+                    href="/insurance"
                     className="block py-4 2xl:py-5 px-2 2xl:px-3 text-[15px] 2xl:text-base font-medium md:w-auto hover:text-[#E40115]"
                   >
                     Insurance
@@ -323,7 +323,7 @@ export default function Header() {
                 </li>
                 <li className="!ml-2">
                   <a
-                    href="#"
+                    href="/about-us"
                     className="block py-4 2xl:py-5 px-2 2xl:px-3 text-[15px] 2xl:text-base font-medium md:w-auto hover:text-[#E40115]"
                   >
                     About Us
