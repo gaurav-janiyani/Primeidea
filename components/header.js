@@ -113,7 +113,15 @@ export default function Header() {
               className="hidden w-full lg:block md:w-auto md:order-1 mx-auto	 "
             >
               <ul className="flex flex-col mt-4 font-medium md:flex-row md:mt-0 md:space-x-8 rtl:space-x-reverse">
-                <li className="!ml-2 group">
+              <li className="!ml-2">
+                  <a
+                    href="/financial-planning-and-investment-advisory"
+                    className="block py-4 2xl:py-5 px-2 2xl:px-3 text-[15px] 2xl:text-base font-medium md:w-auto hover:text-[#E40115]"
+                  >
+                    Wealth Creation 
+                  </a>
+                </li>
+                {/* <li className="!ml-2 group">
                   <button
                     id="mega-menu-full-cta-dropdown-button"
                     data-collapse-toggle="mega-menu-full-cta-dropdown"
@@ -194,7 +202,7 @@ export default function Header() {
                       </div>
                     </div>
                   </div>
-                </li>
+                </li> */}
                 <li className="!ml-2 group">
                   <button
                     id="mega-menu-full-cta-dropdown-button"
