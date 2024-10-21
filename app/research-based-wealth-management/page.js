@@ -9,6 +9,33 @@ import WorkSection from "@/components/researchWelathManagement/workSection";
 import StepperSection from "@/components/steppers";
 
 const ResearchBasedWealthManagementPage = () => { 
+
+    const steps = [
+        {
+          id: '01',
+          title: "Solutions",
+          content:
+            "Providing tailored financial solutions to optimize growth and  returns for our clients.",
+        },
+        {
+          id: '02',
+          title: "Research",
+          content:
+            "In-depth research analysis drive our financial services to deliver accurate and valuable insights.",
+        },
+        {
+          id: '03',
+          title: "Planning",
+          content:
+            "Strategic planning and forecasting are essential for ensuring financial stability and success.",
+        },
+        {
+          id: '04',
+          title: "Ethics",
+          content: "Ethical pratices and transparency from the foundation of our financial services, fostering trust and long term partnerships. ",
+        },
+      ];
+    
     return (
         <div className="bg-[#F6FDFF]">
             
@@ -31,7 +58,7 @@ const ResearchBasedWealthManagementPage = () => {
 
             <PrimeIdeaHelps />
 
-            <StepperSection />
+            <StepperSection steps={steps} />
 
             <PowerOfStrategy />
 

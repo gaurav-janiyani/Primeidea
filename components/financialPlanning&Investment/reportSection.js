@@ -6,9 +6,9 @@ const ReportSection = () => {
         <div className="bg-[#479AD2] pt-12">
           <div className=" 2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-4">
             <div className="flex justify-between items-end">
-              <div className="max-w-[72%]">
+              <div className="w-[72%]">
                 <div className="w-full flex justify-between">
-                  <div className="max-w-[45%] w-full">
+                  <div className="w-[45%]">
                     <h2 className="font-normal text-white text-[42px] mb-[40px] leading-[120%]">
                       Here&#39;s what your
                       <span className="font-semibold block">
@@ -34,7 +34,7 @@ const ReportSection = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="max-w-[55%]">
+                  <div className="w-[55%]">
                     <div className="mt-[80px] mb-[-130px] ml-[-20px]">
                       <Image
                         src="/images/financial-planning/financial-planning-report-tab.png"
@@ -47,7 +47,7 @@ const ReportSection = () => {
                   </div>
                 </div>
               </div>
-              {/* <div className="max-w-[28%]">
+              {/* <div className="w-[28%]">
                 <Image
                   src="/images/financial-planning/financial-advisor-people.png"
                   alt="Finacial Advisor"
@@ -56,7 +56,7 @@ const ReportSection = () => {
                   className="w-full flex items-end"
                 />
               </div> */}
-              <div className="max-w-[28%] flex flex-col items-center mb-16">
+              <div className="w-[28%] flex flex-col items-center mb-16">
                 <Image
                     src="/images/financial-planning/financial-advisor-people.png"
                     alt="Financial Planning & Investment Advisor"

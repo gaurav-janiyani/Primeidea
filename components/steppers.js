@@ -1,32 +1,33 @@
 "use client";
 import React from "react";
 
-const StepperSection = () => {
-  const steps = [
-    {
-      id: '01',
-      title: "Assess Your Income and Tax Liability",
-      content:
-        "Evaluate your total income and calculate your tax liability based on current slabs.",
-    },
-    {
-      id: '02',
-      title: "Maximize Section 80C Deductions",
-      content:
-        "Invest in ELSS, PPF, and insurance to claim ₹1.5 lakh deductions under Section 80C and reduce taxable income.",
-    },
-    {
-      id: '03',
-      title: "Utilize Additional Deductions",
-      content:
-        "Use deductions under Sections 80D, 24(b), and 80E to lower your tax liability.",
-    },
-    {
-      id: '04',
-      title: "Tax-Exempt & Income Splitting",
-      content: "Use HRA, LTA, and split income to leverage lower tax brackets.",
-    },
-  ];
+const StepperSection = (props) => {
+
+  // const steps = [
+  //   {
+  //     id: '01',
+  //     title: "Assess Your Income and Tax Liability",
+  //     content:
+  //       "Evaluate your total income and calculate your tax liability based on current slabs.",
+  //   },
+  //   {
+  //     id: '02',
+  //     title: "Maximize Section 80C Deductions",
+  //     content:
+  //       "Invest in ELSS, PPF, and insurance to claim ₹1.5 lakh deductions under Section 80C and reduce taxable income.",
+  //   },
+  //   {
+  //     id: '03',
+  //     title: "Utilize Additional Deductions",
+  //     content:
+  //       "Use deductions under Sections 80D, 24(b), and 80E to lower your tax liability.",
+  //   },
+  //   {
+  //     id: '04',
+  //     title: "Tax-Exempt & Income Splitting",
+  //     content: "Use HRA, LTA, and split income to leverage lower tax brackets.",
+  //   },
+  // ];
 
   return (
     <section>
@@ -37,7 +38,7 @@ const StepperSection = () => {
           </h2>
           <div className="flex flex-col items-center justify-center pt-8 px-8">
             <div className="relative flex justify-between items-baseline w-full 2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] px-4 mb-8">
-              {steps.map((step, index) => (
+              {props.steps?.map((step, index) => (
                 <React.Fragment key={step.id}>
                   <div className="flex flex-col items-center w-1/4 text-center relative before:absolute before:top-[21px] before:left-[50%] before:w-full before:h-[1px] before:bg-[#3A414D80] before:content-[''] last:before:hidden after:absolute after:top-[11px] after:right-0 after:bg-[url('/images/icons/right.png')] last:after:hidden after:bg-no-repeat after:bg-contain	after:bg-center	after:w-[20px] after:h-[20px]">
                     <div

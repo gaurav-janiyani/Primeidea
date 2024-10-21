@@ -8,6 +8,33 @@ import StepperSection from "@/components/steppers";
 import TaxPlanning from "@/components/tax-planning/taxPlanning";
 
 const LegacyInheritancePlanning = () => { 
+
+    const steps = [
+        {
+          id: '01',
+          title: "Assess Your Estate",
+          content:
+            "Assess your financial situation to understand what needs to be protected and passed on.",
+        },
+        {
+          id: '02',
+          title: "Define Your Goals and Wishes",
+          content:
+            "Define your legacy goals, including asset distribution, beneficiaries, and charitable wishes.",
+        },
+        {
+          id: '03',
+          title: "Implement Legal and Financial Instruments",
+          content:
+            "Set up legal documents and tax-efficient strategies to protect your assets, document your wishes, and minimize taxes.",
+        },
+        {
+          id: '04',
+          title: "Review and Update Regularly",
+          content: "Regularly review and update your legacy plan to reflect changes in your life",
+        },
+      ];
+
     return (
         <div className="bg-[#F6FDFF]">
 
@@ -29,7 +56,7 @@ const LegacyInheritancePlanning = () => {
 
             <TaxPlanning />
 
-            <StepperSection />
+            <StepperSection steps={steps}/>
 
             <InsightsSection />
 

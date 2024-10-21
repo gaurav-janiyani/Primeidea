@@ -9,6 +9,33 @@ import TaxPlanning from "@/components/tax-planning/taxPlanning";
 import YouIHereSection from "@/components/tax-planning/you-i-here";
 
 const TaxPlanningPage = () => { 
+
+    const steps = [
+    {
+      id: '01',
+      title: "Assess Your Income and Tax Liability",
+      content:
+        "Evaluate your total income and calculate your tax liability based on current slabs.",
+    },
+    {
+      id: '02',
+      title: "Maximize Section 80C Deductions",
+      content:
+        "Invest in ELSS, PPF, and insurance to claim ₹1.5 lakh deductions under Section 80C and reduce taxable income.",
+    },
+    {
+      id: '03',
+      title: "Utilize Additional Deductions",
+      content:
+        "Use deductions under Sections 80D, 24(b), and 80E to lower your tax liability.",
+    },
+    {
+      id: '04',
+      title: "Tax-Exempt & Income Splitting",
+      content: "Use HRA, LTA, and split income to leverage lower tax brackets.",
+    },
+  ];
+
     return (
         <div className="bg-[#F6FDFF]">
 
@@ -27,7 +54,7 @@ const TaxPlanningPage = () => {
                 subSectionSubTitle3={"92+"}
             />
             <TaxPlanning />
-            <StepperSection />
+            <StepperSection  steps={steps}/>
             <YouIHereSection />
             <GiftCitySection />
             <InsightsSection />

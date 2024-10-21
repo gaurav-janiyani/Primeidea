@@ -12,6 +12,28 @@ import Footer from "@/components/footer";
 import InsightsSection from "@/components/insightsSection";
 
 const FinancialPlanningAndInvestmentAdvisory = () => { 
+
+    const steps = [
+        {
+          id: '01',
+          title: "Getting to know you.",
+          content:
+            "We begin the financial planning process by understanding your unique needs, goals, and existing assets and liabilities. We also pay close attention to the crucial details that impact your financial plan.",
+        },
+        {
+          id: '02',
+          title: "Finding the right investments",
+          content:
+            "We use our expertise and AI-driven Robo Advisor to match investment avenues with your goals, covering retirement and tax planning for a complete financial solution.",
+        },
+        {
+          id: '03',
+          title: "Recommending the best plan",
+          content:
+            "We recommend investments and manage your portfolio, including performance analysis and rebalancing, to help you achieve your financial goals.",
+        },
+      ];
+
     return (
         <div className="bg-[#F6FDFF]">
             <BannerSection 
