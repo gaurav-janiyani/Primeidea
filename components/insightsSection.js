@@ -108,6 +108,9 @@ const InsightsSection = (props) => {
                               </p>
                             </div>
                           </div>
+                          <a href="" className="ml-auto inline-block">
+                            <Image src="/images/blogs/right-arrow.png" width={36} height={36} alt="Arrow" />
+                          </a>
                         </div>
                       </li>
                     );
