@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Header from "../header";
+import FadeUpAnimation from "@/animations/FadeUpAnimation";
+import FadeUpOneByOneAnimation from "@/animations/FadeUpOneByOneAnimation";
 
 const BannerSection = () => {
   return (
@@ -14,7 +16,7 @@ const BannerSection = () => {
             className="h-full w-full object-cover"
           />
           <div className="main-section mx-auto 2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] px-4 flex justify-between absolute w-full top-[20%] left-[50%] translate-x-[-50%]">
-            <div className="lg:max-w-[400px] xl:max-w-[490px] mt-[10%]">
+            <FadeUpAnimation className="lg:max-w-[400px] xl:max-w-[490px] mt-[10%]">
               <h1 className="md:text-3xl xl:text-4xl text-[#2D2D2D] font-bold mb-3">
                 Protect Your Family&apos;s Future with Confidence
               </h1>
@@ -35,7 +37,7 @@ const BannerSection = () => {
                   className="ml-2"
                 />
               </a>
-            </div>
+            </FadeUpAnimation>
             {/* <div className="max-w-[740px] w-full">
               <Image
                 src="/images/insurance/banner-right.png"
@@ -51,30 +53,30 @@ const BannerSection = () => {
           <div className="mx-auto 2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] px-4">
             <div className="flex justify-between">
               <div className="w-full flex justify-between">
-                <div className="flex flex-col	items-start px-2 w-1/4">
+                <FadeUpOneByOneAnimation className="flex flex-col	items-start px-2 w-1/4">
                     <Image src="/images/legacy-inheritance-planning/icons/1.png" width={50} height={50} alt="1" className="mb-4" />
                     <p className="md:text-lg xl:text-xl font-medium mb-4 text-white">
                         Designed by estate planning experts with 50+ years of experience.
                     </p>
-                </div>
-                <div className="flex flex-col	items-start px-2 w-1/4">
+                </FadeUpOneByOneAnimation>
+                <FadeUpOneByOneAnimation className="flex flex-col	items-start px-2 w-1/4">
                     <Image src="/images/legacy-inheritance-planning/icons/2.png" width={50} height={50} alt="2" className="mb-4" />
                     <p className="md:text-lg xl:text-xl font-medium mb-4 text-white">
                         We offer full assistance with optional Will registration and other offline procedures
                     </p>
-                </div>
-                <div className="flex flex-col	items-start px-2 w-1/4">
+                </FadeUpOneByOneAnimation>
+                <FadeUpOneByOneAnimation className="flex flex-col	items-start px-2 w-1/4">
                     <Image src="/images/legacy-inheritance-planning/icons/3.png" width={50} height={50} alt="3" className="mb-4" />
                     <p className="md:text-lg xl:text-xl font-medium mb-4 text-white">
                         We encrypt and protect your data so nobody has access to it, but you
                     </p>
-                </div>
-                <div className="flex flex-col	items-start px-2 w-1/4">
+                </FadeUpOneByOneAnimation>
+                <FadeUpOneByOneAnimation className="flex flex-col	items-start px-2 w-1/4">
                     <Image src="/images/legacy-inheritance-planning/icons/4.png" width={50} height={50} alt="4" className="mb-4" />
                     <p className="md:text-lg xl:text-xl font-medium mb-4 text-white">
-                        Backed by institutional Investors
+                        Backed by <br/> institutional Investors
                     </p>
-                </div>
+                </FadeUpOneByOneAnimation>
               </div>
             </div>
           </div>

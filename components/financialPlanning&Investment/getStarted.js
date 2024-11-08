@@ -1,3 +1,5 @@
+import FadeUpOneByOneAnimation from "@/animations/FadeUpOneByOneAnimation";
+import FadeUpOneByOneRightAnimation from "@/animations/FadeUpOneByOneRightAnimation";
 import Image from "next/image";
 
 const GetStarted = () => {
@@ -14,8 +16,8 @@ const GetStarted = () => {
               className="rounded-[20px] border-[3px] border-[#479AD2] shadow-[0_0_9px_0_#00000040]"  
             />
             <div className="absolute top-[30%] left-[50%] translate-y-[-50%] translate-x-[-50%] text-center ">
-              <h2 className="text-2xl font-medium text-[#293C7D] mb-2">Grow your wealth with a</h2>
-              <h4 className="text-4xl font-semibold text-[#293C7D]">personalised financial plan</h4>
+              <h2 className="text-2xl font-medium text-[#293C7D] mb-2"><FadeUpOneByOneAnimation>Grow your wealth with a</FadeUpOneByOneAnimation></h2>
+              <h4 className="text-4xl font-semibold text-[#293C7D]"><FadeUpOneByOneAnimation>personalised financial plan</FadeUpOneByOneAnimation></h4>
             </div>
             <div className="absolute bottom-0 right-0 flex bg-[#479AD2] pl-12 pr-6 py-5 rounded-tl-[42px] rounded-br-[22px]">
               <Image
@@ -26,7 +28,9 @@ const GetStarted = () => {
                 className="mr-4"
               />
               <a href="" className="flex items-center text-white">
-                <span className="text-[28px]">Get Started</span>
+                <span className="text-[28px]">
+                    Get Started
+                </span>
                 <Image
                   src="/images/icons/arrow-right-light.png"
                   width={22}

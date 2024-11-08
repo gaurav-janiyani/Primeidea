@@ -1,3 +1,4 @@
+import FadeUpOneByOneRightAnimation from "@/animations/FadeUpOneByOneRightAnimation";
 import Image from "next/image";
 
 const GetStarted = () => {
@@ -14,8 +15,8 @@ const GetStarted = () => {
               className="rounded-[20px] border-[3px] border-[#479AD2] shadow-[0_0_9px_0_#00000040]"  
             />
             <div className="absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] text-center ">
-              <h2 className="text-4xl font-semibold text-[#14606E] mb-2">Sail Smoothly</h2>
-              <h4 className="text-2xl font-medium text-[#14606E]">into Retirement with Our Help</h4>
+              <h2 className="text-4xl font-semibold text-[#14606E] mb-2"><FadeUpOneByOneRightAnimation>Sail Smoothly</FadeUpOneByOneRightAnimation></h2>
+              <h4 className="text-2xl font-medium text-[#14606E]"><FadeUpOneByOneRightAnimation>into Retirement with Our Help</FadeUpOneByOneRightAnimation></h4>
             </div>
             <div className="absolute bottom-0 right-0 flex bg-[#479AD2] pl-12 pr-6 py-5 rounded-tl-[42px] rounded-br-[22px]">
               <Image

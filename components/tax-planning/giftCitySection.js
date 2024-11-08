@@ -1,3 +1,4 @@
+import FadeUpOneByOneAnimation from "@/animations/FadeUpOneByOneAnimation";
 import Image from "next/image";
 
 const GiftCitySection = () => {
@@ -15,7 +16,7 @@ const GiftCitySection = () => {
                 className="w-full"
               />
             </div>
-            <div className="w-[50%]">
+            <FadeUpOneByOneAnimation className="w-[50%]">
               <h2 className="text-[32px] font-semibold leading-[130%] mb-3">
                 GIFT City Tax Advantages
               </h2>
@@ -34,7 +35,7 @@ const GiftCitySection = () => {
                   <strong>No Stamp Duty:</strong> Save on transaction costs with stamp duty exemptions.
                 </li>
                 <li className="mb-3">
-                  <strong>Exempt from DDT:</strong> Benefit from no Dividend Distribution Tax.
+                  <strong>Exempt from DDT:</strong> Benefit from no FadeUpOneByOneAnimationidend Distribution Tax.
                 </li>
                 <li className="mb-3">
                   <strong>Lower MAT:</strong> Pay reduced Minimum Alternate Tax rates.
@@ -56,7 +57,7 @@ const GiftCitySection = () => {
                   className="ml-2"
                 />
               </a>
-            </div>
+            </FadeUpOneByOneAnimation>
           </div>
         </div>
       </div>

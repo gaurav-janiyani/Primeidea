@@ -1,6 +1,7 @@
 "use client"
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
+import FadeUpOneByOneAnimation from "@/animations/FadeUpOneByOneAnimation";
 
 const TaxPlanning = () => {
   const scrollContainerRef = useRef(null);
@@ -50,7 +51,9 @@ const TaxPlanning = () => {
         <div className="2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-4">
           <div ref={stickyHeaderRef} className="sticky-header">
             <h2 className="text-[32px] leading-[140%] font-normal mb-6 text-[#04102A]">
-              How to save Tax in India with the <br /> help of Tax Planning ?
+              <FadeUpOneByOneAnimation>
+                How to save Tax in India with the <br /> help of Tax Planning ?
+              </FadeUpOneByOneAnimation>
             </h2>
           </div>
           <div ref={scrollContainerRef} className="scroll-container">
@@ -59,7 +62,7 @@ const TaxPlanning = () => {
                 <div className="flex justify-between items-end mb-8">
                   <div className="w-[60%] pb-[40px]">
                     <h3 className="text-[28px] font-semibold mb-3">
-                      Invest in Tax-Saving Instruments
+                        Invest in Tax-Saving Instruments
                     </h3>
                     <p className="text-lg mb-1 text-black">
                       Investing in tax-saving instruments is a smart strategy to

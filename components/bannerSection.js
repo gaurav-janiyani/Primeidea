@@ -1,8 +1,12 @@
 'use client';
 import Image from "next/image";
 import Header from "./header";
+import FadeUpAnimation from "@/animations/FadeUpAnimation";
+import FadeUpOneByOneAnimation from "@/animations/FadeUpOneByOneAnimation";
+import FadeUpAnimationDelay from "@/animations/FadeUpAnimationDelay";
 
 const BannerSection = (props) => {
+  
   console.log(props);
   return (
     <section>
@@ -16,7 +20,8 @@ const BannerSection = (props) => {
             className="h-full w-full object-cover"
           />
           <div className="main-section mx-auto 2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] px-4 flex justify-between absolute w-full top-[20%] left-[50%] translate-x-[-50%]">
-            <div className="lg:max-w-[400px] xl:max-w-[490px] mt-[10%]">
+
+            <FadeUpAnimation className="lg:max-w-[400px] xl:max-w-[490px] mt-[10%]">
               {props.mainTitle &&
               <h1 className="md:text-3xl xl:text-4xl text-[#2D2D2D] font-bold mb-3">
                 {/* Protect Your Family&apos;s Future with Confidence */}
@@ -45,7 +50,7 @@ const BannerSection = (props) => {
                 />
               </a>
               }
-            </div>
+            </FadeUpAnimation>
             {/* <div className="max-w-[740px] w-full">
               <Image
                 src="/images/insurance/banner-right.png"
@@ -60,15 +65,15 @@ const BannerSection = (props) => {
         <div className="bg-[#293C7D]/95 py-10 absolute bottom-0 w-full">
           <div className="mx-auto 2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] px-4">
             <div className="flex justify-between">
-              <div className="w-[45%]">
+              <FadeUpAnimation className="w-[45%]">
                 {props.subSectionContent &&
                 <p className="text-white text-lg xl:text-xl max-w-[500px]">                  
                   {props.subSectionContent?props.subSectionContent:''}
                 </p>
                 }
-              </div>
+              </FadeUpAnimation>
               <div className="w-[55%] flex justify-between">
-                <div className="flex flex-col	items-end px-2">
+                <FadeUpAnimationDelay className="flex flex-col	items-end px-2">
                   {props.subSectionTitle1 &&
                   <span className="text-white text-18px xl:text-[20px] font-bold text-right">
                     {props.subSectionTitle1}
@@ -79,8 +84,8 @@ const BannerSection = (props) => {
                     {props.subSectionSubTitle1}
                   </h3>
                   }
-                </div>
-                <div className="flex flex-col	items-end px-2">
+                </FadeUpAnimationDelay>
+                <FadeUpAnimationDelay className="flex flex-col	items-end px-2">
                   {props.subSectionTitle2 &&
                   <span className="text-white text-18px xl:text-[20px] font-bold text-right">
                     {props.subSectionTitle2}
@@ -91,8 +96,8 @@ const BannerSection = (props) => {
                     {props.subSectionSubTitle2}
                   </h3>
                   }
-                </div>
-                <div className="flex flex-col	items-end px-2">
+                </FadeUpAnimationDelay>
+                <FadeUpAnimationDelay className="flex flex-col	items-end px-2">
                   {props.subSectionTitle3 &&
                   <span className="text-white text-18px xl:text-[20px] font-bold text-right">
                     {props.subSectionTitle3}
@@ -103,7 +108,7 @@ const BannerSection = (props) => {
                     {props.subSectionSubTitle3}
                   </h3>
                   }
-                </div>
+                </FadeUpAnimationDelay>
               </div>
             </div>
           </div>

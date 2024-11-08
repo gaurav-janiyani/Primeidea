@@ -1,3 +1,4 @@
+import FadeUpOneByOneAnimation from "@/animations/FadeUpOneByOneAnimation";
 import Image from "next/image";
 
 const AboutInsurance = () => { 
@@ -6,7 +7,7 @@ const AboutInsurance = () => {
         <div className="bg-[#F6FDFF] py-16">
           <div className="2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-4">
             <div className="flex justify-between">
-              <div className="w-[50%]">
+              <FadeUpOneByOneAnimation className="w-[50%]">
                 <h2 className="text-[32px] font-light mb-1 text-[#04102A]">
                   Insurance Solutions for Financial Security
                 </h2>
@@ -17,21 +18,21 @@ const AboutInsurance = () => {
                   protect your family, and ensure your financial goals are
                   achieved, regardless of life&apos;s uncertainties.
                 </p>
-              </div>
-              <div className="w-[50%] flex justify-end items-baseline">
+              </FadeUpOneByOneAnimation>
+              <FadeUpOneByOneAnimation className="w-[50%] flex justify-end items-baseline">
                 <Image
                   src="/images/icons/p.png"
                   width={110}
                   height={105}
                   alt="PrimeIdea"
                 />
-              </div>
+              </FadeUpOneByOneAnimation>
             </div>
           </div>
         </div>
         <div className="bg-[#F6FDFF] pt-8 pb-16">
           <div className="2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-4">
-            <div className="max-w-[652px]">
+            <FadeUpOneByOneAnimation className="max-w-[652px]">
               <h2 className="text-[32px] font-light mb-1 text-[#04102A]">
                 The Role of Insurance in Wealth Management
               </h2>
@@ -40,10 +41,10 @@ const AboutInsurance = () => {
                 in managing and preserving your wealth, Here&apos;s why it&apos;s
                 essential
               </p>
-            </div>
+            </FadeUpOneByOneAnimation>
             <ul className="flex justify-between mx-[-10px]">
               <li className="px-[10px]">
-                <div className=" shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg h-full">
+                <FadeUpOneByOneAnimation className=" shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg h-full">
                   <Image
                     src="/images/insurance/wealth-management/image.jpg"
                     width={387}
@@ -57,10 +58,10 @@ const AboutInsurance = () => {
                     Protect yourself from financial losses due to unforeseen
                     events, ensuring that your wealth remains intact.
                   </p>
-                </div>
+                </FadeUpOneByOneAnimation>
               </li>
               <li className="px-[10px]">
-                <div className=" shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg h-full">
+                <FadeUpOneByOneAnimation className=" shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg h-full">
                   <Image
                     src="/images/insurance/wealth-management/image1.jpg"
                     width={387}
@@ -74,10 +75,10 @@ const AboutInsurance = () => {
                     Secure your assets and investments, enabling you to continue
                     growing your wealth without interruptions.
                   </p>
-                </div>
+                </FadeUpOneByOneAnimation>
               </li>
               <li className="px-[10px]">
-                <div className=" shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg h-full">
+                <FadeUpOneByOneAnimation className=" shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg h-full">
                   <Image
                     src="/images/insurance/wealth-management/image3.jpg"
                     width={387}
@@ -91,7 +92,7 @@ const AboutInsurance = () => {
                     With comprehensive coverage, you can confidently focus on
                     your financial goals, knowing you’re protected.
                   </p>
-                </div>
+                </FadeUpOneByOneAnimation>
               </li>
             </ul>
           </div>

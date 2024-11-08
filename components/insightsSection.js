@@ -1,4 +1,7 @@
 import Image from "next/image";
+import FadeUpOneByOneAnimation from "@/animations/FadeUpOneByOneAnimation";
+import FadeUpAnimationDelay from "@/animations/FadeUpAnimationDelay";
+import FadeUpAnimation from "@/animations/FadeUpAnimation";
 
 const InsightsSection = (props) => {
   const insightsItems = [
@@ -41,18 +44,21 @@ const InsightsSection = (props) => {
             <div className="flex">
               <div className="w-[38%] pt-4 pr-4">
                 <h2 className="text-3xl font-medium mb-5">
-                  Insights & Innovations
+                  <FadeUpOneByOneAnimation>
+                    Insights & Innovations
+                  </FadeUpOneByOneAnimation>
                 </h2>
+                <FadeUpOneByOneAnimation>
                 <p className="text-lg mb-6">
-                  Stay ahead with our latest articles on financial trends,
-                  investment strategies, and wealth management tips. Discover
-                  insights and strategies to keep your financial game strong and
-                  up-to-date.
+                    Stay ahead with our latest articles on financial trends,
+                    investment strategies, and wealth management tips. Discover
+                    insights and strategies to keep your financial game strong and
+                    up-to-date.
                 </p>
                 <a
                   href=""
                   className="bg-[#293C7D] text-lg font-bold rounded-md text-white px-6 py-3 inline-flex items-center"
-                >
+                  >
                   Read All
                   <Image
                     src="/images/icons/arrow-square-right.png"
@@ -60,8 +66,9 @@ const InsightsSection = (props) => {
                     height={21}
                     alt="Read All"
                     className="ml-2"
-                  />
+                    />
                 </a>
+                </FadeUpOneByOneAnimation>
 
                 <Image
                   src="/images/home/insights/insights.png"
@@ -76,7 +83,7 @@ const InsightsSection = (props) => {
                   {insightsItems.map((item, index) => {
                     return (
                       <li className="border-b border-b-[#222222] pb-4 pt-4 pl-8 last:border-b-0" key={index}>
-                        <div className="flex ">
+                        <FadeUpOneByOneAnimation className="flex ">
                           <div className="w-[20%] max-w-[132px] mr-4">
                             <Image
                               src={item.imageUrl}
@@ -111,7 +118,7 @@ const InsightsSection = (props) => {
                           <a href="" className="ml-auto inline-block">
                             <Image src="/images/blogs/right-arrow.png" width={36} height={36} alt="Arrow" />
                           </a>
-                        </div>
+                        </FadeUpOneByOneAnimation>
                       </li>
                     );
                   })}

@@ -353,7 +353,7 @@ export default function Header() {
               </li>
               <li className="!ml-2">
                 <a
-                  href="#"
+                  href="/blogs"
                   className="block py-4 2xl:py-5 px-2 2xl:px-3 text-[15px] 2xl:text-base font-medium md:w-auto hover:text-[#E40115]"
                 >
                   Blogs

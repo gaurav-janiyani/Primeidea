@@ -5,6 +5,7 @@ import BudgetingContent from "./keyComponentsTabsContent/budgetingContent";
 import SavingStrategyContent from "./keyComponentsTabsContent/savingStrategyContent";
 import InvestmentBasicsContent from "./keyComponentsTabsContent/investmentBasicsContent";
 import RiskManagementContent from "./keyComponentsTabsContent/riskmanagementContent";
+import FadeUpOneByOneAnimation from "@/animations/FadeUpOneByOneAnimation";
 
 const KeyComponentsOfFinancialPlanning = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -17,7 +18,9 @@ const KeyComponentsOfFinancialPlanning = () => {
       <div className="py-16 bg-[#293C7D] bg-[url('/images/financial-planning/key-component-bg.png')] bg-no-repeat bg-cover bg-center">
         <div className="2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-4">
           <h2 className="text-3xl text-white mb-8 text-center font-medium">
-            Key Components for Financial Planning
+            <FadeUpOneByOneAnimation>
+              Key Components for Financial Planning
+            </FadeUpOneByOneAnimation>
           </h2>
           <ul className="flex justify-between mb-5">
             <li
@@ -26,7 +29,9 @@ const KeyComponentsOfFinancialPlanning = () => {
               }`}
               onClick={() => handleTabClick(0)}
             >
+            <FadeUpOneByOneAnimation>  
               Budgeting
+            </FadeUpOneByOneAnimation>
             </li>
             <li
               className={`w-1/2 h-[54px] text-2xl px-4 py-2 text-center text-white border-b cursor-pointer hover:font-bold ${
@@ -34,7 +39,9 @@ const KeyComponentsOfFinancialPlanning = () => {
               }`}
               onClick={() => handleTabClick(1)}
             >
+            <FadeUpOneByOneAnimation>  
               Savings Strategies
+            </FadeUpOneByOneAnimation>
             </li>
             <li
               className={`w-1/2 h-[54px] text-2xl px-4 py-2 text-center text-white border-b cursor-pointer hover:font-bold ${
@@ -42,7 +49,9 @@ const KeyComponentsOfFinancialPlanning = () => {
               }`}
               onClick={() => handleTabClick(2)}
             >
+            <FadeUpOneByOneAnimation>  
               Investment Basics
+            </FadeUpOneByOneAnimation>
             </li>
             <li
               className={`w-1/2 h-[54px] text-2xl px-4 py-2 text-center text-white border-b cursor-pointer hover:font-bold ${
@@ -50,7 +59,9 @@ const KeyComponentsOfFinancialPlanning = () => {
               }`}
               onClick={() => handleTabClick(3)}
             >
+            <FadeUpOneByOneAnimation>  
               Risk Management
+            </FadeUpOneByOneAnimation>
             </li>
           </ul>
           <div className={`border border-[#717171] rounded-xl bg-[#479AD2]`}>

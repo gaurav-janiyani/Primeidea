@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
 import Image from "next/image";
+import FadeUpOneByOneAnimation from "@/animations/FadeUpOneByOneAnimation";
 
 const Footer = () => {
 
@@ -47,7 +48,7 @@ const Footer = () => {
                   </button>
                 <div className="absolute top-0 right-0 bg-[#3E8ABD] w-[400%] h-[100%] border-r border-solid border-[#B4B4B4] z-[-1]">
                 </div>
-                <div className="mb-10 w-full">
+                <FadeUpOneByOneAnimation className="mb-10 w-full">
                   <a href="/" className="mb-6 inline-block lg:max-w-[260px] xl:max-w-[280px] 2xl:max-w-[320px]">
                     <Image
                       src="/images/logo-white.png"
@@ -57,9 +58,9 @@ const Footer = () => {
                       className="max-w-full dark:hidden"
                     />
                   </a>
-                </div>
+                </FadeUpOneByOneAnimation>
               </div>
-              <div className=" pb-20 pt-12 w-full pl-14 pr-10 sm:w-1/2 lg:max-w-[42%] xl:max-w-[40%] 2xl:max-w-[33.33%]">
+              <FadeUpOneByOneAnimation className=" pb-20 pt-12 w-full pl-14 pr-10 sm:w-1/2 lg:max-w-[42%] xl:max-w-[40%] 2xl:max-w-[33.33%]">
                 <LinkGroup header="Wealth Creation">
                   {/* <NavLink link="/#" label="Financial Investment Advisory" /> */}
                   <NavLink link="/financial-planning-and-investment-advisory" label="Financial Planning & Investment Advisory" />
@@ -70,9 +71,9 @@ const Footer = () => {
                   <NavLink link="/legacy-inheritance-planning" label="Legacy & Inheritance Planning" />
                   <NavLink link="/tax-planning-savings" label="Setting Tax Planning & Savings" />
                 </LinkGroup>
-              </div>
+              </FadeUpOneByOneAnimation>
 
-              <div className=" pb-20 pt-12 w-full px-4 sm:w-1/2 lg:max-w-[20%] xl:max-w-[25%] 2xl:max-w-[25%]">
+              <FadeUpOneByOneAnimation className=" pb-20 pt-12 w-full px-4 sm:w-1/2 lg:max-w-[20%] xl:max-w-[25%] 2xl:max-w-[25%]">
                 <div className="mb-10 w-full">
                   <h4 className="mb-3 text-lg font-semibold text-white">
                     <a href="/insurance">Insurance</a>
@@ -84,7 +85,7 @@ const Footer = () => {
                     <a href="">Blogs</a>
                   </h4>
                 </div>
-              </div>
+              </FadeUpOneByOneAnimation>
             </div>
           </div>
         </div>

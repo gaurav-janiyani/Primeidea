@@ -1,3 +1,4 @@
+import FadeUpOneByOneAnimation from "@/animations/FadeUpOneByOneAnimation";
 import Image from "next/image";
 
 const TypesOfInsurance = () => {
@@ -6,9 +7,11 @@ const TypesOfInsurance = () => {
       <div className="bg-[#232D63] py-12 bg-[url('/images/insurance/risk-management/bg.png')]  bg-no-repeat bg-contain bg-top w-full ">
         <div className="2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-4">
           <h2 className="text-[32px] font-light mb-4 text-[#fff] text-center">
-            Explore the Essential Types of Insurance for <br /> Comprehensive
-            Protection
+            <FadeUpOneByOneAnimation>
+              Explore the Essential Types of Insurance for <br /> Comprehensive Protection
+            </FadeUpOneByOneAnimation>
           </h2>
+          <FadeUpOneByOneAnimation>
           <ul className="flex justify-between mb-5">
             <li className="border border-[#717171] p-4 rounded-xl bg-[#223494] flex flex-col justify-between items-center w-[15.4%]">
               <Image
@@ -77,7 +80,8 @@ const TypesOfInsurance = () => {
               </h4>
             </li>
           </ul>
-          <div className="border border-[#717171] rounded-xl bg-[#223494]">
+          </FadeUpOneByOneAnimation>
+          <FadeUpOneByOneAnimation className="border border-[#717171] rounded-xl bg-[#223494]">
             <div className="flex justify-between p-6 border-b border-[#717171]">
               <h2 className="text-white text-3xl w-[370px] leading-[130%]">
                 Comprehensive <br />
@@ -191,7 +195,7 @@ const TypesOfInsurance = () => {
                 </li>
               </ul>
             </div>
-          </div>
+          </FadeUpOneByOneAnimation>
         </div>
       </div>
     </section>

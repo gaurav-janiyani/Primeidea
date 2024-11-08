@@ -1,3 +1,4 @@
+import FadeUpOneByOneAnimation from "@/animations/FadeUpOneByOneAnimation";
 import Image from "next/image";
 
 const ExpertiseSection = () => {
@@ -14,7 +15,7 @@ const ExpertiseSection = () => {
                 alt="Founder"
               />
             </div>
-            <div className="w-full md:w-[70%] lg:w-1/2 px-[30px] md:px-[15px]">
+            <FadeUpOneByOneAnimation className="w-full md:w-[70%] lg:w-1/2 px-[30px] md:px-[15px]">
               <h2 className="text-[32px] md:text-[36px] xl:text-[40px] leading-[120%] font-medium mb-3 md:mb-4 xl:mb-6 text-black">
                 30+ Years of Expertise in <br /> Wealth Management
               </h2>
@@ -37,7 +38,7 @@ const ExpertiseSection = () => {
                   className="ml-2"
                 />
               </a>
-            </div>
+            </FadeUpOneByOneAnimation>
           </div>
         </div>
       </div>

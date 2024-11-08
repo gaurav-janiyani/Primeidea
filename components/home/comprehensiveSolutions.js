@@ -1,17 +1,20 @@
 import Image from "next/image";
+import FadeUpOneByOneAnimation from "@/animations/FadeUpOneByOneAnimation";
 
 const ComprehensiveSolutions = () => {
   return (
     <section>
       <div className="bg-[#232D63] py-12 bg-[url('/images/insurance/risk-management/bg.png')]  bg-no-repeat bg-contain bg-top w-full ">
         <div className="2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-4">
-          <h2 className="text-[28px] 2xl:text-[32px] font-light mb-6 text-[#fff] text-center">
-            Your comprehensive solution for all financial needs, <br /> guiding
+          <h2  className="text-[28px] 2xl:text-[32px] font-light mb-6 text-[#fff] text-center">
+            <FadeUpOneByOneAnimation>
+              Your comprehensive solution for all financial needs, <br /> guiding
             you from saving to investing and beyond.
+            </FadeUpOneByOneAnimation>
           </h2>
           <ul className="flex justify-center flex-wrap mb-8 2xl:mb-16 mx-[-10px]">
             <li className="px-[10px] w-[20%] 2xl:w-[16%]">
-              <div className="border border-[#717171] p-4 mb-4 rounded-xl bg-[#223494] flex flex-col justify-between items-center aspect-square">
+              <FadeUpOneByOneAnimation className="border border-[#717171] p-4 mb-4 rounded-xl bg-[#223494] flex flex-col justify-between items-center aspect-square">
                 <Image
                   src="/images/home/icons/stocks.png"
                   width={142}
@@ -20,10 +23,10 @@ const ComprehensiveSolutions = () => {
                   className="object-contain h-full max-h-[95px] xl:max-h-[100px] 2xl:max-h-[110px]"
                 />
                 <h4 className="text-white text-base xl:text-lg text-center">Stocks</h4>
-              </div>{" "}
+              </FadeUpOneByOneAnimation>{" "}
             </li>
             <li className="px-[10px] w-[20%] 2xl:w-[16%]">
-              <div className="border border-[#717171] p-4 mb-4 rounded-xl bg-[#223494] flex flex-col justify-between items-center aspect-square">
+              <FadeUpOneByOneAnimation className="border border-[#717171] p-4 mb-4 rounded-xl bg-[#223494] flex flex-col justify-between items-center aspect-square">
                 <Image
                   src="/images/home/icons/bonds.png"
                   width={121}
@@ -32,10 +35,10 @@ const ComprehensiveSolutions = () => {
                   className="object-contain h-full max-h-[95px] xl:max-h-[100px] 2xl:max-h-[110px]"
                 />
                 <h4 className="text-white text-base xl:text-lg text-center">Bonds</h4>
-              </div>{" "}
+              </FadeUpOneByOneAnimation>{" "}
             </li>
             <li className="px-[10px] w-[20%] 2xl:w-[16%]">
-              <div className="border border-[#717171] p-4 mb-4 rounded-xl bg-[#223494] flex flex-col justify-between items-center aspect-square">
+              <FadeUpOneByOneAnimation className="border border-[#717171] p-4 mb-4 rounded-xl bg-[#223494] flex flex-col justify-between items-center aspect-square">
                 <Image
                   src="/images/home/icons/insurance.png"
                   width={96}
@@ -44,10 +47,10 @@ const ComprehensiveSolutions = () => {
                   className="object-contain h-full max-h-[95px] xl:max-h-[100px] 2xl:max-h-[110px]"
                 />
                 <h4 className="text-white text-base xl:text-lg text-center">Insurance</h4>
-              </div>{" "}
+              </FadeUpOneByOneAnimation>{" "}
             </li>
             <li className="px-[10px] w-[20%] 2xl:w-[16%]">
-              <div className="border border-[#717171] p-4 mb-4 rounded-xl bg-[#223494] flex flex-col justify-between items-center aspect-square">
+              <FadeUpOneByOneAnimation className="border border-[#717171] p-4 mb-4 rounded-xl bg-[#223494] flex flex-col justify-between items-center aspect-square">
                 <Image
                   src="/images/home/icons/personal-cfo.png"
                   width={83}
@@ -56,10 +59,10 @@ const ComprehensiveSolutions = () => {
                   className="object-contain h-full max-h-[95px] xl:max-h-[100px] 2xl:max-h-[110px]"
                 />
                 <h4 className="text-white text-base xl:text-lg text-center">Personal CFO</h4>
-              </div>{" "}
+              </FadeUpOneByOneAnimation>{" "}
             </li>
             <li className="px-[10px] w-[20%] 2xl:w-[16%]">
-              <div className="border border-[#717171] p-4 mb-4 rounded-xl bg-[#223494] flex flex-col justify-between items-center aspect-square">
+              <FadeUpOneByOneAnimation className="border border-[#717171] p-4 mb-4 rounded-xl bg-[#223494] flex flex-col justify-between items-center aspect-square">
                 <Image
                   src="/images/home/icons/fixed-deposit.png"
                   width={116}
@@ -70,10 +73,10 @@ const ComprehensiveSolutions = () => {
                 <h4 className="text-white text-base xl:text-lg text-center">
                   Fixed Deposit
                 </h4>
-              </div>{" "}
+              </FadeUpOneByOneAnimation>{" "}
             </li>
             <li className="px-[10px] w-[20%] 2xl:w-[16%]">
-              <div className="border border-[#717171] p-4 mb-4 rounded-xl bg-[#223494] flex flex-col justify-between items-center aspect-square">
+              <FadeUpOneByOneAnimation className="border border-[#717171] p-4 mb-4 rounded-xl bg-[#223494] flex flex-col justify-between items-center aspect-square">
                 <Image
                   src="/images/home/icons/gold.png"
                   width={133}
@@ -82,10 +85,10 @@ const ComprehensiveSolutions = () => {
                   className="object-contain h-full max-h-[95px] xl:max-h-[100px] 2xl:max-h-[110px]"
                 />
                 <h4 className="text-white text-base xl:text-lg text-center">Gold</h4>
-              </div>{" "}
+              </FadeUpOneByOneAnimation>{" "}
             </li>
             <li className="px-[10px] w-[20%] 2xl:w-[16%]">
-              <div className="border border-[#717171] p-4 mb-4 rounded-xl bg-[#223494] flex flex-col justify-between items-center aspect-square">
+              <FadeUpOneByOneAnimation className="border border-[#717171] p-4 mb-4 rounded-xl bg-[#223494] flex flex-col justify-between items-center aspect-square">
                 <Image
                   src="/images/home/icons/personal-cfo.png"
                   width={83}
@@ -94,10 +97,10 @@ const ComprehensiveSolutions = () => {
                   className="object-contain h-full max-h-[95px] xl:max-h-[100px] 2xl:max-h-[110px]"
                 />
                 <h4 className="text-white text-base xl:text-lg text-center">Personal CFO</h4>
-              </div>{" "}
+              </FadeUpOneByOneAnimation>{" "}
             </li>
             <li className="px-[10px] w-[20%] 2xl:w-[16%]">
-              <div className="border border-[#717171] p-4 mb-4 rounded-xl bg-[#223494] flex flex-col justify-between items-center aspect-square">
+              <FadeUpOneByOneAnimation className="border border-[#717171] p-4 mb-4 rounded-xl bg-[#223494] flex flex-col justify-between items-center aspect-square">
                 <Image
                   src="/images/home/icons/fixed-deposit.png"
                   width={116}
@@ -108,10 +111,10 @@ const ComprehensiveSolutions = () => {
                 <h4 className="text-white text-base xl:text-lg text-center">
                   Fixed Deposit
                 </h4>
-              </div>{" "}
+              </FadeUpOneByOneAnimation>{" "}
             </li>
             <li className="px-[10px] w-[20%] 2xl:w-[16%]">
-              <div className="border border-[#717171] p-4 mb-4 rounded-xl bg-[#223494] flex flex-col justify-between items-center aspect-square">
+              <FadeUpOneByOneAnimation className="border border-[#717171] p-4 mb-4 rounded-xl bg-[#223494] flex flex-col justify-between items-center aspect-square">
                 <Image
                   src="/images/home/icons/bonds.png"
                   width={121}
@@ -120,10 +123,10 @@ const ComprehensiveSolutions = () => {
                   className="object-contain h-full max-h-[95px] xl:max-h-[100px] 2xl:max-h-[110px]"
                 />
                 <h4 className="text-white text-base xl:text-lg text-center">Bonds</h4>
-              </div>{" "}
+              </FadeUpOneByOneAnimation>{" "}
             </li>
             <li className="px-[10px] w-[20%] 2xl:w-[16%]">
-              <div className="border border-[#717171] p-4 mb-4 rounded-xl bg-[#223494] flex flex-col justify-between items-center aspect-square">
+              <FadeUpOneByOneAnimation className="border border-[#717171] p-4 mb-4 rounded-xl bg-[#223494] flex flex-col justify-between items-center aspect-square">
                 <Image
                   src="/images/home/icons/gold.png"
                   width={133}
@@ -132,15 +135,17 @@ const ComprehensiveSolutions = () => {
                   className="object-contain h-full max-h-[95px] xl:max-h-[100px] 2xl:max-h-[110px]"
                 />
                 <h4 className="text-white text-base xl:text-lg text-center">Gold</h4>
-              </div>{" "}
+              </FadeUpOneByOneAnimation>{" "}
             </li>
           </ul>
           <h2 className="text-[28px] 2xl:text-[32px] font-light mb-4 text-[#fff] text-center">
-            Exclusive Benefits for you
+            <FadeUpOneByOneAnimation>
+              Exclusive Benefits for you
+            </FadeUpOneByOneAnimation>
           </h2>
           <ul className="flex justify-center flex-wrap mb-16 mx-[-10px]">
             <li className="px-[10px] w-[20%] 2xl:w-[16%]">
-              <div className="border border-[#717171] p-3 mb-4 w-full rounded-xl bg-[#223494] flex flex-col justify-between items-center aspect-square">
+              <FadeUpOneByOneAnimation className="border border-[#717171] p-3 mb-4 w-full rounded-xl bg-[#223494] flex flex-col justify-between items-center aspect-square">
                 <Image
                   src="/images/home/icons/exclusive-benefits/flexible-consultation.png"
                   width={132}
@@ -149,10 +154,10 @@ const ComprehensiveSolutions = () => {
                   className="object-contain h-full max-h-[95px] xl:max-h-[100px] 2xl:max-h-[110px]"
                 />
                 <h4 className="text-white text-base xl:text-lg text-center">Flexible Consultation</h4>
-              </div>{" "}
+              </FadeUpOneByOneAnimation>{" "}
             </li>
             <li className="px-[10px] w-[20%] 2xl:w-[16%]">
-              <div className="border border-[#717171] p-3 mb-4 w-full rounded-xl bg-[#223494] flex flex-col justify-between items-center aspect-square">
+              <FadeUpOneByOneAnimation className="border border-[#717171] p-3 mb-4 w-full rounded-xl bg-[#223494] flex flex-col justify-between items-center aspect-square">
                 <Image
                   src="/images/home/icons/exclusive-benefits/detail-support.png"
                   width={123}
@@ -161,10 +166,10 @@ const ComprehensiveSolutions = () => {
                   className="object-contain h-full max-h-[95px] xl:max-h-[100px] 2xl:max-h-[110px]"
                 />
                 <h4 className="text-white text-base xl:text-lg text-center">Detail Support</h4>
-              </div>{" "}
+              </FadeUpOneByOneAnimation>{" "}
             </li>
             <li className="px-[10px] w-[20%] 2xl:w-[16%]">
-              <div className="border border-[#717171] p-3 mb-4 w-full rounded-xl bg-[#223494] flex flex-col justify-between items-center aspect-square">
+              <FadeUpOneByOneAnimation className="border border-[#717171] p-3 mb-4 w-full rounded-xl bg-[#223494] flex flex-col justify-between items-center aspect-square">
                 <Image
                   src="/images/home/icons/exclusive-benefits/proven-track-record.png"
                   width={88}
@@ -173,10 +178,10 @@ const ComprehensiveSolutions = () => {
                   className="object-contain h-full max-h-[95px] xl:max-h-[100px] 2xl:max-h-[110px]"
                 />
                 <h4 className="text-white text-base xl:text-lg text-center">Proven Track Record</h4>
-              </div>{" "}
+              </FadeUpOneByOneAnimation>{" "}
             </li>
             <li className="px-[10px] w-[20%] 2xl:w-[16%]">
-              <div className="border border-[#717171] p-3 mb-4 w-full rounded-xl bg-[#223494] flex flex-col justify-between items-center aspect-square">
+              <FadeUpOneByOneAnimation className="border border-[#717171] p-3 mb-4 w-full rounded-xl bg-[#223494] flex flex-col justify-between items-center aspect-square">
                 <Image
                   src="/images/home/icons/exclusive-benefits/young-professional-resource.png"
                   width={89}
@@ -185,10 +190,10 @@ const ComprehensiveSolutions = () => {
                   className="object-contain h-full max-h-[95px] xl:max-h-[100px] 2xl:max-h-[110px]"
                 />
                 <h4 className="text-white text-base xl:text-lg text-center">Resource for young professionals</h4>
-              </div>{" "}
+              </FadeUpOneByOneAnimation>{" "}
             </li>
             <li className="px-[10px] w-[20%] 2xl:w-[16%]">
-              <div className="border border-[#717171] p-3 mb-4 w-full rounded-xl bg-[#223494] flex flex-col justify-between items-center aspect-square">
+              <FadeUpOneByOneAnimation className="border border-[#717171] p-3 mb-4 w-full rounded-xl bg-[#223494] flex flex-col justify-between items-center aspect-square">
                 <Image
                   src="/images/home/icons/exclusive-benefits/financial-strategies.png"
                   width={88}
@@ -199,7 +204,7 @@ const ComprehensiveSolutions = () => {
                 <h4 className="text-white text-base xl:text-lg text-center">
                   Tailored Financial Strategies
                 </h4>
-              </div>{" "}
+              </FadeUpOneByOneAnimation>{" "}
             </li>
           </ul>
         </div>

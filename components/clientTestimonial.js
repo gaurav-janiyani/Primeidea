@@ -1,4 +1,5 @@
 "use client";
+import FadeUpOneByOneAnimation from "@/animations/FadeUpOneByOneAnimation";
 import Image from "next/image";
 import { useEffect, useRef, useState, useCallback } from "react";
 import Slider from "react-slick";
@@ -103,7 +104,9 @@ const ClientTestimonial = () => {
       <div className="bg-[#F6FDFF] py-16 2xl:py-24">
         <div className="2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-4">
           <h2 className="text-xl font-normal tracking-tight text-[#04102A] sm:text-3xl mt-0 mb-10 text-center">
-            What our clients say
+            <FadeUpOneByOneAnimation>
+              What our clients say
+             </FadeUpOneByOneAnimation>
           </h2>
           <div className="bg-[#C6E8FF] flex rounded-lg">
             <div className="w-[78%] 2xl:w-[82%] border-r border-r-[#B2B2B2] py-12 px-10">
@@ -125,7 +128,7 @@ const ClientTestimonial = () => {
                       key={index}
                       // className={currentSlide === index ? "active" : null}
                     >
-                      <div
+                      <FadeUpOneByOneAnimation
                         className={`px-[30px] ${
                           activeSlides.includes(index) ? "border-r " : ""
                         } border-r-[#B2B2B2]`}
@@ -146,7 +149,7 @@ const ClientTestimonial = () => {
                             {item.subtitle}
                           </h4>
                         </div>
-                      </div>
+                      </FadeUpOneByOneAnimation>
                     </div>
                   );
                 })}
@@ -154,8 +157,8 @@ const ClientTestimonial = () => {
               {/* </div> */}
             </div>
             <div className="w-[22%] 2xl:w-[18%] p-10 text-center">
-              <div className="text-[22px] font-normal">Average Rating</div>
-              <span className="my-3 text-6xl font-semibold block">4.9</span>
+              <FadeUpOneByOneAnimation className="text-[22px] font-normal">Average Rating</FadeUpOneByOneAnimation>
+              <FadeUpOneByOneAnimation className="my-3 text-6xl font-semibold block">4.9</FadeUpOneByOneAnimation>
               <div className="flex flex-col justify-center items-center">
                 <Image
                   src="/images/icons/stars.png"
@@ -164,9 +167,9 @@ const ClientTestimonial = () => {
                   alt="Ratings"
                 />
               </div>
-              <span className="mt-2 max-w-[80%] mx-auto block">
+              <FadeUpOneByOneAnimation className="mt-2 max-w-[80%] mx-auto block">
                 (30+) Customer review
-              </span>
+              </FadeUpOneByOneAnimation>
               <span className="bg-[#B2B2B2] h-[1px] w-full block my-[30px] "></span>
 
               <div className="flex">

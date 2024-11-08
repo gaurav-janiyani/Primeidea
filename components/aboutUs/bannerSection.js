@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Header from "../header";
+import FadeUpOneByOneAnimation from "@/animations/FadeUpOneByOneAnimation";
+import FadeUpOneByOneLeftAnimation from "@/animations/FadeUpOneByOneLeftAnimation";
 
 const BannerSection = () => {
   return (
@@ -14,7 +16,7 @@ const BannerSection = () => {
             className="h-full w-full object-cover"
           />
           <div className="main-section mx-auto 2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] px-4 flex justify-between absolute w-full top-[30%] left-[50%] translate-x-[-50%]">
-            <div className="flex items-baseline lg:items-center flex-col  lg:flex-row">
+            <FadeUpOneByOneAnimation className="flex items-baseline lg:items-center flex-col  lg:flex-row">
               <Image
                 src="/images/icons/p-light.png"
                 width={165}
@@ -33,29 +35,29 @@ const BannerSection = () => {
                   reality, guiding you every step of the way.
                 </p>
               </div>
-            </div>
+            </FadeUpOneByOneAnimation>
             <div className="hidden md:flex flex-col items-center">
-                <h4 className="text-center text-white text-lg xl:text-xl">FOLLOW <br/> US</h4>
-                <span className="w-[1px] h-[20px] xl:h-[30px] my-2 bg-white inline-block"></span>
+                <h4 className="text-center text-white text-lg xl:text-xl"><FadeUpOneByOneAnimation>FOLLOW <br/> US</FadeUpOneByOneAnimation></h4>
+                <FadeUpOneByOneAnimation className="w-[1px] h-[20px] xl:h-[30px] my-2 bg-white inline-block"></FadeUpOneByOneAnimation>
                 <ul className="flex flex-col items-center">
                     <li className="m-2">
                         <a href="">
-                            <Image src="/images/icons/social-media/facebook.png" width={40} height={40} alt="Facebook" className="w-[35px] h-[35px] xl:w-[40px] xl:h-[40px]" />
+                            <FadeUpOneByOneLeftAnimation><Image src="/images/icons/social-media/facebook.png" width={40} height={40} alt="Facebook" className="w-[35px] h-[35px] xl:w-[40px] xl:h-[40px]" /></FadeUpOneByOneLeftAnimation>
                         </a>
                     </li>
                     <li className="m-2">
                         <a href="">
-                            <Image src="/images/icons/social-media/instagram.png" width={40} height={40} alt="Instagram" className="w-[35px] h-[35px] xl:w-[40px] xl:h-[40px]" />
+                            <FadeUpOneByOneLeftAnimation><Image src="/images/icons/social-media/instagram.png" width={40} height={40} alt="Instagram" className="w-[35px] h-[35px] xl:w-[40px] xl:h-[40px]" /></FadeUpOneByOneLeftAnimation>
                         </a>
                     </li>
                     <li className="m-2">
                         <a href="">
-                            <Image src="/images/icons/social-media/linkedin.png" width={40} height={40} alt="LinkedIn" className="w-[35px] h-[35px] xl:w-[40px] xl:h-[40px]" />
+                            <FadeUpOneByOneLeftAnimation><Image src="/images/icons/social-media/linkedin.png" width={40} height={40} alt="LinkedIn" className="w-[35px] h-[35px] xl:w-[40px] xl:h-[40px]" /></FadeUpOneByOneLeftAnimation>
                         </a>
                     </li>
                     <li className="m-2">
                         <a href="">
-                            <Image src="/images/icons/social-media/whatsapp.png" width={40} height={40} alt="WhatsApp" className="w-[35px] h-[35px] xl:w-[40px] xl:h-[40px]" />
+                            <FadeUpOneByOneLeftAnimation><Image src="/images/icons/social-media/whatsapp.png" width={40} height={40} alt="WhatsApp" className="w-[35px] h-[35px] xl:w-[40px] xl:h-[40px]" /></FadeUpOneByOneLeftAnimation>
                         </a>
                     </li>
                 </ul>

@@ -1,4 +1,7 @@
 import Image from "next/image";
+import FadeUpOneByOneAnimation from "@/animations/FadeUpOneByOneAnimation";
+import FadeUpOneByOneLeftAnimation from "@/animations/FadeUpOneByOneLeftAnimation";
+import FadeUpOneByOneRightAnimation from "@/animations/FadeUpOneByOneRightAnimation";
 
 const ReportSection = () => { 
     return (
@@ -10,32 +13,44 @@ const ReportSection = () => {
                 <div className="w-full flex justify-between">
                   <div className="w-[45%]">
                     <h2 className="font-normal text-white text-[42px] mb-[40px] leading-[120%]">
-                      Here&#39;s what your
-                      <span className="font-semibold block">
-                        personalized <br /> financial report
-                      </span>{" "}
-                      will look like
+                      <FadeUpOneByOneAnimation>
+                        Here&#39;s what your
+                        <span className="font-semibold block">
+                          personalized <br /> financial report
+                        </span>{" "}
+                        will look like
+                      </FadeUpOneByOneAnimation>
                     </h2>
                     <ul className="flex flex-col">
                       <li className="w-full text-white px-6 py-4 text-xl cursor-pointer font-extrabold hover:shadow-[inset_0px_0px_6.641px_0px_rgba(0,0,0,0.25)]">
-                        Goal Settings
+                        <FadeUpOneByOneRightAnimation>
+                          Goal Settings 
+                        </FadeUpOneByOneRightAnimation>                      
                       </li>
                       <li className="w-full text-white px-6 py-4 text-xl cursor-pointer font-medium hover:shadow-[inset_0px_0px_6.641px_0px_rgba(0,0,0,0.25)]">
-                        Financial Analysis
+                        <FadeUpOneByOneRightAnimation>
+                          Financial Analysis  
+                        </FadeUpOneByOneRightAnimation>                      
                       </li>
                       <li className="w-full text-white px-6 py-4 text-xl cursor-pointer font-medium hover:shadow-[inset_0px_0px_6.641px_0px_rgba(0,0,0,0.25)]">
-                        Retirement Income Needs
+                        <FadeUpOneByOneRightAnimation>
+                          Retirement Income Needs 
+                        </FadeUpOneByOneRightAnimation>                      
                       </li>
                       <li className="w-full text-white px-6 py-4 text-xl cursor-pointer font-medium hover:shadow-[inset_0px_0px_6.641px_0px_rgba(0,0,0,0.25)]">
-                        Risk Management
+                        <FadeUpOneByOneRightAnimation>
+                          Risk Management 
+                        </FadeUpOneByOneRightAnimation>                      
                       </li>
                       <li className="w-full text-white px-6 py-4 text-xl cursor-pointer font-medium hover:shadow-[inset_0px_0px_6.641px_0px_rgba(0,0,0,0.25)]">
-                        Review & Monitoring
+                        <FadeUpOneByOneRightAnimation>
+                          Review & Monitoring 
+                        </FadeUpOneByOneRightAnimation>                      
                       </li>
                     </ul>
                   </div>
                   <div className="w-[55%]">
-                    <div className="mt-[80px] mb-[-130px] ml-[-20px]">
+                    <FadeUpOneByOneAnimation className="mt-[80px] mb-[-130px] ml-[-20px]">
                       <Image
                         src="/images/financial-planning/financial-planning-report-tab.png"
                         alt="Financial Planning"
@@ -43,7 +58,7 @@ const ReportSection = () => {
                         height={771}
                         className="w-full"
                       />
-                    </div>
+                    </FadeUpOneByOneAnimation>
                   </div>
                 </div>
               </div>
@@ -56,7 +71,7 @@ const ReportSection = () => {
                   className="w-full flex items-end"
                 />
               </div> */}
-              <div className="w-[28%] flex flex-col items-center mb-16">
+              <FadeUpOneByOneLeftAnimation className="w-[28%] flex flex-col items-center mb-16">
                 <Image
                     src="/images/financial-planning/financial-advisor-people.png"
                     alt="Financial Planning & Investment Advisor"
@@ -75,7 +90,7 @@ const ReportSection = () => {
                     className="ml-2"
                     />
                 </a>
-            </div>
+            </FadeUpOneByOneLeftAnimation>
             </div>
           </div>
         </div>

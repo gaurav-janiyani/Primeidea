@@ -1,3 +1,4 @@
+import FadeUpOneByOneAnimation from "@/animations/FadeUpOneByOneAnimation";
 import Image from "next/image";
 
 const ProtectingFinanceFuture = () => { 
@@ -6,7 +7,7 @@ const ProtectingFinanceFuture = () => {
         <div className="bg-[#F6FDFF] py-16">
           <div className="2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-4">
             <div className="flex justify-between">
-              <div className="w-[46%]">
+              <FadeUpOneByOneAnimation className="w-[46%]">
                 <Image
                   src="/images/insurance/financial-future.png"
                   width={565}
@@ -14,8 +15,8 @@ const ProtectingFinanceFuture = () => {
                   alt="Financial Future"
                   className="w-full"
                 />
-              </div>
-              <div className="w-[50%]">
+              </FadeUpOneByOneAnimation>
+              <FadeUpOneByOneAnimation className="w-[50%]">
                 <h2 className="text-3xl font-semibold leading-[130%] mb-3">
                   Protecting Your Financial Future <br /> Beyond the Claim
                 </h2>
@@ -64,7 +65,7 @@ const ProtectingFinanceFuture = () => {
                     className="ml-2"
                   />
                 </a>
-              </div>
+              </FadeUpOneByOneAnimation>
             </div>
           </div>
         </div>
