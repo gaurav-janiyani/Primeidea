@@ -1,9 +1,11 @@
 "use client";
+import moment from "moment";
 import Image from "next/image";
 import React from "react";
 
-export default function BlogListing({ posts }) {
+export default function BlogListing({ posts, categoriesList }) {
   console.log(posts);
+  console.log(categoriesList);
 
   const categoryItems = [
     {
@@ -111,20 +113,21 @@ export default function BlogListing({ posts }) {
           <ul>
             <li className="border-b border-[#479AD2]">
               <a
-                href=""
+                href="/blogs"
                 className="text-[#222222] font-semibold text-xl inline-block w-full px-4 py-4"
               >
                 All Categories
               </a>
             </li>
-            {categoryItems.map((items, index) => {
+            {categoriesList.filter(item => item.count > 0).map((items, index) => {
+              
               return (
                 <li
                   key={index}
                   className="border-b border-[#479AD2] last:border-b-0"
                 >
                   <a
-                    href=""
+                    href={`/blogs/category/${items.slug}`}
                     className="text-[#222222] font-semibold text-xl inline-block w-full px-4 py-4"
                   >
                     {items.name}
@@ -140,9 +143,10 @@ export default function BlogListing({ posts }) {
             </li> */}
           </ul>
         </div>
-        <div className="w-[calc(100%-362px)] shadow-[0_0_7px_0_#00000040] rounded-2xl">
+        <div className="w-[calc(100%-362px)] h-full shadow-[0_0_7px_0_#00000040] rounded-2xl">
           <ul>
-            {insightsItems.map((item, index) => {
+            {posts.map((item, index) => {
+              console.log("items", item);
               return (
                 <li
                   className="border-b border-b-[#222222] pb-4 pt-4 px-8 last:border-b-0"
@@ -151,30 +155,30 @@ export default function BlogListing({ posts }) {
                   <div className="flex ">
                     <div className="w-[20%] max-w-[132px] mr-4">
                       <Image
-                        src={item.imageUrl}
+                        src={item.author.node.avatar.url}
                         width={132}
                         height={132}
                         alt={item.title}
                       />
                       <h3 className="flex flex-col justify-center items-center mt-3 leading-[100%]">
                         Writtern by{" "}
-                        <span className="text-xl font-bold">{item.author}</span>
+                        <span className="text-xl font-bold capitalize">{item.author.node.name}</span>
                       </h3>
                     </div>
                     <div className="w-[70%]">
                       <div className="top-section flex items-center ">
                         <div className="bg-[#BCE4FF] text-[#000] px-3 py-1 rounded-md font-normal">
-                          {item.category}
+                          {item.categories.nodes[0].name}
                         </div>{" "}
                         <span className="w-[16px] h-[2px] rounded-[5px] bg-[#222222] mx-4"></span>{" "}
-                        <div className="text-lg">{item.date}</div>
+                        <div className="text-lg">{moment(item.date).format('MMMM D, YYYY')}</div>
                       </div>
                       <div className="pt-3">
                         <h2 className="text-2xl font-semibold">{item.title}</h2>
-                        <p>{item.description}</p>
+                        <div dangerouslySetInnerHTML={{ __html: item.excerpt}}></div>
                       </div>
                     </div>
-                    <a href="" className="ml-auto inline-block">
+                    <a href={`/blogs/${item.slug}`} className="ml-auto inline-block">
                       <Image
                         src="/images/blogs/right-arrow.png"
                         width={36}

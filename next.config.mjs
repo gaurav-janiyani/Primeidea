@@ -7,7 +7,7 @@ const nextConfig = {
   },
   reactStrictMode: false,
   images: {
-    domains: ['primeidea.kashyappandya.com', 'https://primeidea.kashyappandya.com', 'https://primeidea.kashyappandya.com/wp-content/uploads'],
+    domains: ['primeidea.kashyappandya.com', 'https://primeidea.kashyappandya.com', 'https://primeidea.kashyappandya.com/wp-content/uploads', 'secure.gravatar.com'],
     remotePatterns: [
       {
         protocol: 'https',

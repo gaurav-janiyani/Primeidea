@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
-import { getPostList } from "@/lib/posts";
+import { getPostList, getCategoriesPostList } from "@/lib/posts";
 // import graphqlRequest from "@/lib/graphqlRequest";
 import BlogListing from "@/components/blogs/blogListing";
 
@@ -11,8 +11,14 @@ async function getData(params) {
     return { allPosts: allPosts };
 }
 
+async function getCategoryData(params) {
+    const allPosts = await getCategoriesPostList();
+    return { allPosts: allPosts };
+}
+
 export default async function BlogsList() {
     const posts = await getData();
+    const categoriesList = await getCategoriesPostList();
 
     return (
         <div>
@@ -22,6 +28,7 @@ export default async function BlogsList() {
             <div className="py-12">
                 <BlogListing 
                 posts={posts.allPosts.nodes}
+                categoriesList={categoriesList.categories.nodes}
                 />
             </div>
 

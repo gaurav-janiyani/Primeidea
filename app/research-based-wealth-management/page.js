@@ -41,6 +41,7 @@ const ResearchBasedWealthManagementPage = () => {
             
             <BannerSection 
              mainBannerImage={"/images/research-wealth-management/banner.png"}
+             bannerRightImg={"/images/research-wealth-management/banner-right.png"}
              mainTitle={"Maximize Your Wealth Potential with Research-Driven Strategies"}
              mainSubTitle={"Transform Idle Savings into Strategic Investments with Data-Backed Insights"}
              mainLinkTitle={"Start Your Wealth Transformation Today"}

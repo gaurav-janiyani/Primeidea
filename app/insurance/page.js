@@ -14,6 +14,7 @@ const InsurancePage = () => {
     <div className="bg-[#F6FDFF]">
       <BannerSection 
         mainBannerImage={"/images/insurance/banner.jpg"}
+        bannerRightImg={"/images/insurance/banner-right.png"}
         mainTitle={"Protect Your Family's Future with Confidence"}
         mainSubTitle={"Expert Assistance in Navigating Insurance Claims and Ensuring Financial Security"}
         mainLinkTitle={"Get Expert Guidance Now"}

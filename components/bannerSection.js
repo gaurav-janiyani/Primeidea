@@ -11,7 +11,7 @@ const BannerSection = (props) => {
   return (
     <section>
       <div className="banner-section relative h-[100vh]">
-        <div className="image-section h-[100vh] w-full">
+        <div className="image-section h-[calc(100vh-166px)] w-full">
           <Image
             src={props.mainBannerImage?props.mainBannerImage:''}
             width={1920}
@@ -51,18 +51,23 @@ const BannerSection = (props) => {
               </a>
               }
             </FadeUpAnimation>
-            {/* <div className="max-w-[740px] w-full">
-              <Image
-                src="/images/insurance/banner-right.png"
-                width={802}
-                height={642}
-                alt="Insurance"
-              />
-            </div> */}
+            {props.bannerRightImg &&
+              <div className="max-w-[740px] w-full">
+                <Image
+                  src={props.bannerRightImg}
+                  // src="/images/insurance/banner-right.png"
+                  width={802}
+                  height={642}
+                  alt={props.mainTitle}
+                  className="max-h-[555px] object-contain	"
+                />
+              </div>
+            }
           </div>
         </div>
         <Header />
-        <div className="bg-[#293C7D]/95 py-10 absolute bottom-0 w-full">
+        <div className="bg-[#293C7D] py-10 relative w-full">
+        {/* <div className="bg-[#293C7D]/95 py-10 absolute bottom-0 w-full"></div> */}
           <div className="mx-auto 2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] px-4">
             <div className="flex justify-between">
               <FadeUpAnimation className="w-[45%]">

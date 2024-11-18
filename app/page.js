@@ -4,6 +4,7 @@ import FaqsSection from "@/components/faqsSection";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import ComprehensiveSolutions from "@/components/home/comprehensiveSolutions";
+import WealthCreationPreservation from "@/components/home/wealthCreationPreservationSection";
 import InsightsSection from "@/components/insightsSection";
 import JoinCommunity from "@/components/joinCommunity";
 import Image from "next/image";
@@ -40,6 +41,7 @@ export default function Home() {
     <div className="bg-[#F6FDFF]">
       <BannerSection 
        mainBannerImage={"/images/home/banner.png"}
+       bannerRightImg={"/images/home/banner-right.png"}
        mainTitle={"Experience You Can Trust"}
        mainSubTitle={"Under Partha Shah's guidance, Prime Idea turns financial goals into reality."}
        mainLinkTitle={"Start your journey with us"}
@@ -52,6 +54,8 @@ export default function Home() {
        subSectionTitle3={"Client Satisfaction"}
        subSectionSubTitle3={"92+"}
       />
+
+      <WealthCreationPreservation />
 
       <ComprehensiveSolutions />
 

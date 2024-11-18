@@ -5,7 +5,7 @@ const BannerSection = () => {
   return (
     <section>
       <div className="banner-section relative h-[100vh]">
-        <div className="image-section h-[100vh] w-full">
+        <div className="image-section h-[calc(100vh-164px)] w-full">
           <Image
             src="/images/landing/banner.png"
             width={1920}
@@ -36,14 +36,14 @@ const BannerSection = () => {
                 />
               </a>
             </div>
-            {/* <div className="max-w-[740px] w-full">
+            <div className="max-w-[740px] w-full">
               <Image
-                src="/images/insurance/banner-right.png"
+                src="/images/landing/banner-right.png"
                 width={802}
                 height={642}
-                alt="Insurance"
+                alt="landing"
               />
-            </div> */}
+            </div>
           </div>
         </div>
         <Header />
