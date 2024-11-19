@@ -25,3 +25,111 @@ body {
     text-wrap: balance;
   }
 }
+
+
+/* Blog Detail Page CSS S */
+
+  .single-blog-content h1 {
+    font-size: 42px;
+    color: #171717;
+    margin-bottom: 18px;
+  }
+
+  .single-blog-content h2 {
+    font-size: 38px;
+    color: #171717;
+  }
+
+  .single-blog-content h3 {
+    font-size: 32px;
+    color: #171717;
+  }
+
+  .single-blog-content h4 {
+    font-size: 28px;
+    color: #171717;
+  }
+
+  .single-blog-content h5 {
+    font-size: 24px;
+    color: #171717;
+  }
+
+  .single-blog-content h6 {
+    font-size: 22px;
+    color: #171717;
+  }
+
+  .single-blog-content p {
+    font-size: 18px;
+    color: #171717;
+  }
+
+  .single-blog-content img {
+    border-radius: 10px;
+    margin: 20px 0;
+  }
+
+  .single-blog-content ul {
+    list-style: disc;
+    list-style-position: inside;
+    margin: 10px 0px 20px 0px;
+  }
+
+  .single-blog-content ol {
+    list-style: decimal;
+    list-style-position: inside;
+    margin: 10px 0px 20px 0px;
+  }
+
+  .single-blog-content ul li,
+  .single-blog-content ol li {
+    margin: 5px 0 10px 0;
+    font-size: 19px;
+    color: #171717;
+  }
+
+  @media (max-width: 1280px) {
+    .single-blog-content h1 {
+			font-size: 36px;
+			margin-bottom: 12px;
+		}
+		.single-blog-content h2 {
+			font-size: 32px;
+		}
+		.single-blog-content h3 {
+			font-size: 30px;
+		}
+		.single-blog-content h4 {
+			font-size: 26px;
+		}
+    .single-blog-content h6 {
+			font-size: 20px;
+		}
+  }
+
+  @media (max-width: 575px) {
+    .single-blog-content h1 {
+			font-size: 32px;
+		}
+		.single-blog-content h2 {
+			font-size: 28px;
+		}
+		.single-blog-content h3 {
+			font-size: 26px;
+		}
+		.single-blog-content h4 {
+			font-size: 24px;
+		}
+		.single-blog-content h5 {
+			font-size: 22px;
+		}
+		.single-blog-content h6 {
+			font-size: 20px;
+		}
+		.single-blog-content p {
+			font-size: 16px;
+		}
+  }
+
+/* Blog Detail Page CSS E */
