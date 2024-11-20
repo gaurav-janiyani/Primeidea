@@ -94,8 +94,8 @@ export default function BlogListing({ posts, categoriesList }) {
                     )
                 })}
             </div> */}
-      <div className="flex flex-wrap w-full h-full">
-        <div className="w-[345px] mr-4 shadow-[0_0_7px_0_#00000040] rounded-2xl h-full">
+      <div className="flex flex-wrap w-full h-full ">
+        <div className="w-[285px] xl:w-[345px] mr-4 shadow-[0_0_7px_0_#00000040] rounded-2xl h-full hidden lg:flex lg:flex-col">
           <div className="p-4">
             <Image
               src="/images/blogs/blog.png"
@@ -105,7 +105,7 @@ export default function BlogListing({ posts, categoriesList }) {
               className="max-w-[240px] mx-auto mb-4"
             />
             <h2 className="text-3xl font-semibold text-center mb-3">Blogs</h2>
-            <p className="text-xl text-center mb-4">
+            <p className="text-lg xl:text-xl text-center mb-4">
               Personal finance resources for informed financial decisions and a
               happier wallet.
             </p>
@@ -114,13 +114,12 @@ export default function BlogListing({ posts, categoriesList }) {
             <li className="border-b border-[#479AD2]">
               <a
                 href="/blogs"
-                className="text-[#222222] font-semibold text-xl inline-block w-full px-4 py-4"
+                className="text-[#222222] font-semibold text-lg xl:text-xl inline-block w-full px-4 py-3 xl:py-4"
               >
                 All Categories
               </a>
             </li>
             {categoriesList.filter(item => item.count > 0).map((items, index) => {
-              
               return (
                 <li
                   key={index}
@@ -128,7 +127,7 @@ export default function BlogListing({ posts, categoriesList }) {
                 >
                   <a
                     href={`/blogs/category/${items.slug}`}
-                    className="text-[#222222] font-semibold text-xl inline-block w-full px-4 py-4"
+                    className="text-[#222222] font-semibold text-lg xl:text-xl inline-block w-full px-4 py-3 xl:py-4"
                   >
                     {items.name}
                   </a>
@@ -143,47 +142,48 @@ export default function BlogListing({ posts, categoriesList }) {
             </li> */}
           </ul>
         </div>
-        <div className="w-[calc(100%-362px)] h-full shadow-[0_0_7px_0_#00000040] rounded-2xl">
+        <div className="w-full lg:w-[calc(100%-305px)] xl:w-[calc(100%-362px)] h-full lg:shadow-[0_0_7px_0_#00000040] rounded-2xl ">
           <ul>
             {posts.map((item, index) => {
               console.log("items", item);
               return (
                 <li
-                  className="border-b border-b-[#222222] pb-4 pt-4 px-8 last:border-b-0"
+                  className="border-b border-b-[#222222] py-4 px-2 sm:px-4 lg:px-8 last:border-b-0"
                   key={index}
                 >
-                  <div className="flex ">
-                    <div className="w-[20%] max-w-[132px] mr-4">
+                  <div className="flex flex-wrap lg:flex-nowrap">
+                    <div className="w-[85px] md:w-[132px] mr-[10px] md:mr-4">
                       <Image
                         src={item.author.node.avatar.url}
                         width={132}
                         height={132}
                         alt={item.title}
                       />
-                      <h3 className="flex flex-col justify-center items-center mt-3 leading-[100%]">
+                      <h3 className="flex flex-col justify-center items-center mt-3 leading-[100%] text-sm md:text-base">
                         Writtern by{" "}
-                        <span className="text-xl font-bold capitalize">{item.author.node.name}</span>
+                        <span className="text-base md:text-xl font-bold capitalize">{item.author.node.name}</span>
                       </h3>
                     </div>
-                    <div className="w-[70%]">
+                    <div className="w-[calc(100%-95px)] md:w-[calc(100%-148px)] lg:w-[calc(100%-168px)]">
                       <div className="top-section flex items-center ">
-                        <div className="bg-[#BCE4FF] text-[#000] px-3 py-1 rounded-md font-normal">
+                        <div className="bg-[#BCE4FF] text-[#000] px-3 py-1 rounded-md font-normal text-sm md:text-base">
                           {item.categories.nodes[0].name}
                         </div>{" "}
-                        <span className="w-[16px] h-[2px] rounded-[5px] bg-[#222222] mx-4"></span>{" "}
-                        <div className="text-lg">{moment(item.date).format('MMMM D, YYYY')}</div>
+                        <span className="w-[16px] h-[2px] rounded-[5px] bg-[#222222] mx-2 md:mx-4"></span>{" "}
+                        <div className="text-sm md:text-lg">{moment(item.date).format('MMMM D, YYYY')}</div>
                       </div>
-                      <div className="pt-3">
-                        <h2 className="text-2xl font-semibold">{item.title}</h2>
-                        <div dangerouslySetInnerHTML={{ __html: item.excerpt}}></div>
+                      <div className="pt-2 md:pt-3">
+                        <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-1 md:mb-0">{item.title}</h2>
+                        <div dangerouslySetInnerHTML={{ __html: item.excerpt}} className="line-clamp-3 text-sm sm:text-base mb-2 md:mb-0"></div>
                       </div>
                     </div>
-                    <a href={`/blogs/${item.slug}`} className="ml-auto inline-block">
+                    <a href={`/blogs/${item.slug}`} className="ml-auto inline-flex justify-end items-baseline w-full lg:w-[36px]">
                       <Image
                         src="/images/blogs/right-arrow.png"
                         width={36}
                         height={36}
                         alt="Arrow"
+                        className="w-[32px] sm:w-[36px] h-[32px] sm:h-[36px]"
                       />
                     </a>
                   </div>
