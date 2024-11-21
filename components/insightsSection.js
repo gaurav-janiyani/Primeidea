@@ -40,16 +40,16 @@ const InsightsSection = (props) => {
     <section className={`${props.bgColor ? props.bgColor : ""}`}>
       <div className="py-6 sm:py-12 2xl:py-16">
         <div className="border-b border-b-[#222222]">
-          <div className="2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-4 ">
-            <div className="flex">
-              <div className="w-[38%] pt-4 pr-4">
-                <h2 className="text-3xl font-medium mb-5">
+          <div className="2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto md:px-4 ">
+            <div className="flex flex-col md:flex-row">
+              <div className="w-full md:w-[38%] pt-4 px-4 mb-4 md:mb-0">
+                <h2 className="text-2xl md:text-3xl font-medium mb-3 md:mb-5">
                   <FadeUpOneByOneAnimation>
                     Insights & Innovations
                   </FadeUpOneByOneAnimation>
                 </h2>
                 <FadeUpOneByOneAnimation>
-                <p className="text-lg mb-6">
+                <p className="text-base md:text-lg mb-6">
                     Stay ahead with our latest articles on financial trends,
                     investment strategies, and wealth management tips. Discover
                     insights and strategies to keep your financial game strong and
@@ -57,7 +57,7 @@ const InsightsSection = (props) => {
                 </p>
                 <a
                   href=""
-                  className="bg-[#293C7D] text-lg font-bold rounded-md text-white px-6 py-3 inline-flex items-center"
+                  className="bg-[#293C7D] text-base md:text-lg font-bold rounded-md text-white px-6 py-3 inline-flex items-center"
                   >
                   Read All
                   <Image
@@ -78,11 +78,11 @@ const InsightsSection = (props) => {
                   className="mx-auto mt-6"
                 />
               </div>
-              <div className="w-[62%] border-l border-l-[#222222]">
+              <div className="w-full md:w-[62%] md:border-l md:border-l-[#222222]">
                 <ul className="">
                   {insightsItems.map((item, index) => {
                     return (
-                      <li className="border-b border-b-[#222222] pb-4 pt-4 pl-2 sm:pl-4 pl-8 last:border-b-0" key={index}>
+                      <li className="border-b border-b-[#222222] pb-4 pt-4 px-4 md:pr-0 md:pl-4 last:border-b-0" key={index}>
                         <FadeUpOneByOneAnimation className="flex flex-wrap lg:flex-nowrap">
                           <div className="w-[85px] md:w-[132px] mr-[10px] md:mr-4">
                             <Image
@@ -107,7 +107,7 @@ const InsightsSection = (props) => {
                               <div className="text-sm md:text-lg">{item.date}</div>
                             </div>
                             <div className="pt-2 md:pt-3">
-                              <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-1 md:mb-0">
+                              <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-1 md:mb-0 leading-[130%]">
                                 {item.title}
                               </h2>
                               <p className="line-clamp-3 text-sm sm:text-base mb-2 md:mb-0">

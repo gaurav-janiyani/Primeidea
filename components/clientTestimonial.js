@@ -44,7 +44,7 @@ const ClientTestimonial = () => {
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 575,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -103,13 +103,13 @@ const ClientTestimonial = () => {
     <section>
       <div className="bg-[#F6FDFF] py-16 2xl:py-24">
         <div className="2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-4">
-          <h2 className="text-xl font-normal tracking-tight text-[#04102A] sm:text-3xl mt-0 mb-10 text-center">
+          <h2 className="text-2xl font-medium tracking-tight text-[#04102A] sm:text-3xl mt-0 mb-10 text-center">
             <FadeUpOneByOneAnimation>
               What our clients say
              </FadeUpOneByOneAnimation>
           </h2>
           <div className="bg-[#C6E8FF] flex rounded-lg">
-            <div className="w-[78%] 2xl:w-[82%] border-r border-r-[#B2B2B2] py-12 px-10">
+            <div className="w-full md:w-[78%] 2xl:w-[82%] md:border-r border-r-[#B2B2B2] px-6 md:py-6 py-10 lg:py-12 lg:px-10">
               {/* <div className="flex justify-between mx-[-3%]"> */}
               <Slider
                 {...settings}
@@ -129,8 +129,8 @@ const ClientTestimonial = () => {
                       // className={currentSlide === index ? "active" : null}
                     >
                       <FadeUpOneByOneAnimation
-                        className={`px-[30px] ${
-                          activeSlides.includes(index) ? "border-r " : ""
+                        className={`px-[10px] sm:px-[30px] ${
+                          activeSlides.includes(index) ? "sm:border-r " : ""
                         } border-r-[#B2B2B2]`}
                       >
                         <Image
@@ -156,7 +156,7 @@ const ClientTestimonial = () => {
               </Slider>
               {/* </div> */}
             </div>
-            <div className="w-[22%] 2xl:w-[18%] p-10 text-center">
+            <div className="hidden md:inline-block w-[22%] 2xl:w-[18%] p-10 text-center">
               <FadeUpOneByOneAnimation className="text-[22px] font-normal">Average Rating</FadeUpOneByOneAnimation>
               <FadeUpOneByOneAnimation className="my-3 text-6xl font-semibold block">4.9</FadeUpOneByOneAnimation>
               <div className="flex flex-col justify-center items-center">
