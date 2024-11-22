@@ -7,11 +7,11 @@ const MeetOurTeam = () => {
             <div className="py-8">
                 <div className="2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-4">
                     <FadeUpOneByOneAnimation className="flex justify-between flex-col md:flex-row mb-4">
-                        <h2 className="text-2xl lg:text-3xl text-center md:text-left mb-2 md:mb-0">
+                        <h2 className="text-2xl lg:text-3xl text-center md:text-left mb-2 md:mb-0 font-medium">
                             Meet the <br/>
                             counsultation team 
                         </h2>
-                        <p className="text-base md:text-lg lg:text-xl text-center md:max-w-[420px] lg:max-w-[600px] xl:max-w-[780px]">
+                        <p className="text-base md:text-lg lg:text-xl text-center md:text-left md:max-w-[420px] lg:max-w-[600px] xl:max-w-[780px]">
                             Explore our diverse case studies showcasing how our financial consultation services have enabled businesses to overcome challenges and achieve their full potential.
                         </p>
                         {/* <a href="" className="font-semibold underline-offset-8 px-2 text-[#293C7D]s">

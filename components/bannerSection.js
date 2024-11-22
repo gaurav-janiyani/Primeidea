@@ -10,7 +10,7 @@ const BannerSection = (props) => {
   console.log(props);
   return (
     <section>
-      <div className="banner-section relative h-[100vh]">
+      <div className="banner-section relative h-full md:h-[100vh]">
         <div className="image-section h-[calc(100vh-166px)] w-full">
           <Image
             src={props.mainBannerImage?props.mainBannerImage:''}
@@ -19,11 +19,11 @@ const BannerSection = (props) => {
             alt="Banner"
             className="h-full w-full object-cover"
           />
-          <div className="main-section mx-auto 2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] px-4 flex justify-between absolute w-full top-[20%] left-[50%] translate-x-[-50%]">
+          <div className="main-section mx-auto 2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] px-4 pt-[160px] sm:pt-0 flex justify-between flex-col sm:flex-row absolute w-full bottom-[186px] sm:bottom-unset sm:top-[20%] left-[50%] translate-x-[-50%]">
 
-            <FadeUpAnimation className="lg:max-w-[400px] xl:max-w-[490px] mt-[10%]">
+            <FadeUpAnimation className="lg:max-w-[400px] xl:max-w-[490px] mb-[10%] md:mb-0 mt-0 sm:mt-[10%]">
               {props.mainTitle &&
-              <h1 className="md:text-3xl xl:text-4xl text-[#2D2D2D] font-bold mb-3">
+              <h1 className="text-2xl md:text-3xl xl:text-4xl text-[#2D2D2D] font-bold mb-3">
                 {/* Protect Your Family&apos;s Future with Confidence */}
                 {props.mainTitle}
               </h1>
@@ -59,25 +59,25 @@ const BannerSection = (props) => {
                   width={802}
                   height={642}
                   alt={props.mainTitle}
-                  className="max-h-[555px] object-contain	"
+                  className="max-h-[300px] sm:max-h-[555px] object-contain m-auto sm:m-0"
                 />
               </div>
             }
           </div>
         </div>
         <Header />
-        <div className="bg-[#293C7D] py-10 relative w-full">
+        <div className="bg-[#293C7D] py-10 relative w-full overflow-y-auto">
         {/* <div className="bg-[#293C7D]/95 py-10 absolute bottom-0 w-full"></div> */}
-          <div className="mx-auto 2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] px-4">
+          <div className="mx-auto 2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] px-4 min-w-[590px]">
             <div className="flex justify-between">
-              <FadeUpAnimation className="w-[45%]">
+              <FadeUpAnimation className="w-[45%] min-w-[230px]">
                 {props.subSectionContent &&
-                <p className="text-white text-lg xl:text-xl max-w-[500px]">                  
+                <p className="text-white text-base xl:text-xl max-w-[400px] xl:max-w-[500px]">                  
                   {props.subSectionContent?props.subSectionContent:''}
                 </p>
                 }
               </FadeUpAnimation>
-              <div className="w-[55%] flex justify-between">
+              <div className="w-[55%] flex justify-between min-w-[400px]">
                 <FadeUpAnimationDelay className="flex flex-col	items-end px-2">
                   {props.subSectionTitle1 &&
                   <span className="text-white text-18px xl:text-[20px] font-bold text-right">
