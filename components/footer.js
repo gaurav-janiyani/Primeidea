@@ -23,9 +23,9 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="bg-[#479AD2] relative">
+      <footer className="bg-[#479AD2] relative overflow-hidden">
         <div className="">
-          <span className="absolute bottom-0 right-40 z-[999]">
+          <span className="absolute bottom-0 right-[-40px] md:right-40 sm:z-[999]">
             <Image src="/images/footer/shape1.png" width="300" height="190" alt="Shape" />
           </span>
           {/* <span className="absolute right-0 top-10 z-[999]">
@@ -35,8 +35,8 @@ const Footer = () => {
         <div className="relative z-[9999] border border-solid border-[#B4B4B4]">
           <div className="lg:max-w-[1024px] xl:max-w-[1170px] 2xl:max-w-[1340px] mx-auto px-4">
             <div className=" flex flex-wrap ">
-              <div className="pb-20 pt-12 w-full px-4  lg:max-w-[320px] xl:max-w-[370px] 2xl:max-w-[400px] relative">
-                  <button className="absolute top-[50%] right-[-3.2rem] text-white border border-solid border-white flex py-[1px] px-[13px] bg-[#3E8ABD] rotate-[270deg] rounded-2xl" id="back_top">
+              <div className="mb:pb-10 lg:pb-20 pt-12 w-full sm:px-4 md:max-w-[260px] lg:max-w-[320px] xl:max-w-[370px] 2xl:max-w-[400px] relative">
+                  <button className="absolute top-[50%] right-[-3.2rem] text-white border border-solid border-white hidden md:flex py-[1px] px-[13px] bg-[#3E8ABD] rotate-[270deg] rounded-2xl" id="back_top">
                     GO UP
                     <Image
                       width="24"
@@ -46,10 +46,10 @@ const Footer = () => {
                       className="ml-2"
                     />
                   </button>
-                <div className="absolute top-0 right-0 bg-[#3E8ABD] w-[400%] h-[100%] border-r border-solid border-[#B4B4B4] z-[-1]">
+                <div className="absolute top-0 right-0 bg-[#3E8ABD] w-[400%] h-[100%] border-r border-solid border-[#B4B4B4] z-[-1] hidden md:inline-block">
                 </div>
-                <FadeUpOneByOneAnimation className="mb-10 w-full">
-                  <a href="/" className="mb-6 inline-block lg:max-w-[260px] xl:max-w-[280px] 2xl:max-w-[320px]">
+                <FadeUpOneByOneAnimation className="mb-8 md:mb-10 w-full">
+                  <a href="/" className="md:mb-6 inline-block lg:max-w-[260px] xl:max-w-[280px] 2xl:max-w-[320px]">
                     <Image
                       src="/images/logo-white.png"
                       width={320}
@@ -60,7 +60,7 @@ const Footer = () => {
                   </a>
                 </FadeUpOneByOneAnimation>
               </div>
-              <FadeUpOneByOneAnimation className=" pb-20 pt-12 w-full pl-14 pr-10 sm:w-1/2 lg:max-w-[42%] xl:max-w-[40%] 2xl:max-w-[33.33%]">
+              <FadeUpOneByOneAnimation className="pb-10 lg:pb-20 md:pt-12 w-full sm:px-8 lg:pl-14 lg:pr-10 sm:w-1/2 md:max-w-[42%] xl:max-w-[40%] 2xl:max-w-[33.33%]">
                 <LinkGroup header="Wealth Creation">
                   {/* <NavLink link="/#" label="Financial Investment Advisory" /> */}
                   <NavLink link="/financial-planning-and-investment-advisory" label="Financial Planning & Investment Advisory" />
@@ -73,8 +73,8 @@ const Footer = () => {
                 </LinkGroup>
               </FadeUpOneByOneAnimation>
 
-              <FadeUpOneByOneAnimation className=" pb-20 pt-12 w-full px-4 sm:w-1/2 lg:max-w-[20%] xl:max-w-[25%] 2xl:max-w-[25%]">
-                <div className="mb-10 w-full">
+              <FadeUpOneByOneAnimation className="pb-10 lg:pb-20 md:pt-12 w-full sm:px-4 sm:w-1/2 md:max-w-[20%] xl:max-w-[25%] 2xl:max-w-[25%]">
+                <div className="sm:mb-10 w-full">
                   <h4 className="mb-3 text-lg font-semibold text-white">
                     <a href="/insurance">Insurance</a>
                   </h4>
@@ -90,10 +90,10 @@ const Footer = () => {
           </div>
         </div>
         <div className="">
-          <div className="lg:max-w-[1024px] xl:max-w-[1170px] 2xl:max-w-[1340px] mx-auto px-4">
+          <div className="lg:max-w-[1024px] xl:max-w-[1170px] 2xl:max-w-[1340px] mx-auto sm:px-4">
             <div className="">
-              <ul className="flex py-6 w-full lg:max-w-[320px] xl:max-w-[370px] 2xl:max-w-[400px] relative">
-                <li className="absolute top-0 right-0 bg-[#3E8ABD] w-[400%] h-[100%] border-r border-solid border-[#B4B4B4] z-0"></li>
+              <ul className="flex px-4 md:px-0 py-6 w-full md:max-w-[260px] lg:max-w-[320px] xl:max-w-[370px] 2xl:max-w-[400px] relative">
+                <li className="absolute top-0 right-0 bg-[#3E8ABD] w-[400%] h-[100%] sm:border-r border-solid border-[#B4B4B4] z-0"></li>
                 <li className="mr-8 relative z-1">
                   <a href="">
                     <Image
@@ -159,7 +159,7 @@ const LinkGroup = ({ children, header }) => {
 const NavLink = ({ link, label }) => {
   return (
     <li>
-      <a href={link} className="inline-block text-lg leading-tight	text-white">
+      <a href={link} className="inline-block text-base lg:text-lg leading-tight	text-white">
         {label}
       </a>
     </li>
