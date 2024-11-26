@@ -17,14 +17,14 @@ const KeyComponentsOfFinancialPlanning = () => {
     <section>
       <div className="py-16 bg-[#293C7D] bg-[url('/images/financial-planning/key-component-bg.png')] bg-no-repeat bg-cover bg-center">
         <div className="2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-4">
-          <h2 className="text-3xl text-white mb-8 text-center font-medium">
+          <h2 className="text-2xl xl:text-3xl text-white mb-8 text-center font-medium">
             <FadeUpOneByOneAnimation>
               Key Components for Financial Planning
             </FadeUpOneByOneAnimation>
           </h2>
           <ul className="flex justify-between mb-5">
             <li
-              className={`w-1/2 h-[54px] text-2xl px-4 py-2 text-center text-white border-b cursor-pointer hover:font-bold ${
+              className={`w-1/2 h-[48px] text-xl xl:text-2xl px-4 py-2 text-center text-white border-b cursor-pointer hover:font-bold ${
                 activeTab === 0 ? "font-bold border-b-[#fff]" : "border-b-transparent"
               }`}
               onClick={() => handleTabClick(0)}
@@ -34,7 +34,7 @@ const KeyComponentsOfFinancialPlanning = () => {
             </FadeUpOneByOneAnimation>
             </li>
             <li
-              className={`w-1/2 h-[54px] text-2xl px-4 py-2 text-center text-white border-b cursor-pointer hover:font-bold ${
+              className={`w-1/2 h-[48px] text-xl xl:text-2xl px-4 py-2 text-center text-white border-b cursor-pointer hover:font-bold ${
                 activeTab === 1 ? "font-bold border-b-[#fff]" : "border-b-transparent"
               }`}
               onClick={() => handleTabClick(1)}
@@ -44,7 +44,7 @@ const KeyComponentsOfFinancialPlanning = () => {
             </FadeUpOneByOneAnimation>
             </li>
             <li
-              className={`w-1/2 h-[54px] text-2xl px-4 py-2 text-center text-white border-b cursor-pointer hover:font-bold ${
+              className={`w-1/2 h-[48px] text-xl xl:text-2xl px-4 py-2 text-center text-white border-b cursor-pointer hover:font-bold ${
                 activeTab === 2 ? "font-bold border-b-[#fff]" : "border-b-transparent"
               }`}
               onClick={() => handleTabClick(2)}
@@ -54,7 +54,7 @@ const KeyComponentsOfFinancialPlanning = () => {
             </FadeUpOneByOneAnimation>
             </li>
             <li
-              className={`w-1/2 h-[54px] text-2xl px-4 py-2 text-center text-white border-b cursor-pointer hover:font-bold ${
+              className={`w-1/2 h-[48px] text-xl xl:text-2xl px-4 py-2 text-center text-white border-b cursor-pointer hover:font-bold ${
                 activeTab === 3 ? "font-bold border-b-[#fff]" : "border-b-transparent"
               }`}
               onClick={() => handleTabClick(3)}

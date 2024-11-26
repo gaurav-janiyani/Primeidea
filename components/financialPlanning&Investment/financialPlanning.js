@@ -10,8 +10,8 @@ const FinancialPlanning = () => {
             Why have a financial plan?
           </FadeUpOneByOneAnimation>
         </h2>
-        <div className="flex justify-between max-w-[1020px] mx-auto mb-12">
-          <FadeUpOneByOneAnimation className="w-[45%] px-2 flex justify-center">
+        <div className="flex justify-between flex-col md:flex-row items-center md:items-baseline max-w-[1020px] mx-auto mb-6 md:mb-12">
+          <FadeUpOneByOneAnimation className="w-full max-w-[350px] md:max-w-[45%] my-4 md:my-0 px-2 flex justify-center">
             <Image
               src="/images/financial-planning/without-plan.png"
               width="397"
@@ -20,7 +20,7 @@ const FinancialPlanning = () => {
               className="w-full"
             />
           </FadeUpOneByOneAnimation>
-          <FadeUpOneByOneAnimation className="w-[45%] px-2 flex justify-center">
+          <FadeUpOneByOneAnimation className="w-full max-w-[350px] md:max-w-[45%] my-4 md:my-0 px-2 flex justify-center">
             <Image
               src="/images/financial-planning/with-plan.png"
               width="397"
@@ -30,16 +30,16 @@ const FinancialPlanning = () => {
             />
           </FadeUpOneByOneAnimation>
         </div>
-        <div className="flex justify-between max-w-[1020px] mx-auto">
-            <FadeUpOneByOneAnimation className="w-[70%]">
-                <p className="text-[19px] font-normal mb-3">
+        <div className="flex justify-between flex-col-reverse md:flex-row max-w-[1020px] mx-auto">
+            <FadeUpOneByOneAnimation className="w-full md:w-[70%]">
+                <p className="text-[17px] md:text-[19px] font-normal mb-3">
                     At Prime Idea, we create personalized investment strategies to help you achieve your financial goals, whether it&apos;s retirement, education savings, or wealth building.
                 </p>
-                <p className="text-[19px] font-normal mb-3">
+                <p className="text-[17px] md:text-[19px] font-normal mb-3">
                     Our expert advisors offer comprehensive guidance, ensuring your investments align with your aspirations. Trust Prime Idea to navigate the complexities of India&apos;s investment landscape with transparency and long-term growth.
                 </p>
             </FadeUpOneByOneAnimation>
-            <FadeUpOneByOneAnimation className="w-[30%] flex justify-end items-baseline">
+            <FadeUpOneByOneAnimation className="w-full max-w-[110px] md:max-w-[30%] mb-4 md:mb-0 flex justify-end items-baseline">
             <Image
                 src="/images/icons/p.png"
                 width={110}

@@ -26,6 +26,8 @@ const PrimeIdeaHelps = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          dots: true,
+          autoPlay: true,
         },
       },
     ],
@@ -35,15 +37,15 @@ const PrimeIdeaHelps = () => {
     <section>
       <div className="py-16 bg-[#232D63]">
         <div className="2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-4">
-          <div className="flex justify-between mb-10">
-            <div className="w-[50%]">
-              <h2 className="text-[32px] font-light mb-1 text-[#ffffff]">
+          <div className="flex justify-between flex-col-reverse md:flex-row mb-10">
+            <div className=" md:w-[50%]">
+              <h2 className="text-[24px] md:text-[28px] lg:text-[32px] leading-[130%] font-light mb-3 lg:mb-1 text-[#ffffff]">
                 <FadeUpOneByOneAnimation>
                   Insurance Solutions for Financial Security
                 </FadeUpOneByOneAnimation>
               </h2>
               <FadeUpOneByOneAnimation>
-                <p className="text-lg font-light text-[#ffffff]">
+                <p className="text-base md:text-lg font-light text-[#ffffff]">
                   At Prime Idea, we understand that insurance plays a crucial role
                   in a comprehensive wealth management plan. Our expert insurance
                   solutions are designed to safeguard your wealth, protect your
@@ -52,7 +54,7 @@ const PrimeIdeaHelps = () => {
                 </p>
               </FadeUpOneByOneAnimation>
             </div>
-            <div className="w-[50%] flex justify-end items-baseline">
+            <div className="md:w-[50%] mb-4 md:mb-0 md:flex md:justify-end md:items-baseline">
               <Image
                 src="/images/icons/p-light.png"
                 width={110}

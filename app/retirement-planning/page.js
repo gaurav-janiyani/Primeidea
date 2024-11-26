@@ -58,7 +58,7 @@ const RetirementPlanning = () => {
 
             <StepperSection steps={steps}/>
 
-            <div className="mb-[140px]">
+            <div className="md:mb-[140px]">
                 <ReportSection />
             </div>
 

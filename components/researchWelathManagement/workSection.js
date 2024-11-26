@@ -6,23 +6,23 @@ const WorkSection = () => {
         <section>
         <div className="bg-[#F6FDFF] pt-16">
           <div className="2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-4">
-            <div className="flex justify-between">
-              <div className="w-[50%]">
-                <h2 className="text-[32px] font-medium mb-6 text-[#04102A]">
+            <div className="flex justify-between flex-col-reverse md:flex-row">
+              <div className="w-full md:w-[50%]">
+                <h2 className="text-[24px] md:text-[28px] lg:text-[32px] leading-[130%] font-medium mb-4 md:mb-6 text-[#04102A]">
                     <FadeUpOneByOneAnimation>
                       Why Idle Savings Aren&apos;t Working for You ?
                     </FadeUpOneByOneAnimation>
                 </h2>
                 <FadeUpOneByOneAnimation>
-                  <p className="text-lg font-light mb-2">
+                  <p className="text-base md:text-lg font-light mb-2">
                       Many people have money sitting in savings accounts or low-yield investments, believing they are being safe and secure. However, these idle savings are often not working to their full potential.                
                   </p>
-                  <p className="text-lg font-light mb-2">
+                  <p className="text-base md:text-lg font-light mb-2">
                       By keeping your money stagnant, you’re missing out on opportunities for significant growth that active investments can provide.
                   </p>
                 </FadeUpOneByOneAnimation>
               </div>
-              <FadeUpOneByOneAnimation className="w-[50%] flex justify-end items-baseline">
+              <FadeUpOneByOneAnimation className="w-full md:w-[50%] max-w-[300px] mb-4 md:mb-0 flex justify-end items-baseline">
                 <Image
                   src="/images/research-wealth-management/work.png"
                   width={425}
@@ -45,8 +45,8 @@ const WorkSection = () => {
                 essential
               </p>
             </div> */}
-            <ul className="flex justify-between mx-[-10px]">
-              <li className="px-[10px] w-[33.33%]">
+            <ul className="flex justify-center md:justify-between flex-wrap md:flex-nowrap mx-[-10px]">
+              <li className="px-[10px] mb-4 w-full max-w-[380px] sm:max-w-full sm:w-1/2 md:w-[33.33%]">
                 <div className="shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg h-full">
                   <Image
                     src="/images/research-wealth-management/oppotunity.png"
@@ -70,7 +70,7 @@ const WorkSection = () => {
                   </FadeUpOneByOneAnimation>
                 </div>
               </li>
-              <li className="px-[10px] w-[33.33%]">
+              <li className="px-[10px] mb-4 w-full max-w-[380px] sm:max-w-full sm:w-1/2 md:w-[33.33%]">
                 <div className="shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg h-full">
                   <Image
                     src="/images/research-wealth-management/inflation.png"
@@ -93,7 +93,7 @@ const WorkSection = () => {
                   </FadeUpOneByOneAnimation>
                 </div>
               </li>
-              <li className="px-[10px] w-[33.33%]">
+              <li className="px-[10px] mb-4 w-full max-w-[380px] sm:max-w-full sm:w-1/2 md:w-[33.33%]">
                 <div className="shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg h-full">
                   <Image
                     src="/images/research-wealth-management/potential.png"
