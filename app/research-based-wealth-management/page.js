@@ -7,9 +7,64 @@ import PowerOfStrategy from "@/components/researchWelathManagement/powerOfStrate
 import PrimeIdeaHelps from "@/components/researchWelathManagement/primeideaHelps";
 import WorkSection from "@/components/researchWelathManagement/workSection";
 import StepperSection from "@/components/steppers";
+import graphqlRequest from "@/lib/graphqlRequest";
 
-const ResearchBasedWealthManagementPage = () => { 
+async function getData(categorySlug) {
+  const query = {
+      query: `query getPostListByCategory($categorySlug: String!) {
+          posts(where: {categoryName: $categorySlug, orderby: {field: DATE, order: DESC}}) {
+              nodes {
+                  date
+                  slug
+                  title
+                  excerpt(format: RENDERED)
+                  featuredImage {
+                      node {
+                          uri
+                          sourceUrl
+                          mediaDetails {
+                              file
+                              sizes {
+                                  sourceUrl
+                                  width
+                                  height
+                              }
+                          }
+                      }
+                  }
+                  categories {
+                      nodes {
+                          name
+                          slug
+                      }
+                  }
+                  author {
+                      node {
+                          avatar {
+                              url
+                          }
+                          name
+                      }
+                  }
+              }
+              pageInfo {
+                  endCursor
+                  hasNextPage
+                  hasPreviousPage
+                  startCursor
+              }
+          }
+      }`,
+      variables: { categorySlug } // Pass categorySlug as a variable
+  };
 
+  const data = await graphqlRequest(query);
+  return data.data; // Return the post data from the response
+}
+
+export default async function ResearchBasedWealthManagementPage () { 
+  const categorySlug= 'Wealth Management';
+  const posts = await getData(categorySlug);
     const steps = [
         {
           id: '01',
@@ -59,11 +114,11 @@ const ResearchBasedWealthManagementPage = () => {
 
             <PrimeIdeaHelps />
 
-            <StepperSection steps={steps} />
+            <StepperSection title={'Our Process'} steps={steps} />
 
             <PowerOfStrategy />
 
-            <InsightsSection />
+            <InsightsSection blogsListing={posts.posts.nodes}/>
 
             <FaqsSection />
 
@@ -74,5 +129,3 @@ const ResearchBasedWealthManagementPage = () => {
         </div>
     )
  }
-
- export default ResearchBasedWealthManagementPage;

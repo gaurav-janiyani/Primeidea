@@ -6,9 +6,64 @@ import InsightsSection from "@/components/insightsSection";
 import WorkSection from "@/components/researchWelathManagement/workSection";
 import StepperSection from "@/components/steppers";
 import TaxPlanning from "@/components/tax-planning/taxPlanning";
+import graphqlRequest from "@/lib/graphqlRequest";
 
-const LegacyInheritancePlanning = () => { 
+async function getData(categorySlug) {
+  const query = {
+      query: `query getPostListByCategory($categorySlug: String!) {
+          posts(where: {categoryName: $categorySlug, orderby: {field: DATE, order: DESC}}) {
+              nodes {
+                  date
+                  slug
+                  title
+                  excerpt(format: RENDERED)
+                  featuredImage {
+                      node {
+                          uri
+                          sourceUrl
+                          mediaDetails {
+                              file
+                              sizes {
+                                  sourceUrl
+                                  width
+                                  height
+                              }
+                          }
+                      }
+                  }
+                  categories {
+                      nodes {
+                          name
+                          slug
+                      }
+                  }
+                  author {
+                      node {
+                          avatar {
+                              url
+                          }
+                          name
+                      }
+                  }
+              }
+              pageInfo {
+                  endCursor
+                  hasNextPage
+                  hasPreviousPage
+                  startCursor
+              }
+          }
+      }`,
+      variables: { categorySlug } // Pass categorySlug as a variable
+  };
 
+  const data = await graphqlRequest(query);
+  return data.data; // Return the post data from the response
+}
+
+export default async function LegacyInheritancePlanning() { 
+    const categorySlug= 'Legacy & Inheritance';
+    const posts = await getData(categorySlug);
     const steps = [
         {
           id: '01',
@@ -56,9 +111,9 @@ const LegacyInheritancePlanning = () => {
 
             <TaxPlanning />
 
-            <StepperSection steps={steps}/>
+            <StepperSection title={'Steps for Legacy & Inheritance Planning'} steps={steps}/>
 
-            <InsightsSection />
+            <InsightsSection blogsListing={posts.posts.nodes}/>
 
             <FaqsSection />
 
@@ -70,4 +125,4 @@ const LegacyInheritancePlanning = () => {
     )
  }
 
- export default LegacyInheritancePlanning;
+ 

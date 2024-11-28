@@ -8,8 +8,64 @@ import AboutInsurance from "@/components/insurance/aboutInsurance";
 import ProtectingFinanceFuture from "@/components/insurance/protectingFinanceFuture";
 import TypesOfInsurance from "@/components/insurance/typeOfInsurance";
 import Image from "next/image";
+import graphqlRequest from "@/lib/graphqlRequest";
 
-const InsurancePage = () => {
+async function getData(categorySlug) {
+  const query = {
+      query: `query getPostListByCategory($categorySlug: String!) {
+          posts(where: {categoryName: $categorySlug, orderby: {field: DATE, order: DESC}}) {
+              nodes {
+                  date
+                  slug
+                  title
+                  excerpt(format: RENDERED)
+                  featuredImage {
+                      node {
+                          uri
+                          sourceUrl
+                          mediaDetails {
+                              file
+                              sizes {
+                                  sourceUrl
+                                  width
+                                  height
+                              }
+                          }
+                      }
+                  }
+                  categories {
+                      nodes {
+                          name
+                          slug
+                      }
+                  }
+                  author {
+                      node {
+                          avatar {
+                              url
+                          }
+                          name
+                      }
+                  }
+              }
+              pageInfo {
+                  endCursor
+                  hasNextPage
+                  hasPreviousPage
+                  startCursor
+              }
+          }
+      }`,
+      variables: { categorySlug } // Pass categorySlug as a variable
+  };
+
+  const data = await graphqlRequest(query);
+  return data.data; // Return the post data from the response
+}
+
+export default async function InsurancePage() {
+  const categorySlug= 'Insurance';
+    const posts = await getData(categorySlug);
   return (
     <div className="bg-[#F6FDFF]">
       <BannerSection 
@@ -34,7 +90,7 @@ const InsurancePage = () => {
 
       <ProtectingFinanceFuture />
 
-      <InsightsSection bgColor="bg-[#F6FDFF]" />
+      <InsightsSection  blogsListing={posts.posts.nodes} bgColor="bg-[#F6FDFF]" />
       
       <FaqsSection />
 
@@ -46,4 +102,3 @@ const InsurancePage = () => {
   );
 };
 
-export default InsurancePage;

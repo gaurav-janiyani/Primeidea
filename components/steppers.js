@@ -36,7 +36,8 @@ const StepperSection = (props) => {
         <div className="2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] xl:px-4 mx-auto">
           <h2 className="text-2xl xl:text-3xl font-bold mb-6 text-center">
             <FadeUpOneByOneAnimation> 
-              Steps for Tax Planning & Savings
+              {/* Steps for Tax Planning & Savings */}
+              {props?.title}
             </FadeUpOneByOneAnimation>
           </h2>
           <div className="flex flex-col items-center justify-center pt-8 xl:px-8">

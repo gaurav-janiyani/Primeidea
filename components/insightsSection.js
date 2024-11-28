@@ -1,9 +1,13 @@
+'use client'
 import Image from "next/image";
 import FadeUpOneByOneAnimation from "@/animations/FadeUpOneByOneAnimation";
 import FadeUpAnimationDelay from "@/animations/FadeUpAnimationDelay";
 import FadeUpAnimation from "@/animations/FadeUpAnimation";
+import moment from "moment";
 
 const InsightsSection = (props) => {
+  const blogsListing = props.blogsListing;
+  // console.log(props);
   const insightsItems = [
     {
       imageUrl: "/images/home/insights/1.png",
@@ -56,7 +60,7 @@ const InsightsSection = (props) => {
                     up-to-date.
                 </p>
                 <a
-                  href=""
+                  href="/blogs"
                   className="bg-[#293C7D] text-base md:text-lg font-bold rounded-md text-white px-6 py-3 inline-flex items-center"
                   >
                   Read All
@@ -80,13 +84,13 @@ const InsightsSection = (props) => {
               </div>
               <div className="w-full md:w-[62%] md:border-l md:border-l-[#222222]">
                 <ul className="">
-                  {insightsItems.map((item, index) => {
+                  {blogsListing?.slice(0, 3).map((item, index) => {
                     return (
                       <li className="border-b border-b-[#222222] pb-4 pt-4 px-4 md:pr-0 md:pl-4 last:border-b-0" key={index}>
                         <FadeUpOneByOneAnimation className="flex flex-wrap lg:flex-nowrap">
                           <div className="w-[85px] md:w-[132px] mr-[10px] md:mr-4">
                             <Image
-                              src={item.imageUrl}
+                              src={item.author.node.avatar.url}
                               width={132}
                               height={132}
                               alt={item.title}
@@ -94,28 +98,28 @@ const InsightsSection = (props) => {
                             <h3 className="flex flex-col justify-center items-center mt-3 leading-[100%] text-sm md:text-base">
                               Writtern by{" "}
                               <span className="text-base md:text-xl font-bold capitalize">
-                                {item.author}
+                                {item.author.node.name}
                               </span>
                             </h3>
                           </div>
                           <div className="w-[calc(100%-95px)] md:w-[calc(100%-148px)] lg:w-[calc(100%-168px)]">
                             <div className="top-section flex items-center ">
                               <div className="bg-[#BCE4FF] text-[#000] px-3 py-1 rounded-md font-normal text-sm md:text-base">
-                                {item.category}
+                                {item.categories.nodes[0].name}
                               </div>{" "}
                               <span className="w-[16px] h-[2px] rounded-[5px] bg-[#222222] mx-2 md:mx-4"></span>{" "}
-                              <div className="text-sm md:text-lg">{item.date}</div>
+                              <div className="text-sm md:text-lg">{moment(item.date).format('MMMM D, YYYY')}</div>
                             </div>
                             <div className="pt-2 md:pt-3">
-                              <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-1 md:mb-0 leading-[130%]">
+                              <h2 className="line-clamp-2 text-lg sm:text-xl md:text-2xl font-semibold mb-1 md:mb-0 leading-[130%]">
                                 {item.title}
                               </h2>
-                              <p className="line-clamp-3 text-sm sm:text-base mb-2 md:mb-0">
+                              <div dangerouslySetInnerHTML={{ __html: item.excerpt}} className="line-clamp-3 text-sm sm:text-base mb-2 md:mb-0">
                               {item.description}
-                              </p>
+                              </div>
                             </div>
                           </div>
-                          <a href="" className="ml-auto inline-flex justify-end items-baseline w-full lg:w-[36px]">
+                          <a href={`/blogs/${item.slug}`} className="ml-auto inline-flex justify-end items-baseline w-full lg:w-[36px]">
                             <Image src="/images/blogs/right-arrow.png" width={36} height={36} alt="Arrow" 
                             className="w-[32px] sm:w-[36px] h-[32px] sm:h-[36px]"
                             />

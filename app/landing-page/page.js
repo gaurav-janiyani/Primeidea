@@ -6,8 +6,15 @@ import InsightsSection from "@/components/insightsSection"
 import ExpertiseSection from "@/components/landingPage/expertiseServices"
 import OurCommitment from "@/components/landingPage/ourCommitment"
 import PrimeIdeaBenchmarks from "@/components/landingPage/primeIdeaBenchmarks"
+import { getPostList } from "@/lib/posts"
 
-const LandingPage = () => { 
+async function getData(params) {
+    const allPosts = await getPostList();
+    return { allPosts: allPosts };
+  }
+
+export default async function LandingPage () { 
+    const blogsListing = await getData();
     return (
         <div className="bg-[#F6FDFF]">
 
@@ -34,7 +41,7 @@ const LandingPage = () => {
 
             <OurCommitment />
 
-            <InsightsSection />
+            <InsightsSection blogsListing={blogsListing.allPosts.nodes} />
 
             <FaqsSection />
 
@@ -45,5 +52,3 @@ const LandingPage = () => {
         </div>
     )
  }
-
- export default LandingPage

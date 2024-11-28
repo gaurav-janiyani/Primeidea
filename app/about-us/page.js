@@ -7,8 +7,16 @@ import Footer from "@/components/footer";
 import InsightsSection from "@/components/insightsSection";
 import JoinCommunity from "@/components/joinCommunity";
 import StepperSection from "@/components/steppers";
+import { getPostList } from "@/lib/posts";
 
-const AboutUs = () => { 
+async function getData(params) {
+  const allPosts = await getPostList();
+  return { allPosts: allPosts };
+}
+
+
+export default async function AboutUs() { 
+  const blogsListing = await getData();
     const steps = [
         {
           id: '01',
@@ -44,14 +52,15 @@ const AboutUs = () => {
 
             <div className="bg-white">
                 <StepperSection 
-                steps={steps}
-                // title1={'Solutions'}
-                // content1={'Providing tailored financial solutions to optimize growth and  returns for our clients.'}
-                // title2={'Research'}
-                // content2={'In-depth research analysis drive our financial services to deliver accurate and valuable insights.'}
-                // title3={'Planning'}
-                // content3={'Strategic planning and forecasting are essential for ensuring financial stability and success.'}
-                // title4={'Ethics'}
+                  title={'Our Process'}
+                  steps={steps}
+                  // title1={'Solutions'}
+                  // content1={'Providing tailored financial solutions to optimize growth and  returns for our clients.'}
+                  // title2={'Research'}
+                  // content2={'In-depth research analysis drive our financial services to deliver accurate and valuable insights.'}
+                  // title3={'Planning'}
+                  // content3={'Strategic planning and forecasting are essential for ensuring financial stability and success.'}
+                  // title4={'Ethics'}
                 />
             </div>
 
@@ -59,7 +68,7 @@ const AboutUs = () => {
 
             <MeetOurTeam />
 
-            <InsightsSection />
+            <InsightsSection blogsListing={blogsListing.allPosts.nodes}/>
 
             <FaqsSection />
 
@@ -70,5 +79,3 @@ const AboutUs = () => {
         </div>
     )
  }
-
- export default AboutUs;

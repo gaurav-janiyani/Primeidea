@@ -7,8 +7,64 @@ import StepperSection from "@/components/steppers";
 import GiftCitySection from "@/components/tax-planning/giftCitySection";
 import TaxPlanning from "@/components/tax-planning/taxPlanning";
 import YouIHereSection from "@/components/tax-planning/you-i-here";
+import graphqlRequest from "@/lib/graphqlRequest";
 
-const TaxPlanningPage = () => { 
+async function getData(categorySlug) {
+  const query = {
+      query: `query getPostListByCategory($categorySlug: String!) {
+          posts(where: {categoryName: $categorySlug, orderby: {field: DATE, order: DESC}}) {
+              nodes {
+                  date
+                  slug
+                  title
+                  excerpt(format: RENDERED)
+                  featuredImage {
+                      node {
+                          uri
+                          sourceUrl
+                          mediaDetails {
+                              file
+                              sizes {
+                                  sourceUrl
+                                  width
+                                  height
+                              }
+                          }
+                      }
+                  }
+                  categories {
+                      nodes {
+                          name
+                          slug
+                      }
+                  }
+                  author {
+                      node {
+                          avatar {
+                              url
+                          }
+                          name
+                      }
+                  }
+              }
+              pageInfo {
+                  endCursor
+                  hasNextPage
+                  hasPreviousPage
+                  startCursor
+              }
+          }
+      }`,
+      variables: { categorySlug } // Pass categorySlug as a variable
+  };
+
+  const data = await graphqlRequest(query);
+  return data.data; // Return the post data from the response
+}
+
+export default async function TaxPlanningPage() { 
+    const categorySlug= 'Tax Planning';
+    const posts = await getData(categorySlug);
 
     const steps = [
     {
@@ -54,8 +110,8 @@ const TaxPlanningPage = () => {
                 subSectionTitle3={"Client Satisfaction"}
                 subSectionSubTitle3={"92+"}
             />
-            <TaxPlanning />
-            <StepperSection  steps={steps}/>
+            <TaxPlanning blogsListing={posts.posts.nodes} />
+            <StepperSection title={'Steps for Tax Planning & Savings'}  steps={steps}/>
             <YouIHereSection />
             <GiftCitySection />
             <InsightsSection />
@@ -65,5 +121,3 @@ const TaxPlanningPage = () => {
         </div>
     )
  }
-
- export default TaxPlanningPage;

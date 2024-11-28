@@ -1,6 +1,7 @@
 import FadeUpOneByOneAnimation from "@/animations/FadeUpOneByOneAnimation";
 import FadeUpAnimationDelay from "@/animations/FadeUpAnimationDelay";
 import FadeUpAnimation from "@/animations/FadeUpAnimation";
+import Image from "next/image";
 
 const JoinCommunity = () => { 
     return (
@@ -25,7 +26,7 @@ const JoinCommunity = () => {
                   to shared success and growth.
                 </p>
                 <p className="mb-4 text-lg">Connect with us to:</p>
-                <ul className="list-disc pl-[20px]">
+                <ul className="list-disc pl-[20px] mb-6">
                   <li className="mb-3 text-lg">
                     <p className="contents">
                       <strong>Access Exclusive Insights:</strong> Stay updated
@@ -46,6 +47,19 @@ const JoinCommunity = () => {
                     </p>
                   </li>
                 </ul>
+                <a
+                href='https://chat.whatsapp.com/Bgocyi51gNA3S4CrFkggot'
+                className="bg-[#293C7D] md:text-md xl:text-lg font-bold rounded-md text-white px-6 py-3 inline-flex items-center"
+                >
+                  Join Now 
+                  <Image
+                    src="/images/icons/arrow-square-right.png"
+                    width={21}
+                    height={21}
+                    alt="Read All"
+                    className="ml-2"
+                  />
+                </a>
               </FadeUpOneByOneAnimation>
             </div>
           </div>

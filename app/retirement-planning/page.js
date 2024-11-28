@@ -7,9 +7,64 @@ import WorkSection from "@/components/researchWelathManagement/workSection";
 import GetStarted from "@/components/retirement-planning/getStarted";
 import ReportSection from "@/components/retirement-planning/reportSection";
 import StepperSection from "@/components/steppers";
+import graphqlRequest from "@/lib/graphqlRequest";
 
-const RetirementPlanning = () => { 
+async function getData(categorySlug) {
+  const query = {
+      query: `query getPostListByCategory($categorySlug: String!) {
+          posts(where: {categoryName: $categorySlug, orderby: {field: DATE, order: DESC}}) {
+              nodes {
+                  date
+                  slug
+                  title
+                  excerpt(format: RENDERED)
+                  featuredImage {
+                      node {
+                          uri
+                          sourceUrl
+                          mediaDetails {
+                              file
+                              sizes {
+                                  sourceUrl
+                                  width
+                                  height
+                              }
+                          }
+                      }
+                  }
+                  categories {
+                      nodes {
+                          name
+                          slug
+                      }
+                  }
+                  author {
+                      node {
+                          avatar {
+                              url
+                          }
+                          name
+                      }
+                  }
+              }
+              pageInfo {
+                  endCursor
+                  hasNextPage
+                  hasPreviousPage
+                  startCursor
+              }
+          }
+      }`,
+      variables: { categorySlug } // Pass categorySlug as a variable
+  };
 
+  const data = await graphqlRequest(query);
+  return data.data; // Return the post data from the response
+}
+
+export default async function RetirementPlanning() { 
+  const categorySlug= 'Retirement Planning';
+  const posts = await getData(categorySlug);
     const steps = [
         {
           id: '01',
@@ -56,10 +111,10 @@ const RetirementPlanning = () => {
 
             <WorkSection />
 
-            <StepperSection steps={steps}/>
+            <StepperSection title={'Steps for Dream Retirement Planning'} steps={steps}/>
 
             <div className="md:mb-[140px]">
-                <ReportSection />
+                <ReportSection blogsListing={posts.posts.nodes}/>
             </div>
 
             <InsightsSection />
@@ -77,4 +132,4 @@ const RetirementPlanning = () => {
     )
  }
 
- export default RetirementPlanning;
+ 

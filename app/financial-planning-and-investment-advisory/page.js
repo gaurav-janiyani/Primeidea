@@ -10,8 +10,64 @@ import ReportSection from "@/components/financialPlanning&Investment/reportSecti
 import StepperSection from "@/components/financialPlanning&Investment/steppers";
 import Footer from "@/components/footer";
 import InsightsSection from "@/components/insightsSection";
+import graphqlRequest from "@/lib/graphqlRequest";
 
-const FinancialPlanningAndInvestmentAdvisory = () => { 
+async function getData(categorySlug) {
+  const query = {
+      query: `query getPostListByCategory($categorySlug: String!) {
+          posts(where: {categoryName: $categorySlug, orderby: {field: DATE, order: DESC}}) {
+              nodes {
+                  date
+                  slug
+                  title
+                  excerpt(format: RENDERED)
+                  featuredImage {
+                      node {
+                          uri
+                          sourceUrl
+                          mediaDetails {
+                              file
+                              sizes {
+                                  sourceUrl
+                                  width
+                                  height
+                              }
+                          }
+                      }
+                  }
+                  categories {
+                      nodes {
+                          name
+                          slug
+                      }
+                  }
+                  author {
+                      node {
+                          avatar {
+                              url
+                          }
+                          name
+                      }
+                  }
+              }
+              pageInfo {
+                  endCursor
+                  hasNextPage
+                  hasPreviousPage
+                  startCursor
+              }
+          }
+      }`,
+      variables: { categorySlug } // Pass categorySlug as a variable
+  };
+
+  const data = await graphqlRequest(query);
+  return data.data; // Return the post data from the response
+}
+
+export default async function FinancialPlanningAndInvestmentAdvisory() { 
+    const categorySlug= 'Finance Planning';
+    const posts = await getData(categorySlug);
 
     const steps = [
         {
@@ -63,7 +119,7 @@ const FinancialPlanningAndInvestmentAdvisory = () => {
             <ReportSection />
 
             <div className="mt-28">
-                <InsightsSection />
+                <InsightsSection blogsListing={posts.posts.nodes} />
             </div>
 
             <FaqsSection />
@@ -76,5 +132,3 @@ const FinancialPlanningAndInvestmentAdvisory = () => {
         </div>
     )
  }
-
- export default FinancialPlanningAndInvestmentAdvisory;
