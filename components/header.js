@@ -366,7 +366,7 @@ export default function Header() {
         {/* Contact button */}
         <div className="lg:flex items-center">
           <a
-            href=""
+            href="/contact-us"
             className="rounded-[10px] py-1.5 px-[18px] border border-solid border-[#1F1F1F] hover:text-white hover:bg-[#E40115] hover:border-[#E40115]"
           >
             Contact Now
