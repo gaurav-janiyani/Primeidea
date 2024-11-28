@@ -114,10 +114,10 @@ export default async function RetirementPlanning() {
             <StepperSection title={'Steps for Dream Retirement Planning'} steps={steps}/>
 
             <div className="md:mb-[140px]">
-                <ReportSection blogsListing={posts.posts.nodes}/>
+                <ReportSection />
             </div>
 
-            <InsightsSection />
+            <InsightsSection blogsListing={posts.posts.nodes}/>
 
             <FaqsSection />
 
