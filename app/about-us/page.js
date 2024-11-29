@@ -1,5 +1,6 @@
 import BannerSection from "@/components/aboutUs/bannerSection";
 import ExpertiseSection from "@/components/aboutUs/expertiseSection";
+import HowFinancialAdvisorHelp from "@/components/aboutUs/howFinancialAdvisorHelp";
 import MeetOurTeam from "@/components/aboutUs/meetourTeam";
 import ClientTestimonial from "@/components/clientTestimonial";
 import FaqsSection from "@/components/faqsSection";
@@ -66,11 +67,13 @@ export default async function AboutUs() {
 
             <JoinCommunity />
 
+            <HowFinancialAdvisorHelp />
+
             <MeetOurTeam />
 
-            <InsightsSection blogsListing={blogsListing.allPosts.nodes}/>
+            {/* <InsightsSection blogsListing={blogsListing.allPosts.nodes}/> */}
 
-            <FaqsSection />
+            {/* <FaqsSection /> */}
 
             <ClientTestimonial />
 
