@@ -28,7 +28,7 @@ const RiskManagementContent = () => {
               className="mb-4"
             />
             <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%]">
-              Track Income & <br /> Expense
+              Insurance <br /> Coverage
             </h3>
             <p className="text-base xl:text-lg font-normal">
               Begin by meticulously recording all sources of income and
@@ -45,7 +45,7 @@ const RiskManagementContent = () => {
               className="mb-4"
             />
             <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%]">
-              Categorised <br /> Spending
+              Diversification of <br /> Investments
             </h3>
             <p className="text-base xl:text-lg font-normal">
               Organize your expenses into categories like housing,
@@ -61,7 +61,7 @@ const RiskManagementContent = () => {
               className="mb-4"
             />
             <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%]">
-              Set Realistic <br /> Goal
+              Emergency <br /> Fund
             </h3>
             <p className="text-base xl:text-lg font-normal">
               Define clear and achievable financial objectives that align with
@@ -78,7 +78,7 @@ const RiskManagementContent = () => {
               className="mb-4"
             />
             <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%]">
-              Adjust <br /> Regulary
+              Estate  <br /> Planning
             </h3>
             <p className="text-base xl:text-lg font-normal">
               Flexibility is key; be prepared to modify your budget as
@@ -95,7 +95,7 @@ const RiskManagementContent = () => {
               className="mb-4"
             />
             <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%]">
-              Review <br /> Consistently
+              Risk <br /> Assessment
             </h3>
             <p className="text-base xl:text-lg font-normal">
               Regularly assess your budget to track progress, evaluate adherence

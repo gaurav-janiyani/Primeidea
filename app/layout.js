@@ -2,6 +2,8 @@ import { Manrope } from "next/font/google";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./globals.css";
+import { Bubble } from "@typebot.io/nextjs";
+
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -32,6 +34,11 @@ export default function RootLayout({ children }) {
       <body
         className={manrope.className}
       >
+       <Bubble
+          typebot="product-recommendation-y84k1d6"
+          previewMessage={{ message: "I have a question for you!" }}
+          theme={{ button: { backgroundColor: "#0042DA",  size: "medium" } }}
+        />
         {children}
       </body>
     </html>

@@ -28,7 +28,7 @@ const InvestmentBasicsContent = () => {
               className="mb-4"
             />
             <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%]">
-              Track Income & <br /> Expense
+              Diversification <br /> Investment
             </h3>
             <p className="text-base xl:text-lg font-normal">
               Begin by meticulously recording all sources of income and
@@ -45,7 +45,7 @@ const InvestmentBasicsContent = () => {
               className="mb-4"
             />
             <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%]">
-              Categorised <br /> Spending
+              Asset <br /> Allocation
             </h3>
             <p className="text-base xl:text-lg font-normal">
               Organize your expenses into categories like housing,
@@ -61,7 +61,7 @@ const InvestmentBasicsContent = () => {
               className="mb-4"
             />
             <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%]">
-              Set Realistic <br /> Goal
+              Compound <br /> Interest
             </h3>
             <p className="text-base xl:text-lg font-normal">
               Define clear and achievable financial objectives that align with
@@ -78,7 +78,7 @@ const InvestmentBasicsContent = () => {
               className="mb-4"
             />
             <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%]">
-              Adjust <br /> Regulary
+              Risk vs. <br /> Return
             </h3>
             <p className="text-base xl:text-lg font-normal">
               Flexibility is key; be prepared to modify your budget as
@@ -95,7 +95,7 @@ const InvestmentBasicsContent = () => {
               className="mb-4"
             />
             <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%]">
-              Review <br /> Consistently
+              Long-Term <br /> Focus
             </h3>
             <p className="text-base xl:text-lg font-normal">
               Regularly assess your budget to track progress, evaluate adherence

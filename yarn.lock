@@ -346,6 +346,18 @@
   resolved "https://registry.yarnpkg.com/@tanstack/virtual-core/-/virtual-core-3.10.8.tgz#975446a667755222f62884c19e5c3c66d959b8b4"
   integrity sha512-PBu00mtt95jbKFi6Llk9aik8bnR3tR/oQP1o3TSi+iG//+Q2RTIzCEgKkHG8BB86kxMNW6O8wku+Lmi+QFR6jA==
 
+"@typebot.io/js@0.3.32":
+  version "0.3.32"
+  resolved "https://registry.yarnpkg.com/@typebot.io/js/-/js-0.3.32.tgz#a8a5261267bbe02eb399d1affd844c31dbda0180"
+  integrity sha512-vwPSzpI2dZ980aBWSVPYePXxoKh7e4iJplD6y9ieY8Bbh2Fo2LqEiFjR0KTYFESu8Dc+9oJTSAJru9Nt2FiuUQ==
+
+"@typebot.io/nextjs@^0.3.32":
+  version "0.3.32"
+  resolved "https://registry.yarnpkg.com/@typebot.io/nextjs/-/nextjs-0.3.32.tgz#9ee3193ea03cd1b3b78d4f9d9bcd5f761dd923b3"
+  integrity sha512-vldKXY1End2aOsgkZsuq0xMGBW1CBM7QTfw3cmfzvY1AMGaPq53izqdGAlKilbb2MyL1wszcdYmKSXPKFr/Z9A==
+  dependencies:
+    "@typebot.io/js" "0.3.32"
+
 "@types/json-schema@^7.0.12":
   version "7.0.15"
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.15.tgz#596a1747233694d50f6ad8a7869fcb6f56cf5841"
