@@ -31,9 +31,7 @@ const RiskManagementContent = () => {
               Insurance <br /> Coverage
             </h3>
             <p className="text-base xl:text-lg font-normal">
-              Begin by meticulously recording all sources of income and
-              expenditure to gain a comprehensive view of your financial
-              situation.
+              Secure life, health, disability, and property insurance policies to protect your financial well-being from unforeseen risks and liabilities.
             </p>
           </li>
           <li className="text-white max-w-[300px] md:max-w-[unset] w-full sm:w-[50%] md:w-[30%] mb-4 lg:mb-0 lg:w-[18%] xl:w-[17%] py-4 sm:p-4 lg:pl-4 lg:border-l lg:border-l-[#fff]">
@@ -48,8 +46,7 @@ const RiskManagementContent = () => {
               Diversification of <br /> Investments
             </h3>
             <p className="text-base xl:text-lg font-normal">
-              Organize your expenses into categories like housing,
-              transportation, and entertainment to spot areas for adjustment.
+              Spread capital across various industries, geographies, and asset classes to minimize the impact of individual investment failures.
             </p>
           </li>
           <li className="text-white max-w-[300px] md:max-w-[unset] w-full sm:w-[50%] md:w-[30%] mb-4 lg:mb-0 lg:w-[18%] xl:w-[17%] py-4 sm:p-4 lg:pl-4 lg:border-l lg:border-l-[#fff]">
@@ -64,9 +61,7 @@ const RiskManagementContent = () => {
               Emergency <br /> Fund
             </h3>
             <p className="text-base xl:text-lg font-normal">
-              Define clear and achievable financial objectives that align with
-              your income and expenses, ensuring they are measurable and
-              time-bound.
+              Maintain accessible cash reserves to manage unexpected expenses without disrupting your financial plan or incurring debt.
             </p>
           </li>
           <li className="text-white max-w-[300px] md:max-w-[unset] w-full sm:w-[50%] md:w-[30%] mb-4 lg:mb-0 lg:w-[18%] xl:w-[17%] py-4 sm:p-4 lg:pl-4 lg:border-l lg:border-l-[#fff]">
@@ -81,9 +76,7 @@ const RiskManagementContent = () => {
               Estate  <br /> Planning
             </h3>
             <p className="text-base xl:text-lg font-normal">
-              Flexibility is key; be prepared to modify your budget as
-              circumstances change, allowing for ongoing optimisation and
-              improvement.
+              Organize wills, trusts, and powers of attorney to ensure the seamless transfer of assets and protection of beneficiaries after your passing.
             </p>
           </li>
           <li className="text-white max-w-[300px] md:max-w-[unset] w-full sm:w-[50%] md:w-[30%] mb-4 lg:mb-0 lg:w-[18%] xl:w-[17%] py-4 sm:p-4 lg:pl-4 lg:border-l lg:border-l-[#fff]">
@@ -98,9 +91,7 @@ const RiskManagementContent = () => {
               Risk <br /> Assessment
             </h3>
             <p className="text-base xl:text-lg font-normal">
-              Regularly assess your budget to track progress, evaluate adherence
-              to financial targets, and make informed decisions for future
-              adjustments.
+              Regularly assess financial risks and implement safeguards, like insurance or portfolio adjustments, to preserve wealth over time.
             </p>
           </li>
         </ul>

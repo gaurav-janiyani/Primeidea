@@ -31,9 +31,7 @@ const InvestmentBasicsContent = () => {
               Diversification <br /> Investment
             </h3>
             <p className="text-base xl:text-lg font-normal">
-              Begin by meticulously recording all sources of income and
-              expenditure to gain a comprehensive view of your financial
-              situation.
+              Invest in a mix of assets like stocks, bonds, real estate, and commodities to reduce overall portfolio risk and volatility.
             </p>
           </li>
           <li className="text-white max-w-[300px] md:max-w-[unset] w-full sm:w-[50%] md:w-[30%] mb-4 lg:mb-0 lg:w-[18%] xl:w-[17%] py-4 sm:p-4 lg:pl-4 lg:border-l lg:border-l-[#fff]">
@@ -48,8 +46,7 @@ const InvestmentBasicsContent = () => {
               Asset <br /> Allocation
             </h3>
             <p className="text-base xl:text-lg font-normal">
-              Organize your expenses into categories like housing,
-              transportation, and entertainment to spot areas for adjustment.
+              Develop a strategic distribution of assets based on financial goals, time horizon, and risk tolerance to maximize returns.
             </p>
           </li>
           <li className="text-white max-w-[300px] md:max-w-[unset] w-full sm:w-[50%] md:w-[30%] mb-4 lg:mb-0 lg:w-[18%] xl:w-[17%] py-4 sm:p-4 lg:pl-4 lg:border-l lg:border-l-[#fff]">
@@ -64,9 +61,7 @@ const InvestmentBasicsContent = () => {
               Compound <br /> Interest
             </h3>
             <p className="text-base xl:text-lg font-normal">
-              Define clear and achievable financial objectives that align with
-              your income and expenses, ensuring they are measurable and
-              time-bound.
+              Reinvest earnings to let your money grow exponentially over time, particularly in long-term investment vehicles like mutual funds.
             </p>
           </li>
           <li className="text-white max-w-[300px] md:max-w-[unset] w-full sm:w-[50%] md:w-[30%] mb-4 lg:mb-0 lg:w-[18%] xl:w-[17%] py-4 sm:p-4 lg:pl-4 lg:border-l lg:border-l-[#fff]">
@@ -81,9 +76,7 @@ const InvestmentBasicsContent = () => {
               Risk vs. <br /> Return
             </h3>
             <p className="text-base xl:text-lg font-normal">
-              Flexibility is key; be prepared to modify your budget as
-              circumstances change, allowing for ongoing optimisation and
-              improvement.
+              Weigh the potential for higher returns against the likelihood of financial loss to make informed investment decisions.
             </p>
           </li>
           <li className="text-white max-w-[300px] md:max-w-[unset] w-full sm:w-[50%] md:w-[30%] mb-4 lg:mb-0 lg:w-[18%] xl:w-[17%] py-4 sm:p-4 lg:pl-4 lg:border-l lg:border-l-[#fff]">
@@ -98,9 +91,7 @@ const InvestmentBasicsContent = () => {
               Long-Term <br /> Focus
             </h3>
             <p className="text-base xl:text-lg font-normal">
-              Regularly assess your budget to track progress, evaluate adherence
-              to financial targets, and make informed decisions for future
-              adjustments.
+              Commit to staying invested through market fluctuations, focusing on wealth accumulation and financial independence over decades.
             </p>
           </li>
         </ul>

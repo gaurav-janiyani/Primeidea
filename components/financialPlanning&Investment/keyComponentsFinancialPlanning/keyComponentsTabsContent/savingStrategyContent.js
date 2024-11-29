@@ -31,9 +31,7 @@ const SavingStrategyContent = () => {
               Emergency  <br /> Fund
             </h3>
             <p className="text-base xl:text-lg font-normal">
-              Begin by meticulously recording all sources of income and
-              expenditure to gain a comprehensive view of your financial
-              situation.
+              Build a financial cushion of 3-6 months of living expenses to cover unforeseen emergencies like job loss or medical expenses.
             </p>
           </li>
           <li className="text-white max-w-[300px] md:max-w-[unset] w-full sm:w-[50%] md:w-[30%] mb-4 lg:mb-0 lg:w-[18%] xl:w-[17%] py-4 sm:p-4 lg:pl-4 lg:border-l lg:border-l-[#fff]">
@@ -48,8 +46,7 @@ const SavingStrategyContent = () => {
             Automatic <br /> Savings
             </h3>
             <p className="text-base xl:text-lg font-normal">
-              Organize your expenses into categories like housing,
-              transportation, and entertainment to spot areas for adjustment.
+              Automate monthly transfers to a savings account to ensure consistent and disciplined contributions toward achieving your financial goals.
             </p>
           </li>
           <li className="text-white max-w-[300px] md:max-w-[unset] w-full sm:w-[50%] md:w-[30%] mb-4 lg:mb-0 lg:w-[18%] xl:w-[17%] py-4 sm:p-4 lg:pl-4 lg:border-l lg:border-l-[#fff]">
@@ -64,9 +61,7 @@ const SavingStrategyContent = () => {
               High-Interest <br /> Savings Accounts
             </h3>
             <p className="text-base xl:text-lg font-normal">
-              Define clear and achievable financial objectives that align with
-              your income and expenses, ensuring they are measurable and
-              time-bound.
+              Use accounts offering competitive interest rates to maximize returns on your emergency funds or other short-term savings.
             </p>
           </li>
           <li className="text-white max-w-[300px] md:max-w-[unset] w-full sm:w-[50%] md:w-[30%] mb-4 lg:mb-0 lg:w-[18%] xl:w-[17%] py-4 sm:p-4 lg:pl-4 lg:border-l lg:border-l-[#fff]">
@@ -81,9 +76,7 @@ const SavingStrategyContent = () => {
               Saving for  <br /> Specific Goals
             </h3>
             <p className="text-base xl:text-lg font-normal">
-              Flexibility is key; be prepared to modify your budget as
-              circumstances change, allowing for ongoing optimisation and
-              improvement.
+              Identify future needs, such as vacations, education, or homeownership, and allocate dedicated funds to achieve these objectives.
             </p>
           </li>
           <li className="text-white max-w-[300px] md:max-w-[unset] w-full sm:w-[50%] md:w-[30%] mb-4 lg:mb-0 lg:w-[18%] xl:w-[17%] py-4 sm:p-4 lg:pl-4 lg:border-l lg:border-l-[#fff]">
@@ -98,9 +91,7 @@ const SavingStrategyContent = () => {
               Cutting <br/> Expenses
             </h3>
             <p className="text-base xl:text-lg font-normal">
-              Regularly assess your budget to track progress, evaluate adherence
-              to financial targets, and make informed decisions for future
-              adjustments.
+              Track spending patterns, identify non-essential expenses, and create a realistic budget to free up money for savings or investments.
             </p>
           </li>
         </ul>
