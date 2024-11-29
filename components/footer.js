@@ -95,7 +95,7 @@ const Footer = () => {
               <ul className="flex px-4 md:px-0 py-6 w-full md:max-w-[260px] lg:max-w-[320px] xl:max-w-[370px] 2xl:max-w-[400px] relative">
                 <li className="absolute top-0 right-0 bg-[#3E8ABD] w-[400%] h-[100%] sm:border-r border-solid border-[#B4B4B4] z-0"></li>
                 <li className="mr-8 relative z-1">
-                  <a href="">
+                  <a href="https://www.facebook.com/primeidea" target="_blank">
                     <Image
                       src="/images/footer/icons/facebook.svg"
                       alt="Facebook"
@@ -105,7 +105,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li className="mr-8 relative z-1">
-                  <a href="">
+                  <a href="https://www.linkedin.com/company/primeidea/" target="_blank">
                     <Image
                       src="/images/footer/icons/linkedin.svg"
                       alt="LinkedIn"
@@ -115,7 +115,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li className="mr-8 relative z-1">
-                  <a href="">
+                  <a href="https://www.instagram.com/primeidea/" target="_blank">
                     <Image
                       src="/images/footer/icons/instagram.svg"
                       alt="Instagram"
@@ -124,7 +124,7 @@ const Footer = () => {
                     />
                   </a>
                 </li>
-                <li className="relative z-1">
+                {/* <li className="relative z-1">
                   <a href="">
                     <Image
                       src="/images/footer/icons/twitter.svg"
@@ -133,7 +133,7 @@ const Footer = () => {
                       height={32}
                     />
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>

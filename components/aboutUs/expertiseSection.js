@@ -26,7 +26,7 @@ const ExpertiseSection = () => {
                 Working with Primeidea gives you a peace of mind in real-time, and that your taxes are filed and paid on schedule.
               </p>
               <a
-                href=""
+                href="/contact-us"
                 className="bg-[#293C7D] text-lg font-bold rounded-md text-white px-6 py-3 inline-flex items-center"
               >
                 Get in touch

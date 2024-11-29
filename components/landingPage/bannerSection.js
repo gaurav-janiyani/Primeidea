@@ -23,8 +23,9 @@ const BannerSection = () => {
                 Financial Security
               </p>
               <a
-                href=""
+                href="https://api.whatsapp.com/send?phone=918141027000&text=Hello, I'm interested in learning more about your financial advisory and investment services. Could you please provide me with some details on how I can start planning my investments? Looking forward to hearing from you!"
                 className="bg-[#293C7D] md:text-md xl:text-lg font-bold rounded-md text-white px-6 py-3 inline-flex items-center"
+                target="_blank"
               >
                 Get Expert Guidance Now
                 <Image

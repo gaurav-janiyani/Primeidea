@@ -39,6 +39,7 @@ const BannerSection = (props) => {
               <a
                 href={props.mainLink?props.mainLink:''}
                 className="bg-[#293C7D] md:text-md xl:text-lg font-bold rounded-md text-white px-6 py-3 inline-flex items-center"
+                target="_blank"
               >
                 {props.mainLinkTitle?props.mainLinkTitle:''}
                 <Image

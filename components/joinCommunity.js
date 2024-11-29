@@ -51,7 +51,7 @@ const JoinCommunity = () => {
                 href='https://chat.whatsapp.com/Bgocyi51gNA3S4CrFkggot'
                 className="bg-[#293C7D] md:text-md xl:text-lg font-bold rounded-md text-white px-6 py-3 inline-flex items-center"
                 >
-                  Join Now 
+                  Join our WhatApp Community 
                   <Image
                     src="/images/icons/arrow-square-right.png"
                     width={21}

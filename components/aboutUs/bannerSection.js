@@ -41,22 +41,22 @@ const BannerSection = () => {
                 <FadeUpOneByOneAnimation className="w-[1px] h-[20px] xl:h-[30px] my-2 bg-white inline-block"></FadeUpOneByOneAnimation>
                 <ul className="flex flex-col items-center">
                     <li className="m-2">
-                        <a href="">
+                        <a href="https://www.facebook.com/primeidea" target="_blank">
                             <FadeUpOneByOneLeftAnimation><Image src="/images/icons/social-media/facebook.png" width={40} height={40} alt="Facebook" className="w-[35px] h-[35px] xl:w-[40px] xl:h-[40px]" /></FadeUpOneByOneLeftAnimation>
                         </a>
                     </li>
                     <li className="m-2">
-                        <a href="">
+                      <a href="https://www.instagram.com/primeidea/" target="_blank">
                             <FadeUpOneByOneLeftAnimation><Image src="/images/icons/social-media/instagram.png" width={40} height={40} alt="Instagram" className="w-[35px] h-[35px] xl:w-[40px] xl:h-[40px]" /></FadeUpOneByOneLeftAnimation>
                         </a>
                     </li>
                     <li className="m-2">
-                        <a href="">
+                      <a href="https://www.linkedin.com/company/primeidea/" target="_blank">
                             <FadeUpOneByOneLeftAnimation><Image src="/images/icons/social-media/linkedin.png" width={40} height={40} alt="LinkedIn" className="w-[35px] h-[35px] xl:w-[40px] xl:h-[40px]" /></FadeUpOneByOneLeftAnimation>
                         </a>
                     </li>
                     <li className="m-2">
-                        <a href="">
+                        <a href="https://api.whatsapp.com/send?phone=918141027000&text=Hello, I'm interested in learning more about your financial advisory and investment services. Could you please provide me with some details on how I can start planning my investments? Looking forward to hearing from you!">
                             <FadeUpOneByOneLeftAnimation><Image src="/images/icons/social-media/whatsapp.png" width={40} height={40} alt="WhatsApp" className="w-[35px] h-[35px] xl:w-[40px] xl:h-[40px]" /></FadeUpOneByOneLeftAnimation>
                         </a>
                     </li>

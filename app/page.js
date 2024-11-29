@@ -25,7 +25,7 @@ export default async function Home() {
        mainTitle={"Experience You Can Trust"}
        mainSubTitle={"Under Partha Shah's guidance, Prime Idea turns financial goals into reality."}
        mainLinkTitle={"Start your journey with us"}
-       mainLink={""}
+       mainLink={"https://api.whatsapp.com/send?phone=918141027000&text=Hello, I'm interested in learning more about your financial advisory and investment services. Could you please provide me with some details on how I can start planning my investments? Looking forward to hearing from you!"}
        subSectionContent={"Prime Idea creates financial plans that fuel your ambitions today and secure your success for tomorrow, whether you’re starting out or scaling up."}
        subSectionTitle1={"Trusted By Clients"}
        subSectionSubTitle1={"80+"}
