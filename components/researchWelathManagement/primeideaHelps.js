@@ -46,7 +46,7 @@ const PrimeIdeaHelps = () => {
               </h2>
               <FadeUpOneByOneAnimation>
                 <p className="text-base md:text-lg font-light text-[#ffffff]">
-                  At Prime Idea, we understand that insurance plays a crucial role
+                  At Primeidea, we understand that insurance plays a crucial role
                   in a comprehensive wealth management plan. Our expert insurance
                   solutions are designed to safeguard your wealth, protect your
                   family, and ensure your financial goals are achieved, regardless

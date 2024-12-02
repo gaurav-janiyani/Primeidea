@@ -8,7 +8,7 @@ const OurCommitment = () => {
           <div className="w-full md:w-[54%] xl:w-[47%] pr-0 md:pr-8 xl:pr-12">
             <h2 className="text-[28px] md:text-[32px] text-[#222222] mb-2">Our Commitment</h2>
             <p className="mb-2 text-base md:text-lg xl:text-xl">
-              At Prime Idea, we are dedicated to delivering exceptional wealth
+              At Primeidea, we are dedicated to delivering exceptional wealth
               management services tailored to your unique needs. Our commitment
               includes:
             </p>

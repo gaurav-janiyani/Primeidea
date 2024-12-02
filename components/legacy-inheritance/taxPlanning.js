@@ -52,7 +52,8 @@ const TaxPlanning = () => {
           <div ref={stickyHeaderRef} className="sticky-header">
             <h2 className="text-[28px] md:text-[32px] leading-[140%] font-normal mb-6 text-[#04102A]">
               <FadeUpOneByOneAnimation>
-                How to save Tax in India with the <br className="hidden md:block" /> help of Tax Planning ?
+              Main Components of
+               <br className="hidden md:block" /> Legacy and Inheritance Planning
               </FadeUpOneByOneAnimation>
             </h2>
           </div>
@@ -62,24 +63,21 @@ const TaxPlanning = () => {
                 <div className="flex flex-col-reverse md:flex-row md:justify-between md:items-end mb-8">
                   <div className="w-full md:w-[60%] pb-[40px]">
                     <h3 className="text-[22px] md:text-[28px] font-semibold mb-3">
-                        Invest in Tax-Saving Instruments
+                        Wills & Trust
                     </h3>
                     <p className="text-lg mb-1 text-black">
-                      Investing in tax-saving instruments is a smart strategy to
-                      reduce your taxable income while growing your wealth.
-                      <br />
-                      These instruments, recognized under various sections of
-                      the Income Tax Act, offer tax deductions and incentives,
-                      making them an essential part of financial planning in
-                      India.
+                      A will is a crucial document that ensures your wishes are honored and your assets are distributed according to your intentions.
+                      <br />                      
+                      At Primeidea, we help you draft a clear and comprehensive will that reflects your values, secures your legacy, and provides peace of mind for your loved ones.
                     </p>
                   </div>
                   <div className="w-full md:w-[37%] max-w-[300px] md:max-w-full">
                     <Image
-                      src="/images/tax-planning/1.png"
+                      src="/images/legacy-inheritance-planning/service/will.png"
                       width="331"
                       height="198"
                       alt="1"
+                      className="max-w-[190px] object-contain ml-auto"
                     />
                   </div>
                 </div>
@@ -90,7 +88,7 @@ const TaxPlanning = () => {
                   <li className="px-[10px] w-[33%]">
                     <div className=" shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg h-full">
                       <Image
-                        src="/images/tax-planning/invest-tax-saving/elss.png"
+                        src="/images/legacy-inheritance-planning/service/1.png"
                         width={387}
                         height={159}
                         alt="1"
@@ -108,7 +106,7 @@ const TaxPlanning = () => {
                   <li className="px-[10px] w-[33%]">
                     <div className=" shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg h-full">
                       <Image
-                        src="/images/tax-planning/invest-tax-saving/ppf.png"
+                        src="/images/legacy-inheritance-planning/service/2.png"
                         width={387}
                         height={159}
                         alt="2"
@@ -126,7 +124,7 @@ const TaxPlanning = () => {
                   <li className="px-[10px] w-[33%]">
                     <div className=" shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg h-full">
                       <Image
-                        src="/images/tax-planning/invest-tax-saving/nps.png"
+                        src="/images/legacy-inheritance-planning/service/3.png"
                         width={387}
                         height={159}
                         alt="3"
@@ -147,14 +145,11 @@ const TaxPlanning = () => {
                 <div className="flex flex-col-reverse md:flex-row md:justify-between md:items-end mb-8">
                   <div className="w-full md:w-[60%] pb-[40px]">
                     <h3 className="text-[22px] md:text-[28px] font-semibold mb-3">
-                      Claim Deductions for expenses
+                      Tax Planning
                     </h3>
                     <p className="text-lg mb-1 text-black">
-                      Claiming deductions for various expenses helps reduce your
-                      taxable income, leading to lower tax liability. By
-                      leveraging eligible deductions under different sections of
-                      the Income Tax Act, you can maximize your savings while
-                      covering essential costsu
+                      Trusts are powerful tools in legacy and inheritance planning, allowing you to protect and manage your wealth while ensuring it is distributed according to your specific wishes.
+                      <br/>At Primeidea, we assist in establishing and managing trusts that align with your long-term goals, providing flexibility, control, and security for your assets.
                     </p>
                   </div>
                   <div className="w-full md:w-[37%] max-w-[300px] md:max-w-full">
@@ -173,7 +168,7 @@ const TaxPlanning = () => {
                   <li className="px-[10px] w-[33%]">
                     <div className=" shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg h-full">
                       <Image
-                        src="/images/tax-planning/invest-tax-saving/elss.png"
+                        src="/images/legacy-inheritance-planning/service/1.png"
                         width={387}
                         height={159}
                         alt="1"
@@ -190,7 +185,7 @@ const TaxPlanning = () => {
                   <li className="px-[10px] w-[33%]">
                     <div className=" shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg h-full">
                       <Image
-                        src="/images/tax-planning/invest-tax-saving/ppf.png"
+                        src="/images/legacy-inheritance-planning/service/2.png"
                         width={387}
                         height={159}
                         alt="2"
@@ -207,7 +202,7 @@ const TaxPlanning = () => {
                   <li className="px-[10px] w-[33%]">
                     <div className=" shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg h-full">
                       <Image
-                        src="/images/tax-planning/invest-tax-saving/nps.png"
+                        src="/images/legacy-inheritance-planning/service/3.png"
                         width={387}
                         height={159}
                         alt="3"
@@ -228,18 +223,14 @@ const TaxPlanning = () => {
                 <div className="flex flex-col-reverse md:flex-row md:justify-between md:items-end mb-8">
                   <div className="w-full md:w-[60%] pb-[40px]">
                     <h3 className="text-[22px] md:text-[28px] font-semibold mb-3">
-                      Opt for Tax-Exempt Allowances
+                      Asset Protection
                     </h3>
                     <p className="text-lg mb-1 text-black">
-                      Investing in tax-saving instruments is a smart strategy to
-                      reduce your taxable income while growing your wealth.
+                      SMART (Strategic Management of Assets and Resources through Trusts) that combines trust benefits with advanced asset management techniques.
+                      <br/><br/>
+                      Primeidea uses SMART to help you preserve, grow and efficiently transfer your wealth to future generations.
                     </p>
-                    <p className="text-lg mb-1 text-black">
-                      These instruments, recognized under various sections of
-                      the Income Tax Act, offer tax deductions and incentives,
-                      making them an essential part of financial planning in
-                      India.
-                    </p>
+                    
                   </div>
                   <div className="w-full md:w-[37%] max-w-[300px] md:max-w-full">
                     <Image
@@ -257,7 +248,7 @@ const TaxPlanning = () => {
                   <li className="px-[10px] w-[33%]">
                     <div className=" shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg h-full">
                       <Image
-                        src="/images/tax-planning/invest-tax-saving/elss.png"
+                        src="/images/legacy-inheritance-planning/service/1.png"
                         width={387}
                         height={159}
                         alt="1"
@@ -275,7 +266,7 @@ const TaxPlanning = () => {
                   <li className="px-[10px] w-[33%]">
                     <div className=" shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg h-full">
                       <Image
-                        src="/images/tax-planning/invest-tax-saving/ppf.png"
+                        src="/images/legacy-inheritance-planning/service/2.png"
                         width={387}
                         height={159}
                         alt="2"
@@ -293,7 +284,7 @@ const TaxPlanning = () => {
                   <li className="px-[10px] w-[33%]">
                     <div className=" shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg h-full">
                       <Image
-                        src="/images/tax-planning/invest-tax-saving/nps.png"
+                        src="/images/legacy-inheritance-planning/service/3.png"
                         width={387}
                         height={159}
                         alt="3"

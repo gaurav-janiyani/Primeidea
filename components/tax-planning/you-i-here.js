@@ -6,8 +6,8 @@ const YouIHereSection = () => {
     <section>
       <div className="bg-[#232D63] py-12">
         <div className="max-w-[1140px] mx-auto px-4">
-          <div className="flex justify-between">
-            <FadeUpOneByOneAnimation className="w-[50%] py-2 px-8 border-r border-r-white">
+          <div className="flex justify-between flex-col md:flex-row">
+            <FadeUpOneByOneAnimation className="w-full md:w-[50%] pb-6 md:py-2 md:px-8 border-b border-b-white md:border-b-0 md:border-r md:border-r-white">
               <div className="w-[50px] h-[50px] p-[8px] bg-white rounded-full mb-4">
                 <Image
                   src="/images/icons/users.png"
@@ -23,7 +23,7 @@ const YouIHereSection = () => {
                 Beause you took a risk and started a business  to impact lives & ignite prosperity - I love that about you!
               </p>
             </FadeUpOneByOneAnimation>
-            <FadeUpOneByOneAnimation className="w-[50%] py-2 px-8">
+            <FadeUpOneByOneAnimation className="w-full md:w-[50%] pt-6  md:py-2 md:px-8">
               <div className="w-[50px] h-[50px] p-[8px] bg-white rounded-full mb-4">
                 <Image
                   src="/images/icons/user.png"

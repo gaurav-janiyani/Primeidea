@@ -12,7 +12,7 @@ const AboutInsurance = () => {
                   Insurance Solutions for Financial Security
                 </h2>
                 <p className="text-base sm:text-lg font-light">
-                  At Prime Idea, we understand that insurance plays a crucial
+                  At Primeidea, we understand that insurance plays a crucial
                   role in a comprehensive wealth management plan. Our expert
                   insurance solutions are designed to safeguard your wealth,
                   protect your family, and ensure your financial goals are

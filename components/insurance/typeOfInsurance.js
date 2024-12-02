@@ -88,7 +88,7 @@ const TypesOfInsurance = () => {
                 Risk Management
               </h2>
               <p className="text-white text-base xl:text-lg md:max-w-[500px] xl:max-w-[770px] mx-auto text-center md:text-left">
-                At Prime Idea, effective risk management is key to a solid
+                At Primeidea, effective risk management is key to a solid
                 financial strategy. Insurance isn&apos;t just about protection—it&apos;s
                 about anticipating risks and being prepared. Our tailored
                 solutions minimize threats to your wealth and ensure financial

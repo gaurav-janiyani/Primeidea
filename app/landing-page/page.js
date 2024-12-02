@@ -20,12 +20,12 @@ export default async function LandingPage () {
 
             {/* <BannerSection 
                 mainBannerImage={"/images/landing/banner.png"}
-                mainTitle={"Empowering Your Financial Future with Prime Idea"}
+                mainTitle={"Empowering Your Financial Future with Primeidea"}
                 mainSubTitle={"Expert Wealth Management Tailored to Your Goals"}
                 mainLinkTitle={"Schedule a Consultation"}
                 mainLink={""}
                 subSectionTitle={'Why choose us ?'}
-                subSectionContent={"Prime Idea creates financial plans that fuel your ambitions today and secure your success for tomorrow, whether you’re starting out or scaling up."}
+                subSectionContent={"Primeidea creates financial plans that fuel your ambitions today and secure your success for tomorrow, whether you’re starting out or scaling up."}
                 subSectionTitle1={"Trusted By Clients"}
                 subSectionSubTitle1={"80+"}
                 subSectionTitle2={"Years of expertise"}

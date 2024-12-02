@@ -29,7 +29,7 @@ const BannerSection = () => {
                   Empowering Your Financial Future with Expertise and Integrity
                 </h1>
                 <p className="text-base xl:text-lg 2xl:text-xl font-medium text-white">
-                  At Prime Idea, we blend deep market insights with personalized
+                  At Primeidea, we blend deep market insights with personalized
                   strategies to help you achieve lasting wealth and security.
                   Our mission is to turn your financial aspirations into
                   reality, guiding you every step of the way.

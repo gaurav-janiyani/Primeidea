@@ -5,8 +5,8 @@ import Footer from "@/components/footer";
 import InsightsSection from "@/components/insightsSection";
 import WorkSection from "@/components/researchWelathManagement/workSection";
 import StepperSection from "@/components/steppers";
-import TaxPlanning from "@/components/tax-planning/taxPlanning";
 import graphqlRequest from "@/lib/graphqlRequest";
+import TaxPlanning from "@/components/legacy-inheritance/taxPlanning";
 
 async function getData(categorySlug) {
   const query = {
@@ -99,7 +99,7 @@ export default async function LegacyInheritancePlanning() {
              mainSubTitle={"Plan today to leave behind a lasting heritage for those you love."}
              mainLinkTitle={"Start Your Retirement Plan"}
              mainLink={""}
-             subSectionContent={"Prime Idea creates financial plans that fuel your ambitions today and secure your success for tomorrow, whether you’re starting out or scaling up."}
+             subSectionContent={"Primeidea creates financial plans that fuel your ambitions today and secure your success for tomorrow, whether you’re starting out or scaling up."}
              subSectionTitle1={"Trusted By Clients"}
              subSectionSubTitle1={"80+"}
              subSectionTitle2={"Years of expertise"}

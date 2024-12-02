@@ -53,7 +53,7 @@ const BannerSection = () => {
             <div className="flex justify-between">
               <div className="w-[45%]">
                 <p className="text-white text-lg xl:text-xl max-w-[500px]">
-                  Prime Idea creates financial plans that fuel your ambitions
+                  Primeidea creates financial plans that fuel your ambitions
                   today and secure your success for tomorrow, whether you’re
                   starting out or scaling up.
                 </p>

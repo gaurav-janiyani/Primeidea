@@ -10,7 +10,7 @@ const ExpertiseSection = () => {
               Our Expertise
             </h2>
             <p className="text-lg font-light">
-              Prime Idea offers a comprehensive range of wealth management
+              Primeidea offers a comprehensive range of wealth management
               services designed to meet your unique financial needs. From
               personalized financial planning to strategic investment advisory,
               we provide the expertise you need to achieve your financial goals.
@@ -41,7 +41,7 @@ const ExpertiseSection = () => {
               <h2 className="text-xl font-bold mb-2">Financial Planning</h2>
               <p className="font-normal text-black">
                 Tailored strategies that align with your unique financial goals.
-                Prime Idea creates detailed plans to guide you toward long-term
+                Primeidea creates detailed plans to guide you toward long-term
                 success.
               </p>
             </div>

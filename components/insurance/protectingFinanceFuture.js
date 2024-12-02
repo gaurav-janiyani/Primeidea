@@ -22,7 +22,7 @@ const ProtectingFinanceFuture = () => {
                 </h2>
                 <p className="text-lg xl:text-xl mb-4">
                   Filing an insurance claim is just the first step toward
-                  financial protection. At Prime Idea, we believe that how you
+                  financial protection. At Primeidea, we believe that how you
                   manage your claim payout is equally crucial. Many people
                   mistakenly misuse or mismanage their funds, leading to
                   long-term financial issues. Here are common pitfalls and how

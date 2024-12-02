@@ -8,7 +8,7 @@ const WealthCreationPreservation = () => {
             <div className="2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-4 py-12 bg-[#F6FDFF]">
                 <h2 className="text-[24px] md:text-[28px] 2xl:text-[32px] font-light mb-6 text-[#2D2D2D] text-center leading-[130%]">
                     <FadeUpOneByOneAnimation>
-                        At Prime Idea, we offer a balanced approach to <br className="hidden md:inline-block" /> <strong>Wealth Preservation and Wealth Creation.</strong>
+                        At Primeidea, we offer a balanced approach to <br className="hidden md:inline-block" /> <strong>Wealth Preservation and Wealth Creation.</strong>
                     </FadeUpOneByOneAnimation>
                 </h2>
                 <div className="">
@@ -19,7 +19,7 @@ const WealthCreationPreservation = () => {
                                 <div className="">
                                     <h3 className="text-[#293C7D] text-xl font-bold mb-1" >Wealth Preservation</h3>
                                     <p className="text-[14px] font-semibold line-clamp-4">
-                                    At Prime Idea Ventures, we focus on strategies that protect your wealth while fostering sustained growth and generational impact. Discover our tailored services to build a legacy you can rely on.
+                                    At Primeidea Ventures, we focus on strategies that protect your wealth while fostering sustained growth and generational impact. Discover our tailored services to build a legacy you can rely on.
                                     </p>
                                 </div>
                             </FadeUpOneByOneAnimation>
