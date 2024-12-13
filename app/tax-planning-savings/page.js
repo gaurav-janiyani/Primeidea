@@ -110,11 +110,11 @@ export default async function TaxPlanningPage() {
                 subSectionTitle3={"Client Satisfaction"}
                 subSectionSubTitle3={"92+"}
             />
-            <TaxPlanning blogsListing={posts.posts.nodes} />
+            <TaxPlanning  />
             <StepperSection title={'Steps for Tax Planning & Savings'}  steps={steps}/>
             <YouIHereSection />
             <GiftCitySection />
-            <InsightsSection />
+            <InsightsSection blogsListing={posts.posts.nodes} />
             <FaqsSection />
             <ClientTestimonial />
             <Footer />

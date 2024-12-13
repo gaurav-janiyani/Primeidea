@@ -8,6 +8,7 @@ import GetStarted from "@/components/retirement-planning/getStarted";
 import ReportSection from "@/components/retirement-planning/reportSection";
 import StepperSection from "@/components/steppers";
 import graphqlRequest from "@/lib/graphqlRequest";
+import RetirementPlanningSection from "@/components/retirement-planning/retirementPlanningSection";
 
 async function getData(categorySlug) {
   const query = {
@@ -109,7 +110,8 @@ export default async function RetirementPlanning() {
             subSectionSubTitle3={"92+"}
             />
 
-            <WorkSection />
+            {/* <WorkSection /> */}
+            <RetirementPlanningSection  />
 
             <StepperSection title={'Steps for Dream Retirement Planning'} steps={steps}/>
 
