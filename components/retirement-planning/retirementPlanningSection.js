@@ -72,10 +72,11 @@ const RetirementPlanningSection = () => {
                   </div>
                   <div className="w-full md:w-[37%] max-w-[300px] md:max-w-full">
                     <Image
-                      src="/images/tax-planning/1.png"
+                      src="/images/retirement-planning/services/serviceMain1.png"
                       width="331"
                       height="198"
-                      alt="1"
+                      alt="Early Retirement"
+                      className="max-h-[260px] object-contain"
                     />
                   </div>
                 </div>
@@ -86,10 +87,10 @@ const RetirementPlanningSection = () => {
                   <li className="px-[10px] w-[33%]">
                     <div className=" shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg h-full">
                       <Image
-                        src="/images/tax-planning/invest-tax-saving/elss.png"
+                        src="/images/retirement-planning/services/service11.png"
                         width={387}
                         height={159}
-                        alt="1"
+                        alt="Aggressive Savings & Investments"
                       />
                       <h3 className="my-[10px] text-lg text-[#222222] font-bold">
                         Aggressive Savings & Investments
@@ -102,10 +103,10 @@ const RetirementPlanningSection = () => {
                   <li className="px-[10px] w-[33%]">
                     <div className=" shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg h-full">
                       <Image
-                        src="/images/tax-planning/invest-tax-saving/ppf.png"
+                        src="/images/retirement-planning/services/service12.png"
                         width={387}
                         height={159}
-                        alt="2"
+                        alt="Lifestyle Planning"
                       />
                       <h3 className="my-[10px] text-lg text-[#222222] font-bold">
                         Lifestyle Planning
@@ -118,10 +119,10 @@ const RetirementPlanningSection = () => {
                   <li className="px-[10px] w-[33%]">
                     <div className=" shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg h-full">
                       <Image
-                        src="/images/tax-planning/invest-tax-saving/nps.png"
+                        src="/images/retirement-planning/services/service13.png"
                         width={387}
                         height={159}
-                        alt="3"
+                        alt="Financial Independence"
                       />
                       <h3 className="my-[10px] text-lg text-[#222222] font-bold">
                         Financial Independence
@@ -147,10 +148,11 @@ const RetirementPlanningSection = () => {
                   </div>
                   <div className="w-full md:w-[37%] max-w-[300px] md:max-w-full">
                     <Image
-                      src="/images/tax-planning/1.png"
+                      src="/images/retirement-planning/services/serviceMain2.png"
                       width="331"
                       height="198"
-                      alt="1"
+                      alt="Ideal Retirement"
+                      className="max-h-[260px] object-contain"
                     />
                   </div>
                 </div>
@@ -161,10 +163,10 @@ const RetirementPlanningSection = () => {
                   <li className="px-[10px] w-[33%]">
                     <div className=" shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg h-full">
                       <Image
-                        src="/images/tax-planning/invest-tax-saving/elss.png"
+                        src="/images/retirement-planning/services/service21.png"
                         width={387}
                         height={159}
-                        alt="1"
+                        alt="Balanced Investment Strategy"
                       />
                       <h3 className="my-[10px] text-lg text-[#222222] font-bold">
                         Balanced Investment Strategy
@@ -177,10 +179,10 @@ const RetirementPlanningSection = () => {
                   <li className="px-[10px] w-[33%]">
                     <div className=" shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg h-full">
                       <Image
-                        src="/images/tax-planning/invest-tax-saving/ppf.png"
+                        src="/images/retirement-planning/services/service22.png"
                         width={387}
                         height={159}
-                        alt="2"
+                        alt="Comprehensive Planning"
                       />
                       <h3 className="my-[10px] text-lg text-[#222222] font-bold">
                         Comprehensive Planning
@@ -193,10 +195,10 @@ const RetirementPlanningSection = () => {
                   <li className="px-[10px] w-[33%]">
                     <div className=" shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg h-full">
                       <Image
-                        src="/images/tax-planning/invest-tax-saving/nps.png"
+                        src="/images/retirement-planning/services/service23.png"
                         width={387}
                         height={159}
-                        alt="3"
+                        alt="Sustainable Income"
                       />
                       <h3 className="my-[10px] text-lg text-[#222222] font-bold">
                         Sustainable Income
@@ -223,10 +225,11 @@ const RetirementPlanningSection = () => {
                   </div>
                   <div className="w-full md:w-[37%] max-w-[300px] md:max-w-full">
                     <Image
-                      src="/images/tax-planning/1.png"
+                      src="/images/retirement-planning/services/serviceMain3.png"
                       width="331"
                       height="198"
-                      alt="1"
+                      alt="Gurantee Fixed Income"
+                      className="max-h-[260px] object-contain"
                     />
                   </div>
                 </div>
@@ -237,10 +240,10 @@ const RetirementPlanningSection = () => {
                   <li className="px-[10px] w-[33%]">
                     <div className=" shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg h-full">
                       <Image
-                        src="/images/tax-planning/invest-tax-saving/elss.png"
+                        src="/images/retirement-planning/services/service31.png"
                         width={387}
                         height={159}
-                        alt="1"
+                        alt="Low-Risk Investments"
                       />
                       <h3 className="my-[10px] text-lg text-[#222222] font-bold">
                         Low-Risk Investments
@@ -253,10 +256,10 @@ const RetirementPlanningSection = () => {
                   <li className="px-[10px] w-[33%]">
                     <div className=" shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg h-full">
                       <Image
-                        src="/images/tax-planning/invest-tax-saving/ppf.png"
+                        src="/images/retirement-planning/services/service32.png"
                         width={387}
                         height={159}
-                        alt="2"
+                        alt="Fixed Annuties"
                       />
                       <h3 className="my-[10px] text-lg text-[#222222] font-bold">
                         Fixed Annuties
@@ -271,10 +274,10 @@ const RetirementPlanningSection = () => {
                   <li className="px-[10px] w-[33%]">
                     <div className=" shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg h-full">
                       <Image
-                        src="/images/tax-planning/invest-tax-saving/nps.png"
+                        src="/images/retirement-planning/services/service33.png"
                         width={387}
                         height={159}
-                        alt="3"
+                        alt="Budget-Friendly"
                       />
                       <h3 className="my-[10px] text-lg text-[#222222] font-bold">
                         Budget-Friendly

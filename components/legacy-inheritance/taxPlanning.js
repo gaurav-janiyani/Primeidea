@@ -91,15 +91,13 @@ const TaxPlanning = () => {
                         src="/images/legacy-inheritance-planning/service/1.png"
                         width={387}
                         height={159}
-                        alt="1"
+                        alt="Clarity and Control"
                       />
                       <h3 className="my-[10px] text-lg text-[#222222] font-bold">
-                        Equity-Linked Savings Scheme (ELSS)
+                        Clarity and Control
                       </h3>
                       <p className="text-base font-normal text-[#222222]">
-                        ELSS funds are equity-based mutual funds with a 3-year
-                        lock-in, offering high returns and tax deductions up to
-                        ₹1.5 lakh under Section 80C.
+                        A well-drafted will gives you complete control over how your assets are distributed, ensuring that your wishes are clear and legally binding
                       </p>
                     </div>
                   </li>
@@ -109,15 +107,13 @@ const TaxPlanning = () => {
                         src="/images/legacy-inheritance-planning/service/2.png"
                         width={387}
                         height={159}
-                        alt="2"
+                        alt="Minimizing Disputes"
                       />
                       <h3 className="my-[10px] text-lg text-[#222222] font-bold">
-                        Public Provident Fund (PPF)
+                        Minimizing Disputes
                       </h3>
                       <p className="text-base font-normal text-[#222222]">
-                        PPF is a 15-year savings scheme with a fixed interest
-                        rate, offering tax benefits under Section 80C. Interest
-                        earned and maturity are tax-free.
+                        By clearly outlining your intentions, a will helps reduce the risk of family disputes or legal challenges, protecting your loved ones from potential conflicts.
                       </p>
                     </div>
                   </li>
@@ -127,15 +123,13 @@ const TaxPlanning = () => {
                         src="/images/legacy-inheritance-planning/service/3.png"
                         width={387}
                         height={159}
-                        alt="3"
+                        alt="Tax Efficiency"
                       />
                       <h3 className="my-[10px] text-lg text-[#222222] font-bold">
-                        National Pension System (NPS)
+                        Tax Efficiency
                       </h3>
                       <p className="text-base font-normal text-[#222222]">
-                        NPS is a government-backed pension scheme offering tax
-                        benefits under Section 80C and an extra ₹50,000
-                        deduction under Section 80CCD(1B).
+                        Our expert guidance ensures your will is structured to minimize tax liabilities, preserving more of your wealth for your heirs
                       </p>
                     </div>
                   </li>
@@ -154,10 +148,10 @@ const TaxPlanning = () => {
                   </div>
                   <div className="w-full md:w-[37%] max-w-[300px] md:max-w-full">
                     <Image
-                      src="/images/tax-planning/1.png"
+                      src="/images/legacy-inheritance-planning/service/tax-planning.png"
                       width="331"
                       height="198"
-                      alt="1"
+                      alt="Tax Planning"
                     />
                   </div>
                 </div>
@@ -168,52 +162,48 @@ const TaxPlanning = () => {
                   <li className="px-[10px] w-[33%]">
                     <div className=" shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg h-full">
                       <Image
-                        src="/images/legacy-inheritance-planning/service/1.png"
+                        src="/images/legacy-inheritance-planning/service/service21.png"
                         width={387}
                         height={159}
-                        alt="1"
+                        alt="Asset Protection"
                       />
                       <h3 className="my-[10px] text-lg text-[#222222] font-bold">
-                        Health Insurance Premiums (Section 80D)
+                        Asset Protection
                       </h3>
                       <p className="text-base font-normal text-[#222222]">
-                        Deduct up to ₹25,000 for premiums paid for self, spouse,
-                        and children, and ₹50,000 for senior citizen parents.
+                        Trusts offer robust protection for your assets, shielding them from potential creditors, legal disputes, or mismanagement, ensuring they are preserved for your beneficiaries.
                       </p>
                     </div>
                   </li>
                   <li className="px-[10px] w-[33%]">
                     <div className=" shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg h-full">
                       <Image
-                        src="/images/legacy-inheritance-planning/service/2.png"
+                        src="/images/legacy-inheritance-planning/service/service22.png"
                         width={387}
                         height={159}
-                        alt="2"
+                        alt="Customized Distribution"
                       />
                       <h3 className="my-[10px] text-lg text-[#222222] font-bold">
-                        Education Loan Interest (Section 80E)
+                        Customized Distribution
                       </h3>
                       <p className="text-base font-normal text-[#222222]">
-                        Deduct the entire interest paid on an education loan for
-                        higher studies, with no upper limit, for up to 8 years.
+                        A trust lets you control how your assets are distributed, ensuring they align with your goals, like supporting education or charities.
                       </p>
                     </div>
                   </li>
                   <li className="px-[10px] w-[33%]">
                     <div className=" shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg h-full">
                       <Image
-                        src="/images/legacy-inheritance-planning/service/3.png"
+                        src="/images/legacy-inheritance-planning/service/service23.png"
                         width={387}
                         height={159}
-                        alt="3"
+                        alt="Tax Effiency"
                       />
                       <h3 className="my-[10px] text-lg text-[#222222] font-bold">
-                        National Pension System (NPS)
+                        Tax Effiency
                       </h3>
                       <p className="text-base font-normal text-[#222222]">
-                        NPS is a government-backed pension scheme offering tax
-                        benefits under Section 80C and an extra ₹50,000
-                        deduction under Section 80CCD(1B).
+                        Trusts can be structured to reduce estate taxes and other financial burdens, maximizing the wealth that is passed on to your heirs and ensuring more of your legacy is preserved.
                       </p>
                     </div>
                   </li>
@@ -234,10 +224,11 @@ const TaxPlanning = () => {
                   </div>
                   <div className="w-full md:w-[37%] max-w-[300px] md:max-w-full">
                     <Image
-                      src="/images/tax-planning/1.png"
+                      src="/images/legacy-inheritance-planning/service/asset-protection.png"
                       width="331"
                       height="198"
-                      alt="1"
+                      alt="Asset Protection"
+                      className="max-h-[260px] object-contain"
                     />
                   </div>
                 </div>
@@ -248,54 +239,48 @@ const TaxPlanning = () => {
                   <li className="px-[10px] w-[33%]">
                     <div className=" shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg h-full">
                       <Image
-                        src="/images/legacy-inheritance-planning/service/1.png"
+                        src="/images/legacy-inheritance-planning/service/service31.png"
                         width={387}
                         height={159}
-                        alt="1"
+                        alt="Strategic Asset Growth"
                       />
                       <h3 className="my-[10px] text-lg text-[#222222] font-bold">
-                        Equity-Linked Savings Scheme (ELSS)
+                        Strategic Asset Growth
                       </h3>
                       <p className="text-base font-normal text-[#222222]">
-                        ELSS funds are equity-based mutual funds with a 3-year
-                        lock-in, offering high returns and tax deductions up to
-                        ₹1.5 lakh under Section 80C.
+                        SMART planning focuses on not just preserving your assets but actively managing them to grow over time, ensuring that your legacy continues to build wealth for future generations.
                       </p>
                     </div>
                   </li>
                   <li className="px-[10px] w-[33%]">
                     <div className=" shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg h-full">
                       <Image
-                        src="/images/legacy-inheritance-planning/service/2.png"
+                        src="/images/legacy-inheritance-planning/service/service32.png"
                         width={387}
                         height={159}
-                        alt="2"
+                        alt="Tailored Flexibility"
                       />
                       <h3 className="my-[10px] text-lg text-[#222222] font-bold">
-                        Public Provident Fund (PPF)
+                        Tailored Flexibility
                       </h3>
                       <p className="text-base font-normal text-[#222222]">
-                        PPF is a 15-year savings scheme with a fixed interest
-                        rate, offering tax benefits under Section 80C. Interest
-                        earned and maturity are tax-free.
+                        SMART allows you to create personalized plans that can be adjusted to meet your evolving needs and circumstances.
                       </p>
                     </div>
                   </li>
                   <li className="px-[10px] w-[33%]">
                     <div className=" shadow-[0_0_4px_0_rgba(0,0,0,0.25)] bg-white p-4 rounded-lg h-full">
                       <Image
-                        src="/images/legacy-inheritance-planning/service/3.png"
+                        src="/images/legacy-inheritance-planning/service/service33.png"
                         width={387}
                         height={159}
-                        alt="3"
+                        alt="Enhanced Control and Security"
                       />
                       <h3 className="my-[10px] text-lg text-[#222222] font-bold">
-                        National Pension System (NPS)
+                        Enhanced Control and Security
                       </h3>
                       <p className="text-base font-normal text-[#222222]">
-                        NPS is a government-backed pension scheme offering tax
-                        benefits under Section 80C and an extra ₹50,000
-                        deduction under Section 80CCD(1B).
+                        SMART trusts give you greater control over your wealth, with built-in safeguards to protect your assets and ensure they are used as you intend. 
                       </p>
                     </div>
                   </li>

@@ -11,7 +11,7 @@ const JoinCommunity = () => {
             <div className="flex justify-between flex-col lg:flex-row">
               <FadeUpOneByOneAnimation className="max-w-[500px] lg:max-w-[100%] w-full lg:w-[40%] xl:w-[45%] mb-5">
                 <h2 className="text-[98px] sm:text-[118px] xl:text-[158px] 2xl:text-[170px] font-extrabold leading-[100%] bg-[#2f8d46] bg-[url('/images/home/prime-idea-textbg.png')] bg-repeat bg-clip-text text-transparent">
-                  Primeidea{" "}
+                  Prime idea{" "}
                   <span className="inline-block w-[70px] h-[70px] bg-[url('/images/home/prime-idea-textbg.png')] rounded-[50%]"></span>
                 </h2>
               </FadeUpOneByOneAnimation>

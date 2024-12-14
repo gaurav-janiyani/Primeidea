@@ -5,12 +5,12 @@ import Link from "next/link";
 
 const navigation = [
   {
-    name: "Wealth Creation",
+    name: "Financial Planning",
     href: "research-based-wealth-management",
     current: true,
   },
   {
-    name: "Wealth Preservation",
+    name: "Investment Planning",
     href: "#",
     current: false,
     submenus: [
@@ -122,7 +122,7 @@ export default function Header() {
                   href="/financial-planning-and-investment-advisory"
                   className="block py-4 2xl:py-5 px-2 2xl:px-3 text-[15px] 2xl:text-base font-medium md:w-auto hover:text-[#E40115]"
                 >
-                  Wealth Creation
+                  Financial Planning
                 </a>
               </li>
               {/* <li className="!ml-2 group">
@@ -136,7 +136,7 @@ export default function Header() {
                     onMouseEnter={() => setIsActiveWealthCreationMenu(true)}
                     onMouseLeave={() => setIsActiveWealthCreationMenu(false)}
                   >
-                    Wealth Creation{" "}
+                    Financial Planning{" "}
                     <svg
                       className="w-2.5 h-2.5 ms-3"
                       aria-hidden="true"
@@ -218,7 +218,7 @@ export default function Header() {
                   onMouseEnter={() => setIsActiveWealthPreservationMenu(true)}
                   onMouseLeave={() => setIsActiveWealthPreservationMenu(false)}
                 >
-                  Wealth Preservation{" "}
+                  Investment Planning{" "}
                   <svg
                     className="w-2.5 h-2.5 ms-3"
                     aria-hidden="true"

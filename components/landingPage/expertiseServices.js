@@ -68,10 +68,10 @@ const ExpertiseSection = () => {
                 src="/images/landing/icons/wealth-preservation.png"
                 width={109}
                 height={116}
-                alt="Wealth preservation"
+                alt="Investment Planning"
                 className="w-[85px] h-[85px] 2xl:h-[100px] object-contain mt-3 mb-4 lg:my-4"
               />
-              <h2 className="text-xl font-bold mb-2">Wealth Preservation</h2>
+              <h2 className="text-xl font-bold mb-2">Investment Planning</h2>
               <p className="font-normal text-black">
                 We protect your wealth for future generations with strategies
                 that guard against market volatility and economic changes.

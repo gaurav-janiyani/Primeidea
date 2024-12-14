@@ -61,11 +61,11 @@ const Footer = () => {
                 </FadeUpOneByOneAnimation>
               </div>
               <FadeUpOneByOneAnimation className="pb-10 lg:pb-20 md:pt-12 w-full sm:px-8 lg:pl-14 lg:pr-10 sm:w-1/2 md:max-w-[42%] xl:max-w-[40%] 2xl:max-w-[33.33%]">
-                <LinkGroup header="Wealth Creation">
+                <LinkGroup header="Financial Planning">
                   {/* <NavLink link="/#" label="Financial Investment Advisory" /> */}
                   <NavLink link="/financial-planning-and-investment-advisory" label="Financial Planning & Investment Advisory" />
                 </LinkGroup>
-                <LinkGroup header="Wealth Preservation">
+                <LinkGroup header="Investment Planning">
                   <NavLink link="/research-based-wealth-management" label="Research Based Wealth Management" />
                   <NavLink link="/retirement-planning" label="Dream Retirement Planning" />
                   <NavLink link="/legacy-inheritance-planning" label="Legacy & Inheritance Planning" />

@@ -7,7 +7,7 @@ const HelpWealthCreation = () => {
       <div className="py-8 2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-4">
         <h2 className="text-2xl xl:text-3xl mb-6 font-medium">
           <FadeUpOneByOneAnimation>
-            How we help in wealth creation?
+            How we help in Financial Planning?
             </FadeUpOneByOneAnimation>
         </h2>
         <div className="flex justify-between flex-col md:flex-row mx-[-15px]">
@@ -21,7 +21,7 @@ const HelpWealthCreation = () => {
               src="/images/financial-planning/wealth-creation.png"
               width={638}
               height={517}
-              alt="Wealth Creation"
+              alt="Financial Planning"
             />
           </div>
           <div className="w-full md:w-1/2 px-[15px] md:max-h-[660px] md:overflow-x-hidden md:overflow-y-scroll">
