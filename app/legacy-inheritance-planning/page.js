@@ -1,12 +1,12 @@
 import BannerSection from "@/components/legacy-inheritance/bannerSection";
 import ClientTestimonial from "@/components/clientTestimonial";
-import FaqsSection from "@/components/faqsSection";
 import Footer from "@/components/footer";
 import InsightsSection from "@/components/insightsSection";
 import WorkSection from "@/components/researchWelathManagement/workSection";
 import StepperSection from "@/components/steppers";
 import graphqlRequest from "@/lib/graphqlRequest";
 import TaxPlanning from "@/components/legacy-inheritance/taxPlanning";
+import FaqsSection from "@/components/legacy-inheritance/faqsSection";
 
 async function getData(categorySlug) {
   const query = {

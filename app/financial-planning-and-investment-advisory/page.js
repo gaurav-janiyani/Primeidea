@@ -1,6 +1,6 @@
 import BannerSection from "@/components/bannerSection";
 import ClientTestimonial from "@/components/clientTestimonial";
-import FaqsSection from "@/components/faqsSection";
+import FaqsSection from "@/components/financialPlanning&Investment/faqsSection";
 import FinancialPlanning from "@/components/financialPlanning&Investment/financialPlanning";
 import GetStarted from "@/components/financialPlanning&Investment/getStarted";
 import HelpWealthCreation from "@/components/financialPlanning&Investment/helpWealthCreation";

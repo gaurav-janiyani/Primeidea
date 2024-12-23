@@ -1,6 +1,5 @@
 import BannerSection from "@/components/bannerSection";
 import ClientTestimonial from "@/components/clientTestimonial";
-import FaqsSection from "@/components/faqsSection";
 import Footer from "@/components/footer";
 import InsightsSection from "@/components/insightsSection";
 import WorkSection from "@/components/researchWelathManagement/workSection";
@@ -9,6 +8,7 @@ import ReportSection from "@/components/retirement-planning/reportSection";
 import StepperSection from "@/components/steppers";
 import graphqlRequest from "@/lib/graphqlRequest";
 import RetirementPlanningSection from "@/components/retirement-planning/retirementPlanningSection";
+import FaqsSection from "@/components/retirement-planning/faqsSection";
 
 async function getData(categorySlug) {
   const query = {

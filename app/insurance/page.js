@@ -1,6 +1,5 @@
 import BannerSection from "@/components/bannerSection";
 import ClientTestimonial from "@/components/clientTestimonial";
-import FaqsSection from "@/components/faqsSection";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import InsightsSection from "@/components/insightsSection";
@@ -9,6 +8,7 @@ import ProtectingFinanceFuture from "@/components/insurance/protectingFinanceFut
 import TypesOfInsurance from "@/components/insurance/typeOfInsurance";
 import Image from "next/image";
 import graphqlRequest from "@/lib/graphqlRequest";
+import FaqsSection from "@/components/insurance/faqsSection";
 
 async function getData(categorySlug) {
   const query = {
