@@ -34,7 +34,7 @@ const GetStarted = () => {
                 alt="Get Started"
                 className="mr-2 sm:mr-4 w-[30px] sm:w-[50px] xl:w-[60px] h-[30px] sm:h-[50px] xl:h-[60px]"
               />
-              <a href="" className="flex items-center text-white">
+              <button  className="flex items-center text-white">
                 <span className="text-base sm:text-[22px] xl:text-[28px]">
                     Get Started
                 </span>
@@ -45,7 +45,7 @@ const GetStarted = () => {
                   alt="Arrow Right"                  
                   className="ml-3"
                 />
-              </a>
+              </button>
             </div>
           </div>
         </div>

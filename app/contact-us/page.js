@@ -1,8 +1,9 @@
+"use client"
 import Footer from "@/components/footer";
 import Header from "@/components/header";
+import Image from "next/image";
 
-
-const ContactUs = () => {
+const ContactUs = () => {   
     return (
         <>
         <Header />
@@ -36,6 +37,61 @@ const ContactUs = () => {
                             </div>
                         </div>
                     </section>
+                </div>
+                <div className="2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-4 pt-16 ">                
+                    <div className="">
+                            <div className="flex flex-col md:flex-row items-center md:items-center">
+                                <div className="w-full md:w-1/2 mb-8 md:mb-0 md:mr-8">
+                                    <Image src="/images/contact/contact-form.png" alt="Contact Us" className="w-full h-auto rounded-lg" width={520} height={520} />
+                                </div>
+                                <div className="w-full md:w-1/2 bg-[#f2f3f4] py-8 px-12 rounded-lg shadow-lg bg-[#fff]">
+                                    <h2 className="text-2xl sm:text-3xl font-semibold text-gray-800 mb-2">Get in Touch</h2>
+                                    <p className="text-[#787878] font-medium">Send us a message using the form below, and we'll be in touch.</p>
+                                    
+                                    <form className="space-y-4 mt-6">               
+                                    <input 
+                                        type="text" 
+                                        id="fullName" 
+                                        name="fullName" 
+                                        placeholder="Enter Your Full Name" 
+                                        required
+                                        className="mb-4 block font-medium w-full px-3 py-3 border border-[#f6f6f6] shadow-sm bg-[#f6f6f6] text-[#1f4153] focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 text-[16px]" 
+                                    />
+                                    <input 
+                                        type="email" 
+                                        id="email" 
+                                        name="email" 
+                                        placeholder="Enter Your Email" 
+                                        required
+                                        className="mb-4 block font-medium w-full px-3 py-3 border border-[#f6f6f6] shadow-sm bg-[#f6f6f6] text-[#1f4153] focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 text-[16px]" 
+                                    />
+                                    <input 
+                                        type="tel" 
+                                        id="phone" 
+                                        name="phone" 
+                                        placeholder="Enter Your Phone No" 
+                                        required
+                                        className="mb-4 block font-medium w-full px-3 py-3 border border-[#f6f6f6] shadow-sm bg-[#f6f6f6] text-[#1f4153] focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 text-[16px]" 
+                                    />
+                                    <textarea 
+                                        id="description" 
+                                        name="description" 
+                                        rows="4" 
+                                        placeholder="Enter Your Message" 
+                                        required
+                                        className="mb-6 block font-medium w-full px-3 py-3 border border-[#f6f6f6] shadow-sm bg-[#f6f6f6] text-[#1f4153] focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 text-[16px]"
+                                    ></textarea>
+                                    <button 
+                                        type="submit" 
+                                        className="bg-[#293C7D] md:text-md xl:text-lg font-bold rounded-md text-white px-6 py-3 w-full text-center"
+                                    >
+                                        Submit
+                                    </button>
+                                </form>
+                                </div>
+                            </div>
+
+                    </div>
                 </div>
             </main>
             <iframe
