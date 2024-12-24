@@ -46,7 +46,7 @@ const ContactUs = () => {
                                 </div>
                                 <div className="w-full md:w-1/2 bg-[#f2f3f4] py-8 px-12 rounded-lg shadow-lg bg-[#fff]">
                                     <h2 className="text-2xl sm:text-3xl font-semibold text-gray-800 mb-2">Get in Touch</h2>
-                                    <p className="text-[#787878] font-medium">Send us a message using the form below, and we'll be in touch.</p>
+                                    <p className="text-[#787878] font-medium">Send us a message using the form below, and we&apos;ll be in touch.</p>
                                     
                                     <form className="space-y-4 mt-6">               
                                     <input 
