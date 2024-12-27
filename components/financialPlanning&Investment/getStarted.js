@@ -1,6 +1,7 @@
 import FadeUpOneByOneAnimation from "@/animations/FadeUpOneByOneAnimation";
 import FadeUpOneByOneRightAnimation from "@/animations/FadeUpOneByOneRightAnimation";
 import Image from "next/image";
+import GetStartedButton from "../getStartedButton";
 
 const GetStarted = () => {
   return (
@@ -26,7 +27,8 @@ const GetStarted = () => {
               <h2 className="text-[18px] md:text-[20px] xl:text-2xl font-medium text-[#293C7D] mb-1 sm:mb-2"><FadeUpOneByOneAnimation>Grow your wealth with a</FadeUpOneByOneAnimation></h2>
               <h4 className="text-[20px] sm:text-[22px] md:text-[32px] xl:text-4xl font-semibold text-[#293C7D] capitalize"><FadeUpOneByOneAnimation>personalised financial plan</FadeUpOneByOneAnimation></h4>
             </div>
-            <div className="absolute bottom-0 right-0 flex bg-[#479AD2] pl-3 sm:pl-6 md:pl-10 xl:pl-12 pr-3 sm:pr-6 py-3 xl:py-5 rounded-tl-[32px] xl:rounded-tl-[42px] rounded-br-[22px] xl:rounded-br-[22px]">
+            <GetStartedButton />
+            {/* <div className="absolute bottom-0 right-0 flex bg-[#479AD2] pl-3 sm:pl-6 md:pl-10 xl:pl-12 pr-3 sm:pr-6 py-3 xl:py-5 rounded-tl-[32px] xl:rounded-tl-[42px] rounded-br-[22px] xl:rounded-br-[22px]">
               <Image
                 src="/images/retirement-planning/get-start.png"
                 width={60}
@@ -46,7 +48,7 @@ const GetStarted = () => {
                   className="ml-3"
                 />
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

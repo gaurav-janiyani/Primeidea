@@ -1,9 +1,11 @@
+"use client"
 import FadeUpOneByOneRightAnimation from "@/animations/FadeUpOneByOneRightAnimation";
 import Image from "next/image";
+import GetStartedButton from "../getStartedButton";
 
 const GetStarted = () => {
   return (
-    <section>
+    <section>     
       <div className="py-16">
         <div className="2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-4">
           <div className="relative">
@@ -25,27 +27,7 @@ const GetStarted = () => {
               <h2 className="text-[32px] md:text-4xl font-semibold text-[#14606E] mb-2"><FadeUpOneByOneRightAnimation>Sail Smoothly</FadeUpOneByOneRightAnimation></h2>
               <h4 className="text-xl md:text-2xl font-medium text-[#14606E]"><FadeUpOneByOneRightAnimation>into Retirement with Our Help</FadeUpOneByOneRightAnimation></h4>
             </div>
-            <div className="absolute bottom-0 right-0 flex bg-[#479AD2] pl-3 sm:pl-6 md:pl-10 xl:pl-12 pr-3 sm:pr-6 py-3 xl:py-5 rounded-tl-[32px] xl:rounded-tl-[42px] rounded-br-[22px] xl:rounded-br-[22px]">
-              <Image
-                src="/images/retirement-planning/get-start.png"
-                width={60}
-                height={60}
-                alt="Get Started"
-                className="mr-2 sm:mr-4 w-[30px] sm:w-[50px] xl:w-[60px] h-[30px] sm:h-[50px] xl:h-[60px]"
-              />
-              <a href="" className="flex items-center text-white">
-                <span className="text-base sm:text-[22px] xl:text-[28px]">
-                    Get Started
-                </span>
-                <Image
-                  src="/images/icons/arrow-right-light.png"
-                  width={22}
-                  height={12}
-                  alt="Arrow Right"                  
-                  className="ml-3"
-                />
-              </a>
-            </div>
+            <GetStartedButton />
           </div>
         </div>
       </div>

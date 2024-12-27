@@ -7,7 +7,7 @@ import FadeUpAnimationDelay from "@/animations/FadeUpAnimationDelay";
 
 const BannerSection = (props) => {
   
-  console.log(props);
+  // console.log(props);
   return (
     <section>
       <div className="banner-section relative h-full md:h-[100vh]">
