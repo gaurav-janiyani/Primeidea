@@ -3,6 +3,8 @@
 import Image from "next/image";
 import Header from "../header";
 import moment from "moment";
+import Footer from "../footer";
+import GetStarted from "../financialPlanning&Investment/getStarted";
   
 
 const BlogDetail = (props) => {
@@ -52,7 +54,7 @@ const BlogDetail = (props) => {
                             <Image src="/images/blogs/single-blog.jpg" width={1920} height={600} alt="Single Blog" className="rounded-[10px]"/>
                         </div>
                         <div className="single-blog-content">
-                            <div dangerouslySetInnerHTML={{ __html: post.excerpt}}></div>
+                            <div dangerouslySetInnerHTML={{ __html: post.content}}></div>
                         </div>
                     </div>
                     <div className="w-full max-w-[350px] lg:w-[280px] lg:max-w-[280px] bg-[#fff] shadow-[0_0_2px_0_#00000040] rounded-[10px] h-full">
@@ -95,6 +97,11 @@ const BlogDetail = (props) => {
                 </div>
             </div>
         </section>
+
+        <GetStarted />
+
+        <Footer />
+
         </>
     )
 }

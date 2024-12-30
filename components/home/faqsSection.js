@@ -13,12 +13,12 @@ const FaqsSection = () => {
         <div className="py-16 sm:py-8">
             <div className="mx-auto 2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] px-4">
               <FadeUpOneByOneAnimation className="text-center max-w-[767px] px-4 mx-auto">
-                <h2 className="text-2xl font-medium tracking-tight mb-2 md:mb-4 text-[#04102A] sm:text-3xl">
+                <h2 className="text-2xl font-medium tracking-tight mb-6 md:mb-8 text-[#04102A] sm:text-3xl">
                   Frequently Asked Questions
                 </h2>
-                <p className="mb-12 text-base font-semibold leading-6 text-[#4D4D4D]">
+                {/* <p className="mb-12 text-base font-semibold leading-6 text-[#4D4D4D]">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                </p>
+                </p> */}
               </FadeUpOneByOneAnimation>
               <div className="max-w-[1023px] mx-auto">
                 <ul>

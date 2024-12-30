@@ -12,6 +12,11 @@ import Footer from "@/components/footer";
 import InsightsSection from "@/components/insightsSection";
 import graphqlRequest from "@/lib/graphqlRequest";
 
+export const metadata = {
+    title: 'Financial Planning And Investment Advisory Services in India',
+    description: 'Discover top-tier wealth management services in India with certified consultants. Contact with the best wealth management firm for solutions and expert advisory. Achieve your goals with our leading wealth management company.',
+}
+
 async function getData(categorySlug) {
   const query = {
       query: `query getPostListByCategory($categorySlug: String!) {

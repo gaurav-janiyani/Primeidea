@@ -64,38 +64,38 @@ const ClientTestimonial = () => {
   const sliderItem = [
     {
       imageUrl: "/images/icons/comma.png",
-      title: "Mark Henry",
-      subtitle: "Developer, Oklavery",
+      title: "Mr. Ravi Patel",
+      subtitle: "IT Professional",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
+        "The best investment advisor in Vadodara! They provide expert advice, and have helped me grow my investments steadily. Highly recommend their professional services!",
     },
     {
       imageUrl: "/images/icons/comma.png",
-      title: "Mark Henry",
-      subtitle: "Developer, Oklavery",
+      title: "Ms. Priya Shah",
+      subtitle: "Entrepreneur",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
+        "Working with the best mutual fund advisor in Vadodara has been a great experience. They offer clear, insightful advice and have significantly improved my financial portfolio.",
     },
     {
       imageUrl: "/images/icons/comma.png",
-      title: "Mark Henry",
-      subtitle: "Developer, Oklavery",
+      title: "Mr. Anand Desai",
+      subtitle: "Senior Manager",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
+        "Excellent service from the best mutual fund advisor in Gujarat! Their expertise and dedication have led to consistent portfolio growth. Highly trust their advice and guidance.",
     },
     {
       imageUrl: "/images/icons/comma.png",
-      title: "Mark Henry",
-      subtitle: "Developer, Oklavery",
+      title: "Dr. Neha Joshi",
+      subtitle: "Doctor",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
+        "I’m grateful for the best investment advisor in Vadodara. Their thoughtful strategies and market insights have provided excellent returns on my investments. Truly trustworthy ",
     },
     {
       imageUrl: "/images/icons/comma.png",
-      title: "Mark Henry",
-      subtitle: "Developer, Oklavery",
+      title: "Mr. Manish Kumar",
+      subtitle: "Business Owner",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
+        "As the best mutual fund advisor in Gujarat, they’ve helped me build a solid investment portfolio. Their expertise and dedication ensure my financial success. Highly recommend!",
     },
   ];
 

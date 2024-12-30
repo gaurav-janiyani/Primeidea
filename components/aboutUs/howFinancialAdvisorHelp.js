@@ -4,40 +4,41 @@ const features = [
   {
     name: 'Financial Planning',
     description:
-      'Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.',
+      'Develop a comprehensive financial plan to achieve your short-term and long-term financial goals with expert guidance.',
     icon: DocumentArrowUpIcon,
   },
   {
     name: 'Wealth Management',
     description:
-      'Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.',
+      'Strategically manage and grow your wealth through investment solutions, diversification, and personalized financial strategies for optimal returns.',
     icon: DocumentCurrencyRupeeIcon,
   },
   {
     name: 'Retirement Planning',
     description:
-      'Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.',
+      'Create a tailored retirement strategy to ensure financial independence and security during your retirement years, with expert advice.',
     icon: DocumentChartBarIcon,
   },
   {
     name: 'Legacy & Inheritance Planning',
     description:
-      'Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.',
+      'Ensure your assets are passed down efficiently and according to your wishes, with personalized legacy and inheritance strategies.',
     icon: ClipboardDocumentCheckIcon,
   },
   {
     name: 'Tax Planning & Saving',
     description:
-      'Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.',
+      'Optimize your tax strategies to reduce liabilities, increase savings, and maximize your financial potential with expert advice.',
     icon: ClipboardDocumentListIcon,
   },
   {
     name: 'Insurance Planning',
     description:
-      'Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.',
+      'Protect your financial well-being and family’s future with customized insurance plans tailored to your specific needs and risks.',
     icon: DocumentTextIcon,
   },
-]
+];
+
 
 export default function HowFinancialAdvisorHelp() {
   return (
@@ -49,7 +50,7 @@ export default function HowFinancialAdvisorHelp() {
             How can our financial <br/> advisor help you?
           </p>
           <p className="text-lg/8 text-gray-600">
-            Receive expert guidance tailored to your unique financial goals, helping you navigate investments, savings, and secure future planning.
+            Receive expert guidance to navigate investments, optimize savings, and plan for a secure financial future tailored to your goals.
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">

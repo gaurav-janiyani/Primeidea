@@ -9,6 +9,11 @@ import TaxPlanning from "@/components/tax-planning/taxPlanning";
 import YouIHereSection from "@/components/tax-planning/you-i-here";
 import graphqlRequest from "@/lib/graphqlRequest";
 
+export const metadata = {
+    title: 'Get Tax Planning And Management Services in India',
+    description: 'Discover expert tax planning services in India to optimize your income and save more. Explore the best tax-saving plans to meet your financial goals. Secure your future with effective income tax planning strategies.',
+}
+   
 async function getData(categorySlug) {
   const query = {
       query: `query getPostListByCategory($categorySlug: String!) {

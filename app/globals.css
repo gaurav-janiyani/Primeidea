@@ -29,6 +29,13 @@ body {
 
 /* Blog Detail Page CSS S */
 
+  .single-blog-content section{
+    font-size: 18px;
+    color: #171717;
+    line-height: 140%;
+    margin: 0px 0 20px 0;
+  }
+
   .single-blog-content h1 {
     font-size: 42px;
     color: #171717;
@@ -36,33 +43,54 @@ body {
   }
 
   .single-blog-content h2 {
-    font-size: 38px;
+    font-size: 30px;
     color: #171717;
+    line-height: 130%;
+    font-weight: 600;
+    margin: 20px 0 10px 0;
   }
 
   .single-blog-content h3 {
-    font-size: 32px;
+    font-size: 26px;
     color: #171717;
+    line-height: 130%;
+    font-weight: 600;
+    margin: 20px 0 10px 0;
   }
 
   .single-blog-content h4 {
-    font-size: 28px;
+    font-size: 22px;
     color: #171717;
+    line-height: 130%;
+    font-weight: 600;
+    margin: 20px 0 10px 0;
   }
 
   .single-blog-content h5 {
-    font-size: 24px;
+    font-size: 20px;
     color: #171717;
+    line-height: 130%;
+    font-weight: 600;
+    margin: 20px 0 10px 0;
   }
 
   .single-blog-content h6 {
-    font-size: 22px;
+    font-size: 18px;
     color: #171717;
+    line-height: 130%;
+    font-weight: 600;
+    margin: 20px 0 10px 0;
   }
 
   .single-blog-content p {
     font-size: 18px;
     color: #171717;
+    line-height: 150%;
+    margin: 20px 0 20px 0;
+  }
+
+  .single-blog-content p + p {
+    margin: 10px 0 0px 0;
   }
 
   .single-blog-content img {
@@ -80,6 +108,7 @@ body {
     list-style: decimal;
     list-style-position: inside;
     margin: 10px 0px 20px 0px;
+    display: inline-block;
   }
 
   .single-blog-content ul li,
@@ -87,6 +116,21 @@ body {
     margin: 5px 0 10px 0;
     font-size: 19px;
     color: #171717;
+  }
+
+  .single-blog-content ul li > h2,
+  .single-blog-content ul li > h3,
+  .single-blog-content ul li > h4,
+  .single-blog-content ul li > h5,
+  .single-blog-content ul li > h6,
+  .single-blog-content ol li > h2,
+  .single-blog-content ol li > h3,
+  .single-blog-content ol li > h4,
+  .single-blog-content ol li > h5,
+  .single-blog-content ol li > h6 {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 0;
   }
 
   @media (max-width: 1280px) {

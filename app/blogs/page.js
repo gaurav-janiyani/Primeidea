@@ -6,6 +6,11 @@ import { getPostList, getCategoriesPostList } from "@/lib/posts";
 import BlogListing from "@/components/blogs/blogListing";
 
 
+export const metadata = {
+    title: 'PrimeIdea Blog: Insights, Tips & Ideas for Financial Journey',
+    description: 'Explore PrimeIdea Ventures blog for expert insights on financial planning, investment strategies, retirement planning, tax savings, and wealth management to make informed financial decisions.',
+}
+
 async function getData(params) {
     const allPosts = await getPostList();
     return { allPosts: allPosts };

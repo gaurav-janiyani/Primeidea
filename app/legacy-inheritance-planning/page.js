@@ -8,6 +8,11 @@ import graphqlRequest from "@/lib/graphqlRequest";
 import TaxPlanning from "@/components/legacy-inheritance/taxPlanning";
 import FaqsSection from "@/components/legacy-inheritance/faqsSection";
 
+export const metadata = {
+    title: 'Legacy or Inheritance Planning Services in India - PrimeIdea',
+    description: 'Plan your legacy with expert inheritance financial planning and tax services. Partner with a trusted inheritance planning company to secure your assets and ensure seamless business legacy planning.',
+}
+
 async function getData(categorySlug) {
   const query = {
       query: `query getPostListByCategory($categorySlug: String!) {

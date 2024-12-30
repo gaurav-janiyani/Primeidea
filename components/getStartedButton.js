@@ -147,7 +147,7 @@ const GetStartedButton = () => {
                      <button 
                        type="submit"
                        disabled={isSubmitting}
-                       className="w-full h-12 mt-4 text-white bg-[#14606E] rounded-md disabled:opacity-50"
+                       className="w-full h-12 mt-4 text-white bg-[#479ad2] rounded-md disabled:opacity-50"
                      >
                        {isSubmitting ? 'Submitting...' : 'Submit'}
                      </button>

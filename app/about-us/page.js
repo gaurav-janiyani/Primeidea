@@ -10,11 +10,15 @@ import JoinCommunity from "@/components/joinCommunity";
 import StepperSection from "@/components/steppers";
 import { getPostList } from "@/lib/posts";
 
+export const metadata = {
+  title: 'About Us | PrimeIdea - Your Trusted Financial Partner',
+  description: 'Get to know PrimeIdea Ventures, a team of financial experts to help you achieve your personal and business goals. Learn about our values and vision.',
+}
+
 async function getData(params) {
   const allPosts = await getPostList();
   return { allPosts: allPosts };
 }
-
 
 export default async function AboutUs() { 
   const blogsListing = await getData();

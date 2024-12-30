@@ -10,6 +10,11 @@ import graphqlRequest from "@/lib/graphqlRequest";
 import RetirementPlanningSection from "@/components/retirement-planning/retirementPlanningSection";
 import FaqsSection from "@/components/retirement-planning/faqsSection";
 
+export const metadata = {
+    title: 'Best Retirement Plan Services in India - PrimeIdea',
+    description: 'Secure your future with the best retirement plans. Get expert retirement financial planning and pension services in India. Explore top retirement plan options and start planning today. ',
+}
+
 async function getData(categorySlug) {
   const query = {
       query: `query getPostListByCategory($categorySlug: String!) {

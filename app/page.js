@@ -9,11 +9,18 @@ import InsightsSection from "@/components/insightsSection";
 import JoinCommunity from "@/components/joinCommunity";
 import { getPostList } from "@/lib/posts";
 import Image from "next/image";
+// import type { Metadata } from 'next';
+
 
 async function getData(params) {
   const allPosts = await getPostList();
   return { allPosts: allPosts };
 }
+
+// export const metadata: Metadata = {
+//   title: '...',
+//   description: '...',
+// }
 
 export default async function Home() {
   const blogsListing = await getData();
