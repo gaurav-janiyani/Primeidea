@@ -10,10 +10,39 @@ import JoinCommunity from "@/components/joinCommunity";
 import StepperSection from "@/components/steppers";
 import { getPostList } from "@/lib/posts";
 
+// export const metadata = {
+//   title: 'About Us | PrimeIdea - Your Trusted Financial Partner',
+//   description: 'Get to know PrimeIdea Ventures, a team of financial experts to help you achieve your personal and business goals. Learn about our values and vision.',
+// }
 export const metadata = {
   title: 'About Us | PrimeIdea - Your Trusted Financial Partner',
   description: 'Get to know PrimeIdea Ventures, a team of financial experts to help you achieve your personal and business goals. Learn about our values and vision.',
-}
+  keywords: 'mutual funds, investment advisory, financial planning, wealth management, retirement planning, insurance solutions, Partha Shah, PrimeIdea Ventures, Gujarat financial advisor, investment consultant',
+  author: 'Partha Shah',
+  viewport: 'width=device-width, initial-scale=1',
+  robots: 'index, follow',
+  canonical: 'https://primeidea.in/about-us/',
+  openGraph: {
+    type: 'website',
+    locale: 'en_IE',
+    url: 'https://primeidea.in/about-us/',
+    site_name: 'PrimeIdea Ventures',
+    title: 'About Us | PrimeIdea - Your Trusted Financial Partner',
+    description: 'Get to know PrimeIdea Ventures, a team of financial experts to help you achieve your personal and business goals. Learn about our values and vision.',
+  },
+  twitter: {
+    handle: '@primeidea',
+    site: '@primeidea',
+    cardType: 'summary_large_image',
+  },
+  alternates: {
+    canonical: 'https://primeidea.in/about-us/',
+    languages: {
+      'en-US': 'https://primeidea.in/about-us/',
+    },
+  },
+};
+
 
 async function getData(params) {
   const allPosts = await getPostList();

@@ -6,10 +6,39 @@ import { getPostList, getCategoriesPostList } from "@/lib/posts";
 import BlogListing from "@/components/blogs/blogListing";
 
 
+// export const metadata = {
+//     title: 'PrimeIdea Blog: Insights, Tips & Ideas for Financial Journey',
+//     description: 'Explore PrimeIdea Ventures blog for expert insights on financial planning, investment strategies, retirement planning, tax savings, and wealth management to make informed financial decisions.',
+// }
+
 export const metadata = {
     title: 'PrimeIdea Blog: Insights, Tips & Ideas for Financial Journey',
     description: 'Explore PrimeIdea Ventures blog for expert insights on financial planning, investment strategies, retirement planning, tax savings, and wealth management to make informed financial decisions.',
-}
+    keywords: 'mutual funds, investment advisory, financial planning, wealth management, retirement planning, insurance solutions, Partha Shah, PrimeIdea Ventures, Gujarat financial advisor, investment consultant',
+    author: 'Partha Shah',
+    viewport: 'width=device-width, initial-scale=1',
+    robots: 'index, follow',
+    canonical: 'https://primeidea.in/blogs/',
+    openGraph: {
+      type: 'website',
+      locale: 'en_IE',
+      url: 'https://primeidea.in/blogs/',
+      site_name: 'PrimeIdea Ventures',
+      title: 'PrimeIdea Blog: Insights, Tips & Ideas for Financial Journey',
+      description: 'Explore PrimeIdea Ventures blog for expert insights on financial planning, investment strategies, retirement planning, tax savings, and wealth management to make informed financial decisions.',
+    },
+    twitter: {
+      handle: '@primeidea',
+      site: '@primeidea',
+      cardType: 'summary_large_image',
+    },
+    alternates: {
+      canonical: 'https://primeidea.in/blogs/',
+      languages: {
+        'en-US': 'https://primeidea.in/blogs/',
+      },
+    },
+  };
 
 async function getData(params) {
     const allPosts = await getPostList();

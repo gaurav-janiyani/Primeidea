@@ -10,10 +10,39 @@ import Image from "next/image";
 import graphqlRequest from "@/lib/graphqlRequest";
 import FaqsSection from "@/components/insurance/faqsSection";
 
+// export const metadata = {
+//     title: 'Get Best Insurance Services in India | PrimeIdea Ventures',
+//     description: 'Secure your future with PrimeIdea Ventures expert insurance services. From life and health coverage to auto and home protection, find solutions according to your needs.',
+// }
+
 export const metadata = {
     title: 'Get Best Insurance Services in India | PrimeIdea Ventures',
     description: 'Secure your future with PrimeIdea Ventures expert insurance services. From life and health coverage to auto and home protection, find solutions according to your needs.',
-}
+    keywords: 'mutual funds, investment advisory, financial planning, wealth management, retirement planning, insurance solutions, Partha Shah, PrimeIdea Ventures, Gujarat financial advisor, investment consultant',
+    author: 'Partha Shah',
+    viewport: 'width=device-width, initial-scale=1',
+    robots: 'index, follow',
+    canonical: 'https://primeidea.in/insurance/',
+    openGraph: {
+      type: 'website',
+      locale: 'en_IE',
+      url: 'https://primeidea.in/insurance/',
+      site_name: 'PrimeIdea Ventures',
+      title: 'Get Best Insurance Services in India | PrimeIdea Ventures',
+      description: 'Secure your future with PrimeIdea Ventures expert insurance services. From life and health coverage to auto and home protection, find solutions according to your needs.',
+    },
+    twitter: {
+      handle: '@primeidea',
+      site: '@primeidea',
+      cardType: 'summary_large_image',
+    },
+    alternates: {
+      canonical: 'https://primeidea.in/insurance/',
+      languages: {
+        'en-US': 'https://primeidea.in/insurance/',
+      },
+    },
+  };
 
 async function getData(categorySlug) {
   const query = {

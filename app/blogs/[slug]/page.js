@@ -3,6 +3,79 @@ import React from "react";
 import BlogDetail from "@/components/blogs/blogDetail";
 import graphqlRequest from "@/lib/graphqlRequest";
 
+
+export async function generateMetadata({ params }) {
+  const { slug } = params;
+  const query = {
+    query: `query pageSEO {
+      post(id: "${slug}", idType: SLUG) {
+          seo {
+            metaDesc
+            title
+            metaKeywords
+            canonical
+            focuskw
+            opengraphTitle
+            opengraphDescription
+            twitterTitle
+            twitterDescription
+            opengraphImage {
+              mediaDetails {
+                sizes {
+                  sourceUrl
+                }
+              }
+            }
+          }
+        }
+      }`,
+  };
+  const response = await graphqlRequest(query);
+  const content = response;
+
+  return {
+    title: content.data.post.seo.title,
+    description: content.data.post.seo.metaDesc,
+    keywords: content.data.post.metaKeywords,
+    applicationName: 'PrimeIdea Ventures',
+    formatDetection: {
+      email: true,
+      address: true,
+      telephone: true,
+    },
+    author: 'Partha Shah',
+    viewport: 'width=device-width, initial-scale=1',
+    robots: 'index, follow',
+    canonical: `https://primeidea.in/${slug}`,
+    alternates: {
+      canonical: `https://primeidea.in/${slug}`,
+      languages: {
+        'en-US': `https://primeidea.in/${slug}`,
+      },
+    },
+    openGraph: {
+      title: content.data.post.seo.title,
+      description: content.data.post.seo.metaDesc,
+      url: `https://primeidea.in/${slug}`,
+      site_name: 'PrimeIdea Ventures',
+      images: [
+        {
+          url: content.data.post.seo.opengraphImage?.mediaDetails.sizes
+            .sourceUrl,
+        },
+      ],
+      locale: "en_US",
+      type: "website",
+    },
+    twitter: {
+      title: content.data.post.seo.title,
+      description: content.data.post.seo.metaDesc,
+      images:
+        content.data.post.seo.opengraphImage?.mediaDetails.sizes.sourceUrl,
+    },
+  };
+}
+
 export async function getSinglePost(slug) {
     const query = {
       query: `query getSinglePost {

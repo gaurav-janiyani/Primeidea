@@ -9,6 +9,35 @@ import WorkSection from "@/components/researchWelathManagement/workSection";
 import StepperSection from "@/components/steppers";
 import graphqlRequest from "@/lib/graphqlRequest";
 
+export const metadata = {
+    title: 'Get Best Wealth Management Services in India - PrimeIdea',
+    description: 'Discover top-tier wealth management services in India with certified consultants. Contact with the best wealth management firm for solutions and expert advisory. Achieve your goals with our leading wealth management company.',
+    keywords: 'mutual funds, investment advisory, financial planning, wealth management, retirement planning, insurance solutions, Partha Shah, PrimeIdea Ventures, Gujarat financial advisor, investment consultant',
+    author: 'Partha Shah',
+    viewport: 'width=device-width, initial-scale=1',
+    robots: 'index, follow',
+    canonical: 'https://primeidea.in/research-based-wealth-management/',
+    openGraph: {
+      type: 'website',
+      locale: 'en_IE',
+      url: 'https://primeidea.in/research-based-wealth-management/',
+      site_name: 'PrimeIdea Ventures',
+      title: 'Get Best Wealth Management Services in India - PrimeIdea',
+      description: 'Discover top-tier wealth management services in India with certified consultants. Contact with the best wealth management firm for solutions and expert advisory. Achieve your goals with our leading wealth management company.',
+    },
+    twitter: {
+      handle: '@primeidea',
+      site: '@primeidea',
+      cardType: 'summary_large_image',
+    },
+    alternates: {
+      canonical: 'https://primeidea.in/research-based-wealth-management/',
+      languages: {
+        'en-US': 'https://primeidea.in/research-based-wealth-management/',
+      },
+    },
+  };
+
 async function getData(categorySlug) {
   const query = {
       query: `query getPostListByCategory($categorySlug: String!) {

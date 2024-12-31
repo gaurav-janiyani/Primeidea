@@ -8,10 +8,40 @@ import graphqlRequest from "@/lib/graphqlRequest";
 import TaxPlanning from "@/components/legacy-inheritance/taxPlanning";
 import FaqsSection from "@/components/legacy-inheritance/faqsSection";
 
+// export const metadata = {
+//     title: 'Legacy or Inheritance Planning Services in India - PrimeIdea',
+//     description: 'Plan your legacy with expert inheritance financial planning and tax services. Partner with a trusted inheritance planning company to secure your assets and ensure seamless business legacy planning.',
+// }
+
+
 export const metadata = {
     title: 'Legacy or Inheritance Planning Services in India - PrimeIdea',
     description: 'Plan your legacy with expert inheritance financial planning and tax services. Partner with a trusted inheritance planning company to secure your assets and ensure seamless business legacy planning.',
-}
+    keywords: 'mutual funds, investment advisory, financial planning, wealth management, retirement planning, insurance solutions, Partha Shah, PrimeIdea Ventures, Gujarat financial advisor, investment consultant',
+    author: 'Partha Shah',
+    viewport: 'width=device-width, initial-scale=1',
+    robots: 'index, follow',
+    canonical: 'https://primeidea.in/legacy-inheritance-planning/',
+    openGraph: {
+      type: 'website',
+      locale: 'en_IE',
+      url: 'https://primeidea.in/legacy-inheritance-planning/',
+      site_name: 'PrimeIdea Ventures',
+      title: 'Legacy or Inheritance Planning Services in India - PrimeIdea',
+      description: 'Plan your legacy with expert inheritance financial planning and tax services. Partner with a trusted inheritance planning company to secure your assets and ensure seamless business legacy planning.',
+    },
+    twitter: {
+      handle: '@primeidea',
+      site: '@primeidea',
+      cardType: 'summary_large_image',
+    },
+    alternates: {
+      canonical: 'https://primeidea.in/legacy-inheritance-planning/',
+      languages: {
+        'en-US': 'https://primeidea.in/legacy-inheritance-planning/',
+      },
+    },
+  };
 
 async function getData(categorySlug) {
   const query = {

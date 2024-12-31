@@ -12,10 +12,39 @@ import Footer from "@/components/footer";
 import InsightsSection from "@/components/insightsSection";
 import graphqlRequest from "@/lib/graphqlRequest";
 
+// export const metadata = {
+//     title: 'Financial Planning And Investment Advisory Services in India',
+//     description: 'Discover top-tier wealth management services in India with certified consultants. Contact with the best wealth management firm for solutions and expert advisory. Achieve your goals with our leading wealth management company.',
+// }
+
 export const metadata = {
     title: 'Financial Planning And Investment Advisory Services in India',
     description: 'Discover top-tier wealth management services in India with certified consultants. Contact with the best wealth management firm for solutions and expert advisory. Achieve your goals with our leading wealth management company.',
-}
+    keywords: 'mutual funds, investment advisory, financial planning, wealth management, retirement planning, insurance solutions, Partha Shah, PrimeIdea Ventures, Gujarat financial advisor, investment consultant',
+    author: 'Partha Shah',
+    viewport: 'width=device-width, initial-scale=1',
+    robots: 'index, follow',
+    canonical: 'https://primeidea.in/financial-planning-and-investment-advisory/',
+    openGraph: {
+      type: 'website',
+      locale: 'en_IE',
+      url: 'https://primeidea.in/financial-planning-and-investment-advisory/',
+      site_name: 'PrimeIdea Ventures',
+      title: 'Financial Planning And Investment Advisory Services in India',
+      description: 'Discover top-tier wealth management services in India with certified consultants. Contact with the best wealth management firm for solutions and expert advisory. Achieve your goals with our leading wealth management company.',
+    },
+    twitter: {
+      handle: '@primeidea',
+      site: '@primeidea',
+      cardType: 'summary_large_image',
+    },
+    alternates: {
+      canonical: 'https://primeidea.in/financial-planning-and-investment-advisory/',
+      languages: {
+        'en-US': 'https://primeidea.in/financial-planning-and-investment-advisory/',
+      },
+    },
+  };
 
 async function getData(categorySlug) {
   const query = {

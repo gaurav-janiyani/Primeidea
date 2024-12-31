@@ -3,10 +3,39 @@ import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Image from "next/image";
 
+// export const metadata = {
+//     title: 'Contact Us | PrimeIdea - Financial Guidance & Support',
+//     description: 'Have questions about financial planning or wealth management? Contact PrimeIdea Ventures for personalized advice and expert support.',
+// }
+
 export const metadata = {
     title: 'Contact Us | PrimeIdea - Financial Guidance & Support',
     description: 'Have questions about financial planning or wealth management? Contact PrimeIdea Ventures for personalized advice and expert support.',
-}
+    keywords: 'mutual funds, investment advisory, financial planning, wealth management, retirement planning, insurance solutions, Partha Shah, PrimeIdea Ventures, Gujarat financial advisor, investment consultant',
+    author: 'Partha Shah',
+    viewport: 'width=device-width, initial-scale=1',
+    robots: 'index, follow',
+    canonical: 'https://primeidea.in/contact-us/',
+    openGraph: {
+      type: 'website',
+      locale: 'en_IE',
+      url: 'https://primeidea.in/contact-us/',
+      site_name: 'PrimeIdea Ventures',
+      title: 'Contact Us | PrimeIdea - Financial Guidance & Support',
+      description: 'Have questions about financial planning or wealth management? Contact PrimeIdea Ventures for personalized advice and expert support.',
+    },
+    twitter: {
+      handle: '@primeidea',
+      site: '@primeidea',
+      cardType: 'summary_large_image',
+    },
+    alternates: {
+      canonical: 'https://primeidea.in/contact-us/',
+      languages: {
+        'en-US': 'https://primeidea.in/contact-us/',
+      },
+    },
+  };
 
 const ContactUs = () => {   
 

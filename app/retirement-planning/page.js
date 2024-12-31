@@ -10,10 +10,39 @@ import graphqlRequest from "@/lib/graphqlRequest";
 import RetirementPlanningSection from "@/components/retirement-planning/retirementPlanningSection";
 import FaqsSection from "@/components/retirement-planning/faqsSection";
 
+// export const metadata = {
+//     title: 'Best Retirement Plan Services in India - PrimeIdea',
+//     description: 'Secure your future with the best retirement plans. Get expert retirement financial planning and pension services in India. Explore top retirement plan options and start planning today. ',
+// }
+
 export const metadata = {
     title: 'Best Retirement Plan Services in India - PrimeIdea',
-    description: 'Secure your future with the best retirement plans. Get expert retirement financial planning and pension services in India. Explore top retirement plan options and start planning today. ',
-}
+    description: 'Secure your future with the best retirement plans. Get expert retirement financial planning and pension services in India. Explore top retirement plan options and start planning today.',
+    keywords: 'mutual funds, investment advisory, financial planning, wealth management, retirement planning, insurance solutions, Partha Shah, PrimeIdea Ventures, Gujarat financial advisor, investment consultant',
+    author: 'Partha Shah',
+    viewport: 'width=device-width, initial-scale=1',
+    robots: 'index, follow',
+    canonical: 'https://primeidea.in/retirement-planning/',
+    openGraph: {
+      type: 'website',
+      locale: 'en_IE',
+      url: 'https://primeidea.in/retirement-planning/',
+      site_name: 'PrimeIdea Ventures',
+      title: 'Best Retirement Plan Services in India - PrimeIdea',
+      description: 'Secure your future with the best retirement plans. Get expert retirement financial planning and pension services in India. Explore top retirement plan options and start planning today.',
+    },
+    twitter: {
+      handle: '@primeidea',
+      site: '@primeidea',
+      cardType: 'summary_large_image',
+    },
+    alternates: {
+      canonical: 'https://primeidea.in/retirement-planning/',
+      languages: {
+        'en-US': 'https://primeidea.in/retirement-planning/',
+      },
+    },
+  };
 
 async function getData(categorySlug) {
   const query = {

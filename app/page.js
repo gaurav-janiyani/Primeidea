@@ -12,13 +12,46 @@ import Image from "next/image";
 
 export const metadata = {
   title: 'PrimeIdea Ventures - Mutual Funds, Insurance and Investment Advisory',
-  description: 'Your trusted partner for financial planning, investment advisory, and insurance solutions. Achieve your financial goals with our expert guidance.',
-}
+  description: 'Your trusted partner for financial planning, investment advisory, and insurance solutions. Expert guidance for mutual funds, retirement planning, and wealth management with Partha Shah.',
+  keywords: 'mutual funds, investment advisory, financial planning, wealth management, retirement planning, insurance solutions, Partha Shah, PrimeIdea Ventures, Gujarat financial advisor, investment consultant',
+  author: 'Partha Shah',
+  viewport: 'width=device-width, initial-scale=1',
+  robots: 'index, follow',
+  canonical: 'https://primeidea.in/',
+  openGraph: {
+    type: 'website',
+    locale: 'en_IE',
+    url: 'https://primeidea.in/',
+    site_name: 'PrimeIdea Ventures',
+    title: 'PrimeIdea Ventures - Expert Financial Planning & Investment Advisory',
+    description: 'Transform your financial future with PrimeIdea Ventures. Professional guidance for mutual funds, insurance, and comprehensive wealth management solutions.',
+    // images: [
+    //   {
+    //     url: 'https://primeidea.in/images/home/banner.png',
+    //     width: 1200,
+    //     height: 630,
+    //     alt: 'PrimeIdea Ventures Banner',
+    //   }
+    // ],
+  },
+  twitter: {
+    handle: '@primeidea',
+    site: '@primeidea',
+    cardType: 'summary_large_image',
+  },
+  alternates: {
+    canonical: 'https://primeidea.in',
+    languages: {
+      'en-US': 'https://primeidea.in',
+    },
+  },
+};
 
 async function getData(params) {
   const allPosts = await getPostList();
   return { allPosts: allPosts };
 }
+
 
 export default async function Home() {
   const blogsListing = await getData();
