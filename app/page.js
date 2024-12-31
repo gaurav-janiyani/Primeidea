@@ -9,18 +9,16 @@ import InsightsSection from "@/components/insightsSection";
 import JoinCommunity from "@/components/joinCommunity";
 import { getPostList } from "@/lib/posts";
 import Image from "next/image";
-// import type { Metadata } from 'next';
 
+export const metadata = {
+  title: 'PrimeIdea Ventures - Mutual Funds, Insurance and Investment Advisory',
+  description: 'Your trusted partner for financial planning, investment advisory, and insurance solutions. Achieve your financial goals with our expert guidance.',
+}
 
 async function getData(params) {
   const allPosts = await getPostList();
   return { allPosts: allPosts };
 }
-
-// export const metadata: Metadata = {
-//   title: '...',
-//   description: '...',
-// }
 
 export default async function Home() {
   const blogsListing = await getData();

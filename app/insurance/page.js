@@ -10,6 +10,11 @@ import Image from "next/image";
 import graphqlRequest from "@/lib/graphqlRequest";
 import FaqsSection from "@/components/insurance/faqsSection";
 
+export const metadata = {
+    title: 'Get Best Insurance Services in India | PrimeIdea Ventures',
+    description: 'Secure your future with PrimeIdea Ventures expert insurance services. From life and health coverage to auto and home protection, find solutions according to your needs.',
+}
+
 async function getData(categorySlug) {
   const query = {
       query: `query getPostListByCategory($categorySlug: String!) {
