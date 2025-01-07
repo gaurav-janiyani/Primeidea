@@ -27,10 +27,10 @@ const RiskManagementContent = () => {
               alt="Identifying Potential Risks"
               className="mb-4"
             />
-            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%]">
+            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%] text-[#ffffff]">
               Insurance <br /> Coverage
             </h3>
-            <p className="text-base xl:text-lg font-normal">
+            <p className="text-base xl:text-lg font-normal text-[#ffffff]">
               Secure life, health, disability, and property insurance policies to protect your financial well-being from unforeseen risks and liabilities.
             </p>
           </li>
@@ -42,10 +42,10 @@ const RiskManagementContent = () => {
               alt="Tailored Insurance Solutions"
               className="mb-4"
             />
-            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%]">
+            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%] text-[#ffffff]">
               Diversification of <br /> Investments
             </h3>
-            <p className="text-base xl:text-lg font-normal">
+            <p className="text-base xl:text-lg font-normal text-[#ffffff]">
               Spread capital across various industries, geographies, and asset classes to minimize the impact of individual investment failures.
             </p>
           </li>
@@ -57,10 +57,10 @@ const RiskManagementContent = () => {
               alt="Mitigating Financial Loss"
               className="mb-4"
             />
-            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%]">
+            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%] text-[#ffffff]">
               Emergency <br /> Fund
             </h3>
-            <p className="text-base xl:text-lg font-normal">
+            <p className="text-base xl:text-lg font-normal text-[#ffffff]">
               Maintain accessible cash reserves to manage unexpected expenses without disrupting your financial plan or incurring debt.
             </p>
           </li>
@@ -72,10 +72,10 @@ const RiskManagementContent = () => {
               alt="Ongoing Risk Assessment"
               className="mb-4"
             />
-            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%]">
+            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%] text-[#ffffff]">
               Estate  <br /> Planning
             </h3>
-            <p className="text-base xl:text-lg font-normal">
+            <p className="text-base xl:text-lg font-normal text-[#ffffff]">
               Organize wills, trusts, and powers of attorney to ensure the seamless transfer of assets and protection of beneficiaries after your passing.
             </p>
           </li>
@@ -87,10 +87,10 @@ const RiskManagementContent = () => {
               alt="Crisis Management"
               className="mb-4"
             />
-            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%]">
+            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%] text-[#ffffff]">
               Risk <br /> Assessment
             </h3>
-            <p className="text-base xl:text-lg font-normal">
+            <p className="text-base xl:text-lg font-normal text-[#ffffff]">
               Regularly assess financial risks and implement safeguards, like insurance or portfolio adjustments, to preserve wealth over time.
             </p>
           </li>

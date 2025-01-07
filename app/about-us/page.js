@@ -73,7 +73,7 @@ export default async function AboutUs() {
         {
           id: '04',
           title: "Ethics",
-          content: "Ethical pratices and transparency from the foundation of our financial services, fostering trust and long term partnerships. ",
+          content: "Ethical practices and transparency from the foundation of our financial services, fostering trust and long term partnerships. ",
         },
       ];
     

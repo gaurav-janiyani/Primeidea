@@ -55,9 +55,8 @@ const WealthCreationPreservation = () => {
                             <h2 className="text-[1.1rem] leading-[130%] xl:text-xl font-bold mb-3">
                                 Research Based Wealth Management
                             </h2>
-                            <p className="max-w-[240px] text-[14px]">
-                                A customized investment plan from our experts
-                                empowers you to grow your wealth strategically,
+                            <p className="max-w-[240px] text-[14px] sm:text-[16px]">
+                                Data-driven strategies for sustainable wealth growth.
                             </p>
                             </FadeUpOneByOneAnimation>
                             </div>
@@ -80,9 +79,8 @@ const WealthCreationPreservation = () => {
                             <h2 className="font-[18px] leading-[130%] xl:text-xl font-bold mb-3">
                                 Dream Retirement Planning
                             </h2>
-                            <p className="max-w-[240px] text-[14px]">
-                                A customized investment plan from our experts
-                                empowers you to grow your wealth strategically,
+                            <p className="max-w-[240px] text-[14px] sm:text-[16px]">
+                                Building the retirement you’ve always dreamed of.
                             </p>
                             </FadeUpOneByOneAnimation>
                             </div>
@@ -97,17 +95,16 @@ const WealthCreationPreservation = () => {
                             src="/images/header/wealth-preservation/legacy.png"
                             width={289}
                             height={253}
-                            alt="legacy & Inheritance Planning"
+                            alt="Legacy & Inheritance Planning"
                             className="rounded-[12px] w-full h-full"
                             />
                             <div className="absolute top-0 left-0 p-5">
                             <FadeUpOneByOneAnimation>
                             <h2 className="font-[18px] leading-[130%] xl:text-xl font-bold mb-3">
-                                legacy & Inheritance Planning
+                                Legacy & Inheritance Planning
                             </h2>
-                            <p className="max-w-[240px] text-[14px]">
-                                A customized investment plan from our experts
-                                empowers you to grow your wealth strategically,
+                            <p className="max-w-[240px] text-[14px] sm:text-[16px]">
+                                Preserving wealth for future generations.
                             </p>
                             </FadeUpOneByOneAnimation>
                             </div>
@@ -128,11 +125,10 @@ const WealthCreationPreservation = () => {
                             <div className="absolute top-0 left-0 p-5">
                             <FadeUpOneByOneAnimation>
                             <h2 className="font-[18px] leading-[130%] xl:text-xl font-bold mb-3">
-                                Tax Planning & Savings
+                                Tax Planning & <br/> Savings
                             </h2>
-                            <p className="max-w-[240px] text-[14px]">
-                                A customized investment plan from our experts
-                                empowers you to grow your wealth strategically,
+                            <p className="max-w-[240px] text-[14px] sm:text-[16px]">
+                                Maximize savings with efficient tax strategies.
                             </p>
                             </FadeUpOneByOneAnimation>
                             </div>

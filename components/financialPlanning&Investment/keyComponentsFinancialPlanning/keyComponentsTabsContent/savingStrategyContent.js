@@ -27,10 +27,10 @@ const SavingStrategyContent = () => {
               alt="Identifying Potential Risks"
               className="mb-4"
             />
-            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%]">
+            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%] text-[#ffffff]">
               Emergency  <br /> Fund
             </h3>
-            <p className="text-base xl:text-lg font-normal">
+            <p className="text-base xl:text-lg font-normal text-[#ffffff]">
               Build a financial cushion of 3-6 months of living expenses to cover unforeseen emergencies like job loss or medical expenses.
             </p>
           </li>
@@ -42,10 +42,10 @@ const SavingStrategyContent = () => {
               alt="Tailored Insurance Solutions"
               className="mb-4"
             />
-            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%]">
+            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%] text-[#ffffff]">
             Automatic <br /> Savings
             </h3>
-            <p className="text-base xl:text-lg font-normal">
+            <p className="text-base xl:text-lg font-normal text-[#ffffff]">
               Automate monthly transfers to a savings account to ensure consistent and disciplined contributions toward achieving your financial goals.
             </p>
           </li>
@@ -57,10 +57,10 @@ const SavingStrategyContent = () => {
               alt="Mitigating Financial Loss"
               className="mb-4"
             />
-            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%]">
+            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%] text-[#ffffff]">
               High-Interest <br /> Savings Accounts
             </h3>
-            <p className="text-base xl:text-lg font-normal">
+            <p className="text-base xl:text-lg font-normal text-[#ffffff]">
               Use accounts offering competitive interest rates to maximize returns on your emergency funds or other short-term savings.
             </p>
           </li>
@@ -72,10 +72,10 @@ const SavingStrategyContent = () => {
               alt="Ongoing Risk Assessment"
               className="mb-4"
             />
-            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%]">
+            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%] text-[#ffffff]">
               Saving for  <br /> Specific Goals
             </h3>
-            <p className="text-base xl:text-lg font-normal">
+            <p className="text-base xl:text-lg font-normal text-[#ffffff]">
               Identify future needs, such as vacations, education, or homeownership, and allocate dedicated funds to achieve these objectives.
             </p>
           </li>
@@ -87,10 +87,10 @@ const SavingStrategyContent = () => {
               alt="Crisis Management"
               className="mb-4"
             />
-            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%]">
+            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%] text-[#ffffff]">
               Cutting <br/> Expenses
             </h3>
-            <p className="text-base xl:text-lg font-normal">
+            <p className="text-base xl:text-lg font-normal text-[#ffffff]">
               Track spending patterns, identify non-essential expenses, and create a realistic budget to free up money for savings or investments.
             </p>
           </li>

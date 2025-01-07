@@ -39,7 +39,7 @@ const BlogDetail = (props) => {
                             className="max-w-[100px] lg:max-w-[120px] max-h-[100px] lg:max-h-[120px] rounded-[5px]"
                         />
                       <h3 className="mt-3 leading-[100%] text-sm ml-2 sm:ml-4 text-[#727272] font-bold">
-                        Writtern by{" "}
+                        Written by{" "}
                         <span className="text-xl font-bold capitalize block text-black">{post?.author.node.name}</span>
                       </h3>
                     </div>

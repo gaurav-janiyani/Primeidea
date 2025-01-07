@@ -27,10 +27,10 @@ const BudgetingContent = () => {
               alt="Identifying Potential Risks"
               className="mb-4"
             />
-            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%]">
+            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%] text-[#ffffff]">
               Track Income & <br /> Expense
             </h3>
-            <p className="text-base xl:text-lg font-normal">
+            <p className="text-base xl:text-lg font-normal text-[#ffffff]">
               Begin by meticulously recording all sources of income and
               expenditure to gain a comprehensive view of your financial
               situation.
@@ -44,10 +44,10 @@ const BudgetingContent = () => {
               alt="Tailored Insurance Solutions"
               className="mb-4"
             />
-            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%]">
+            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%] text-[#ffffff]">
               Categorised <br /> Spending
             </h3>
-            <p className="text-base xl:text-lg font-normal">
+            <p className="text-base xl:text-lg font-normal text-[#ffffff]">
               Organize your expenses into categories like housing,
               transportation, and entertainment to spot areas for adjustment.
             </p>
@@ -60,10 +60,10 @@ const BudgetingContent = () => {
               alt="Mitigating Financial Loss"
               className="mb-4"
             />
-            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%]">
+            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%] text-[#ffffff]">
               Set Realistic <br /> Goal
             </h3>
-            <p className="text-base xl:text-lg font-normal">
+            <p className="text-base xl:text-lg font-normal text-[#ffffff]">
               Define clear and achievable financial objectives that align with
               your income and expenses, ensuring they are measurable and
               time-bound.
@@ -77,10 +77,10 @@ const BudgetingContent = () => {
               alt="Ongoing Risk Assessment"
               className="mb-4"
             />
-            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%]">
+            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%] text-[#ffffff]">
               Adjust <br /> Regulary
             </h3>
-            <p className="text-base xl:text-lg font-normal">
+            <p className="text-base xl:text-lg font-normal text-[#ffffff]">
               Flexibility is key; be prepared to modify your budget as
               circumstances change, allowing for ongoing optimisation and
               improvement.
@@ -94,10 +94,10 @@ const BudgetingContent = () => {
               alt="Crisis Management"
               className="mb-4"
             />
-            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%]">
+            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%] text-[#ffffff]">
               Review <br /> Consistently
             </h3>
-            <p className="text-base xl:text-lg font-normal">
+            <p className="text-base xl:text-lg font-normal text-[#ffffff]">
               Regularly assess your budget to track progress, evaluate adherence
               to financial targets, and make informed decisions for future
               adjustments.

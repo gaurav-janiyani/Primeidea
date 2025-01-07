@@ -15,7 +15,7 @@ const ReportSection = () => {
                     <h2 className="font-normal text-white text-[32px] xl:text-[42px] mb-[20px] sm:mb-[40px] leading-[120%]">
                       <FadeUpOneByOneAnimation>
                         Here&#39;s what your&nbsp;
-                        <span className="font-semibold inline sm:block">
+                        <span className="font-semibold inline sm:block text-[#ffffff]">
                           personalized <br className="hidden sm:inline-block" /> financial report
                         </span>{" "}
                         will look like

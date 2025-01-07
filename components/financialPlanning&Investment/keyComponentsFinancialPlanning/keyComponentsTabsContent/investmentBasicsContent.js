@@ -27,10 +27,10 @@ const InvestmentBasicsContent = () => {
               alt="Identifying Potential Risks"
               className="mb-4"
             />
-            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%]">
+            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%] text-[#ffffff]">
               Diversification <br /> Investment
             </h3>
-            <p className="text-base xl:text-lg font-normal">
+            <p className="text-base xl:text-lg font-normal text-[#ffffff]">
               Invest in a mix of assets like stocks, bonds, real estate, and commodities to reduce overall portfolio risk and volatility.
             </p>
           </li>
@@ -42,10 +42,10 @@ const InvestmentBasicsContent = () => {
               alt="Tailored Insurance Solutions"
               className="mb-4"
             />
-            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%]">
+            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%] text-[#ffffff]">
               Asset <br /> Allocation
             </h3>
-            <p className="text-base xl:text-lg font-normal">
+            <p className="text-base xl:text-lg font-normal text-[#ffffff]">
               Develop a strategic distribution of assets based on financial goals, time horizon, and risk tolerance to maximize returns.
             </p>
           </li>
@@ -57,10 +57,10 @@ const InvestmentBasicsContent = () => {
               alt="Mitigating Financial Loss"
               className="mb-4"
             />
-            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%]">
+            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%] text-[#ffffff]">
               Compound <br /> Interest
             </h3>
-            <p className="text-base xl:text-lg font-normal">
+            <p className="text-base xl:text-lg font-normal text-[#ffffff]">
               Reinvest earnings to let your money grow exponentially over time, particularly in long-term investment vehicles like mutual funds.
             </p>
           </li>
@@ -72,10 +72,10 @@ const InvestmentBasicsContent = () => {
               alt="Ongoing Risk Assessment"
               className="mb-4"
             />
-            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%]">
+            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%] text-[#ffffff]">
               Risk vs. <br /> Return
             </h3>
-            <p className="text-base xl:text-lg font-normal">
+            <p className="text-base xl:text-lg font-normal text-[#ffffff]">
               Weigh the potential for higher returns against the likelihood of financial loss to make informed investment decisions.
             </p>
           </li>
@@ -87,10 +87,10 @@ const InvestmentBasicsContent = () => {
               alt="Crisis Management"
               className="mb-4"
             />
-            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%]">
+            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%] text-[#ffffff]">
               Long-Term <br /> Focus
             </h3>
-            <p className="text-base xl:text-lg font-normal">
+            <p className="text-base xl:text-lg font-normal text-[#ffffff]">
               Commit to staying invested through market fluctuations, focusing on wealth accumulation and financial independence over decades.
             </p>
           </li>

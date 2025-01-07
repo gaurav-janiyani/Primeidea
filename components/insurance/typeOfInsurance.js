@@ -108,10 +108,10 @@ const TypesOfInsurance = () => {
                     alt="Identifying Potential Risks"
                     className="mb-4"
                   />
-                  <h3 className="mb-3 text-lg font-semibold leading-[130%]">
+                  <h3 className="mb-3 text-lg font-semibold leading-[130%] text-[#ffffff]">
                     Identifying <br /> Potential Risks
                   </h3>
-                  <p className="text-base xl:text-lg font-light">
+                  <p className="text-base xl:text-lg font-light text-[#ffffff]">
                     <strong className="font-medium">
                       Analyze Vulnerabilities:
                     </strong>{" "}
@@ -127,10 +127,10 @@ const TypesOfInsurance = () => {
                     alt="Tailored Insurance Solutions"
                     className="mb-4"
                   />
-                  <h3 className="mb-3 text-lg font-semibold leading-[130%]">
+                  <h3 className="mb-3 text-lg font-semibold leading-[130%] text-[#ffffff]">
                     Tailored Insurance <br/> Solutions
                   </h3>
-                  <p className="text-base xl:text-lg font-light">
+                  <p className="text-base xl:text-lg font-light text-[#ffffff]">
                     <strong className="font-medium">
                       Customized Coverage:
                     </strong>{" "}
@@ -146,10 +146,10 @@ const TypesOfInsurance = () => {
                     alt="Mitigating Financial Loss"
                     className="mb-4"
                   />
-                  <h3 className="mb-3 text-lg font-semibold leading-[130%]">
+                  <h3 className="mb-3 text-lg font-semibold leading-[130%] text-[#ffffff]">
                     Mitigating <br /> Financial Loss
                   </h3>
-                  <p className="text-base xl:text-lg font-light">
+                  <p className="text-base xl:text-lg font-light text-[#ffffff]">
                     <strong className="font-medium">
                       Strategic Safeguards:
                     </strong>{" "}
@@ -166,10 +166,10 @@ const TypesOfInsurance = () => {
                     alt="Ongoing Risk Assessment"
                     className="mb-4"
                   />
-                  <h3 className="mb-3 text-lg font-semibold leading-[130%]">
+                  <h3 className="mb-3 text-lg font-semibold leading-[130%] text-[#ffffff]">
                     Ongoing Risk <br /> Assessment
                   </h3>
-                  <p className="text-base xl:text-lg font-light">
+                  <p className="text-base xl:text-lg font-light text-[#ffffff]">
                     <strong className="font-medium">Regular Reviews:</strong> We
                     continuously assess and adjust your coverage as your
                     financial situation and life circumstances evolve.
@@ -183,10 +183,10 @@ const TypesOfInsurance = () => {
                     alt="Crisis Management"
                     className="mb-4"
                   />
-                  <h3 className="mb-3 text-lg font-semibold leading-[130%]">
+                  <h3 className="mb-3 text-lg font-semibold leading-[130%] text-[#ffffff]">
                     Crisis <br /> Management
-                  </h3>
-                  <p className="text-base xl:text-lg font-light">
+                  </h3> 
+                  <p className="text-base xl:text-lg font-light text-[#ffffff]">
                     <strong className="font-medium">Preparedness:</strong> In
                     the event of a crisis, our team is ready to assist with
                     claim processing and financial guidance to help you navigate

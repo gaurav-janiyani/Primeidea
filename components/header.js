@@ -257,8 +257,7 @@ export default function Header() {
                             Research Based Wealth Management
                           </h2>
                           <p className="max-w-[240px] text-[14px]">
-                            A customized investment plan from our experts
-                            empowers you to grow your wealth strategically,
+                            Our research-driven approach helps you develop a personalized investment strategy that optimizes growth and secures your financial future.
                           </p>
                         </div>
                       </a>
@@ -280,8 +279,7 @@ export default function Header() {
                             Dream Retirement Planning
                           </h2>
                           <p className="max-w-[240px] text-[14px]">
-                            A customized investment plan from our experts
-                            empowers you to grow your wealth strategically,
+                            We craft retirement plans that align with your aspirations, ensuring peace of mind in your golden years.
                           </p>
                         </div>
                       </a>
@@ -303,8 +301,7 @@ export default function Header() {
                             legacy & Inheritance Planning
                           </h2>
                           <p className="max-w-[240px] text-[14px]">
-                            A customized investment plan from our experts
-                            empowers you to grow your wealth strategically,
+                            Protect your legacy and ensure a smooth transition of wealth to your loved ones, preserving your values for generations to come.
                           </p>
                         </div>
                       </a>
@@ -326,8 +323,7 @@ export default function Header() {
                             Tax Planning & Savings
                           </h2>
                           <p className="max-w-[240px] text-[14px]">
-                            A customized investment plan from our experts
-                            empowers you to grow your wealth strategically,
+                            Maximize your savings through proactive tax strategies, minimizing liabilities while growing your wealth efficiently.
                           </p>
                         </div>
                       </a>

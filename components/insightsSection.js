@@ -96,7 +96,7 @@ const InsightsSection = (props) => {
                               alt={item.title}
                             />
                             <h3 className="flex flex-col justify-center items-center mt-3 leading-[100%] text-sm md:text-base">
-                              Writtern by{" "}
+                              Written by{" "}
                               <span className="text-base md:text-xl font-bold capitalize">
                                 {item.author.node.name}
                               </span>

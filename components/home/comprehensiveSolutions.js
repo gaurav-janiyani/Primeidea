@@ -87,7 +87,7 @@ const ComprehensiveSolutions = () => {
                 <h4 className="text-white text-base xl:text-lg text-center">Gold</h4>
               </FadeUpOneByOneAnimation>{" "}
             </li>
-            <li className="px-[10px] w-[48%] sm:w-[33%] md:w-[26%] lg:w-[20%] 2xl:w-[16%]">
+            {/* <li className="px-[10px] w-[48%] sm:w-[33%] md:w-[26%] lg:w-[20%] 2xl:w-[16%]">
               <FadeUpOneByOneAnimation className="border border-[#717171] p-4 mb-4 rounded-xl bg-[#223494] flex flex-col justify-between items-center aspect-square">
                 <Image
                   src="/images/home/icons/personal-cfo.png"
@@ -136,7 +136,7 @@ const ComprehensiveSolutions = () => {
                 />
                 <h4 className="text-white text-base xl:text-lg text-center">Gold</h4>
               </FadeUpOneByOneAnimation>{" "}
-            </li>
+            </li> */}
           </ul>
           <h2 className="text-[24px] sm:text-[28px] 2xl:text-[32px] font-light mb-4 text-[#fff] text-center">
             <FadeUpOneByOneAnimation>
