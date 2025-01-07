@@ -61,7 +61,7 @@ export default function Header() {
                 width={184}
                 height={40}
                 alt="Primeidea Ventures"
-                className="h-10 w-auto"
+                className="h-10 w-[160px] sm:w-auto object-contain"
               />
             </Link>
           </div>
