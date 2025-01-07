@@ -367,7 +367,7 @@ export default function Header() {
         <div className="lg:flex items-center">
           <a
             href="/contact-us"
-            className="rounded-[10px] py-1.5 px-[18px] border border-solid border-[#1F1F1F] hover:text-white hover:bg-[#E40115] hover:border-[#E40115]"
+            className="rounded-[10px] py-1.5 px-[18px] border border-solid border-[#1F1F1F] text-[#171717] hover:text-white hover:bg-[#E40115] hover:border-[#E40115]"
           >
             Contact Now
           </a>
