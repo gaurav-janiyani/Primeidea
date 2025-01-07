@@ -14,7 +14,7 @@
   }
 }
 
-* {
+h1, h2, h3, h4, h5, h6, p, span, a, li, ul, ol, img, figure, figcaption, blockquote, pre, code, table, th, td, hr {
   color: #171717; 
 }
 
