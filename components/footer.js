@@ -55,7 +55,7 @@ const Footer = () => {
                       width={320}
                       height={70}
                       alt="Primeidea Ventures"
-                      className="max-w-full dark:hidden"
+                      className="max-w-full "
                     />
                   </a>
                 </FadeUpOneByOneAnimation>
