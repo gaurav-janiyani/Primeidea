@@ -6,7 +6,7 @@ const StepperSection = () => {
   const steps = [
     {
       id: '01',
-      title: "Getting to know you.",
+      title: "Getting to know you",
       content:
         "We begin the financial planning process by understanding your unique needs, goals, and existing assets and liabilities. We also pay close attention to the crucial details that impact your financial plan.",
     },
