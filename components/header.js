@@ -298,7 +298,7 @@ export default function Header() {
                         />
                         <div className="absolute top-0 left-0 p-5">
                           <h2 className="font-bold mb-3">
-                            legacy & Inheritance Planning
+                            Legacy & Inheritance Planning
                           </h2>
                           <p className="max-w-[240px] text-[14px]">
                             Protect your legacy and ensure a smooth transition of wealth to your loved ones, preserving your values for generations to come.
