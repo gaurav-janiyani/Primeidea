@@ -7,12 +7,12 @@
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 h1, h2, h3, h4, h5, h6, p, span, a, li, ul, ol, img, figure, figcaption, blockquote, pre, code, table, th, td, hr {
   color: #171717; 
