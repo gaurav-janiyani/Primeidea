@@ -3,6 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./globals.css";
 import Script from "next/script";
+import { ChatBotScripts } from "@/components/chatbot";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -67,7 +68,6 @@ export const metadata = {
     'msvalidate.01': 'your-ms-validation-code',
   },
   assets: ['https://primeidea.in'],
-  manifest: '/manifest.json'
 };
 
 export default function RootLayout({ children }) {
@@ -75,17 +75,12 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${manrope.variable}`}>
       <body className={manrope.className}>
         {children}
-        <Script 
-          id="yellow-ai-config" 
-          strategy="beforeInteractive"
-        >
-          {`window.ymConfig = {"bot":"x1734168923745","host":"https://r0.cloud.yellow.ai"};`}
-        </Script>
-        <Script
+        <ChatBotScripts />
+        {/* <Script
           id="yellow-ai-loader"
           strategy="afterInteractive"
           src="https://cdn.yellowmessenger.com/plugin/widget-v2/latest/dist/main.min.js"
-        />
+        /> */}
       </body>
     </html>
   );
