@@ -1,5 +1,7 @@
 'use client';
 
+import Script from "next/script";
+
 export const ChatBotScripts = () => {
 
     return (
@@ -7,7 +9,10 @@ export const ChatBotScripts = () => {
             id="yellow-ai-config"
             strategy="beforeInteractive"
             onLoad={() => {
-                window.ymConfig = { "bot": "x1734168923745", "host": "https://r0.cloud.yellow.ai" };
+
+            }}
+        >
+            {` window.ymConfig = { "bot": "x1734168923745", "host": "https://r0.cloud.yellow.ai" };
                 var w = window,
                     ic = w.YellowMessenger;
                 if ("function" === typeof ic) ic("reattach_activator"), ic("update", ymConfig);
@@ -25,9 +30,7 @@ export const ChatBotScripts = () => {
                     i.q = [], i.c = function (e) {
                         i.q.push(e)
                     }, w.YellowMessenger = i, w.attachEvent ? w.attachEvent("onload", l) : w.addEventListener("load", l, !1)
-                }
-            }}
-        >
+                }`}
         </Script>
     )
 }
