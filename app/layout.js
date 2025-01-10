@@ -2,15 +2,13 @@ import { Manrope } from "next/font/google";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./globals.css";
-import { Bubble } from "@typebot.io/nextjs";
-
+import Script from "next/script";
 
 const manrope = Manrope({
   subsets: ["latin"],
   weight: ["200", "300", "400", "500", "600", "700", "800"],
   variable: "--font-manrope",
 });
-
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -78,12 +76,31 @@ export default function RootLayout({ children }) {
       <body
         className={manrope.className}
       >
-       <Bubble
-          typebot="product-recommendation-y84k1d6"
-          previewMessage={{ message: "I have a question for you!" }}
-          theme={{ button: { backgroundColor: "#0042DA",  size: "medium" } }}
-        />
         {children}
+        <Script id="yellow-ai" strategy="afterInteractive">
+          {`
+            window.ymConfig = {"bot":"x1734168923745","host":"https://r0.cloud.yellow.ai"};
+            (function() {
+                var w = window,
+                    ic = w.YellowMessenger;
+                if ("function" === typeof ic) ic("reattach_activator"), ic("update", ymConfig);
+                else {
+                    var d = document,
+                        i = function() {
+                            i.c(arguments)
+                        };
+                    function l() {
+                        var e = d.createElement("script");
+                        e.type = "text/javascript", e.async = !0, e.src = "https://cdn.yellowmessenger.com/plugin/widget-v2/latest/dist/main.min.js";
+                        var t = d.getElementsByTagName("script")[0];
+                        t.parentNode.insertBefore(e, t)
+                    }
+                    i.q = [], i.c = function(e) {
+                        i.q.push(e)
+                    }, w.YellowMessenger = i, w.attachEvent ? w.attachEvent("onload", l) : w.addEventListener("load", l, !1)}
+            })();
+          `}
+        </Script>
       </body>
     </html>
   );

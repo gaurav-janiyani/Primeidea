@@ -72,12 +72,12 @@ const ReportSection = () => {
                 />
                 <a href=""
                 className="bg-[#293C7D] text-lg font-bold rounded-md text-white px-6 py-3 inline-flex items-center justify-center w-full "
-                >Get your personalized now 
+                >Get your personalized report 
                 <Image
                     src="/images/icons/arrow-square-right.png"
                     width={21}
                     height={21}
-                    alt="Get your personalized now "
+                    alt="Get your personalized report "
                     className="ml-2"
                     />
                 </a>
