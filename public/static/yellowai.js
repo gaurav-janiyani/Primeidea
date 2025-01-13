@@ -23,6 +23,6 @@ window.ymConfig = { "bot": "x1734168923745", "host": "https://r0.cloud.yellow.ai
             i.q.push(e);
         };
         w.YellowMessenger = i;
-        w.attachEvent ? w.attachEvent("onload", l) : w.addEventListener("load", l, !1);
+        l();
     }
 })();
