@@ -1,20 +1,8 @@
 'use client';
 
-<<<<<<< HEAD
-import Script from 'next/script';
-
-=======
->>>>>>> parent of b52486f (test commit)
 export const ChatBotScripts = () => {
     return (
         <Script
-<<<<<<< HEAD
-            src="/static/yellowai.js"
-            strategy="afterInteractive"
-            id="yellow-messenger"
-        />
-    );
-=======
             id="yellow-ai-config"
             strategy="beforeInteractive"
             onLoad={() => {
@@ -41,5 +29,4 @@ export const ChatBotScripts = () => {
         >
         </Script>
     )
->>>>>>> parent of b52486f (test commit)
 }
