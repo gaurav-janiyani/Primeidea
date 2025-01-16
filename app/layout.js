@@ -3,7 +3,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./globals.css";
 import Script from "next/script";
-import { ChatBotScripts } from "@/components/chatbot";
+import YellowMessengerWidget from "@/components/chatbot";
+// import { ChatBotScripts } from "@/components/chatbot";
+
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -70,12 +72,15 @@ export const metadata = {
   assets: ['https://primeidea.in'],
 };
 
+
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${manrope.variable}`}>
       <body className={manrope.className}>
         {children}
-        <ChatBotScripts />
+        {/* <ChatBotScripts /> */}
+        <YellowMessengerWidget />
         {/* <Script
           id="yellow-ai-loader"
           strategy="afterInteractive"
