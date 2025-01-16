@@ -25,7 +25,7 @@ const HelpWealthCreation = () => {
             />
           </div>
           <div className="w-full md:w-1/2 px-[15px] md:max-h-[660px] md:overflow-x-hidden md:overflow-y-scroll">
-            <ul className="">
+            <ul >
                 <li className="pl-6 ml-2 sm:ml-6 relative before:absolute before:left-0 before:top-[38px] before:w-[1px] before:h-[100%] before:bg-black before:content-[''] ">
                       <span className="font-bold text-[#479AD2] text-xl absolute left-[-5px] top-[38px] w-[30px] h-[30px] bg-[#F6FDFF]">1</span>
                       <h2 className="flex items-center text-[20px] xl:text-2xl font-semibold">

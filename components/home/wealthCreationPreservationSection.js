@@ -11,12 +11,12 @@ const WealthCreationPreservation = () => {
                         At Primeidea, we offer a balanced approach to <br className="hidden md:inline-block" /> <strong>Investment Planning and Financial Planning.</strong>
                     </FadeUpOneByOneAnimation>
                 </h2>
-                <div className="">
+                <div >
                     <div className="flex justify-between flex-col-reverse md:flex-row">
                         <div className="w-full md:w-[calc(50%-10px)] px-6 py-6 pb-10 bg-[#fff] rounded-tl-[40px] rounded-tr-[40px] border-2 border-b-0 border-[#cccccc75] relative">
                             <FadeUpOneByOneAnimation className="flex relative z-10">
                                 <Image src="/images/home/icons/wealth-preservation.png" width={120} height={120} alt="Investment Planning" className="aspect-square	min-w-[100px] mr-4 h-full" />
-                                <div className="">
+                                <div >
                                     <h3 className="text-[#293C7D] text-xl font-bold mb-1" >Investment Planning</h3>
                                     <p className="text-[14px] font-semibold line-clamp-4">
                                     At Primeidea Ventures, we focus on strategies that protect your wealth while fostering sustained growth and generational impact. Discover our tailored services to build a legacy you can rely on.
@@ -28,7 +28,7 @@ const WealthCreationPreservation = () => {
                         <a href="/financial-planning-and-investment-advisory" className="w-full md:w-[calc(50%-10px)] px-6 py-6   bg-[#fff] h-full rounded-[40px] border-2 border-[#cccccc75] z-10 mb-2 md:mb-0">
                             <FadeUpOneByOneAnimation className="flex relative z-10">
                                 <Image src="/images/home/icons/wealth-preservation.png" width={120} height={120} alt="Financial Planning" className="aspect-square	min-w-[100px] mr-4 h-full" />
-                                <div className="">
+                                <div >
                                     <h3 className="text-[#293C7D] text-xl font-bold mb-1" >Financial Planning</h3>
                                     <p className="text-[14px] font-semibold line-clamp-4">
                                         Strategic advisory and personalized investment plans thoughtfully designed to grow your wealth with precision, insight, and long-term vision.

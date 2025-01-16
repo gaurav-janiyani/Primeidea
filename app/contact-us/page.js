@@ -74,7 +74,7 @@ const ContactUs = () => {
                     </section>
                 </div>
                 <div className="2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-4 pt-16 ">                
-                    <div className="">
+                    <div>
                             <div className="flex flex-col md:flex-row items-center md:items-center">
                                 <div className="w-full md:w-1/2 mb-8 md:mb-0 md:mr-8">
                                     <Image src="/images/contact/contact-form.png" alt="Contact Us" className="w-full h-auto rounded-lg" width={520} height={520} />

@@ -134,12 +134,6 @@ export default function BlogListing({ posts, categoriesList }) {
                 </li>
               );
             })}
-            {/* <li>
-              <a href="" className="border-b border-[#479AD2] text-[#222222] font-semibold text-xl inline-block w-full px-4 py-4">Finance</a>
-            </li>
-            <li>
-              <a href="" className="border-b border-[#479AD2] text-[#222222] font-semibold text-xl inline-block w-full px-4 py-4">Insurance</a>
-            </li> */}
           </ul>
         </div>
         <div className="w-full lg:w-[calc(100%-305px)] xl:w-[calc(100%-362px)] h-full lg:shadow-[0_0_7px_0_#00000040] rounded-2xl ">

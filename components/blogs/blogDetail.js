@@ -62,22 +62,22 @@ const BlogDetail = (props) => {
                             <h2 className="mb-4 text-xl font-medium">FOLLOW US</h2>
                             <ul className="flex justify-between">
                                 <li>
-                                    <a href="">
+                                    <a href="https://www.facebook.com/primeidea" target="_blank">
                                         <Image src="/images/blogs/social-media/fb.png" width={42} height={42} alt="Facebook" />
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="">
+                                    <a href="https://www.instagram.com/primeidea/" target="_blank">
                                         <Image src="/images/blogs/social-media/instagram.png" width={42} height={42} alt="Instagram" />
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="">
+                                    <a href="https://www.linkedin.com/company/primeidea/" target="_blank">
                                         <Image src="/images/blogs/social-media/linkedin.png" width={42} height={42} alt="LinkedIn" />
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="">
+                                    <a href="https://api.whatsapp.com/send?phone=918141027000&text=Hello, I'm interested in learning more about your financial advisory and investment services. Could you please provide me with some details on how I can start planning my investments? Looking forward to hearing from you!">
                                         <Image src="/images/blogs/social-media/whatsapp.png" width={42} height={42} alt="WhatsApp" />
                                     </a>
                                 </li>

@@ -24,7 +24,7 @@ const Footer = () => {
   return (
     <>
       <footer className="bg-[#479AD2] relative overflow-hidden">
-        <div className="">
+        <div >
           <span className="absolute bottom-0 right-[-40px] md:right-40 sm:z-[999]">
             <Image src="/images/footer/shape1.png" width="300" height="190" alt="Shape" />
           </span>
@@ -82,16 +82,16 @@ const Footer = () => {
                     <a href="/about-us">About Us</a>
                   </h4>
                   <h4 className="mb-3 text-lg font-semibold text-white">
-                    <a href="">Blogs</a>
+                    <a href="/blogs">Blogs</a>
                   </h4>
                 </div>
               </FadeUpOneByOneAnimation>
             </div>
           </div>
         </div>
-        <div className="">
+        <div >
           <div className="lg:max-w-[1024px] xl:max-w-[1170px] 2xl:max-w-[1340px] mx-auto sm:px-4">
-            <div className="">
+            <div >
               <ul className="flex px-4 md:px-0 py-6 w-full md:max-w-[260px] lg:max-w-[320px] xl:max-w-[370px] 2xl:max-w-[400px] relative">
                 <li className="absolute top-0 right-0 bg-[#3E8ABD] w-[400%] h-[100%] sm:border-r border-solid border-[#B4B4B4] z-0"></li>
                 <li className="mr-8 relative z-1">
@@ -124,16 +124,6 @@ const Footer = () => {
                     />
                   </a>
                 </li>
-                {/* <li className="relative z-1">
-                  <a href="">
-                    <Image
-                      src="/images/footer/icons/twitter.svg"
-                      alt="Twitter"
-                      width={32}
-                      height={32}
-                    />
-                  </a>
-                </li> */}
               </ul>
             </div>
           </div>

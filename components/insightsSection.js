@@ -83,7 +83,7 @@ const InsightsSection = (props) => {
                 />
               </div>
               <div className="w-full md:w-[62%] md:border-l md:border-l-[#222222]">
-                <ul className="">
+                <ul >
                   {blogsListing?.slice(0, 3).map((item, index) => {
                     return (
                       <li className="border-b border-b-[#222222] pb-4 pt-4 px-4 md:pr-0 md:pl-4 last:border-b-0" key={index}>
