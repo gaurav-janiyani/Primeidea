@@ -35,7 +35,7 @@ const GiftCitySection = () => {
                   <strong>No Stamp Duty:</strong> Save on transaction costs with stamp duty exemptions.
                 </li>
                 <li className="mb-3">
-                  <strong>Exempt from DDT:</strong> Benefit from no FadeUpOneByOneAnimationidend Distribution Tax.
+                  <strong>Exempt from DDT:</strong> Benefit from no Dividend Distribution Tax.
                 </li>
                 <li className="mb-3">
                   <strong>Lower MAT:</strong> Pay reduced Minimum Alternate Tax rates.

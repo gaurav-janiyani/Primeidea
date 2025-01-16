@@ -63,7 +63,7 @@ const BannerSection = () => {
                 <FadeUpOneByOneAnimation className="flex flex-col	items-start px-2 w-1/4">
                     <Image src="/images/legacy-inheritance-planning/icons/2.png" width={50} height={50} alt="2" className="mb-4" />
                     <p className="md:text-lg xl:text-xl font-medium mb-4 text-white">
-                        We offer full assistance with optional Will registration and other offline procedures
+                        We offer full assistance with optional will registration and other offline procedures
                     </p>
                 </FadeUpOneByOneAnimation>
                 <FadeUpOneByOneAnimation className="flex flex-col	items-start px-2 w-1/4">

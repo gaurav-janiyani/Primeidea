@@ -20,7 +20,7 @@ const YouIHereSection = () => {
                 You&apos;re Here!
               </h3>
               <p className="text-lg text-white font-medium">
-                Beause you took a risk and started a business  to impact lives & ignite prosperity - I love that about you!
+                Because you took a risk and started a business  to impact lives & ignite prosperity - I love that about you!
               </p>
             </FadeUpOneByOneAnimation>
             <FadeUpOneByOneAnimation className="w-full md:w-[50%] pt-6  md:py-2 md:px-8">
