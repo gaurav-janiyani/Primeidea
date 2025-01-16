@@ -131,7 +131,7 @@ export default async function TaxPlanningPage() {
 
             <BannerSection 
                 mainBannerImage={"/images/tax-planning/banner.png"}
-                bannerRightImg={"/images/tax-planning/banner-right.png"}
+                bannerRightImg={"/images/tax-planning/bannerright.png"}
                 mainTitle={"Optimize Your Tax Liabilities with Strategic Planning"}
                 mainSubTitle={"Comprehensive Solutions to Minimize Taxes and Maximize Savings"}
                 mainLinkTitle={"Start Saving on Taxes Now"}

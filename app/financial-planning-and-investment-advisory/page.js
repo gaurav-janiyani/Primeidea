@@ -128,7 +128,7 @@ export default async function FinancialPlanningAndInvestmentAdvisory() {
         <div className="bg-[#F6FDFF]">
             <BannerSection 
              mainBannerImage={"/images/financial-planning/banner.png"}
-             bannerRightImg={"/images/financial-planning/banner-right.png"}
+             bannerRightImg={"/images/financial-planning/bannerright.png"}
              mainTitle={"Empowering Young Professionals & Enterprenuers to Secure Their Financial Future"}
              mainSubTitle={""}
              mainLinkTitle={"Start your journey with us"}
