@@ -3,6 +3,7 @@ import ClientTestimonial from "@/components/clientTestimonial";
 import Footer from "@/components/footer";
 import InsightsSection from "@/components/insightsSection";
 import FaqsSection from "@/components/researchWelathManagement/faqsSection";
+import HowDoWeDoIt from "@/components/researchWelathManagement/howDoWeDoIt";
 import PowerOfStrategy from "@/components/researchWelathManagement/powerOfStrategy";
 import PrimeIdeaHelps from "@/components/researchWelathManagement/primeideaHelps";
 import WorkSection from "@/components/researchWelathManagement/workSection";
@@ -141,7 +142,9 @@ export default async function ResearchBasedWealthManagementPage () {
 
             <WorkSection />
 
-            <PrimeIdeaHelps />
+            {/* <PrimeIdeaHelps /> */} 
+
+            <HowDoWeDoIt />
 
             <StepperSection title={'Our Process'} steps={steps} />
 

@@ -14,7 +14,7 @@ window.ymConfig = { "bot": "x1734168923745", "host": "https://r0.cloud.yellow.ai
             var e = d.createElement("script");
             e.type = "text/javascript";
             e.async = !0;
-            e.src = "https://cdn.yellowmessenger.com/plugin/widget-v2/latest/dist/main.min.js";
+            e.src = "https://cdn.yellowmessenger.com/plugin/widget-v2/latest/dist/main.min.js?no-cache=${new Date().getTime()}";
             var t = d.getElementsByTagName("script")[0];
             t.parentNode.insertBefore(e, t);
         }
