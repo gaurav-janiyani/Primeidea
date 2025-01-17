@@ -8,12 +8,12 @@ const RiskManagementContent = () => {
           Risk Management
         </h2>
         <p className="text-white text-base xl:text-lg w-full lg:max-w-[600px] xl:max-w-[770px] text-center lg:text-left mx-auto">
-          Risk management is the process of identify, assessing and controlling potential thrreats to your financial well-being. It&apos;s an essential part of financial planning that helps protect your assets and achieve your financial goals. 
+          Risk management is the process of identify, assessing and controlling potential threats to your financial well-being. It&apos;s an essential part of financial planning that helps protect your assets and achieve your financial goals. 
         </p>
       </div>
       <div className="p-6">
         <p className="text-white text-xl mb-6 font-semibold">
-          Key benefits of budgeting include:
+          Key benefits of risk management include:
         </p>
       <div className="flex justify-start lg:justify-between flex-col md:flex-row-reverse">          
         <Image src="/images/financial-planning/icons/risk-management.png" width={500} height={218} alt="Risk Management" className="object-contain mr-6 w-full max-w-[450px] xl:max-w-[500px] mb-6 lg:mb-0 " />
@@ -22,7 +22,7 @@ const RiskManagementContent = () => {
             <strong>Identifying potential risks: </strong> Recognizing threats such as market fluctuations, economic downturns, health issues and natural disasters.
           </li>
           <li className="mb-3 text-white text-[18px]">
-            <strong>Assessing the impact of risks: </strong> Evaluting the potential financial consequences of each risk.
+            <strong>Assessing the impact of risks: </strong> Evaluating the potential financial consequences of each risk.
           </li>
           <li className="mb-3 text-white text-[18px]">
             <strong>Implementing risk mitigation strategies: </strong> Developing plans to reduce or eliminate risks, such as insurance, Diversification and emergency funds.

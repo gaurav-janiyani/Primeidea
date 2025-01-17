@@ -13,7 +13,7 @@ const InvestmentBasicsContent = () => {
       </div>
       <div className="p-6">
         <p className="text-white text-xl mb-6 font-semibold">
-          Key benefits of budgeting include:
+          Key benefits of investment include:
         </p>
         <ul className="flex justify-start lg:justify-between flex-wrap lg:flex-nowrap">
           <li className="text-white max-w-[300px] md:max-w-[unset] w-full sm:w-[50%] md:w-[30%] mb-4 lg:mb-0 lg:w-[18%] xl:w-[17%] py-4 sm:p-4">
@@ -28,7 +28,7 @@ const InvestmentBasicsContent = () => {
               Stocks
             </h3>
             <p className="text-base xl:text-lg font-normal text-[#ffffff]">
-              Begin by meticulously recording all sources of income and expenditure to gain a comprehensive view of your financial situation.
+              Stocks represent ownership in a company, offering potential growth and dividends, but with higher risk and volatility.
             </p>
           </li>
           <li className="text-white max-w-[300px] md:max-w-[unset] w-full sm:w-[50%] md:w-[30%] mb-4 lg:mb-0 lg:w-[18%] xl:w-[17%] py-4 sm:p-4 lg:pl-4 lg:border-l lg:border-l-[#fff]">
@@ -43,7 +43,7 @@ const InvestmentBasicsContent = () => {
               Bond
             </h3>
             <p className="text-base xl:text-lg font-normal text-[#ffffff]">
-              Organize your expenses into categories like housing, transportation, and entertainment to spot areas for adjustments.
+              Bonds are debt securities issued by governments or corporations, providing fixed interest returns with lower risk than stocks.
             </p>
           </li>
           <li className="text-white max-w-[300px] md:max-w-[unset] w-full sm:w-[50%] md:w-[30%] mb-4 lg:mb-0 lg:w-[18%] xl:w-[17%] py-4 sm:p-4 lg:pl-4 lg:border-l lg:border-l-[#fff]">
@@ -58,7 +58,7 @@ const InvestmentBasicsContent = () => {
               Mutual Funds
             </h3>
             <p className="text-base xl:text-lg font-normal text-[#ffffff]">
-              Define clear and achievable financial objectives that align with your income and expenses, ensuring they are measurable and time-bound.
+              Mutual funds pool money from investors to buy a diversified portfolio of stocks, bonds, or other securities.
             </p>
           </li>
           <li className="text-white max-w-[300px] md:max-w-[unset] w-full sm:w-[50%] md:w-[30%] mb-4 lg:mb-0 lg:w-[18%] xl:w-[17%] py-4 sm:p-4 lg:pl-4 lg:border-l lg:border-l-[#fff]">
@@ -73,7 +73,7 @@ const InvestmentBasicsContent = () => {
               Real Estate
             </h3>
             <p className="text-base xl:text-lg font-normal text-[#ffffff]">
-              Flexibility is key; be prepared to modify your budget as circumstances change, allowing for ongoing optimisation and improvement.
+              Real estate investments involve purchasing property for rental income or capital appreciation, requiring significant upfront capital and management.
             </p>
           </li>
           <li className="text-white max-w-[300px] md:max-w-[unset] w-full sm:w-[50%] md:w-[30%] mb-4 lg:mb-0 lg:w-[18%] xl:w-[17%] py-4 sm:p-4 lg:pl-4 lg:border-l lg:border-l-[#fff]">
@@ -88,7 +88,7 @@ const InvestmentBasicsContent = () => {
               Retirement Account
             </h3>
             <p className="text-base xl:text-lg font-normal text-[#ffffff]">
-              Regularly assess your budget to track progress, evaluate adherence to financial targets, and make informed decisions for future adjustments.
+              Retirement account, like IRAs and 401(k)s, offer tax advantages for long-term saving towards retirement goals.
             </p>
           </li>
         </ul>

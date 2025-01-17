@@ -61,7 +61,7 @@ const BudgetingContent = () => {
               className="mb-4"
             />
             <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%] text-[#ffffff]">
-              Set Realistic <br /> Goal
+              Set Realistic <br /> Goals
             </h3>
             <p className="text-base xl:text-lg font-normal text-[#ffffff]">
               Define clear and achievable financial objectives that align with

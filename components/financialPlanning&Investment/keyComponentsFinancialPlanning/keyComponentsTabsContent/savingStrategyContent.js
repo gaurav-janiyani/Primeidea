@@ -8,7 +8,7 @@ const SavingStrategyContent = () => {
           Saving Strategies
         </h2>
         <p className="text-white text-base xl:text-lg w-full lg:max-w-[600px] xl:max-w-[770px] text-center lg:text-left mx-auto">
-          Savins is the portion of income that remains after expenses are deducted. It&apos;s a fundamental component of financial planning as it serves as a safety net for unforeseen circumstances and a stepping stone for achieving financial goals.
+          Savings is the portion of income that remains after expenses are deducted. It&apos;s a fundamental component of financial planning as it serves as a safety net for unforeseen circumstances and a stepping stone for achieving financial goals.
         </p>
       </div>
       <div className="p-6">
