@@ -52,7 +52,7 @@ const HelpWealthCreation = () => {
                     </h2>
                     <FadeUpOneByOneAnimation>
                       <p>
-                          Asset allocation is the process of dividing your investments among different asset classes, like stocks, bonds, and cash, to balance risk and reward. It’s essential in financial planning, as it helps reduce risk by diversifying your portfolio and should be regularly adjusted to align with your goals and market changes.
+                        Diversification involves spreading investments across various sectors, industries, and asset types to minimize the impact of any single asset’s poor performance on your overall portfolio. By diversifying, you reduce risk while aiming for stable returns, ensuring that no single investment dominates your portfolio’s performance. It’s a key strategy in managing volatility and achieving long-term growth.
                       </p>
                     </FadeUpOneByOneAnimation>
                 </li>
@@ -68,7 +68,7 @@ const HelpWealthCreation = () => {
                     </h2>
                     <FadeUpOneByOneAnimation> 
                       <p>
-                          Asset allocation is the process of dividing your investments among different asset classes, like stocks, bonds, and cash, to balance risk and reward. It’s essential in financial planning, as it helps reduce risk by diversifying your portfolio and should be regularly adjusted to align with your goals and market changes.
+                        Goal-based planning helps you align your financial strategy with your specific life goals, whether it’s buying a home, funding your child’s education, or preparing for retirement. By clearly defining your goals, you can create a tailored plan to prioritize savings and investment strategies that fit your timeline and risk tolerance, ensuring that you stay on track and focused.
                       </p>
                     </FadeUpOneByOneAnimation> 
                 </li>
@@ -84,7 +84,7 @@ const HelpWealthCreation = () => {
                     </h2>
                     <FadeUpOneByOneAnimation> 
                       <p>
-                          Asset allocation is the process of dividing your investments among different asset classes, like stocks, bonds, and cash, to balance risk and reward. It’s essential in financial planning, as it helps reduce risk by diversifying your portfolio and should be regularly adjusted to align with your goals and market changes.
+                        Creating a well-structured portfolio is about selecting the right mix of investments that align with your financial goals, risk tolerance, and time horizon. This process involves carefully choosing a combination of assets such as equities, bonds, real estate, and alternatives to create a balanced portfolio that maximizes potential returns while managing risk.
                       </p>
                     </FadeUpOneByOneAnimation>
                 </li>
@@ -100,7 +100,7 @@ const HelpWealthCreation = () => {
                     </h2>
                     <FadeUpOneByOneAnimation> 
                     <p>
-                        Asset allocation is the process of dividing your investments among different asset classes, like stocks, bonds, and cash, to balance risk and reward. It’s essential in financial planning, as it helps reduce risk by diversifying your portfolio and should be regularly adjusted to align with your goals and market changes.
+                      Regular portfolio reviews, especially on a quarterly basis, are essential to ensure that your investments remain aligned with your goals and market conditions. By revisiting your portfolio regularly, you can make adjustments to optimize returns, manage risk, and stay on course to meet your financial objectives, especially as life circumstances and market conditions evolve.
                     </p>
                     </FadeUpOneByOneAnimation>
                 </li>
