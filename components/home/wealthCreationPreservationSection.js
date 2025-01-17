@@ -15,7 +15,7 @@ const WealthCreationPreservation = () => {
                     <div className="flex justify-between flex-col-reverse md:flex-row">
                         <div className="w-full md:w-[calc(50%-10px)] px-6 py-6 pb-10 bg-[#fff] rounded-tl-[40px] rounded-tr-[40px] border-2 border-b-0 border-[#cccccc75] relative">
                             <FadeUpOneByOneAnimation className="flex relative z-10">
-                                <Image src="/images/home/icons/wealth-preservation.png" width={120} height={120} alt="Investment Planning" className="aspect-square	min-w-[100px] mr-4 h-full" />
+                                <Image src="/images/home/icons/investment-planning.png" width={120} height={120} alt="Investment Planning" className="aspect-square	min-w-[100px] mr-4 h-full" />
                                 <div >
                                     <h3 className="text-[#293C7D] text-xl font-bold mb-1" >Investment Planning</h3>
                                     <p className="text-[14px] font-semibold line-clamp-4">

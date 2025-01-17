@@ -4,6 +4,7 @@ import FaqsSection from "@/components/financialPlanning&Investment/faqsSection";
 import FinancialPlanning from "@/components/financialPlanning&Investment/financialPlanning";
 import GetStarted from "@/components/financialPlanning&Investment/getStarted";
 import HelpWealthCreation from "@/components/financialPlanning&Investment/helpWealthCreation";
+import InvestmentAdvisory from "@/components/financialPlanning&Investment/investmentAdvisory";
 import KeyComponentsOfFinancialPlanning from "@/components/financialPlanning&Investment/keyComponentsFinancialPlanning";
 
 import ReportSection from "@/components/financialPlanning&Investment/reportSection";
@@ -152,7 +153,9 @@ export default async function FinancialPlanningAndInvestmentAdvisory() {
 
             <ReportSection />
 
-            <div className="mt-28">
+            <InvestmentAdvisory />
+
+            <div className="mt-16">
                 <InsightsSection blogsListing={posts.posts.nodes} />
             </div>
 
