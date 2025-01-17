@@ -20,7 +20,7 @@ const YellowMessengerWidget = () => {
   useEffect(() => {
     window.ymConfig = {
       bot: 'x1734168923745',
-      logging: true,
+      // logging: true,
       alignRight: true,
     };
 

@@ -5,12 +5,6 @@ import { getPostList, getCategoriesPostList } from "@/lib/posts";
 // import graphqlRequest from "@/lib/graphqlRequest";
 import BlogListing from "@/components/blogs/blogListing";
 
-
-// export const metadata = {
-//     title: 'PrimeIdea Blog: Insights, Tips & Ideas for Financial Journey',
-//     description: 'Explore PrimeIdea Ventures blog for expert insights on financial planning, investment strategies, retirement planning, tax savings, and wealth management to make informed financial decisions.',
-// }
-
 export const metadata = {
     title: 'PrimeIdea Blog: Insights, Tips & Ideas for Financial Journey',
     description: 'Explore PrimeIdea Ventures blog for expert insights on financial planning, investment strategies, retirement planning, tax savings, and wealth management to make informed financial decisions.',
