@@ -69,7 +69,7 @@ const Footer = () => {
                   <NavLink link="/research-based-wealth-management" label="Research Based Wealth Management" />
                   <NavLink link="/retirement-planning" label="Dream Retirement Planning" />
                   <NavLink link="/legacy-inheritance-planning" label="Legacy & Inheritance Planning" />
-                  <NavLink link="/tax-planning-savings" label="Setting Tax Planning & Savings" />
+                  <NavLink link="/tax-planning-savings" label="Tax Planning & Savings" />
                 </LinkGroup>
               </FadeUpOneByOneAnimation>
 
