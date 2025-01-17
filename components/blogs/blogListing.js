@@ -1,6 +1,7 @@
 "use client";
 import moment from "moment";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export default function BlogListing({ posts, categoriesList }) {
@@ -88,7 +89,7 @@ export default function BlogListing({ posts, categoriesList }) {
                     return (
                         <div className="border border-black p-4 mb-2 mr-2 w-[48%]" key={index}>
                             <Image src={item.featuredImage?.node?.sourceUrl} width={1320} height={565} alt={item.title} className="mb-2"/>
-                            <h1 className="text-2xl font-semibold"><a href={`blogs/${item.slug}`}>{item.title}</a></h1>
+                            <h1 className="text-2xl font-semibold"><Link href={`blogs/${item.slug}`}>{item.title}</Link> </h1>
                             <p dangerouslySetInnerHTML={{ __html: item.excerpt }} />
                         </div>
                     )
@@ -112,12 +113,12 @@ export default function BlogListing({ posts, categoriesList }) {
           </div>
           <ul>
             <li className="border-b border-[#479AD2]">
-              <a
+              <Link
                 href="/blogs"
                 className="text-[#222222] font-semibold text-lg xl:text-xl inline-block w-full px-4 py-3 xl:py-4"
               >
                 All Categories
-              </a>
+              </Link>
             </li>
             {categoriesList.filter(item => item.count > 0).map((items, index) => {
               return (
@@ -125,12 +126,12 @@ export default function BlogListing({ posts, categoriesList }) {
                   key={index}
                   className="border-b border-[#479AD2] last:border-b-0"
                 >
-                  <a
+                  <Link
                     href={`/blogs/category/${items.slug}`}
                     className="text-[#222222] font-semibold text-lg xl:text-xl inline-block w-full px-4 py-3 xl:py-4"
                   >
                     {items.name}
-                  </a>
+                  </Link> 
                 </li>
               );
             })}
@@ -171,7 +172,7 @@ export default function BlogListing({ posts, categoriesList }) {
                         <div dangerouslySetInnerHTML={{ __html: item.excerpt}} className="line-clamp-3 text-sm sm:text-base mb-2 md:mb-0"></div>
                       </div>
                     </div>
-                    <a href={`/blogs/${item.slug}`} className="ml-auto inline-flex justify-end items-baseline w-full lg:w-[36px]">
+                    <Link href={`/blogs/${item.slug}`} className="ml-auto inline-flex justify-end items-baseline w-full lg:w-[36px]">
                       <Image
                         src="/images/blogs/right-arrow.png"
                         width={36}
@@ -179,7 +180,7 @@ export default function BlogListing({ posts, categoriesList }) {
                         alt="Arrow"
                         className="w-[32px] sm:w-[36px] h-[32px] sm:h-[36px]"
                       />
-                    </a>
+                    </Link> 
                   </div>
                 </li>
               );

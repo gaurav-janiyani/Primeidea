@@ -2,6 +2,7 @@ import Image from "next/image";
 import Header from "../header";
 import FadeUpAnimation from "@/animations/FadeUpAnimation";
 import FadeUpOneByOneAnimation from "@/animations/FadeUpOneByOneAnimation";
+import Link from "next/link";
 
 const BannerSection = () => {
   return (
@@ -24,7 +25,7 @@ const BannerSection = () => {
                 Expert Assistance in Navigating Insurance Claims and Ensuring
                 Financial Security
               </p>
-              <a
+              <Link
                 href="https://api.whatsapp.com/send?phone=918141027000&text=Hello, I'm interested in learning more about your financial advisory and investment services. Could you please provide me with some details on how I can start planning my investments? Looking forward to hearing from you!"
                 className="bg-[#293C7D] md:text-md xl:text-lg font-bold rounded-md text-white px-6 py-3 inline-flex items-center"
                 target="_blank"
@@ -37,7 +38,7 @@ const BannerSection = () => {
                   alt="Read All"
                   className="ml-2"
                 />
-              </a>
+              </Link> 
             </FadeUpAnimation>
             {/* <div className="max-w-[740px] w-full">
               <Image

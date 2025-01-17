@@ -2,6 +2,7 @@
 import React, { useEffect } from "react";
 import Image from "next/image";
 import FadeUpOneByOneAnimation from "@/animations/FadeUpOneByOneAnimation";
+import Link from "next/link";
 
 const Footer = () => {
 
@@ -49,7 +50,7 @@ const Footer = () => {
                 <div className="absolute top-0 right-0 bg-[#3E8ABD] w-[400%] h-[100%] border-r border-solid border-[#B4B4B4] z-[-1] hidden md:inline-block">
                 </div>
                 <FadeUpOneByOneAnimation className="mb-8 md:mb-10 w-full">
-                  <a href="/" className="md:mb-6 inline-block lg:max-w-[260px] xl:max-w-[280px] 2xl:max-w-[320px]">
+                  <Link href="/" className="md:mb-6 inline-block lg:max-w-[260px] xl:max-w-[280px] 2xl:max-w-[320px]">
                     <Image
                       src="/images/logo-white.png"
                       width={320}
@@ -57,7 +58,7 @@ const Footer = () => {
                       alt="Primeidea Ventures"
                       className="max-w-full "
                     />
-                  </a>
+                  </Link>
                 </FadeUpOneByOneAnimation>
               </div>
               <FadeUpOneByOneAnimation className="pb-10 lg:pb-20 md:pt-12 w-full sm:px-8 lg:pl-14 lg:pr-10 sm:w-1/2 md:max-w-[42%] xl:max-w-[40%] 2xl:max-w-[33.33%]">
@@ -76,13 +77,13 @@ const Footer = () => {
               <FadeUpOneByOneAnimation className="pb-10 lg:pb-20 md:pt-12 w-full sm:px-4 sm:w-1/2 md:max-w-[20%] xl:max-w-[25%] 2xl:max-w-[25%]">
                 <div className="sm:mb-10 w-full">
                   <h4 className="mb-3 text-lg font-semibold text-white">
-                    <a href="/insurance">Insurance</a>
+                    <Link href="/insurance">Insurance</Link> 
                   </h4>
                   <h4 className="mb-3 text-lg font-semibold text-white">
-                    <a href="/about-us">About Us</a>
+                    <Link href="/about-us">About Us</Link> 
                   </h4>
                   <h4 className="mb-3 text-lg font-semibold text-white">
-                    <a href="/blogs">Blogs</a>
+                    <Link href="/blogs">Blogs</Link> 
                   </h4>
                 </div>
               </FadeUpOneByOneAnimation>
@@ -95,34 +96,34 @@ const Footer = () => {
               <ul className="flex px-4 md:px-0 py-6 w-full md:max-w-[260px] lg:max-w-[320px] xl:max-w-[370px] 2xl:max-w-[400px] relative">
                 <li className="absolute top-0 right-0 bg-[#3E8ABD] w-[400%] h-[100%] sm:border-r border-solid border-[#B4B4B4] z-0"></li>
                 <li className="mr-8 relative z-1">
-                  <a href="https://www.facebook.com/primeidea" target="_blank">
+                  <Link href="https://www.facebook.com/primeidea" target="_blank">
                     <Image
                       src="/images/footer/icons/facebook.svg"
                       alt="Facebook"
                       width={32}
                       height={32}
                     />
-                  </a>
+                  </Link> 
                 </li>
                 <li className="mr-8 relative z-1">
-                  <a href="https://www.linkedin.com/company/primeidea/" target="_blank">
+                  <Link href="https://www.linkedin.com/company/primeidea/" target="_blank">
                     <Image
                       src="/images/footer/icons/linkedin.svg"
                       alt="LinkedIn"
                       width={32}
                       height={32}
                     />
-                  </a>
+                  </Link> 
                 </li>
                 <li className="mr-8 relative z-1">
-                  <a href="https://www.instagram.com/primeidea/" target="_blank">
+                  <Link href="https://www.instagram.com/primeidea/" target="_blank">
                     <Image
                       src="/images/footer/icons/instagram.svg"
                       alt="Instagram"
                       width={32}
                       height={32}
                     />
-                  </a>
+                  </Link> 
                 </li>
               </ul>
             </div>
@@ -149,9 +150,9 @@ const LinkGroup = ({ children, header }) => {
 const NavLink = ({ link, label }) => {
   return (
     <li>
-      <a href={link} className="inline-block text-base lg:text-lg leading-tight	text-white">
+      <Link href={link} className="inline-block text-base lg:text-lg leading-tight	text-white">
         {label}
-      </a>
+      </Link> 
     </li>
   );
 };

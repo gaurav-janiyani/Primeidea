@@ -5,8 +5,8 @@ import Header from "../header";
 import moment from "moment";
 import Footer from "../footer";
 import GetStarted from "../financialPlanning&Investment/getStarted";
+import Link from "next/link";
   
-
 const BlogDetail = (props) => {
     const { post } = props;
     console.log(post);
@@ -17,10 +17,10 @@ const BlogDetail = (props) => {
             <div className="2xl:max-w-[1320px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-4">
                 <ul className="flex flex-wrap mb-6">
                     <li className="font-bold text-[#0077FF]">
-                        <a href="/" >Home</a> <span className="inline-block px-1 text-[#171717]">/</span>
+                        <Link href="/" >Home</Link> <span className="inline-block px-1 text-[#171717]">/</span>
                     </li>
                     <li className="font-bold text-[#0077FF]">
-                        <a href="/blogs" >Blogs</a> <span className="inline-block px-1 text-[#171717]">/</span>
+                        <Link href="/blogs" >Blogs</Link> <span className="inline-block px-1 text-[#171717]">/</span>
                     </li>
                     <li className="font-bold text-[#171717]">
                         <span>{post?.title}</span>
@@ -62,24 +62,24 @@ const BlogDetail = (props) => {
                             <h2 className="mb-4 text-xl font-medium">FOLLOW US</h2>
                             <ul className="flex justify-between">
                                 <li>
-                                    <a href="https://www.facebook.com/primeidea" target="_blank">
+                                    <Link href="https://www.facebook.com/primeidea" target="_blank">
                                         <Image src="/images/blogs/social-media/fb.png" width={42} height={42} alt="Facebook" />
-                                    </a>
+                                    </Link> 
                                 </li>
                                 <li>
-                                    <a href="https://www.instagram.com/primeidea/" target="_blank">
+                                    <Link href="https://www.instagram.com/primeidea/" target="_blank">
                                         <Image src="/images/blogs/social-media/instagram.png" width={42} height={42} alt="Instagram" />
-                                    </a>
+                                    </Link> 
                                 </li>
                                 <li>
-                                    <a href="https://www.linkedin.com/company/primeidea/" target="_blank">
+                                    <Link href="https://www.linkedin.com/company/primeidea/" target="_blank">
                                         <Image src="/images/blogs/social-media/linkedin.png" width={42} height={42} alt="LinkedIn" />
-                                    </a>
+                                    </Link> 
                                 </li>
                                 <li>
-                                    <a href="https://api.whatsapp.com/send?phone=918141027000&text=Hello, I'm interested in learning more about your financial advisory and investment services. Could you please provide me with some details on how I can start planning my investments? Looking forward to hearing from you!">
+                                    <Link href="https://api.whatsapp.com/send?phone=918141027000&text=Hello, I'm interested in learning more about your financial advisory and investment services. Could you please provide me with some details on how I can start planning my investments? Looking forward to hearing from you!">
                                         <Image src="/images/blogs/social-media/whatsapp.png" width={42} height={42} alt="WhatsApp" />
-                                    </a>
+                                    </Link> 
                                 </li>
                             </ul>
                         </div>
@@ -98,7 +98,7 @@ const BlogDetail = (props) => {
                             <p className="mb-3">
                             Join our exclusive community of financial advisors! Share insights, and stay updated with the latest trends and tools. Connect with experts on WhatsApp!
                             </p>
-                            <a href="https://chat.whatsapp.com/Bgocyi51gNA3S4CrFkggot" className="border rounded-[5px] border-[#232D63] text-[#fff] bg-[#232D63] p-3 text-center font-bold w-full inline-block" >Join our community</a>
+                            <Link href="https://chat.whatsapp.com/Bgocyi51gNA3S4CrFkggot" className="border rounded-[5px] border-[#232D63] text-[#fff] bg-[#232D63] p-3 text-center font-bold w-full inline-block" >Join our community</Link> 
 
                         </div>
                     </div>

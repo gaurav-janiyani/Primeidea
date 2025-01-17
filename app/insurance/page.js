@@ -118,7 +118,7 @@ export default async function InsurancePage() {
         subSectionSubTitle3={"92+"}
       />
 
-      <AboutInsurance />
+      <aboutInsurance />
 
       <TypesOfInsurance />
 

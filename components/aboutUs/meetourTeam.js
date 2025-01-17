@@ -14,9 +14,9 @@ const MeetOurTeam = () => {
                         <p className="text-base md:text-lg lg:text-xl text-center md:text-left md:max-w-[420px] lg:max-w-[600px] xl:max-w-[780px]">
                             Explore our diverse case studies showcasing how our financial consultation services have enabled businesses to overcome challenges and achieve their full potential.
                         </p>
-                        {/* <a href="" className="font-semibold underline-offset-8 px-2 text-[#293C7D]s">
+                        {/* <Link href="" className="font-semibold underline-offset-8 px-2 text-[#293C7D]s">
                             Join our team
-                        </a> */}
+                        </Link>  */}
                     </FadeUpOneByOneAnimation>
                     <div className="flex flex-wrap mx-[-10px]">
                         <FadeUpOneByOneAnimation className="mb-4 md:mb-0 w-1/2 md:w-1/4 px-[10px] text-center">

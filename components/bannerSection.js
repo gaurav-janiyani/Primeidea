@@ -4,6 +4,7 @@ import Header from "./header";
 import FadeUpAnimation from "@/animations/FadeUpAnimation";
 import FadeUpOneByOneAnimation from "@/animations/FadeUpOneByOneAnimation";
 import FadeUpAnimationDelay from "@/animations/FadeUpAnimationDelay";
+import Link from "next/link";
 
 const BannerSection = (props) => {
   
@@ -36,7 +37,7 @@ const BannerSection = (props) => {
                 </p>
               }
               {props.mainLinkTitle &&
-              <a
+              <Link
                 href={props.mainLink?props.mainLink:''}
                 className="bg-[#293C7D] md:text-md xl:text-lg font-bold rounded-md text-white px-6 py-3 inline-flex items-center"
                 target="_blank"
@@ -49,7 +50,7 @@ const BannerSection = (props) => {
                   alt="Read All"
                   className="ml-2"
                 />
-              </a>
+              </Link> 
               }
             </FadeUpAnimation>
             {props.bannerRightImg &&

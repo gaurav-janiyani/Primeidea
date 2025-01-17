@@ -7,76 +7,77 @@ import BlogListing from "@/components/blogs/blogListing";
 import graphqlRequest from "@/lib/graphqlRequest";
 
 
-export async function generateMetadata({ params }) {
-  const { categorySlug } = params;
-  const query = {
-    query: `query pageSEO {
-      category(id: "${categorySlug}", idType: SLUG) {
-          seo {
-            metaDesc
-            title
-            metaKeywords
-            canonical
-            focuskw
-            opengraphTitle
-            opengraphDescription
-            twitterTitle
-            twitterDescription
-            opengraphImage {
-              mediaDetails {
-                sizes {
-                  sourceUrl
+export async function generateMetadata(props) {
+    const params = await props.params;
+    const { categorySlug } = params;
+    const query = {
+      query: `query pageSEO {
+        category(id: "${categorySlug}", idType: SLUG) {
+            seo {
+              metaDesc
+              title
+              metaKeywords
+              canonical
+              focuskw
+              opengraphTitle
+              opengraphDescription
+              twitterTitle
+              twitterDescription
+              opengraphImage {
+                mediaDetails {
+                  sizes {
+                    sourceUrl
+                  }
                 }
               }
             }
           }
-        }
-      }`,
-  };
-  const response = await graphqlRequest(query);
-  const content = response;
+        }`,
+    };
+    const response = await graphqlRequest(query);
+    const content = response;
 
-  return {
-    title: content.data.category.seo.title,
-    description: content.data.category.seo.metaDesc,
-    keywords: content.data.category.metaKeywords,
-    applicationName: 'PrimeIdea Ventures',
-    formatDetection: {
-      email: true,
-      address: true,
-      telephone: true,
-    },
-    author: 'Partha Shah',
-    viewport: 'width=device-width, initial-scale=1',
-    robots: 'index, follow',
-    canonical: `https://primeidea.in/category/${categorySlug}`,
-    alternates: {
-      canonical: `https://primeidea.in/category/${categorySlug}`,
-      languages: {
-        'en-US': `https://primeidea.in/category/${categorySlug}`,
+    return {
+      title: content.data.category.seo.title,
+      description: content.data.category.seo.metaDesc,
+      keywords: content.data.category.metaKeywords,
+      applicationName: 'PrimeIdea Ventures',
+      formatDetection: {
+        email: true,
+        address: true,
+        telephone: true,
       },
-    },
-    openGraph: {
-      title: content.data.category.seo.title,
-      description: content.data.category.seo.metaDesc,
-      url: `https://primeidea.in/category/${categorySlug}`,
-      site_name: 'PrimeIdea Ventures',
-      // images: [
-      //   {
-      //     url: content.data.category.seo.opengraphImage?.mediaDetails.sizes
-      //       .sourceUrl,
-      //   },
-      // ],
-      locale: "en_US",
-      type: "website",
-    },
-    twitter: {
-      title: content.data.category.seo.title,
-      description: content.data.category.seo.metaDesc,
-      // images:
-      //   content.data.category.seo.opengraphImage?.mediaDetails.sizes.sourceUrl,
-    },
-  };
+      author: 'Partha Shah',
+      viewport: 'width=device-width, initial-scale=1',
+      robots: 'index, follow',
+      canonical: `https://primeidea.in/category/${categorySlug}`,
+      alternates: {
+        canonical: `https://primeidea.in/category/${categorySlug}`,
+        languages: {
+          'en-US': `https://primeidea.in/category/${categorySlug}`,
+        },
+      },
+      openGraph: {
+        title: content.data.category.seo.title,
+        description: content.data.category.seo.metaDesc,
+        url: `https://primeidea.in/category/${categorySlug}`,
+        site_name: 'PrimeIdea Ventures',
+        // images: [
+        //   {
+        //     url: content.data.category.seo.opengraphImage?.mediaDetails.sizes
+        //       .sourceUrl,
+        //   },
+        // ],
+        locale: "en_US",
+        type: "website",
+      },
+      twitter: {
+        title: content.data.category.seo.title,
+        description: content.data.category.seo.metaDesc,
+        // images:
+        //   content.data.category.seo.opengraphImage?.mediaDetails.sizes.sourceUrl,
+      },
+    };
 }
 
 async function getData(categorySlug) {
@@ -137,7 +138,8 @@ async function getCategoryData(params) {
     return { allPosts: allPosts };
 }
 
-export default async function BlogsList({params}) {
+export default async function BlogsList(props) {
+    const params = await props.params;
     const { categorySlug } = params;
     const posts = await getData(categorySlug);
     const categoriesList = await getCategoriesPostList();

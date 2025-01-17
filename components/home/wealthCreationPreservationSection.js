@@ -1,5 +1,6 @@
 import FadeUpOneByOneAnimation from "@/animations/FadeUpOneByOneAnimation";
 import Image from "next/image";
+import Link from "next/link";
 
 
 const WealthCreationPreservation = () => {
@@ -25,7 +26,7 @@ const WealthCreationPreservation = () => {
                             </FadeUpOneByOneAnimation>
                             <div className="absolute bottom-[-2px] left-0 h-[40px] w-[calc(100%+35px)] bg-white after:content-[''] after:absolute after:bottom-[0] after:right-[-35px] after:w-[70px] after:h-[70px] after:border-l-2 after:border-b-2 after:bg-[#F6FDFF] after:border-[#cccccc75] after:rounded-bl-[40px] hidden md:inline-block"></div>
                         </div>
-                        <a href="/financial-planning-and-investment-advisory" className="w-full md:w-[calc(50%-10px)] px-6 py-6   bg-[#fff] h-full rounded-[40px] border-2 border-[#cccccc75] z-10 mb-2 md:mb-0">
+                        <Link href="/financial-planning-and-investment-advisory" className="w-full md:w-[calc(50%-10px)] px-6 py-6   bg-[#fff] h-full rounded-[40px] border-2 border-[#cccccc75] z-10 mb-2 md:mb-0">
                             <FadeUpOneByOneAnimation className="flex relative z-10">
                                 <Image src="/images/home/icons/wealth-preservation.png" width={120} height={120} alt="Financial Planning" className="aspect-square	min-w-[100px] mr-4 h-full" />
                                 <div >
@@ -35,11 +36,11 @@ const WealthCreationPreservation = () => {
                                     </p>
                                 </div>
                             </FadeUpOneByOneAnimation>
-                        </a>
+                        </Link> 
                     </div>
                     <div className="flex flex-wrap lg:flex-nowrap justify-between bg-[#fff]  p-4 py-6 rounded-[40px] rounded-tl-[0px] rounded-tr-[0px] md:rounded-tr-[40px] border-t-0 border-2 md:border-2 border-[#cccccc75]">
                         <div className="mb-4 lg:mb-0 w-full sm:w-1/2 lg:w-1/4 px-2">
-                        <a
+                        <Link
                             href="/research-based-wealth-management"
                             className="relative rounded-[12px] shadow-[0px_0px_4px_0px_#00000040] inline-block h-full w-full cursor-pointer"
                         >
@@ -60,10 +61,10 @@ const WealthCreationPreservation = () => {
                             </p>
                             </FadeUpOneByOneAnimation>
                             </div>
-                        </a>
+                        </Link> 
                         </div>
                         <div className="mb-4 lg:mb-0 w-full sm:w-1/2 lg:w-1/4 px-2">
-                        <a
+                        <Link
                             href="/retirement-planning"
                             className="relative rounded-[12px] shadow-[0px_0px_4px_0px_#00000040] inline-block h-full w-full cursor-pointer"
                         >
@@ -84,10 +85,10 @@ const WealthCreationPreservation = () => {
                             </p>
                             </FadeUpOneByOneAnimation>
                             </div>
-                        </a>
+                        </Link> 
                         </div>
                         <div className="mb-4 lg:mb-0 w-full sm:w-1/2 lg:w-1/4 px-2">
-                        <a
+                        <Link
                             href="/legacy-inheritance-planning"
                             className="relative rounded-[12px] shadow-[0px_0px_4px_0px_#00000040] inline-block h-full w-full cursor-pointer"
                         >
@@ -108,10 +109,10 @@ const WealthCreationPreservation = () => {
                             </p>
                             </FadeUpOneByOneAnimation>
                             </div>
-                        </a>
+                        </Link> 
                         </div>
                         <div className="mb-4 lg:mb-0 w-full sm:w-1/2 lg:w-1/4 px-2">
-                        <a
+                        <Link
                             href="/tax-planning-savings"
                             className="relative rounded-[12px] shadow-[0px_0px_4px_0px_#00000040] inline-block h-full w-full cursor-pointer"
                         >
@@ -132,7 +133,7 @@ const WealthCreationPreservation = () => {
                             </p>
                             </FadeUpOneByOneAnimation>
                             </div>
-                        </a>
+                        </Link> 
                         </div>
                     </div>
                 </div>

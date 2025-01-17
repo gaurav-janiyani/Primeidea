@@ -97,14 +97,14 @@ export default function Header() {
                   <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-150 ease-in-out">
                     <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                       {item.submenus.map((submenu) => (
-                        <a
+                        <Link
                           key={submenu.name}
                           href={submenu.href}
                           className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
                           role="menuitem"
                         >
                           {submenu.name}
-                        </a>
+                        </Link> 
                       ))}
                     </div>
                   </div>
@@ -118,12 +118,12 @@ export default function Header() {
           >
             <ul className="flex flex-col mt-4 font-medium md:flex-row md:mt-0 md:space-x-8 rtl:space-x-reverse">
               <li className="!ml-2">
-                <a
+                <Link
                   href="/financial-planning-and-investment-advisory"
                   className="block py-4 2xl:py-5 px-2 2xl:px-3 text-[15px] 2xl:text-base font-medium md:w-auto hover:text-[#E40115]"
                 >
                   Financial Planning
-                </a>
+                </Link> 
               </li>
               {/* <li className="!ml-2 group">
                   <button
@@ -159,7 +159,7 @@ export default function Header() {
                   >
                     <div className="flex justify-between">
                       <div className="w-1/2 px-2">
-                        <a href="/financial-planning-and-investment-advisory" className="relative rounded-[12px] shadow-[0_0_5px_0_#00000040] cursor-pointer">
+                        <Link href="/financial-planning-and-investment-advisory" className="relative rounded-[12px] shadow-[0_0_5px_0_#00000040] cursor-pointer">
                           <Image
                             src="/images/header/wealth-creation/financial-investment-advisory.png"
                             width={621}
@@ -179,10 +179,10 @@ export default function Header() {
                               wealth.
                             </p>
                           </div>
-                        </a>
+                        </Link> 
                       </div>
                       <div className="w-1/2 px-2">
-                        <a href="/financial-planning-and-investment-advisory" className="relative rounded-[12px] shadow-[0_0_5px_0_#00000040] cursor-pointer">
+                        <Link href="/financial-planning-and-investment-advisory" className="relative rounded-[12px] shadow-[0_0_5px_0_#00000040] cursor-pointer">
                           <Image
                             src="/images/header/wealth-creation/financial-investment-planning.png"
                             width={621}
@@ -202,7 +202,7 @@ export default function Header() {
                               wealth.
                             </p>
                           </div>
-                        </a>
+                        </Link> 
                       </div>
                     </div>
                   </div>
@@ -241,7 +241,7 @@ export default function Header() {
                 >
                   <div className="flex justify-between">
                     <div className="w-1/4 px-2">
-                      <a
+                      <Link
                         href="/research-based-wealth-management"
                         className="relative rounded-[12px] shadow-[0_0_5px_0_#00000040] cursor-pointer"
                       >
@@ -260,10 +260,10 @@ export default function Header() {
                             Our research-driven approach helps you develop a personalized investment strategy that optimizes growth and secures your financial future.
                           </p>
                         </div>
-                      </a>
+                      </Link> 
                     </div>
                     <div className="w-1/4 px-2">
-                      <a
+                      <Link
                         href="/retirement-planning"
                         className="relative rounded-[12px] shadow-[0_0_5px_0_#00000040] cursor-pointer"
                       >
@@ -282,10 +282,10 @@ export default function Header() {
                             We craft retirement plans that align with your aspirations, ensuring peace of mind in your golden years.
                           </p>
                         </div>
-                      </a>
+                      </Link> 
                     </div>
                     <div className="w-1/4 px-2">
-                      <a
+                      <Link
                         href="/legacy-inheritance-planning"
                         className="relative rounded-[12px] shadow-[0_0_5px_0_#00000040] cursor-pointer"
                       >
@@ -304,10 +304,10 @@ export default function Header() {
                             Protect your legacy and ensure a smooth transition of wealth to your loved ones, preserving your values for generations to come.
                           </p>
                         </div>
-                      </a>
+                      </Link> 
                     </div>
                     <div className="w-1/4 px-2">
-                      <a
+                      <Link
                         href="/tax-planning-savings"
                         className="relative rounded-[12px] shadow-[0_0_5px_0_#00000040] cursor-pointer"
                       >
@@ -326,34 +326,34 @@ export default function Header() {
                             Maximize your savings through proactive tax strategies, minimizing liabilities while growing your wealth efficiently.
                           </p>
                         </div>
-                      </a>
+                      </Link> 
                     </div>
                   </div>
                 </div>
               </li>
               <li className="!ml-2">
-                <a
+                <Link
                   href="/insurance"
                   className="block py-4 2xl:py-5 px-2 2xl:px-3 text-[15px] 2xl:text-base font-medium md:w-auto hover:text-[#E40115]"
                 >
                   Insurance
-                </a>
+                </Link> 
               </li>
               <li className="!ml-2">
-                <a
+                <Link
                   href="/about-us"
                   className="block py-4 2xl:py-5 px-2 2xl:px-3 text-[15px] 2xl:text-base font-medium md:w-auto hover:text-[#E40115]"
                 >
                   About Us
-                </a>
+                </Link> 
               </li>
               <li className="!ml-2">
-                <a
+                <Link
                   href="/blogs"
                   className="block py-4 2xl:py-5 px-2 2xl:px-3 text-[15px] 2xl:text-base font-medium md:w-auto hover:text-[#E40115]"
                 >
                   Blogs
-                </a>
+                </Link> 
               </li>
             </ul>
           </div>
@@ -361,12 +361,12 @@ export default function Header() {
 
         {/* Contact button */}
         <div className="lg:flex items-center">
-          <a
+          <Link
             href="/contact-us"
             className="rounded-[10px] py-1.5 px-[18px] border border-solid border-[#1F1F1F] text-[#171717] hover:text-white hover:bg-[#E40115] hover:border-[#E40115]"
           >
             Contact Now
-          </a>
+          </Link> 
         </div>
       </div>
 
@@ -387,7 +387,7 @@ export default function Header() {
               </button>
               <div className="flex justify-between flex-wrap">
                 <div className="w-[calc(50%-8px)] mb-4 rounded-[12px] shadow-[0_0px_3px_0px_#00000040]">
-                  <a
+                  <Link
                     href="/research-based-wealth-management"
                     className="relative rounded-[12px] shadow-[0_0_5px_0_#00000040] cursor-pointer"
                   >
@@ -407,10 +407,10 @@ export default function Header() {
                               empowers you to grow your wealth strategically,
                             </p> */}
                     </div>
-                  </a>
+                  </Link> 
                 </div>
                 <div className="w-[calc(50%-8px)] mb-4 rounded-[12px] shadow-[0_0px_3px_0px_#00000040]">
-                  <a
+                  <Link
                     href="/retirement-planning"
                     className="relative rounded-[12px] shadow-[0_0_5px_0_#00000040] cursor-pointer"
                   >
@@ -430,10 +430,10 @@ export default function Header() {
                               empowers you to grow your wealth strategically,
                             </p> */}
                     </div>
-                  </a>
+                  </Link> 
                 </div>
                 <div className="w-[calc(50%-8px)] mb-4 rounded-[12px] shadow-[0_0px_3px_0px_#00000040]">
-                  <a
+                  <Link
                     href="/legacy-inheritance-planning"
                     className="relative rounded-[12px] shadow-[0_0_5px_0_#00000040] cursor-pointer"
                   >
@@ -453,10 +453,10 @@ export default function Header() {
                               empowers you to grow your wealth strategically,
                             </p> */}
                     </div>
-                  </a>
+                  </Link> 
                 </div>
                 <div className="w-[calc(50%-8px)] mb-4 rounded-[12px] shadow-[0_0px_3px_0px_#00000040]">
-                  <a
+                  <Link
                     href="/tax-planning-savings"
                     className="relative rounded-[12px] shadow-[0_0_5px_0_#00000040] cursor-pointer"
                   >
@@ -474,7 +474,7 @@ export default function Header() {
                               empowers you to grow your wealth strategically,
                             </p> */}
                     </div>
-                  </a>
+                  </Link> 
                 </div>
               </div>
             </>
@@ -483,7 +483,7 @@ export default function Header() {
             ? navigation.find((item) => item.name === activeSubmenu).submenus
             : navigation
           ).map((item) => (
-            <a
+            <Link
               key={item.name}
               href={item.href}
               onClick={() => handleSubmenuClick(item)}
@@ -491,7 +491,7 @@ export default function Header() {
             >
               {item.name}
               {item.submenus && <span className="float-right">→</span>}
-            </a>
+            </Link> 
           ))}
         </div>
       </div>

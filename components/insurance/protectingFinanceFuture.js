@@ -1,5 +1,6 @@
 import FadeUpOneByOneAnimation from "@/animations/FadeUpOneByOneAnimation";
 import Image from "next/image";
+import Link from "next/link";
 
 const ProtectingFinanceFuture = () => { 
     return (
@@ -52,7 +53,7 @@ const ProtectingFinanceFuture = () => {
                     wisely to support long-term financial goals.
                   </li>
                 </ul>
-                <a
+                <Link
                   href="https://api.whatsapp.com/send?phone=918141027000&text=Hello, I'm interested in learning more about your financial advisory and investment services. Could you please provide me with some details on how I can start planning my investments? Looking forward to hearing from you!"
                   className="bg-[#479AD2] text-base xl:text-lg font-bold rounded-md text-white px-6 py-3 inline-flex items-center"
                 >
@@ -64,7 +65,7 @@ const ProtectingFinanceFuture = () => {
                     alt="Read All"
                     className="ml-2"
                   />
-                </a>
+                </Link> 
               </FadeUpOneByOneAnimation>
             </div>
           </div>

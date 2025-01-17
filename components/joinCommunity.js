@@ -2,6 +2,7 @@ import FadeUpOneByOneAnimation from "@/animations/FadeUpOneByOneAnimation";
 import FadeUpAnimationDelay from "@/animations/FadeUpAnimationDelay";
 import FadeUpAnimation from "@/animations/FadeUpAnimation";
 import Image from "next/image";
+import Link from "next/link";
 
 const JoinCommunity = () => { 
     return (
@@ -47,7 +48,7 @@ const JoinCommunity = () => {
                     </p>
                   </li>
                 </ul>
-                <a
+                <Link
                 href='https://chat.whatsapp.com/Bgocyi51gNA3S4CrFkggot'
                 className="bg-[#293C7D] md:text-md xl:text-lg font-bold rounded-md text-white px-6 py-3 inline-flex items-center"
                 >
@@ -59,7 +60,7 @@ const JoinCommunity = () => {
                     alt="Read All"
                     className="ml-2"
                   />
-                </a>
+                </Link> 
               </FadeUpOneByOneAnimation>
             </div>
           </div>

@@ -4,7 +4,8 @@ import BlogDetail from "@/components/blogs/blogDetail";
 import graphqlRequest from "@/lib/graphqlRequest";
 
 
-export async function generateMetadata({ params }) {
+export async function generateMetadata(props) {
+  const params = await props.params;
   const { slug } = params;
   const query = {
     query: `query pageSEO {
@@ -125,13 +126,14 @@ export async function getSinglePost(slug) {
     return singlePost;
 }
 
-export default async function BlogDetailPage ({params}) {
-    const { slug } = params;
-    const post = await getSinglePost(slug);
+export default async function BlogDetailPage(props) {
+  const params = await props.params;
+  const { slug } = params;
+  const post = await getSinglePost(slug);
 
-    return (
-        <div className="bg-[#F6FDFF]">
-            <BlogDetail slug={slug} post={post} />
-        </div>
-    )
+  return (
+      <div className="bg-[#F6FDFF]">
+          <BlogDetail slug={slug} post={post} />
+      </div>
+  )
 }

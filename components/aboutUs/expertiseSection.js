@@ -1,5 +1,6 @@
 import FadeUpOneByOneAnimation from "@/animations/FadeUpOneByOneAnimation";
 import Image from "next/image";
+import Link from "next/link";
 
 const ExpertiseSection = () => {
   return (
@@ -25,7 +26,7 @@ const ExpertiseSection = () => {
               <p className="text-lg xl:text-xl mb-4 xl:mb-6 font-medium text-black">
                 Working with Primeidea gives you a peace of mind in real-time, and that your taxes are filed and paid on schedule.
               </p>
-              <a
+              <Link
                 href="/contact-us"
                 className="bg-[#293C7D] text-lg font-bold rounded-md text-white px-6 py-3 inline-flex items-center"
               >
@@ -37,7 +38,7 @@ const ExpertiseSection = () => {
                   alt="Read All"
                   className="ml-2"
                 />
-              </a>
+              </Link> 
             </FadeUpOneByOneAnimation>
           </div>
         </div>
