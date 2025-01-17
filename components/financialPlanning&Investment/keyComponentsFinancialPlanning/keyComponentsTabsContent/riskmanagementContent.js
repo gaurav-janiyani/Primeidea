@@ -8,96 +8,34 @@ const RiskManagementContent = () => {
           Risk Management
         </h2>
         <p className="text-white text-base xl:text-lg w-full lg:max-w-[600px] xl:max-w-[770px] text-center lg:text-left mx-auto">
-          Budgeting is essential for effective financial planning. By tracking
-          income and categorizing expenses, individuals and businesses can
-          understand their financial health, identify savings opportunities, and
-          make informed spending decisions.
+          Risk management is the process of identify, assessing and controlling potential thrreats to your financial well-being. It&apos;s an essential part of financial planning that helps protect your assets and achieve your financial goals. 
         </p>
       </div>
       <div className="p-6">
         <p className="text-white text-xl mb-6 font-semibold">
           Key benefits of budgeting include:
         </p>
-        <ul className="flex justify-start lg:justify-between flex-wrap lg:flex-nowrap">
-          <li className="text-white max-w-[300px] md:max-w-[unset] w-full sm:w-[50%] md:w-[30%] mb-4 lg:mb-0 lg:w-[18%] xl:w-[17%] py-4 sm:p-4">
-            <Image
-              src="/images/financial-planning/icons/track-income-expense.png"
-              width={78}
-              height={78}
-              alt="Identifying Potential Risks"
-              className="mb-4"
-            />
-            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%] text-[#ffffff]">
-              Insurance <br /> Coverage
-            </h3>
-            <p className="text-base xl:text-lg font-normal text-[#ffffff]">
-              Secure life, health, disability, and property insurance policies to protect your financial well-being from unforeseen risks and liabilities.
-            </p>
+      <div className="flex justify-start lg:justify-between flex-col md:flex-row-reverse">          
+        <Image src="/images/financial-planning/icons/risk-management.png" width={500} height={218} alt="Risk Management" className="object-contain mr-6 w-full max-w-[450px] xl:max-w-[500px] mb-6 lg:mb-0 " />
+        <ul className="max-w-[600px] list-disc pl-4">
+          <li className="mb-3 text-white text-[18px]">
+            <strong>Identifying potential risks: </strong> Recognizing threats such as market fluctuations, economic downturns, health issues and natural disasters.
           </li>
-          <li className="text-white max-w-[300px] md:max-w-[unset] w-full sm:w-[50%] md:w-[30%] mb-4 lg:mb-0 lg:w-[18%] xl:w-[17%] py-4 sm:p-4 lg:pl-4 lg:border-l lg:border-l-[#fff]">
-            <Image
-              src="/images/financial-planning/icons/categorised-spending.png"
-              width={78}
-              height={78}
-              alt="Tailored Insurance Solutions"
-              className="mb-4"
-            />
-            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%] text-[#ffffff]">
-              Diversification of <br /> Investments
-            </h3>
-            <p className="text-base xl:text-lg font-normal text-[#ffffff]">
-              Spread capital across various industries, geographies, and asset classes to minimize the impact of individual investment failures.
-            </p>
+          <li className="mb-3 text-white text-[18px]">
+            <strong>Assessing the impact of risks: </strong> Evaluting the potential financial consequences of each risk.
           </li>
-          <li className="text-white max-w-[300px] md:max-w-[unset] w-full sm:w-[50%] md:w-[30%] mb-4 lg:mb-0 lg:w-[18%] xl:w-[17%] py-4 sm:p-4 lg:pl-4 lg:border-l lg:border-l-[#fff]">
-            <Image
-              src="/images/financial-planning/icons/set-realistic.png"
-              width={78}
-              height={78}
-              alt="Mitigating Financial Loss"
-              className="mb-4"
-            />
-            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%] text-[#ffffff]">
-              Emergency <br /> Fund
-            </h3>
-            <p className="text-base xl:text-lg font-normal text-[#ffffff]">
-              Maintain accessible cash reserves to manage unexpected expenses without disrupting your financial plan or incurring debt.
-            </p>
+          <li className="mb-3 text-white text-[18px]">
+            <strong>Implementing risk mitigation strategies: </strong> Developing plans to reduce or eliminate risks, such as insurance, Diversification and emergency funds.
           </li>
-          <li className="text-white max-w-[300px] md:max-w-[unset] w-full sm:w-[50%] md:w-[30%] mb-4 lg:mb-0 lg:w-[18%] xl:w-[17%] py-4 sm:p-4 lg:pl-4 lg:border-l lg:border-l-[#fff]">
-            <Image
-              src="/images/financial-planning/icons/adjust-regulary.png"
-              width={78}
-              height={78}
-              alt="Ongoing Risk Assessment"
-              className="mb-4"
-            />
-            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%] text-[#ffffff]">
-              Estate  <br /> Planning
-            </h3>
-            <p className="text-base xl:text-lg font-normal text-[#ffffff]">
-              Organize wills, trusts, and powers of attorney to ensure the seamless transfer of assets and protection of beneficiaries after your passing.
-            </p>
-          </li>
-          <li className="text-white max-w-[300px] md:max-w-[unset] w-full sm:w-[50%] md:w-[30%] mb-4 lg:mb-0 lg:w-[18%] xl:w-[17%] py-4 sm:p-4 lg:pl-4 lg:border-l lg:border-l-[#fff]">
-            <Image
-              src="/images/financial-planning/icons/review-consistently.png"
-              width={78}
-              height={78}
-              alt="Crisis Management"
-              className="mb-4"
-            />
-            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%] text-[#ffffff]">
-              Risk <br /> Assessment
-            </h3>
-            <p className="text-base xl:text-lg font-normal text-[#ffffff]">
-              Regularly assess financial risks and implement safeguards, like insurance or portfolio adjustments, to preserve wealth over time.
-            </p>
+          <li className="mb-3 text-white text-[18px]">
+            <strong>Monitoring and reviewing: </strong> Continiuously assessing your risk exposure and adjusting strategies as needed.
           </li>
         </ul>
+      </div>
       </div>
     </>
   );
 };
 
 export default RiskManagementContent;
+

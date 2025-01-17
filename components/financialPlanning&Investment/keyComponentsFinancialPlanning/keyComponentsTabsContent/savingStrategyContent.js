@@ -8,93 +8,27 @@ const SavingStrategyContent = () => {
           Saving Strategies
         </h2>
         <p className="text-white text-base xl:text-lg w-full lg:max-w-[600px] xl:max-w-[770px] text-center lg:text-left mx-auto">
-          Budgeting is essential for effective financial planning. By tracking
-          income and categorizing expenses, individuals and businesses can
-          understand their financial health, identify savings opportunities, and
-          make informed spending decisions.
+          Savins is the portion of income that remains after expenses are deducted. It&apos;s a fundamental component of financial planning as it serves as a safety net for unforeseen circumstances and a stepping stone for achieving financial goals.
         </p>
       </div>
       <div className="p-6">
         <p className="text-white text-xl mb-6 font-semibold">
-          Key benefits of budgeting include:
+          Key benefits of savings include:
         </p>
-        <ul className="flex justify-start lg:justify-between flex-wrap lg:flex-nowrap">
-          <li className="text-white max-w-[300px] md:max-w-[unset] w-full sm:w-[50%] md:w-[30%] mb-4 lg:mb-0 lg:w-[18%] xl:w-[17%] py-4 sm:p-4">
-            <Image
-              src="/images/financial-planning/icons/track-income-expense.png"
-              width={78}
-              height={78}
-              alt="Identifying Potential Risks"
-              className="mb-4"
-            />
-            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%] text-[#ffffff]">
-              Emergency  <br /> Fund
-            </h3>
-            <p className="text-base xl:text-lg font-normal text-[#ffffff]">
-              Build a financial cushion of 3-6 months of living expenses to cover unforeseen emergencies like job loss or medical expenses.
+        <div className="flex justify-start lg:justify-between flex-col md:flex-row">          
+          <Image src="/images/financial-planning/icons/savings-benefits.png" width={772} height={450} alt="Savings Benefits" className="object-contain mr-6 w-full max-w-[450px] xl:max-w-[550px] mb-6 lg:mb-0 " />
+          <div className="">
+            <p className="mt-4 xl:mt-8 mb-4 md:mb-8 xl:mb-14 text-white">
+              <strong>Savings: </strong> Allocate a significant portion of income towards savings, emergency funds, investment, and retirement planning to secure financial stability and future goals.
             </p>
-          </li>
-          <li className="text-white max-w-[300px] md:max-w-[unset] w-full sm:w-[50%] md:w-[30%] mb-4 lg:mb-0 lg:w-[18%] xl:w-[17%] py-4 sm:p-4 lg:pl-4 lg:border-l lg:border-l-[#fff]">
-            <Image
-              src="/images/financial-planning/icons/categorised-spending.png"
-              width={78}
-              height={78}
-              alt="Tailored Insurance Solutions"
-              className="mb-4"
-            />
-            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%] text-[#ffffff]">
-            Automatic <br /> Savings
-            </h3>
-            <p className="text-base xl:text-lg font-normal text-[#ffffff]">
-              Automate monthly transfers to a savings account to ensure consistent and disciplined contributions toward achieving your financial goals.
+            <p className="mt-4 xl:mt-8 mb-4 md:mb-8 xl:mb-14 text-white">
+              <strong>Wants: </strong> Discretion spending on non-essential items such as dining out, entertainment & shopping to indulge in personal preferences.
             </p>
-          </li>
-          <li className="text-white max-w-[300px] md:max-w-[unset] w-full sm:w-[50%] md:w-[30%] mb-4 lg:mb-0 lg:w-[18%] xl:w-[17%] py-4 sm:p-4 lg:pl-4 lg:border-l lg:border-l-[#fff]">
-            <Image
-              src="/images/financial-planning/icons/set-realistic.png"
-              width={78}
-              height={78}
-              alt="Mitigating Financial Loss"
-              className="mb-4"
-            />
-            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%] text-[#ffffff]">
-              High-Interest <br /> Savings Accounts
-            </h3>
-            <p className="text-base xl:text-lg font-normal text-[#ffffff]">
-              Use accounts offering competitive interest rates to maximize returns on your emergency funds or other short-term savings.
+            <p className="mt-4 xl:mt-8 mb-4 md:mb-8 xl:mb-14 text-white">
+              <strong>Needs: </strong> Essential expenses like rent, utilities & groceries fall under this category to ensure basic living requirement are met.
             </p>
-          </li>
-          <li className="text-white max-w-[300px] md:max-w-[unset] w-full sm:w-[50%] md:w-[30%] mb-4 lg:mb-0 lg:w-[18%] xl:w-[17%] py-4 sm:p-4 lg:pl-4 lg:border-l lg:border-l-[#fff]">
-            <Image
-              src="/images/financial-planning/icons/adjust-regulary.png"
-              width={78}
-              height={78}
-              alt="Ongoing Risk Assessment"
-              className="mb-4"
-            />
-            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%] text-[#ffffff]">
-              Saving for  <br /> Specific Goals
-            </h3>
-            <p className="text-base xl:text-lg font-normal text-[#ffffff]">
-              Identify future needs, such as vacations, education, or homeownership, and allocate dedicated funds to achieve these objectives.
-            </p>
-          </li>
-          <li className="text-white max-w-[300px] md:max-w-[unset] w-full sm:w-[50%] md:w-[30%] mb-4 lg:mb-0 lg:w-[18%] xl:w-[17%] py-4 sm:p-4 lg:pl-4 lg:border-l lg:border-l-[#fff]">
-            <Image
-              src="/images/financial-planning/icons/review-consistently.png"
-              width={78}
-              height={78}
-              alt="Crisis Management"
-              className="mb-4"
-            />
-            <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%] text-[#ffffff]">
-              Cutting <br/> Expenses
-            </h3>
-            <p className="text-base xl:text-lg font-normal text-[#ffffff]">
-              Track spending patterns, identify non-essential expenses, and create a realistic budget to free up money for savings or investments.
-            </p>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </>
   );
