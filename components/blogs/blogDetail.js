@@ -84,14 +84,22 @@ const BlogDetail = (props) => {
                             </ul>
                         </div>
                         <div className="p-4">
-                            <h2 className="mb-1 text-xl font-bold">
+                            {/* <h2 className="mb-1 text-xl font-bold">
                                 Subscription
                             </h2>
                             <p className="mb-3">
                                 Subscribe to our newsletter and receive a selection of cool articles every weeks
                             </p>
                             <input type="email" placeholder="Enter your email" className="border rounded-[5px] border-[#00000080] text-[#00000080] mb-2 w-full p-3"/>
-                            <button type="submit" className="border rounded-[5px] border-[#232D63] text-[#fff] bg-[#232D63] p-3 w-full" >Subscribe</button> 
+                            <button type="submit" className="border rounded-[5px] border-[#232D63] text-[#fff] bg-[#232D63] p-3 w-full" >Subscribe</button>  */}
+                            <h2 className="mb-1 text-xl font-bold">
+                                Connect with us
+                            </h2>
+                            <p className="mb-3">
+                            Join our exclusive community of financial advisors! Share insights, and stay updated with the latest trends and tools. Connect with experts on WhatsApp!
+                            </p>
+                            <a href="https://chat.whatsapp.com/Bgocyi51gNA3S4CrFkggot" className="border rounded-[5px] border-[#232D63] text-[#fff] bg-[#232D63] p-3 text-center font-bold w-full inline-block" >Join our community</a>
+
                         </div>
                     </div>
                 </div>
