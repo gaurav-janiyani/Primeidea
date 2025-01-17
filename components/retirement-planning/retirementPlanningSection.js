@@ -214,13 +214,13 @@ const RetirementPlanningSection = () => {
                 <div className="flex flex-col-reverse md:flex-row md:justify-between md:items-end mb-8">
                   <div className="w-full md:w-[60%] pb-[40px]">
                     <h3 className="text-[22px] md:text-[28px] font-semibold mb-3">
-                      Gurantee Fixed Income
+                      Guarantee Fixed Income
                     </h3>
                     <p className="text-lg mb-1 text-black">
-                      Guranteed Fixed income is a retirement plan designed for those who prioritise financial stability and predictability in their retirement years.
+                      Guaranteed Fixed income is a retirement plan designed for those who prioritise financial stability and predictability in their retirement years.
                     </p>
                     <p className="text-lg mb-1 text-black">
-                      This option ensures a steady, reliable income stream, often through annuties or pension plans, regardless of market fluctuations.
+                      This option ensures a steady, reliable income stream, often through annuity or pension plans, regardless of market fluctuations.
                     </p>
                   </div>
                   <div className="w-full md:w-[37%] max-w-[300px] md:max-w-full">
@@ -228,7 +228,7 @@ const RetirementPlanningSection = () => {
                       src="/images/retirement-planning/services/serviceMain3.png"
                       width="331"
                       height="198"
-                      alt="Gurantee Fixed Income"
+                      alt="Guarantee Fixed Income"
                       className="max-h-[260px] object-contain"
                     />
                   </div>

@@ -28,7 +28,7 @@ const RiskManagementContent = () => {
             <strong>Implementing risk mitigation strategies: </strong> Developing plans to reduce or eliminate risks, such as insurance, Diversification and emergency funds.
           </li>
           <li className="mb-3 text-white text-[18px]">
-            <strong>Monitoring and reviewing: </strong> Continiuously assessing your risk exposure and adjusting strategies as needed.
+            <strong>Monitoring and reviewing: </strong> Continuously assessing your risk exposure and adjusting strategies as needed.
           </li>
         </ul>
       </div>

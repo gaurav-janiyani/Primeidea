@@ -16,9 +16,6 @@ const FaqsSection = () => {
                 <h2 className="text-2xl font-medium tracking-tight mb-6 md:mb-8 text-[#04102A] sm:text-3xl">
                   Frequently Asked Questions
                 </h2>
-               {/* <p className="mb-12 text-base font-semibold leading-6 text-[#4D4D4D]">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                </p> */}
               </FadeUpOneByOneAnimation>
               <div className="max-w-[1023px] mx-auto">
                 <ul>

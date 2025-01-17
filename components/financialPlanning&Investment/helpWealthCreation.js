@@ -92,10 +92,10 @@ const HelpWealthCreation = () => {
                     <span className="font-bold text-[#479AD2] text-xl absolute left-[-5px] top-[38px] w-[30px] h-[30px] bg-[#F6FDFF]">5</span>
                     <h2 className="flex items-center text-[20px] xl:text-2xl font-semibold">
                         <FadeUpOneByOneAnimation> 
-                          <Image src="/images/financial-planning/icons/quarterly-revision.png" width={100} height={100} alt="Quaterly Revision"  className="mr-4 xl:mr-6 w-[90px] xl:w-[100px]"/>
+                          <Image src="/images/financial-planning/icons/quarterly-revision.png" width={100} height={100} alt="Quarterly Revision"  className="mr-4 xl:mr-6 w-[90px] xl:w-[100px]"/>
                         </FadeUpOneByOneAnimation>
                         <FadeUpOneByOneAnimation> 
-                          <span>Quaterly Revision</span>
+                          <span>Quarterly Revision</span>
                         </FadeUpOneByOneAnimation>
                     </h2>
                     <FadeUpOneByOneAnimation> 

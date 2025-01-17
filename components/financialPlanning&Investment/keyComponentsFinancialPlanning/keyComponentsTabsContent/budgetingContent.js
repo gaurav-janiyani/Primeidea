@@ -78,7 +78,7 @@ const BudgetingContent = () => {
               className="mb-4"
             />
             <h3 className="mb-3 text-lg xl:text-xl font-semibold leading-[130%] text-[#ffffff]">
-              Adjust <br /> Regulary
+              Adjust <br /> Regularly
             </h3>
             <p className="text-base xl:text-lg font-normal text-[#ffffff]">
               Flexibility is key; be prepared to modify your budget as

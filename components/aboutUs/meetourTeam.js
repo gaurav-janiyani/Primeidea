@@ -9,7 +9,7 @@ const MeetOurTeam = () => {
                     <FadeUpOneByOneAnimation className="flex justify-between flex-col md:flex-row mb-4">
                         <h2 className="text-2xl lg:text-3xl text-center md:text-left mb-2 md:mb-0 font-medium">
                             Meet the <br/>
-                            counsultation team 
+                            consultation team 
                         </h2>
                         <p className="text-base md:text-lg lg:text-xl text-center md:text-left md:max-w-[420px] lg:max-w-[600px] xl:max-w-[780px]">
                             Explore our diverse case studies showcasing how our financial consultation services have enabled businesses to overcome challenges and achieve their full potential.
