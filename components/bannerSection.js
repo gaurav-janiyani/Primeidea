@@ -21,7 +21,7 @@ const BannerSection = (props) => {
           />
           <div className="main-section mx-auto 2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] px-4 pt-[160px] sm:pt-0 flex justify-between flex-col sm:flex-row absolute w-full bottom-[186px] sm:bottom-unset sm:top-[20%] left-[50%] translate-x-[-50%]">
 
-            <FadeUpAnimation className="lg:max-w-[400px] xl:max-w-[490px] mb-[10%] md:mb-0 mt-0 sm:mt-[10%]">
+            <FadeUpAnimation className="lg:max-w-[400px] xl:max-w-[490px] mb-[4%] md:mb-0 mt-0 sm:mt-[10%]">
               {props.mainTitle &&
               <h1 className="text-2xl md:text-3xl xl:text-4xl text-[#2D2D2D] font-bold mb-3">
                 {/* Protect Your Family&apos;s Future with Confidence */}
