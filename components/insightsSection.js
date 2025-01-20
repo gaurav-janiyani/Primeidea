@@ -7,7 +7,7 @@ import moment from "moment";
 
 const InsightsSection = (props) => {
   const blogsListing = props.blogsListing;
-  // console.log(props);
+  console.log(props);
   const insightsItems = [
     {
       imageUrl: "/images/home/insights/1.png",
@@ -90,10 +90,12 @@ const InsightsSection = (props) => {
                         <FadeUpOneByOneAnimation className="flex flex-wrap lg:flex-nowrap">
                           <div className="w-[85px] md:w-[132px] mr-[10px] md:mr-4">
                             <Image
-                              src={item.author.node.avatar.url}
+                              // src={item.author.node.avatar.url}
+                              src={item.featuredImage?.node.sourceUrl ? item.featuredImage?.node.sourceUrl : '/images/blogs/single-blog.jpg'}
                               width={132}
                               height={132}
                               alt={item.title}
+                              className="object-contain rounded"
                             />
                             <h3 className="flex flex-col justify-center items-center mt-3 leading-[100%] text-sm md:text-base">
                               Written by{" "}

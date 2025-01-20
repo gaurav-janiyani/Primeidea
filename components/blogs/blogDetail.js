@@ -51,7 +51,7 @@ const BlogDetail = (props) => {
                 <div className="flex justify-between flex-col lg:flex-row">
                     <div className="w-full lg:w-[calc(100%-300px)] mb-[40px] lg:mb-0">
                         <div className="mb-4">
-                            <Image src="/images/blogs/single-blog.jpg" width={1920} height={600} alt="Single Blog" className="rounded-[10px]"/>
+                            <Image src={`${post?.featuredImage?.node.sourceUrl ? post?.featuredImage?.node.sourceUrl  : '/images/blogs/single-blog.jpg'}`} width={1920} height={600} alt="Single Blog" className="rounded-[10px]"/>
                         </div>
                         <div className="single-blog-content">
                             <div dangerouslySetInnerHTML={{ __html: post.content}}></div>
