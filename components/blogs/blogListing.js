@@ -151,7 +151,7 @@ export default function BlogListing({ posts, categoriesList }) {
                         // src={item.author.node.avatar.url}
                         src={item.featuredImage?.node.sourceUrl ? item.featuredImage?.node.sourceUrl : '/images/blogs/single-blog.jpg'}
                         width={132}
-                        height={132}
+                        height={88}
                         alt={item.title}
                         className="object-contain rounded"
                       />
