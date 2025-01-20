@@ -6,7 +6,7 @@ import Link from "next/link";
 const navigation = [
   {
     name: "Financial Planning",
-    href: "research-based-wealth-management",
+    href: "financial-planning-and-investment-advisory",
     current: true,
   },
   {
