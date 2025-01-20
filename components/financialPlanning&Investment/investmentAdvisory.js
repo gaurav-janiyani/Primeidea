@@ -10,9 +10,9 @@ const InvestmentAdvisory = () => {
               <h2 className="text-[24px] font-bold mb-4 md:mb-1 text-[#04102A]">
                 Investment Advisory
               </h2>
-              <button className="bg-[#293C7D] text-md font-bold rounded-[8px] text-white px-10 py-3 ">
+              <a href="https://api.whatsapp.com/send?phone=918141027000&text=Hello, I'm interested in learning more about your financial advisory and investment services. Could you please provide me with some details on how I can start planning my investments? Looking forward to hearing from you!" target="_blank" className="bg-[#293C7D] text-md font-bold rounded-[8px] text-white px-10 py-3 ">
                   Start My Investing Journey
-              </button>
+              </a>
             </div>
             <ul className="flex justify-center md:justify-between flex-wrap md:flex-nowrap mx-[-10px]">
               <li className="px-[10px] mb-4 w-full max-w-[380px] sm:max-w-full sm:w-1/2 md:w-[33.33%]">
