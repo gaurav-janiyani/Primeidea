@@ -94,11 +94,11 @@ body {
     font-size: 18px;
     color: #171717;
     line-height: 150%;
-    margin: 20px 0 20px 0;
+    margin: 10px 0 10px 0;
   }
 
   .single-blog-content p + p {
-    margin: 10px 0 0px 0;
+    margin: 10px 0 20px 0;
   }
 
   .single-blog-content img {
@@ -136,7 +136,7 @@ body {
   .single-blog-content ol li > h4,
   .single-blog-content ol li > h5,
   .single-blog-content ol li > h6 {
-    display: inline-block;
+    display: contents;
     margin-top: 10px;
     margin-bottom: 0;
   }
