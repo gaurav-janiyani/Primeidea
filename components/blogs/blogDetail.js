@@ -1,15 +1,49 @@
 'use client';
-
+import { useState } from 'react';
 import Image from "next/image";
 import Header from "../header";
 import moment from "moment";
 import Footer from "../footer";
 import GetStarted from "../financialPlanning&Investment/getStarted";
-  
+import { Popover, PopoverButton, PopoverGroup, PopoverPanel } from '@headlessui/react'
+import { LinkIcon } from '@heroicons/react/24/outline';
+import Facebook from '../../public/images/blogs/icons/fb.svg';
+import Linkedin from '../../public/images/blogs/icons/linkedin.svg';
+import { Notyf } from "notyf";
+// import 'notyf/notyf.min.css';
 
 const BlogDetail = (props) => {
     const { post } = props;
-    console.log(post);
+    // const notyf = new Notyf();
+
+    const copyLink = () => {
+        const notyf = new Notyf({
+            position: {
+                x: "right",
+                y: "top",
+            },
+            duration: 5000,
+        });
+        navigator.clipboard.writeText(window.location.href);
+        notyf.success('Link copied to share!');
+    };
+
+    const shareOnFacebook = () => {
+        const url = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`;
+        window.open(url, '_blank');
+    };
+
+    const shareOnLinkedIn = () => {
+        const url = `https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(window.location.href)}`;
+        window.open(url, '_blank');
+    };
+
+    const products = [
+        { name: 'Copy Link', icon: LinkIcon, action: copyLink },
+        { name: 'Share on Facebook', iconImage: Facebook, action: shareOnFacebook },
+        { name: 'Share on LinkedIn', iconImage: Linkedin, action: shareOnLinkedIn },        
+    ]
+
     return (
         <>
         <Header />
@@ -26,9 +60,45 @@ const BlogDetail = (props) => {
                         <span>{post?.title}</span>
                     </li>
                 </ul>
-                <h1 className="text-2xl md:text-3xl xl:text-4xl text-[#2D2D2D] font-bold mb-3 max-w-[768px] leading-[130%]">
-                    {post?.title}
-                </h1>
+                <div className="flex justify-between items-center">
+                    <h1 className="text-2xl md:text-3xl xl:text-4xl text-[#2D2D2D] font-bold mb-3 max-w-[768px] leading-[130%]">
+                        {post?.title}
+                    </h1>
+                    <div>
+                        <PopoverGroup className="lg:flex lg:gap-x-12">
+                            <Popover className="relative">
+                                <PopoverButton className="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900 outline-0">
+                                <Image src="/images/blogs/icons/share.png" width={24} height={24} className="opacity-60" alt="Share" />
+                                </PopoverButton>
+
+                                <PopoverPanel
+                                transition
+                                className="absolute right-0 lg:right-unset lg:-left-8 top-full z-10 mt-3 overflow-hidden rounded-xl bg-white shadow-lg ring-1 ring-gray-900/5 transition data-[closed]:translate-y-1 data-[closed]:opacity-0 data-[enter]:duration-200 data-[leave]:duration-150 data-[enter]:ease-out data-[leave]:ease-in min-w-[210px]"
+                                >
+                                <div className="p-4">
+                                    {products.map((item) => (
+                                    <div
+                                        key={item.name}
+                                        className="group relative flex items-center gap-x-6 rounded-lg py-2 px-1 text-sm/6 hover:bg-gray-50 cursor-pointer"
+                                        onClick={item.action}
+                                    >
+                                        <div className="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                                        {item.icon ? <item.icon aria-hidden="true" className="size-6 text-gray-600 " /> :
+                                        <Image src={item.iconImage} width={24} height={24} alt={item.name} />}
+                                        </div>
+                                        <div className="flex-auto">
+                                            <span className="block font-semibold text-gray-900">
+                                                {item.name}
+                                            </span>
+                                        </div>
+                                    </div>
+                                    ))}
+                                </div>
+                                </PopoverPanel>
+                            </Popover>
+                        </PopoverGroup>
+                    </div>
+                </div>
                 <div className="border-y-2 border-black py-4 my-4 flex flex-col sm:flex-row sm:justify-between items-baseline sm:items-center">
                     <div className="flex items-center  mb-3 sm:mb-0">
                         <Image
