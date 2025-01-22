@@ -168,7 +168,7 @@ export default function Header() {
                             className="rounded-[12px] w-full"
                           />
                           <div className="absolute top-0 left-0 p-5">
-                            <h2 className="font-bold mb-3">
+                            <h2 className="font-bold mb-3 text-[#171717]">
                               Financial Investment Advisory
                             </h2>
                             <p className="max-w-[240px] text-[14px]">
@@ -191,7 +191,7 @@ export default function Header() {
                             className="rounded-[12px] w-full"
                           />
                           <div className="absolute top-0 left-0 p-5">
-                            <h2 className="font-bold mb-3">
+                            <h2 className="font-bold mb-3 text-[#171717]">
                               Financial Investment Planning
                             </h2>
                             <p className="max-w-[240px] text-[14px]">
@@ -253,7 +253,7 @@ export default function Header() {
                           className="rounded-[12px] w-full h-full"
                         />
                         <div className="absolute top-0 left-0 p-5">
-                          <h2 className="font-bold mb-3">
+                          <h2 className="font-bold mb-3 text-[#171717]">
                             Research Based Wealth Management
                           </h2>
                           <p className="max-w-[240px] text-[14px]">
@@ -275,7 +275,7 @@ export default function Header() {
                           className="rounded-[12px] w-full h-full"
                         />
                         <div className="absolute top-0 left-0 p-5">
-                          <h2 className="font-bold mb-3">
+                          <h2 className="font-bold mb-3 text-[#171717]">
                             Dream Retirement Planning
                           </h2>
                           <p className="max-w-[240px] text-[14px]">
@@ -297,7 +297,7 @@ export default function Header() {
                           className="rounded-[12px] w-full h-full"
                         />
                         <div className="absolute top-0 left-0 p-5">
-                          <h2 className="font-bold mb-3">
+                          <h2 className="font-bold mb-3 text-[#171717]">
                             Legacy & Inheritance Planning
                           </h2>
                           <p className="max-w-[240px] text-[14px]">
@@ -319,7 +319,7 @@ export default function Header() {
                           className="rounded-[12px] w-full h-full"
                         />
                         <div className="absolute top-0 left-0 p-5">
-                          <h2 className="font-bold mb-3">
+                          <h2 className="font-bold mb-3 text-[#171717]">
                             Tax Planning & Savings
                           </h2>
                           <p className="max-w-[240px] text-[14px]">
@@ -399,7 +399,7 @@ export default function Header() {
                       className="rounded-[12px] w-full h-full"
                     />
                     <div className="absolute top-0 left-0 p-5">
-                      <h2 className="font-bold mb-3">
+                      <h2 className="font-bold mb-3 text-[#171717]">
                         Research Based Wealth Management
                       </h2>
                       {/* <p className="max-w-[240px] text-[14px]">
@@ -422,7 +422,7 @@ export default function Header() {
                       className="rounded-[12px] w-full h-full"
                     />
                     <div className="absolute top-0 left-0 p-5">
-                      <h2 className="font-bold mb-3">
+                      <h2 className="font-bold mb-3 text-[#171717]">
                         Dream Retirement Planning
                       </h2>
                       {/* <p className="max-w-[240px] text-[14px]">
@@ -445,7 +445,7 @@ export default function Header() {
                       className="rounded-[12px] w-full h-full"
                     />
                     <div className="absolute top-0 left-0 p-5">
-                      <h2 className="font-bold mb-3">
+                      <h2 className="font-bold mb-3 text-[#171717]">
                         legacy & Inheritance Planning
                       </h2>
                       {/* <p className="max-w-[240px] text-[14px]">
@@ -468,7 +468,7 @@ export default function Header() {
                       className="rounded-[12px] w-full h-full"
                     />
                     <div className="absolute top-0 left-0 p-5">
-                      <h2 className="font-bold mb-3">Tax Planning & Savings</h2>
+                      <h2 className="font-bold mb-3 text-[#171717]">Tax Planning & Savings</h2>
                       {/* <p className="max-w-[240px] text-[14px]">
                               A customized investment plan from our experts
                               empowers you to grow your wealth strategically,
