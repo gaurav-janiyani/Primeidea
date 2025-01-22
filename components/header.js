@@ -398,7 +398,7 @@ export default function Header() {
                       alt="Research Based Wealth Management"
                       className="rounded-[12px] w-full h-full"
                     />
-                    <div className="absolute top-0 left-0 p-5">
+                    <div className="absolute top-0 left-0 p-5 z-10">
                       <h2 className="font-bold mb-3 text-[#171717]">
                         Research Based Wealth Management
                       </h2>
@@ -421,7 +421,7 @@ export default function Header() {
                       alt="Dream Retirement Planning"
                       className="rounded-[12px] w-full h-full"
                     />
-                    <div className="absolute top-0 left-0 p-5">
+                    <div className="absolute top-0 left-0 p-5 z-10">
                       <h2 className="font-bold mb-3 text-[#171717]">
                         Dream Retirement Planning
                       </h2>
@@ -444,7 +444,7 @@ export default function Header() {
                       alt="legacy & Inheritance Planning"
                       className="rounded-[12px] w-full h-full"
                     />
-                    <div className="absolute top-0 left-0 p-5">
+                    <div className="absolute top-0 left-0 p-5 z-10">
                       <h2 className="font-bold mb-3 text-[#171717]">
                         legacy & Inheritance Planning
                       </h2>
@@ -467,7 +467,7 @@ export default function Header() {
                       alt="Tax Planning & Savings"
                       className="rounded-[12px] w-full h-full"
                     />
-                    <div className="absolute top-0 left-0 p-5">
+                    <div className="absolute top-0 left-0 p-5 z-10">
                       <h2 className="font-bold mb-3 text-[#171717]">Tax Planning & Savings</h2>
                       {/* <p className="max-w-[240px] text-[14px]">
                               A customized investment plan from our experts
