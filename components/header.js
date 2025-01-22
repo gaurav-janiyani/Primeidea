@@ -389,7 +389,7 @@ export default function Header() {
                 <div className="w-[calc(50%-8px)] mb-4 rounded-[12px] shadow-[0_0px_3px_0px_#00000040]">
                   <a
                     href="/research-based-wealth-management"
-                    className="relative rounded-[12px] shadow-[0_0_5px_0_#00000040] cursor-pointer"
+                    className="block relative rounded-[12px] shadow-[0_0_5px_0_#00000040] cursor-pointer"
                   >
                     <Image
                       src="/images/header/wealth-preservation/RBWM.png"
@@ -412,7 +412,7 @@ export default function Header() {
                 <div className="w-[calc(50%-8px)] mb-4 rounded-[12px] shadow-[0_0px_3px_0px_#00000040]">
                   <a
                     href="/retirement-planning"
-                    className="relative rounded-[12px] shadow-[0_0_5px_0_#00000040] cursor-pointer"
+                    className="block relative rounded-[12px] shadow-[0_0_5px_0_#00000040] cursor-pointer"
                   >
                     <Image
                       src="/images/header/wealth-preservation/Retirement_PLANING.png"
@@ -435,7 +435,7 @@ export default function Header() {
                 <div className="w-[calc(50%-8px)] mb-4 rounded-[12px] shadow-[0_0px_3px_0px_#00000040]">
                   <a
                     href="/legacy-inheritance-planning"
-                    className="relative rounded-[12px] shadow-[0_0_5px_0_#00000040] cursor-pointer"
+                    className="block relative rounded-[12px] shadow-[0_0_5px_0_#00000040] cursor-pointer"
                   >
                     <Image
                       src="/images/header/wealth-preservation/legacy.png"
@@ -458,7 +458,7 @@ export default function Header() {
                 <div className="w-[calc(50%-8px)] mb-4 rounded-[12px] shadow-[0_0px_3px_0px_#00000040]">
                   <a
                     href="/tax-planning-savings"
-                    className="relative rounded-[12px] shadow-[0_0_5px_0_#00000040] cursor-pointer"
+                    className="block relative rounded-[12px] shadow-[0_0_5px_0_#00000040] cursor-pointer"
                   >
                     <Image
                       src="/images/header/wealth-preservation/tax-planning.png"
