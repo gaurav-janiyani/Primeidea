@@ -24,7 +24,7 @@ const BannerSection = (props) => {
             width={550}
             height={920}
             alt="Retirement Planning"
-            className={`h-full w-full object-cover ${props.isMobileBanner ? 'block' : 'sm:hidden'}`}
+            className={`h-full w-full object-cover ${props.isMobileBanner ? 'block sm:hidden' : ''}`}
           />
           <div className="main-section mx-auto 2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] px-4 pt-[160px] sm:pt-0 flex justify-between flex-col sm:flex-row absolute w-full bottom-[186px] sm:bottom-unset top-0 sm:top-[20%] left-[50%] translate-x-[-50%]">
 
