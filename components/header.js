@@ -376,7 +376,7 @@ export default function Header() {
           isMenuOpen ? "block" : "hidden"
         } mt-2 bg-white rounded-md shadow-lg`}
       >
-        <div className="px-2 pt-2 pb-3 space-y-1">
+        <div className="px-2 pt-2 pb-3 space-y-1 relative">
           {breadcrumb.length > 0 && (
             <>
               <button
