@@ -130,7 +130,7 @@ export default async function RetirementPlanning() {
         <div className="bg-[#F6FDFF]">
 
             <BannerSection 
-            mainBannerImage={"/images/retirement-planning/banner.png"}
+            mainBannerImage={"/images/retirement-planning/banner-right.png"}
             mainMobileBannerImage={"/images/retirement-planning/banner-mobile.png"}
             isMobileBanner={true}
             mainTitle={"Retirement Planning Made Simple and Effective"}

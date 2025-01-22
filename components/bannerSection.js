@@ -17,7 +17,7 @@ const BannerSection = (props) => {
             width={1920}
             height={1280}
             alt="Retirement Planning"
-            className={`h-full w-full object-cover ${props.isMobileBanner ? 'hidden' : 'sm:block'}`}
+            className={`h-full w-full object-cover ${props.isMobileBanner ? 'hidden sm:block' : ''}`}
           />
           <Image
             src={props.mainMobileBannerImage?props.mainMobileBannerImage:''}
