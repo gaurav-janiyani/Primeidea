@@ -131,6 +131,8 @@ export default async function RetirementPlanning() {
 
             <BannerSection 
             mainBannerImage={"/images/retirement-planning/banner.png"}
+            mainMobileBannerImage={"/images/retirement-planning/banner-mobile.png"}
+            isMobileBanner={true}
             mainTitle={"Retirement Planning Made Simple and Effective"}
             mainSubTitle={"With tailored strategies from Primeidea, prepare for a retirement that reflects your dreams and goals."}
             mainLinkTitle={"Start your journey with us"}
