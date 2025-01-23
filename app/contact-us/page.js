@@ -74,24 +74,32 @@ const ContactUs = () => {
                     </section>
                 </div>
                 <div className="2xl:max-w-[1340px] xl:max-w-[1170px] lg:max-w-[1004px] mx-auto px-4 pt-16 ">                
-                    <div>
-                            <div className="flex flex-col md:flex-row items-center md:items-center">
-                                <div className="w-full md:w-1/2 mb-8 md:mb-0 md:mr-8">
-                                    <Image src="/images/contact/contact-form.png" alt="Contact Us" className="w-full h-auto rounded-lg" width={520} height={520} />
+                    <div className="flex flex-col md:flex-row items-center md:items-center">
+                        <div className="w-full md:w-1/2 mb-8 md:mb-0 md:mr-8">
+                            <div className="text-center max-w-[500px] mx-auto">
+                                <div className="relative inline-block">
+                                    <Image src="/images/contact/founder.png" alt="Mr. Partha Shah" className="w-32 h-32 rounded-full mx-auto" width={128} height={128} />
+                                    <a href="https://www.linkedin.com/in/partha-shah-3900b021" target="_blank" rel="noopener noreferrer" className="inline-block mt-2 absolute top-0 right-0 text-[#0c5aa4]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="" className="mx-auto">
+                                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.5c0-1.381-1.119-2.5-2.5-2.5s-2.5 1.119-2.5 2.5v5.5h-3v-10h3v1.268c.878-.805 2.021-1.268 3.25-1.268 2.481 0 4.5 2.019 4.5 4.5v5.5z" fill="currentColor" />
+                                        </svg>
+                                    </a>
                                 </div>
-                                <div className="w-full md:w-1/2 bg-[#f2f3f4] py-8 px-12 rounded-lg shadow-lg bg-[#fff]">
-                                    <h2 className="text-2xl sm:text-3xl font-semibold text-gray-800 mb-2">Get in Touch</h2>
-                                    <p className="text-[#787878] font-medium">Send us a message using the form below, and we&apos;ll be in touch.</p>
-                                    
-                                    <ContactForm />
-                                </div>
+                                <p className="mt-4 text-base text-gray-600">"Welcome to PrimeIdea Ventures. With over two decades of experience in financial markets, we are dedicated to helping you achieve your financial goals. Our personalized approach ensures that every client receives tailored solutions for their unique needs, whether it's wealth management, retirement planning, or investment strategies. We believe in building long-term relationships based on trust, transparency, and excellence in service."</p>
+                                <p className="mt-2 text-base text-gray-800 font-semibold">- Partha Shah, Founder</p>
                             </div>
-
+                        </div>
+                        <div className="w-full md:w-1/2 bg-[#f2f3f4] py-8 px-12 rounded-lg shadow-lg bg-[#fff]">
+                            <h2 className="text-2xl sm:text-3xl font-semibold text-gray-800 mb-2">Get in Touch</h2>
+                            <p className="text-[#787878] font-medium">Send us a message using the form below, and we&apos;ll be in touch.</p>
+                            
+                            <ContactForm />
+                        </div>
                     </div>
                 </div>
             </main>
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14768.370415817908!2d73.1535375!3d22.2744817!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc62043c33df9%3A0x9fba545369e22bb9!2sPrimeidea%20Ventures%20-%20Mutual%20Fund%20%7C%20Insurance%20-%20Investment%20Advisor!5e0!3m2!1sen!2sin!4v1732794238110!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14768.370415817908!2d73.1535375!3d22.2744817!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc62043c33df9%3A0x9fba545369e22bb9!2sPrimeidea%20Ventures%20-%20Mutual%20Fund%20%7C%20Insurance%20-%20Investment%20Advisor!5e0!3m2!1sen!2sin!4v1704794238110!5m2!1sen!2sin"
                 width="100%"
                 height="500"
                 style={{ border: 0 }}
