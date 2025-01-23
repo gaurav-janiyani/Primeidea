@@ -13,11 +13,87 @@ const ContactForm = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitStatus, setSubmitStatus] = useState({ success: false, message: '' });
 
+    // Add new state for verification
+    const [verificationState, setVerificationState] = useState({
+        isVerifying: false,
+        verified: false,
+        otp: ''
+    });
+
     const handleChange = (e) => {
         setFormData({
             ...formData,
             [e.target.name]: e.target.value
         });
+    };
+
+    const sendVerificationCode = async () => {
+        const notyf = new Notyf({
+            position: { x: "right", y: "top" },
+            duration: 5000,
+        });
+        
+        if (!formData.phone) {
+            notyf.error('Please enter a phone number');
+            return;
+        }
+
+        try {
+            console.log('Sending verification code to:', formData.phone); // Debug log
+            const response = await fetch('/api/verify', {
+                method: 'POST',
+                headers: { 
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({ 
+                    phone: formData.phone,
+                    action: 'send'
+                })
+            });
+
+            const data = await response.json();
+            console.log('Verification response:', data); // Debug log
+
+            if (response.ok && data.status === 'sent') {
+                setVerificationState(prev => ({ ...prev, isVerifying: true }));
+                notyf.success(data.message || 'Verification code sent!');
+            } else {
+                throw new Error(data.error || 'Failed to send verification code');
+            }
+        } catch (error) {
+            console.error('Verification error:', error);
+            notyf.error(error.message || 'Error sending verification code');
+        }
+    };
+
+    const verifyOTP = async () => {
+        const notyf = new Notyf({
+            position: { x: "right", y: "top" },
+            duration: 5000,
+        });
+
+        try {
+            const response = await fetch('/api/verify', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    phone: formData.phone,
+                    code: verificationState.otp,
+                    action: 'verify'
+                })
+            });
+
+            const data = await response.json();
+            if (data.status === 'approved') {
+                setVerificationState(prev => ({ ...prev, verified: true, isVerifying: false }));
+                notyf.success('Phone number verified!');
+            } else {
+                notyf.error('Invalid verification code');
+            }
+        } catch (error) {
+            notyf.error('Error verifying code');
+        }
     };
 
     const handleSubmit = async (e) => {
@@ -29,6 +105,11 @@ const ContactForm = () => {
             },
             duration: 5000,
         });
+
+        if (!verificationState.verified) {
+            notyf.error('Please verify your phone number first');
+            return;
+        }
     
         if (!formData.fullName || !formData.email || !formData.description) {
             notyf.error('Please fill in all required fields');
@@ -116,16 +197,47 @@ const ContactForm = () => {
                 required
                 className="mb-4 block font-medium w-full px-3 py-3 border border-[#f6f6f6] shadow-sm bg-[#f6f6f6] text-[#1f4153] focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 text-[16px]" 
             />
-            <input 
-                type="tel" 
-                id="phone" 
-                name="phone" 
-                value={formData.phone}
-                onChange={handleChange}
-                placeholder="Enter Your Phone No" 
-                required
-                className="mb-4 block font-medium w-full px-3 py-3 border border-[#f6f6f6] shadow-sm bg-[#f6f6f6] text-[#1f4153] focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 text-[16px]" 
-            />
+            <div className="flex gap-2">
+                <input 
+                    type="tel" 
+                    id="phone" 
+                    name="phone" 
+                    value={formData.phone}
+                    onChange={handleChange}
+                    placeholder="Enter Your Phone No" 
+                    required
+                    disabled={verificationState.verified}
+                    className="mb-4 block font-medium w-full px-3 py-3 border border-[#f6f6f6] shadow-sm bg-[#f6f6f6] text-[#1f4153] focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 text-[16px]" 
+                />
+                {!verificationState.verified && !verificationState.isVerifying && (
+                    <button
+                        type="button"
+                        onClick={sendVerificationCode}
+                        className="bg-[#293C7D] text-white px-4 py-2 rounded-md"
+                    >
+                        Verify
+                    </button>
+                )}
+            </div>
+
+            {verificationState.isVerifying && !verificationState.verified && (
+                <div className="flex gap-2">
+                    <input
+                        type="text"
+                        placeholder="Enter OTP"
+                        value={verificationState.otp}
+                        onChange={(e) => setVerificationState(prev => ({ ...prev, otp: e.target.value }))}
+                        className="mb-4 block font-medium w-full px-3 py-3 border border-[#f6f6f6] shadow-sm bg-[#f6f6f6]"
+                    />
+                    <button
+                        type="button"
+                        onClick={verifyOTP}
+                        className="bg-[#293C7D] text-white px-4 py-2 rounded-md"
+                    >
+                        Submit OTP
+                    </button>
+                </div>
+            )}
             <textarea 
                 id="description" 
                 name="description" 
