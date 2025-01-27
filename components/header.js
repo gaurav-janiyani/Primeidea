@@ -4,6 +4,17 @@ import Image from "next/image";
 import Link from "next/link";
 
 const navigation = [
+  // { name: "About Us", href: "/about-us", current: false },
+  {
+    name: "Company",
+    href: "#",
+    current: false,
+    submenus: [
+      { name: "About Us", href: "about-us" },
+      { name: "Become a Partner", href: "become-a-partner" },
+      { name: "Careers", href: "careers" },
+    ],
+  },
   {
     name: "Financial Planning",
     href: "financial-planning-and-investment-advisory",
@@ -20,7 +31,7 @@ const navigation = [
     ],
   },
   { name: "Insurance", href: "/insurance", current: false },
-  { name: "About Us", href: "/about-us", current: false },
+  // { name: "About Us", href: "/about-us", current: false },
   { name: "Blogs", href: "/blogs", current: false },
 ];
 
@@ -32,6 +43,8 @@ export default function Header() {
     useState(false);
   const [activeSubmenu, setActiveSubmenu] = useState(null);
   const [breadcrumb, setBreadcrumb] = useState([]);
+  const [activeMainMenu, setActiveMainMenu] = useState(null);
+  const [showInvestmentSubmenu, setShowInvestmentSubmenu] = useState(false);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
@@ -48,6 +61,18 @@ export default function Header() {
   const handleBackClick = () => {
     setBreadcrumb(breadcrumb.slice(0, -1));
     setActiveSubmenu(breadcrumb[breadcrumb.length - 2] || null);
+  };
+
+  const handleMobileMenuClick = (item) => {
+    if (item.name === "Investment Planning") {
+      setShowInvestmentSubmenu(true);
+      setActiveMainMenu("investment");
+    } else if (item.name === "Company") {
+      setActiveMainMenu("company");
+    } else {
+      setActiveMainMenu(null);
+      setShowInvestmentSubmenu(false);
+    }
   };
 
   return (
@@ -117,6 +142,52 @@ export default function Header() {
             className="hidden w-full lg:block md:w-auto md:order-1 mx-auto	 "
           >
             <ul className="flex flex-col mt-4 font-medium md:flex-row md:mt-0 md:space-x-8 rtl:space-x-reverse">
+              <li className="!ml-2 relative group">
+                <button className="flex items-center justify-between w-full py-4 2xl:py-5 px-2 2xl:px-3 text-[15px] 2xl:text-base font-medium md:w-auto hover:text-[#E40115] " >
+                  Company
+                  <svg
+                    className="w-2.5 h-2.5 ms-3"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                <div className="absolute top-[50px] left-0 mt-2 w-48 rounded-md shadow-lg bg-[#abddff] ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-150 ease-in-out">
+                    <div className="py-1 text-left" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                        <a
+                          href="/about-us"
+                          className="block px-4 py-2 text-[15px] text-gray-700 hover:text-[#E40115]"
+                          role="menuitem"
+                        >
+                          About Us
+                        </a>
+                        <a
+                          href="/become-a-partner"
+                          className="block px-4 py-2 text-[15px] text-gray-700 hover:text-[#E40115]"
+                          role="menuitem"
+                        >
+                          Become a Partner
+                        </a>
+                        <a
+                          href="/careers"
+                          className="block px-4 py-2 text-[15px] text-gray-700 hover:text-[#E40115]"
+                          role="menuitem"
+                        >
+                          Careers
+                        </a>
+                      
+                    </div>
+                </div>
+                </button>
+              </li>
               <li className="!ml-2">
                 <a
                   href="/financial-planning-and-investment-advisory"
@@ -293,7 +364,7 @@ export default function Header() {
                           src="/images/header/wealth-preservation/legacy.png"
                           width={289}
                           height={253}
-                          alt="legacy & Inheritance Planning"
+                          alt="Legacy & Inheritance Planning"
                           className="rounded-[12px] w-full h-full"
                         />
                         <div className="absolute top-0 left-0 p-5">
@@ -339,14 +410,14 @@ export default function Header() {
                   Insurance
                 </a>
               </li>
-              <li className="!ml-2">
+              {/* <li className="!ml-2">
                 <a
                   href="/about-us"
                   className="block py-4 2xl:py-5 px-2 2xl:px-3 text-[15px] 2xl:text-base font-medium md:w-auto hover:text-[#E40115]"
                 >
                   About Us
                 </a>
-              </li>
+              </li> */}
               <li className="!ml-2">
                 <a
                   href="/blogs"
@@ -377,16 +448,19 @@ export default function Header() {
         } mt-2 bg-white rounded-md shadow-lg`}
       >
         <div className="px-2 pt-2 pb-3 space-y-1 relative">
-          {breadcrumb.length > 0 && (
+          {showInvestmentSubmenu ? (
             <>
               <button
-                onClick={handleBackClick}
+                onClick={() => {
+                  setShowInvestmentSubmenu(false);
+                  setActiveMainMenu(null);
+                }}
                 className="w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
               >
                 ← Back
               </button>
               <div className="flex justify-between flex-wrap">
-                <div className="w-[calc(50%-8px)] mb-4 rounded-[12px] shadow-[0_0px_3px_0px_#00000040]">
+                <div className="w-[calc(50%-8px)] mb-4">
                   <a
                     href="/research-based-wealth-management"
                     className="block relative rounded-[12px] shadow-[0_0_5px_0_#00000040] cursor-pointer"
@@ -398,18 +472,14 @@ export default function Header() {
                       alt="Research Based Wealth Management"
                       className="rounded-[12px] w-full h-full"
                     />
-                    <div className="absolute top-0 left-0 p-5 z-10">
-                      <h2 className="font-bold mb-3 text-[#171717]">
+                    <div className="absolute top-0 left-0 p-3">
+                      <h2 className="font-bold mb-2 text-[#171717] text-sm">
                         Research Based Wealth Management
                       </h2>
-                      {/* <p className="max-w-[240px] text-[14px]">
-                              A customized investment plan from our experts
-                              empowers you to grow your wealth strategically,
-                            </p> */}
                     </div>
                   </a>
                 </div>
-                <div className="w-[calc(50%-8px)] mb-4 rounded-[12px] shadow-[0_0px_3px_0px_#00000040]">
+                <div className="w-[calc(50%-8px)] mb-4">
                   <a
                     href="/retirement-planning"
                     className="block relative rounded-[12px] shadow-[0_0_5px_0_#00000040] cursor-pointer"
@@ -421,18 +491,14 @@ export default function Header() {
                       alt="Dream Retirement Planning"
                       className="rounded-[12px] w-full h-full"
                     />
-                    <div className="absolute top-0 left-0 p-5 z-10">
-                      <h2 className="font-bold mb-3 text-[#171717]">
+                    <div className="absolute top-0 left-0 p-3">
+                      <h2 className="font-bold mb-2 text-[#171717] text-sm">
                         Dream Retirement Planning
                       </h2>
-                      {/* <p className="max-w-[240px] text-[14px]">
-                              A customized investment plan from our experts
-                              empowers you to grow your wealth strategically,
-                            </p> */}
                     </div>
                   </a>
                 </div>
-                <div className="w-[calc(50%-8px)] mb-4 rounded-[12px] shadow-[0_0px_3px_0px_#00000040]">
+                <div className="w-[calc(50%-8px)] mb-4">
                   <a
                     href="/legacy-inheritance-planning"
                     className="block relative rounded-[12px] shadow-[0_0_5px_0_#00000040] cursor-pointer"
@@ -441,21 +507,17 @@ export default function Header() {
                       src="/images/header/wealth-preservation/legacy.png"
                       width={289}
                       height={253}
-                      alt="legacy & Inheritance Planning"
+                      alt="Legacy & Inheritance Planning"
                       className="rounded-[12px] w-full h-full"
                     />
-                    <div className="absolute top-0 left-0 p-5 z-10">
-                      <h2 className="font-bold mb-3 text-[#171717]">
-                        legacy & Inheritance Planning
+                    <div className="absolute top-0 left-0 p-3">
+                      <h2 className="font-bold mb-2 text-[#171717] text-sm">
+                        Legacy & Inheritance Planning
                       </h2>
-                      {/* <p className="max-w-[240px] text-[14px]">
-                              A customized investment plan from our experts
-                              empowers you to grow your wealth strategically,
-                            </p> */}
                     </div>
                   </a>
                 </div>
-                <div className="w-[calc(50%-8px)] mb-4 rounded-[12px] shadow-[0_0px_3px_0px_#00000040]">
+                <div className="w-[calc(50%-8px)] mb-4">
                   <a
                     href="/tax-planning-savings"
                     className="block relative rounded-[12px] shadow-[0_0_5px_0_#00000040] cursor-pointer"
@@ -467,32 +529,54 @@ export default function Header() {
                       alt="Tax Planning & Savings"
                       className="rounded-[12px] w-full h-full"
                     />
-                    <div className="absolute top-0 left-0 p-5 z-10">
-                      <h2 className="font-bold mb-3 text-[#171717]">Tax Planning & Savings</h2>
-                      {/* <p className="max-w-[240px] text-[14px]">
-                              A customized investment plan from our experts
-                              empowers you to grow your wealth strategically,
-                            </p> */}
+                    <div className="absolute top-0 left-0 p-3">
+                      <h2 className="font-bold mb-2 text-[#171717] text-sm">
+                        Tax Planning & Savings
+                      </h2>
                     </div>
                   </a>
                 </div>
               </div>
             </>
+          ) : activeMainMenu === "company" ? (
+            <>
+              <button
+                onClick={() => setActiveMainMenu(null)}
+                className="w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+              >
+                ← Back
+              </button>
+              <a href="/about-us" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+                About Us
+              </a>
+              <a href="/become-a-partner" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+                Become a Partner
+              </a>
+              <a href="/careers" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+                Careers
+              </a>
+            </>
+          ) : (
+            (activeSubmenu
+              ? navigation.find((item) => item.name === activeSubmenu).submenus
+              : navigation
+            ).map((item) => (
+              <a
+                key={item.name}
+                href={item.href}
+                onClick={(e) => {
+                  if (item.submenus) {
+                    e.preventDefault();
+                    handleMobileMenuClick(item);
+                  }
+                }}
+                className="w-full text-left block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+              >
+                {item.name}
+                {item.submenus && <span className="float-right">→</span>}
+              </a>
+            ))
           )}
-          {(activeSubmenu
-            ? navigation.find((item) => item.name === activeSubmenu).submenus
-            : navigation
-          ).map((item) => (
-            <a
-              key={item.name}
-              href={item.href}
-              onClick={() => handleSubmenuClick(item)}
-              className="w-full text-left block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-            >
-              {item.name}
-              {item.submenus && <span className="float-right">→</span>}
-            </a>
-          ))}
         </div>
       </div>
     </header>
