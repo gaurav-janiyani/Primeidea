@@ -6,7 +6,6 @@ import HowWeSupport from "@/components/becomeAPartner/howWeSupport";
 import JoinOurNetwork from "@/components/becomeAPartner/joinOurNetwork";
 import ClientTestimonial from "@/components/clientTestimonial";
 import Footer from "@/components/footer";
-import { getPostList } from "@/lib/posts";
 
 export const metadata = {
   title: 'Become A Partner | PrimeIdea - Your Trusted Financial Partner',
@@ -38,38 +37,7 @@ export const metadata = {
 };
 
 
-async function getData(params) {
-  const allPosts = await getPostList();
-  return { allPosts: allPosts };
-}
-
-export default async function AboutUs() { 
-  const blogsListing = await getData();
-    const steps = [
-        {
-          id: '01',
-          title: "Solutions",
-          content:
-            "Providing tailored financial solutions to optimize growth and  returns for our clients.",
-        },
-        {
-          id: '02',
-          title: "Research",
-          content:
-            "In-depth research analysis drive our financial services to deliver accurate and valuable insights.",
-        },
-        {
-          id: '03',
-          title: "Planning",
-          content:
-            "Strategic planning and forecasting are essential for ensuring financial stability and success.",
-        },
-        {
-          id: '04',
-          title: "Ethics",
-          content: "Ethical practices and transparency from the foundation of our financial services, fostering trust and long term partnerships. ",
-        },
-      ];
+export default async function BecomeAPartner() { 
     
     return (
         <div className="bg-[#F6FDFF]">
