@@ -79,13 +79,13 @@ const ContactUs = () => {
                             <div className="text-center max-w-[500px] mx-auto">
                                 <div className="relative inline-block">
                                     <Image src="/images/contact/founder.png" alt="Mr. Partha Shah" className="w-32 h-32 rounded-full mx-auto" width={128} height={128} />
-                                    <a href="https://www.linkedin.com/in/partha-shah-3900b021" target="_blank" rel="noopener noreferrer" className="inline-block mt-2 absolute top-0 right-0 text-[#0c5aa4]">
+                                    <a href="https://www.linkedin.com/in/pssays" target="_blank" rel="noopener noreferrer" className="inline-block mt-2 absolute top-0 right-0 text-[#0c5aa4]">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="" className="mx-auto">
                                             <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.5c0-1.381-1.119-2.5-2.5-2.5s-2.5 1.119-2.5 2.5v5.5h-3v-10h3v1.268c.878-.805 2.021-1.268 3.25-1.268 2.481 0 4.5 2.019 4.5 4.5v5.5z" fill="currentColor" />
                                         </svg>
                                     </a>
                                 </div>
-                                <p className="mt-4 text-base text-gray-600">"Welcome to PrimeIdea Ventures. With over two decades of experience in financial markets, we are dedicated to helping you achieve your financial goals. Our personalized approach ensures that every client receives tailored solutions for their unique needs, whether it's wealth management, retirement planning, or investment strategies. We believe in building long-term relationships based on trust, transparency, and excellence in service."</p>
+                                <p className="mt-4 text-base text-gray-600">&quot;Welcome to PrimeIdea Ventures. With over two decades of experience in financial markets, we are dedicated to helping you achieve your financial goals. Our personalized approach ensures that every client receives tailored solutions for their unique needs, whether it&apos;s wealth management, retirement planning, or investment strategies. We believe in building long-term relationships based on trust, transparency, and excellence in service.&quot;</p>
                                 <p className="mt-2 text-base text-gray-800 font-semibold">- Partha Shah, Founder</p>
                             </div>
                         </div>
