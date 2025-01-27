@@ -92,10 +92,10 @@ const JoinOurNetwork = () => {
 
     return (
         <section className="bg-gradient-to-br from-[#232D63] to-[#1a2142] text-white py-20 relative overflow-hidden">
-            <div className="absolute inset-0 bg-[url('/network-pattern.png')] opacity-10"></div>
+            <div className="absolute inset-0  opacity-10"></div>
             <div className="container mx-auto px-4 relative z-10">
                 <div className="max-w-3xl mx-auto text-center">
-                    <h2 className="text-5xl font-extrabold text-white mb-6 leading-tight">
+                    <h2 className="text-[36px] xl:text-5xl font-extrabold text-white mb-6 leading-tight">
                         Join Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">Network</span>
                     </h2>
                     <p className="text-gray-300 text-xl mb-10 leading-relaxed">

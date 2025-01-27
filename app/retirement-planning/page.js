@@ -155,14 +155,14 @@ export default async function RetirementPlanning() {
                 <ReportSection />
             </div>
 
-            <InsightsSection blogsListing={posts.posts.nodes}/>
+            <InsightsSection blogsListing={posts.posts.nodes} customCSS={'pb-0'}/>
 
             <FaqsSection />
 
             <ClientTestimonial />
 
             {/* <>Get Started</> */}
-            <GetStarted />
+            <GetStarted />  
 
             <Footer />
 

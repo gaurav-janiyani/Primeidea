@@ -7,7 +7,7 @@ const ExpertiseSection = () => {
       <div className="pt-16 2xl:pt-20 pb-16 lg:pb-20  mx-auto bg-[url('/images/icons/p-vector.png')] bg-no-repeat bg-[left_top_0] lg:bg-left-top">        
         <div className="max-w-[1150px] mx-auto px-2">
           <div className="flex justify-between items-center flex-col lg:flex-row mx-[-15px]">
-            <FadeUpOneByOneAnimation className="w-[80%] md:w-1/2 px-[15px] mb-10 lg:mb-0">
+            <FadeUpOneByOneAnimation className="w-full sm:w-[80%] md:w-1/2 px-[18px] mb-10 lg:mb-0">
               <Image
                 src="/images/become-a-partner/become-partner-section.png"
                 width={600}
@@ -16,7 +16,7 @@ const ExpertiseSection = () => {
                 className="rounded-md"
               />
             </FadeUpOneByOneAnimation>
-            <FadeUpOneByOneAnimation className="w-full md:w-[70%] lg:w-1/2 px-[30px] md:px-[15px] xl:pl-8">
+            <FadeUpOneByOneAnimation className="w-full md:w-[70%] lg:w-1/2 px-[18px] md:px-[15px] xl:pl-8">
               <h2 className="text-[28px] sm:text-[32px] md:text-[36px] leading-[120%] font-medium mb-3 text-black">
                 {/* Empower Your Clients and <br/> Grow Your Business */}
                 Why Partner with <br/> PrimeIdea Ventures?
