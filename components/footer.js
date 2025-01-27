@@ -84,6 +84,15 @@ const Footer = () => {
                   <h4 className="mb-3 text-lg font-semibold text-white">
                     <a href="/blogs">Blogs</a>
                   </h4>
+                  <h4 className="mb-3 text-lg font-semibold text-white">
+                    <a href="/become-a-partner">Become a Partner</a>
+                  </h4>
+                  <h4 className="mb-3 text-lg font-semibold text-white">
+                    <a href="/careers">Careers</a>
+                  </h4>
+                  <h4 className="mb-3 text-lg font-semibold text-white">
+                    <a href="/contact-us">Contact Us</a>
+                  </h4>
                 </div>
               </FadeUpOneByOneAnimation>
             </div>
