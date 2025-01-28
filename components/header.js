@@ -4,17 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const navigation = [
-  // { name: "About Us", href: "/about-us", current: false },
-  {
-    name: "Company",
-    href: "#",
-    current: false,
-    submenus: [
-      { name: "About Us", href: "about-us" },
-      { name: "Become a Partner", href: "become-a-partner" },
-      { name: "Careers", href: "careers" },
-    ],
-  },
+  // { name: "About Us", href: "/about-us", current: false },  
   {
     name: "Financial Planning",
     href: "financial-planning-and-investment-advisory",
@@ -31,8 +21,18 @@ const navigation = [
     ],
   },
   { name: "Insurance", href: "/insurance", current: false },
-  // { name: "About Us", href: "/about-us", current: false },
   { name: "Blogs", href: "/blogs", current: false },
+  {
+    name: "Company",
+    href: "#",
+    current: false,
+    submenus: [
+      { name: "About Us", href: "about-us" },
+      { name: "Become a Partner", href: "become-a-partner" },
+      { name: "Careers", href: "careers" },
+    ],
+  },
+  { name: "Login", href: "https://login.primeidea.in ", current: false },
 ];
 
 export default function Header() {
@@ -142,52 +142,7 @@ export default function Header() {
             className="hidden w-full lg:block md:w-auto md:order-1 mx-auto	 "
           >
             <ul className="flex flex-col mt-4 font-medium md:flex-row md:mt-0 md:space-x-8 rtl:space-x-reverse">
-              <li className="!ml-2 relative group">
-                <button className="flex items-center justify-between w-full py-4 2xl:py-5 px-2 2xl:px-3 text-[15px] 2xl:text-base font-medium md:w-auto hover:text-[#E40115] " >
-                  Company
-                  <svg
-                    className="w-2.5 h-2.5 ms-3"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 10 6"
-                  >
-                    <path
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="m1 1 4 4 4-4"
-                    />
-                  </svg>
-                <div className="absolute top-[50px] left-0 mt-2 w-48 rounded-md shadow-lg bg-[#abddff] ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-150 ease-in-out">
-                    <div className="py-1 text-left" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-                        <a
-                          href="/about-us"
-                          className="block px-4 py-2 text-[15px] text-gray-700 hover:text-[#E40115]"
-                          role="menuitem"
-                        >
-                          About Us
-                        </a>
-                        <a
-                          href="/become-a-partner"
-                          className="block px-4 py-2 text-[15px] text-gray-700 hover:text-[#E40115]"
-                          role="menuitem"
-                        >
-                          Become a Partner
-                        </a>
-                        <a
-                          href="/careers"
-                          className="block px-4 py-2 text-[15px] text-gray-700 hover:text-[#E40115]"
-                          role="menuitem"
-                        >
-                          Careers
-                        </a>
-                      
-                    </div>
-                </div>
-                </button>
-              </li>
+              
               <li className="!ml-2">
                 <a
                   href="/financial-planning-and-investment-advisory"
@@ -290,7 +245,7 @@ export default function Header() {
                   onMouseLeave={() => setIsActiveWealthPreservationMenu(false)}
                 >
                   Investment Planning{" "}
-                  <svg
+                  {/* <svg
                     className="w-2.5 h-2.5 ms-3"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
@@ -304,7 +259,7 @@ export default function Header() {
                       strokeWidth="2"
                       d="m1 1 4 4 4-4"
                     />
-                  </svg>
+                  </svg> */}
                 </button>
                 <div
                   id="mega-menu-full-cta-dropdown"
@@ -410,20 +365,67 @@ export default function Header() {
                   Insurance
                 </a>
               </li>
-              {/* <li className="!ml-2">
-                <a
-                  href="/about-us"
-                  className="block py-4 2xl:py-5 px-2 2xl:px-3 text-[15px] 2xl:text-base font-medium md:w-auto hover:text-[#E40115]"
-                >
-                  About Us
-                </a>
-              </li> */}
+              <li className="!ml-2 relative group">
+                <button className="flex items-center justify-between w-full py-4 2xl:py-5 px-2 2xl:px-3 text-[15px] 2xl:text-base font-medium md:w-auto hover:text-[#E40115] " >
+                  Company
+                  {/* <svg
+                    className="w-2.5 h-2.5 ms-3"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg> */}
+                <div className="absolute top-[50px] left-0 mt-2 w-48 rounded-md shadow-lg bg-[#abddff] ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-150 ease-in-out">
+                    <div className="py-1 text-left" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                        <a
+                          href="/about-us"
+                          className="block px-4 py-2 text-[15px] text-gray-700 hover:text-[#E40115]"
+                          role="menuitem"
+                        >
+                          About Us
+                        </a>
+                        <a
+                          href="/become-a-partner"
+                          className="block px-4 py-2 text-[15px] text-gray-700 hover:text-[#E40115]"
+                          role="menuitem"
+                        >
+                          Become a Partner
+                        </a>
+                        <a
+                          href="/careers"
+                          className="block px-4 py-2 text-[15px] text-gray-700 hover:text-[#E40115]"
+                          role="menuitem"
+                        >
+                          Careers
+                        </a>
+                      
+                    </div>
+                </div>
+                </button>
+              </li>             
               <li className="!ml-2">
                 <a
                   href="/blogs"
                   className="block py-4 2xl:py-5 px-2 2xl:px-3 text-[15px] 2xl:text-base font-medium md:w-auto hover:text-[#E40115]"
                 >
                   Blogs
+                </a>
+              </li>
+               <li className="!ml-2">
+                <a
+                  href="https://login.primeidea.in"
+                  target="_blank"
+                  className="block py-4 2xl:py-5 px-2 2xl:px-3 text-[15px] 2xl:text-base font-medium md:w-auto hover:text-[#E40115]"
+                >
+                  Login
                 </a>
               </li>
             </ul>
